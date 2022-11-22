@@ -1,0 +1,15 @@
+backups/**
+crash-reports/**
+downloads/**
+journeymap/data/**
+local/**
+logs/**
+mods/**
+patchouli_books/**
+resourcepacks/**
+saves/**
+schematics/**
+screenshots/**
+patchouli_data.json
+usercache.json
+usernamecache.json

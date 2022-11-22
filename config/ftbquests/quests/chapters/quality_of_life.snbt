@@ -1,0 +1,929 @@
+{
+	id: "2E2EE4AC5CADDC33"
+	group: "29701DF1EC6EE2E7"
+	order_index: 0
+	filename: "quality_of_life"
+	title: "Quality of Life"
+	icon: "rftoolsutility:regenerationplus_module"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Quality of Life"
+			icon: "rftoolsutility:regenerationplus_module"
+			x: -5.738095238095212d
+			y: 1.5714285714285694d
+			subtitle: "Some QoL improvements"
+			description: ["This collection of mods want to make your life easier."]
+			dependencies: ["61BAA7CBDCE2512D"]
+			size: 2.0d
+			id: "28EEF15784F7C8CC"
+			tasks: [{
+				id: "553A152C516529C7"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "AI Improvements"
+			icon: "ae2:singularity"
+			x: 0.5d
+			y: 0.0d
+			subtitle: "by QueenOfMissiles"
+			description: ["Simplified AI mod focused on performance and low-level modifications to AIs in the game. Picking up the slack for the base game and improving it for a modded ecosystem. Handling common problems such as too many animals, performance hits from swarms of zombies, and simple remove tasks skipped by larger AI improvement mods."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "4C0F6F13956D39C3"
+			tasks: [{
+				id: "19B25B37EC8DD2D8"
+				type: "checkmark"
+				title: "AI Improvements"
+			}]
+		}
+		{
+			title: "Angel Block Renewed"
+			icon: "angelblockrenewed:angel_block"
+			x: -1.0d
+			y: 0.0d
+			subtitle: "by LaidBackSloth42"
+			description: ["This mod adds a block you can place midair or in fluids to help build in the sky or in water. You can instantly break it without the need of a tool, and it will go directly back into your inventory after breaking."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "7BC3FDD661B050E0"
+			tasks: [{
+				id: "2A9F4CC81A1E72E9"
+				type: "checkmark"
+				title: "Angel Block Renewed"
+			}]
+		}
+		{
+			title: "Angel Ring"
+			icon: "angelring:angel_ring"
+			x: -2.5d
+			y: 0.0d
+			subtitle: "by DenisMasterHerobrine"
+			description: [
+				"This mod adds an Angel Ring, which allows you to fly, like in a creative mode to help with building/travelling. Inspired by Extra Utilities' Angel Ring."
+				""
+				"You can choose the type you wish and upgrade it from time to time using alloys or materials from other mods. See JEI for more types and recipes."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "2ACC8592A42EED25"
+			tasks: [{
+				id: "2368616A6DB34869"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "AppleSkin"
+			icon: "minecraft:enchanted_golden_apple"
+			x: -4.0d
+			y: 0.0d
+			subtitle: "by squeek502"
+			description: [
+				"A standalone mod providing the HUD with features previously included in AppleCore."
+				""
+				"- Adds food value information to tooltips"
+				"- Adds a visualization of potential hunger/saturation restored while holding food"
+				"- Adds a visualization of potential health restored while holding food"
+				"- Adds hunger/saturation/exhaustion info to the debug overlay (F3)"
+				"- Syncs the value of saturation and exhaustion to the client"
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "2875A9104E56BA1C"
+			tasks: [{
+				id: "431A8848E0C5BF0E"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "AttributeFix"
+			icon: {
+				id: "rftoolsutility:counterplus_module"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -7.5d
+			y: 0.0d
+			subtitle: "by DarkhaxDev"
+			description: [
+				"Minecraft uses an attribute system to handle important calculations. It covers everything from armor values, to attack damage, to the maximum health of a mob. This system also introduced attribute caps, which limit how high any value can be. While this usually goes unnoticed, many mods are unknowingly affected by it. This mod significantly increases these caps to allow those mods to work as they were intended."
+				""
+				"Affected Attributes"
+				"- Max Health"
+				"- Follow Range"
+				"- Knockback Resistance"
+				"- Movement Speed"
+				"- Attack Damage"
+				"- Attack Speed"
+				"- Armor"
+				"- Armor Toughness"
+				"- Luck"
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "7660EC54FB5DF2A2"
+			tasks: [{
+				id: "257D9432986DA5C7"
+				type: "checkmark"
+				title: "AttributeFix"
+			}]
+		}
+		{
+			title: "Bad Wither No Cookie – Reloaded"
+			icon: "davebuildingmod:no_entry_sign"
+			x: -9.0d
+			y: 0.0d
+			subtitle: "by Kreezxil"
+			description: [
+				"A lightweight universal mod to silence these nasty world wide broadcast sounds:"
+				""
+				"- Wither"
+				"- End Dragon"
+				"- Thunder"
+				"- and now any sound that any mod makes!"
+				""
+				"This is especially handy on servers where spawners and/or farms are in use for these mobs."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "5BC7B019E0256086"
+			tasks: [{
+				id: "32FD8CA81D8820D6"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Better Spawner Control (Forge)"
+			icon: "minecraft:spawner"
+			x: -10.5d
+			y: 0.0d
+			subtitle: "by Serilum"
+			description: ["Better Spawner Control is a drag-and-drop mod which disables mob spawners whenever they are surrounded by 5 torches. Why? Because those darn blazes won't stop spawning."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "53B6FAA50A45B837"
+			tasks: [{
+				id: "5AF031112388725E"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Building Gadgets"
+			icon: {
+				id: "buildinggadgets:gadget_building"
+				Count: 1b
+				tag: {
+					state: {
+						serializer: "buildinggadgets:dummy_serializer"
+						state: {
+							Name: "minecraft:air"
+						}
+						data: { }
+					}
+					energy: 500000.0d
+				}
+			}
+			x: -12.0d
+			y: 0.0d
+			subtitle: "by Direwolf20"
+			description: [
+				"Welcome to Dire's Building Gadgets! "
+				""
+				"Sometimes, building large structures can be a little tedious, and take a lot of effort. Not all of us a great builders you know! Dire's Building Gadgets aims to make building a little bit easier. "
+				""
+				"For instructions, either view the wiki, or watch the (somewhat outdated) official mod spotlights."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "0C3F359EE39CEF9C"
+			tasks: [{
+				id: "7A24C3E91D849760"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_building"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Charging Gadgets"
+			icon: {
+				id: "charginggadgets:charging_station"
+				Count: 1b
+				tag: { }
+			}
+			x: -12.0d
+			y: -1.5d
+			subtitle: "by Direwolf20"
+			description: [
+				"This is a very simple mod that adds 1 single block. (So far at least!)"
+				""
+				"The charging station burns fuel to charge any items that support Forge Energy (FE), which most mods support."
+				""
+				"Details:"
+				"- Burns any Fuel (Coal/Wood/etc.)"
+				"- 1 Coal = 20,000 RF (Similar to most other mods fuel levels)"
+				"- Internal storage capacity of 1,000,000 RF"
+				"- Burns fuel and charges a single item rather quickly"
+				"- Meant as a stop gap measure to charge items you want to use before you get a fully fledged energy system going"
+			]
+			dependencies: ["0C3F359EE39CEF9C"]
+			id: "4A8F782AB7FA07DA"
+			tasks: [{
+				id: "74E69CD7FB8E6E3E"
+				type: "item"
+				item: {
+					id: "charginggadgets:charging_station"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Catalogue"
+			icon: "minecraft:writable_book"
+			x: -13.5d
+			y: 0.0d
+			subtitle: "by MrCrayfish"
+			description: ["Catalogue is a simple mod that replaces Forge's mod list menu with an updated and modernised version. Catalogue creates a more rich experience for players, making it easier to search installed mods, check for updates, submit bugs and see relevant mod information all in a brand new and modernised layout. All mods that work with Forge's mod list will automatically work with Catalogue and requires no extra work from developers."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "08A15620BCD56931"
+			tasks: [{
+				id: "114A1C17747C0425"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Clumps"
+			icon: "create:experience_nugget"
+			x: -15.0d
+			y: 0.0d
+			subtitle: "by Jaredlll08"
+			description: ["Clumps groups XP orbs together into a single entity to reduce lag when there are many in a small area. On top of this, it also makes the player immediately collect the orbs once they touch the player, so you are not stuck with a bunch of orbs in your face."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "303177F5CC676E74"
+			tasks: [{
+				id: "79CD5C8B005BC421"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "FastFurnace"
+			icon: "ironfurnaces:upgrade_copper"
+			x: -15.0d
+			y: 1.5d
+			subtitle: "by Shadows_of_Fire"
+			description: [
+				"FastFurnace utilizes mixins to edit the functionality of the Furnace, Blast Furnace, and Smoker, improving their TPS performance (not smelting speed!)"
+				""
+				"Similar to FastWorkbench, it caches the last recipe used, and checks this recipe first before re-scanning the entire registry.  This is significantly faster due to the vanilla furnace scanning the entire furnace registry each tick, which may be fine for vanilla, but in a modded environment, gets very large very quickly."
+				""
+				"These changes apply to the Furnace, Blast Furnace, and Smoker.  Any mod utilizing AbstractFurnaceTileEntity will also receive the benefits of having this mod installed."
+				""
+				"For people who like numbers, here is Vanilla vs FastFurnace.  This is 9 furnaces each smelting cobblestone the entire time the test was conducted.  The number of invocations is kept roughly the same as to not skew any numbers.  This test was conducted in vanilla, which only has ~70 furnace recipes.  In a modpack, there could be upwards of 700, significantly increasing the performance gain."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "6093DB0DD6BFD199"
+			tasks: [{
+				id: "1F3B1096911A1BC2"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Fast Leaf Decay"
+			icon: "minecraft:spruce_leaves"
+			x: -13.5d
+			y: 1.5d
+			subtitle: "by olafskiii"
+			description: ["A simple Minecraft Forge mod that speeds up leaf decay after you cut down the wood in a tree. By default it will only take about five seconds before all leaves are gone."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "2DBA2215FFE1A1EA"
+			tasks: [{
+				id: "3ED21C31B85CEA13"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Extreme sound muffler"
+			icon: "mob_grinding_utils:dragon_muffler"
+			x: -12.0d
+			y: 1.5d
+			subtitle: "by LeoBeliik"
+			description: [
+				"A client side mod that allows you to muffle sounds selectively."
+				""
+				"1. Click on the button in your inventory or assign a key to open the gui."
+				"2. Click on the button next to the sound you want to muffle."
+				"3. Optional: set the volume of the sound dragging the slider around."
+				"4. Optional: press the play button to be sure that's the sound you want to muffle."
+				"5. Enjoy peace."
+				""
+				"For further information see the CurseForge mod page."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "7F3E258769D5C5DD"
+			tasks: [{
+				id: "5E357707D9A90439"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Enchantment Descriptions"
+			icon: {
+				id: "rftoolscontrol:console_module"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -10.5d
+			y: 1.5d
+			subtitle: "by DarkhaxDev"
+			description: ["Enchantment Descriptions is a light weight client-side mod that adds descriptions of enchantments to the tool tip of enchanted books. This mod supports all vanilla enchantments in over 13 languages! Most modded enchantments are also supported. "]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "37179D621ABB6709"
+			tasks: [{
+				id: "464AB113FF47DDE9"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Elytra Slot"
+			icon: {
+				id: "minecraft:elytra"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -9.0d
+			y: 1.5d
+			subtitle: "by TheIllusiveC4"
+			description: ["Elytra Slot is a mod that uses the Caelus API and the Curios API to add a new slot, the Back slot, to the player inventory and allows the elytra to be placed into this slot, either directly or through right-clicking with the elytra held in hand. While the elytra is in this slot, it will grant the same flight capabilities as if it was in your chestplate slot. This allows the player to gain the benefits of the elytra without sacrificing an armor slot."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "3DC8A15D42EE6E51"
+			tasks: [{
+				id: "0A0ECEA002E8D055"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Dark Mode Everywhere"
+			icon: "farmersdelight:gray_canvas_sign"
+			x: -7.5d
+			y: 1.5d
+			subtitle: "by Buuz135"
+			description: ["Dark Mode Everywhere uses the built in Minecraft shaders to transform any GUI texture into a Dark Mode. Thanks to the shaders it will work in any GUI in the game, it will also try to modify the text color is its not hard to read in dark mode."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "2E0EB8EB5ABF03B9"
+			tasks: [{
+				id: "5A0DB6E9051F8E59"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Controlling"
+			icon: "create_things_and_misc:magnifying_glass"
+			x: -4.0d
+			y: 1.5d
+			subtitle: "by Jaredlll08"
+			description: [
+				"Adds the ability to search for keybinds using their name in the KeyBinding menu, this allows players to easily find a key binding in the menu.Adds a button that will only show KeyBindings that conflict with each other, which makes it easier to fix them."
+				""
+				"You also have the ability to see what keys are available to be bound."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "45D8848D058F9ABF"
+			tasks: [{
+				id: "5D4F1B4644DFCE76"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Configured"
+			icon: "industrialforegoing:iron_gear"
+			x: -2.5d
+			y: 1.5d
+			subtitle: "by MrCrayfish"
+			description: [
+				"Configured is a simple and lightweight mod that dynamically creates a configuration menu for every mod. Previously mods would use Forge's built-in GUI system however that no longer exists in newer versions. This mod aims to reintroduce that system and create fresh new experience with an updated easy-to-use layout. The best part is that Configured supports every mod and doesn't require other mods to write extra code. Configured allows you to change client, common and server configurations! This mod can be safely added to any modpack without any problems."
+				""
+				"Features:"
+				"- Supports editing client, common and server configurations (client files only). This can be done from the main menu or even in-game!"
+				"- Automatically supports every mod that utilises the Forge config system"
+				"- No extra work needed mod developers!"
+				"- A simple and intuitive layout for quick modification of config values"
+				"- Adds a new keybinding to open the mod list from in-game without additional mods"
+				"- Optional support for mod developers to set the background texture of their config menu"
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "73492C74E664B621"
+			tasks: [{
+				id: "7B2B9D6CB07AF593"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Common Capabilities"
+			icon: "integrateddynamics:portable_logic_programmer"
+			x: -1.0d
+			y: 1.5d
+			subtitle: "by kroeser"
+			description: [
+				"This mod improves mod interactions, which are possible because of Forge's new capability system.This does not provide any actual new content, it only improves existing interactions.The goal of this mod is to provide standard capabilities that are useful for different mods, without those mods having to depend on each other."
+				""
+				"Initially, this mod was part of Integrated Dynamics, to improve the 'readability' for various mods. This has been separated into this new mod because other mods might also benefit from these capabilities without having to depend on Integrated Dynamics."
+				""
+				"See mod page on CurseForge site for more information."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "51AFD2C9DE1A80CA"
+			tasks: [{
+				id: "428D9CB63F5DA277"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Comforts"
+			icon: "comforts:sleeping_bag_red"
+			x: 0.5d
+			y: 1.5d
+			subtitle: "by TheIllusiveC4"
+			description: ["Comforts is a mod that adds sleeping bags and hammocks to Minecraft. These items can be used just like beds except they do not set a player's spawn point on use, safely preserving a player's spawn point at their home base. Just like beds, they also come in 16 different colors! The difference is that sleeping bags can be stacked and are more convenient to use on adventures and hammocks are like an inverse bed, turning day to night."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "73B335D3F11CE655"
+			tasks: [{
+				id: "39D86AB1A098941B"
+				type: "item"
+				title: "Any #comforts:sleeping_bags"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "comforts:sleeping_bags"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5E47A3C0DD6AF9E3"
+				type: "item"
+				item: "comforts:hammock_white"
+			}]
+		}
+		{
+			title: "Light Overlay"
+			icon: "immersiveengineering:light_bulb"
+			x: -13.5d
+			y: 3.0d
+			subtitle: "by shedaniel"
+			description: [
+				"This mod provides users with a NEI-like light overlay."
+				""
+				"Light Overlay is a client ONLY mod, putting this on a server will do nothing."
+				""
+				"Press F7 to toggle the light overlay, configurable through Controls Settings."
+				""
+				"A yellow cross means that mobs can spawn at night, a red cross means that mobs can spawn anytime. A blue cross means that mobs can spawn if there is a spawner."
+				""
+				"Numbers can be shown instead by toggling the option in the in-game mod settings."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "0AC7B79D7D8CD7D7"
+			tasks: [{
+				id: "0C1F9AC6C2407BA0"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "KleeSlabs"
+			icon: "minecraft:mossy_stone_brick_slab"
+			x: -12.0d
+			y: 3.0d
+			subtitle: "by BlayTheNinth"
+			description: ["This mod allows you to break only one half of a double slab. The half that is broken depends on which half you're looking at. It supports Vanilla slabs as well as many modded slabs."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "5C4FD2C0160BEF08"
+			tasks: [{
+				id: "5DE79600079DFE4C"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Just Another Rotten Flesh to Leather Mod"
+			icon: "minecraft:rotten_flesh"
+			x: -10.5d
+			y: 3.0d
+			subtitle: "by alexdaum1"
+			description: ["With JRFTL you can convert Rotten Flesh to Leather. By Default, leather is created by smelting rotten flesh. However, when the HardMode is enabled in the config file, first a prepared flesh has to be crafted from 4 rotten flesh and then smelted in a furnace."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "1E4A598724B4A7C6"
+			tasks: [{
+				id: "19756A62ECD8A57E"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Inventory Sorter"
+			icon: {
+				id: "rftoolsstorage:dump_module"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -9.0d
+			y: 3.0d
+			subtitle: "by cpw"
+			description: [
+				"Some simple inventory sorting tweaks. Middle click sorts, mousewheel in and out of inventory one item at a time."
+				""
+				"Quick note: the default keybindings for the mousewheel actions *are* the wheel. If you set them to something else, just reset to recover the wheel operation."
+				""
+				"New command added in version 1.13:"
+				"/inventorysorter <arg>"
+				""
+				"It interacts with the last container you middle click sorted (or attempted to), to allow you to manipulate the container blacklist. These are containers that don't respect middleclick sorting for one reason or another (typically where a special slot containing a special item is not properly marked read only, allowing for it to be duped instead)."
+				""
+				"- bladd: adds the last container to the blacklist"
+				"- blremove: removes the last container from the blacklist"
+				"- show: shows the last container sorted"
+				"- list: shows the list of blacklisted containers"
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "53D5EDD4C54145C6"
+			tasks: [{
+				id: "1CB650006F5D543C"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "FTB Ultimine"
+			icon: {
+				id: "ae2:fluix_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -7.5d
+			y: 3.0d
+			subtitle: "by FTB"
+			description: [
+				"This mod allows you to harvest multiple blocks at once if you hold ` / ~ key (configurable in Controls, change FTB Ultimine key). 1.15 versions also render white lines around blocks that will be mined."
+				""
+				"Grass has special handling that looks for blocks further away than 1."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "61CFCAB9C688A1B4"
+			tasks: [{
+				id: "0BDA5D390F9ADD03"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "FTB Teams"
+			icon: "davebuildingmod:arrow_up_sign"
+			x: -4.0d
+			y: 3.0d
+			subtitle: "by FTB"
+			description: [
+				"Library for mods that can utilize team progression like FTB Chunks and FTB Quests. In quests, it allows multiple people to complete the same quests together, in FTB Chunks it allows for team interactions between blocks without need to whitelist them otherwise."
+				""
+				"To create a team, use \"/ftbteams create Name here\". To change it's settings, use \"/ftbteams settings <key> <value>\", use tab to cycle through them. Team data is stored in world/data/ftbteams folder."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "1D7CCE13A535F60C"
+			tasks: [{
+				id: "3CF70F6B4B707900"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "FTB Essentials"
+			icon: "supplementaries:statue"
+			x: -2.5d
+			y: 3.0d
+			subtitle: "by FTB"
+			description: [
+				"Adds many essential utility commands for servers."
+				""
+				"See the CurseForge mod page for a full list of commands."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "48D9D79FC1D6ECD5"
+			tasks: [{
+				id: "75F82811EA5B64B2"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "FTB Chunks"
+			icon: "waystones:warp_scroll"
+			x: -1.0d
+			y: 3.0d
+			subtitle: "by FTB"
+			description: [
+				"A mod that allows you to claim chunks to protect your blocks. It also has a minimap and large map!"
+				""
+				"Right-click anywhere in map to create a waypoint."
+				"Right-click on waypoints and death points to edit or delete them."
+				"Click on Claimed Chunks button, then left or right-click on map to select chunks that will belong to you. Shift-left or right-click on claimed chunks to toggle forceloading."
+				"Add people as allies with Allies button to allow them to interact with your chunks. (This has changed recently, update will soon follow)"
+				"If they also add you as ally, you can share map data with them."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "3E0C5E11318E4173"
+			tasks: [{
+				id: "54ECCF5B90DC682A"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "FTB Backups 2"
+			icon: "minecraft:clock"
+			x: 0.5d
+			y: 3.0d
+			subtitle: "by FTB"
+			description: [
+				"FTB's latest backup mod for version Minecraft 1.18 and beyond."
+				""
+				"See CurseForge mod page for more info."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "3EFB738254B77D19"
+			tasks: [{
+				id: "3B48DFCAA7B9B8D8"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "TrashSlot"
+			icon: "trashcans:item_trash_can"
+			x: -12.5d
+			y: 4.5d
+			subtitle: "by BlayTheNinth"
+			description: [
+				"This mod adds a trash slot to your inventory allowing you to quickly and safely get rid of unwanted items."
+				"The trash slot keeps the last deleted item stored to allow you to take your trash back out. It can be dragged around and enabled or disabled in nearly every screen."
+				""
+				"Features:"
+				"- Trash Slot to delete items by dropping them into it"
+				"- Untrashing of the last trash item in case of mistakes by taking it out of the trash slot again"
+				"- Configurable trash slot position by simply dragging it around with the mouse cursor"
+				"- Delete key to delete item at mouse cursor"
+				"- Shift+Delete key to delete all items of same type as the one at mouse cursor"
+				"- Optional on clients. Only the server and those who want to use it need to install it"
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "2E2382891B48AFD4"
+			tasks: [{
+				id: "48B7E8193252A833"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "The One Probe"
+			icon: "theoneprobe:probe"
+			x: -11.0d
+			y: 4.5d
+			subtitle: "by McJty"
+			description: [
+				"The One Probe (or TOP in short) is a more immersive version of WAILA. You don't get to see the information tooltip all the time but only when you have the probe in your hand (note that this mod can be configured to show the information all the time just like WAILA)."
+				""
+				"See the CurseForge mod page for more information."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "301814DA62EC3F21"
+			tasks: [{
+				id: "4B28B56688FB435A"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Starter Kit"
+			icon: {
+				id: "quark:seed_pouch"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -9.5d
+			y: 4.5d
+			subtitle: "by Serilum"
+			description: ["Starter Kit is a mod which allows players who join a world for the first time to receive items set in a config file. It's possible to set items to any specific slot in the inventory, to the offhand and to the armour slots. The mod can detect which players have never joined before. If players have joined prior to the mod's installation, it will only change the inventory if it's completely empty and if the player again first logs in near the spawn point."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "4C1F0D58001F13C7"
+			tasks: [{
+				id: "1B414485B051C1A0"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Squat Grow (Shift / Twerk to grow plants)"
+			icon: "minecraft:spruce_sapling"
+			x: -8.0d
+			y: 4.5d
+			subtitle: "by Gaz_"
+			description: [
+				"What is Squat Grow?"
+				""
+				"Feeling weak in Minecraft and not getting enough gains? Well throw away your bonemeal and start squatting!"
+				"With Squat Grow your plant will grow twice as fast and feel the gains!"
+				"All you need to do is press your sneak key until you are happy with the growth of your plant."
+				"You can configure the plants affected using the registry name of the plant or using tags, there is also an option to use a blacklist or a whitelist along with changing the effect range."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "7BF137A3EBE0D8E4"
+			tasks: [{
+				id: "48238EA512EA9EFF"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Reap Mod"
+			icon: "minecraft:wheat"
+			x: -6.5d
+			y: 4.5d
+			subtitle: "by henkelmax"
+			description: [
+				"This mod adds a function that harvests crops by right-clicking."
+				"Optionally you can enable tree harvesting in the config."
+				"If you break the bottom log of a tree while not sneaking, the whole tree will be harvested."
+				"It also works with other mods that are adding other crops or trees to Minecraft. In the config file you can define which crops can be harvested or not. The tools to break trees and the log types are also configurable."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "67F077B17DAB44C0"
+			tasks: [{
+				id: "260C23F0091E1600"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Pick Up Notifier"
+			icon: {
+				id: "rftoolsutility:redstone_module"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -5.0d
+			y: 4.5d
+			subtitle: "by Fuzs_"
+			description: [
+				"Pick Up Notifier adds a pick up log, a neat list shown in the corner of your screen. Including fancy little sprites!"
+				""
+				"The log includes all the items and experience you've just picked up. Outdated entries will slowly move out of the screen. By default the display is shown in the bottom right corner of the screen."
+				""
+				"Some customization options include: amount of ticks an entry will be shown for, amount of ticks it takes for an entry to move out of the screen, combining entries of equal type, whether item sprites should be drawn, and text color for item names."
+				""
+				"The appearance of the display can be further customized: screen corner to show in, x and y offset from default position, height percentage the whole display is allowed to use, and a custom scale."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "225FF5E85BD9ED80"
+			tasks: [{
+				id: "33F69090F9C8EEFC"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "NetherPortalFix"
+			icon: "minecraft:crying_obsidian"
+			x: -3.5d
+			y: 4.5d
+			subtitle: "by BlayTheNinth"
+			description: [
+				"Ever played on a multiplayer server, built near other players and when returning from the Nether, surprisingly found yourself in another player's base? It's because of the 8:1 block ratio between the Nether and the Overworld. It's really weird though that you enter a portal in the overworld, and then when going back through where you came, come out of a different portal in the overworld. This mod fixes that issue."
+				""
+				"It keeps track of what portals a player went through in order to ensure correct destinations when the player is going back through the same portals. The 1:8 ratio remains, portals just get smarter and remember where you came from."
+				""
+				"Features: "
+				"- As long as players use the same portal to return to the overworld, they will end up where they came from"
+				"- Only needs to be installed on the server (but works in singleplayer as well)"
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "3396F983F1839E68"
+			tasks: [{
+				id: "1622C528F7EDB0EF"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Mouse Tweaks"
+			icon: "create:brass_hand"
+			x: -2.0d
+			y: 4.5d
+			subtitle: "by YaLTeR"
+			description: [
+				"Mouse Tweaks replaces the standard RMB dragging mechanic, adds two new LMB dragging mechanics and an ability to quickly move items with the scroll wheel."
+				""
+				"See the CurseForge mod page for more information."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "12B2324F77A651AE"
+			tasks: [{
+				id: "48E240C2DC1EBB81"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "More Dragon Eggs"
+			icon: "minecraft:dragon_head"
+			x: -0.5d
+			y: 4.5d
+			subtitle: "by Darkere"
+			description: ["A small mod that spawns a new dragon egg every time the dragon is killed, rather than only the first time."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "4A8D784FD7AA0CC0"
+			tasks: [{
+				id: "199E778CC9D4ED14"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Lootr"
+			icon: "ironchest:gold_chest"
+			x: -15.0d
+			y: 3.0d
+			subtitle: "by Noobanidus"
+			description: [
+				"What is Lootr? It's simple: unique inventories for every loot chest for every player on a server."
+				""
+				"What does that mean? When you open a loot chest (distinctly textured from Vanilla chests), what items you get are unique to you (as though you had opened an Ender Chest). This means no empty chests, and no picking up other people's trash!"
+				""
+				"See the CurseForge mod page for more information."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "73E437666B60ECEB"
+			tasks: [{
+				id: "634A96ABB020E273"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Time in a bottle standalone"
+			icon: {
+				id: "tiab:time_in_a_bottle"
+				Count: 1b
+				tag: { }
+			}
+			x: -14.0d
+			y: 4.5d
+			subtitle: "by haoict"
+			description: ["This item allows you to accelerate the rate at which blocks tick. It passively collects time while in your inventory which you can consume by right clicking a block with it. The first click requires 30 Seconds, the second 60, the third 120 the fourth 240 and the fifth 480. The speed at which the block ticks doubles with each click. The effect lasts 30 seconds."]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "19736C0BC7C3B622"
+			tasks: [{
+				id: "351971DB310D8225"
+				type: "checkmark"
+				title: "Time in a bottle standalone"
+			}]
+		}
+	]
+}

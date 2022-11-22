@@ -1,0 +1,12 @@
+{
+  "time": 100,
+  "result": {
+    "item": "example:item_stack"
+  },
+  "top": {
+    "tag": "example:ingredient"
+  },
+  "bottom": {
+    "tag": "example:ingredient"
+  }
+}

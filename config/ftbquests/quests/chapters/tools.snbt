@@ -1,0 +1,10 @@
+{
+	id: "049D2D1CECB51DB3"
+	group: "1C845547E300E479"
+	order_index: 2
+	filename: "tools"
+	title: "Tooling up"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

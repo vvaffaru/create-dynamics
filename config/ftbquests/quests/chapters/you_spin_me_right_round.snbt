@@ -1,0 +1,32 @@
+{
+	id: "5B490A9A61A03505"
+	group: "0AD79EFD5DB551F7"
+	order_index: 0
+	filename: "you_spin_me_right_round"
+	title: "You spin me right round"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "You Spin Me Right Round"
+		icon: "create:large_cogwheel"
+		x: 0.0d
+		y: 0.0d
+		shape: "gear"
+		subtitle: "Rotational force"
+		description: [
+			"This mod uses a system based around rotational force and stress units. The water wheel is the easiest and cheapest to get setup initially. As you progress in the mod there are more options to produce even greater amounts of rotational force."
+			""
+			"There are many ways to transfer this force, but ultimately it's up to you how to design your factory machines."
+			""
+			"This part of the quest book aims to guide you through some of the major aspects this mod has to offer, and provide some examples of what kinds of automation are possible."
+		]
+		dependencies: ["7F2E01D05C369FA3"]
+		size: 2.0d
+		id: "17FBD2EEC593280D"
+		tasks: [{
+			id: "1241C65276026224"
+			type: "item"
+			item: "create:water_wheel"
+		}]
+	}]
+}

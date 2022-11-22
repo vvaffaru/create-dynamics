@@ -1,0 +1,10 @@
+{
+	id: "381A3D573C769CE5"
+	group: "6C4621CF96444F8A"
+	order_index: 4
+	filename: "supply_the_demand"
+	title: "Supplying demand"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

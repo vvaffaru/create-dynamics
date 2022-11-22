@@ -1,0 +1,416 @@
+{
+	id: "72E5DA181E9E3FED"
+	group: "1C845547E300E479"
+	order_index: 3
+	filename: "out_of_nothing"
+	title: "Out of nothing"
+	icon: "exnihilosequentia:warped_sieve"
+	subtitle: ["Ex Nihilo: Sequentia"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Ex Nihilo: Sequentia"
+			x: 1.0d
+			y: 0.0d
+			subtitle: "Ex Nihilo is a Latin phrase meaning \"out of nothing\""
+			description: [
+				"Sequentia is the next installment of the Ex Nihilo series."
+				""
+				"Using sieves and some other various tools, you can produce all the resources you need to get started in this modpack."
+				""
+				"Sieves will be especially handy to generate a supply of andesite for Create."
+				""
+				"To use the sieve you need a mesh. Right click it into an empty sieve. To begin sieving, hold right click with a compatable block while pointing at the sieve."
+				""
+				"Multi-sieve sifting is possible by placing additional sieves nearby on the same Y level. Attached sieves will attempt to use other sieves nearby."
+			]
+			dependencies: ["15EDA0CD3B28ED7B"]
+			size: 2.0d
+			id: "0A319D7EBB66BAB9"
+			tasks: [
+				{
+					id: "7836308955931FA4"
+					type: "item"
+					item: "exnihilosequentia:string_mesh"
+				}
+				{
+					id: "12F2D42A5F051847"
+					type: "item"
+					title: "Any #exnihilosequentia:sieves"
+					icon: {
+						id: "exnihilosequentia:oak_sieve"
+						Count: 1b
+						tag: {
+							tag: "exnihilosequentia:sieves"
+						}
+					}
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "exnihilosequentia:sieves"
+						}
+					}
+					only_from_crafting: true
+				}
+			]
+			rewards: [
+				{
+					id: "60DCC5AE583E7E60"
+					type: "item"
+					item: "minecraft:gravel"
+					count: 32
+				}
+				{
+					id: "486BC245146DA110"
+					type: "item"
+					item: "minecraft:dirt"
+					count: 32
+				}
+				{
+					id: "597EFCB02087DF4A"
+					type: "item"
+					item: { id: "exnihilosequentia:dust", Count: 32b }
+					count: 32
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -2.0d
+			subtitle: "Tier 1"
+			description: ["The first tier of upgrades for the sieve mesh. You'll want to get these as soon as possible."]
+			dependencies: ["0A319D7EBB66BAB9"]
+			id: "269CD81C19007882"
+			tasks: [{
+				id: "6FABEAD8108C00B0"
+				type: "item"
+				item: "exnihilosequentia:flint_mesh"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			subtitle: "Tier 2"
+			description: ["Iron meshes start to introduce new materials as well as higher drop rates. Once you start getting enough iron, make sure you prioritize these upgrades."]
+			dependencies: ["269CD81C19007882"]
+			id: "21BB62EAC038875A"
+			tasks: [{
+				id: "33282BC467CB094D"
+				type: "item"
+				item: "exnihilosequentia:iron_mesh"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			subtitle: "Tier 3"
+			description: ["Diamond meshes improve drop rates greatly over previous tiers."]
+			dependencies: ["21BB62EAC038875A"]
+			id: "6EE1118C4625B7FD"
+			tasks: [{
+				id: "0E0F609D81BF511C"
+				type: "item"
+				item: "exnihilosequentia:diamond_mesh"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			subtitle: "Tier 4"
+			description: ["Further increasing drop rates, emerald upgrades will carry you until endgame when you've got enough netherrite."]
+			dependencies: ["6EE1118C4625B7FD"]
+			id: "0A153DA1580AAA4E"
+			tasks: [{
+				id: "74300DAFB20B8E5E"
+				type: "item"
+				item: "exnihilosequentia:emerald_mesh"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			subtitle: "Tier 5"
+			description: ["The ultimate drop rate upgrade. The only better option for easily amassing large quantities of materials are the laser drills from Industrial Foregoing."]
+			dependencies: ["0A153DA1580AAA4E"]
+			id: "6827E3B331988E81"
+			tasks: [{
+				id: "646B9AC2FDE8D2C4"
+				type: "item"
+				item: "exnihilosequentia:netherite_mesh"
+			}]
+		}
+		{
+			title: "Sequentia Barrels"
+			x: -0.5d
+			y: 0.0d
+			subtitle: "This is a versatile early game block"
+			description: [
+				"Capable of more than just composting organics into dirt, you can also collect water from rain, and transfer one fluid to another, and more."
+				""
+				"Wood barrels can't hold hot fluids, but stone ones can. Water has a temp of 300. Anything over 433 will not go into a wood barrel."
+				""
+				"Barrels are able to spawn mobs as well. Search for @exnihilo in JEI and right click on one of the barrels for more information."
+			]
+			dependencies: ["0A319D7EBB66BAB9"]
+			id: "23F6531EDD8113EB"
+			tasks: [{
+				id: "51173CF5F0A68106"
+				type: "item"
+				title: "Any #exnihilosequentia:barrels"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:barrels"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0138B2DAB2981094"
+					type: "item"
+					item: "minecraft:mycelium"
+				}
+				{
+					id: "3B3023E00233D793"
+					type: "item"
+					item: "minecraft:sand"
+				}
+			]
+		}
+		{
+			title: "Sequentia Crucible"
+			x: -0.5d
+			y: 1.5d
+			subtitle: "Melt various blocks and items into fluids"
+			description: [
+				"Right click the barrel to place an item or block into the crucible. The barrel requires a heat source underneath to start melting. Once the crucible is full, right click with a bucket to get your fluid."
+				""
+				"A wood crucible isn't able to melt everything the fired crucible can, but works in the beginning to get you started."
+			]
+			dependencies: ["23F6531EDD8113EB"]
+			id: "608753C0CC5CC4BC"
+			tasks: [{
+				id: "241C59300F8E7C56"
+				type: "item"
+				item: "exnihilosequentia:fired_crucible"
+			}]
+			rewards: [
+				{
+					id: "782718CE22A17945"
+					type: "item"
+					item: "minecraft:oak_leaves"
+					count: 64
+				}
+				{
+					id: "5671C108A08D1701"
+					type: "item"
+					item: "minecraft:stone"
+					count: 64
+				}
+				{
+					id: "746D0066C72EE5EE"
+					type: "item"
+					item: "minecraft:campfire"
+				}
+			]
+		}
+		{
+			title: "Sequentia Crook"
+			x: 1.0d
+			y: -2.0d
+			subtitle: "I /am/ a crook"
+			description: [
+				"Silkworms are obtained by breaking leaves with a crook."
+				""
+				"They all have some minor stat differences, but basically do the same job."
+			]
+			dependencies: ["0A319D7EBB66BAB9"]
+			id: "5529B57CFCD9ECD9"
+			tasks: [{
+				id: "50338D786ED32F41"
+				type: "item"
+				title: "Any #exnihilosequentia:crook"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:crook"
+					}
+				}
+			}]
+			rewards: [{
+				id: "42115DCB2B77ED48"
+				type: "item"
+				item: "exnihilosequentia:silkworm"
+				count: 16
+			}]
+		}
+		{
+			title: "Silkworms"
+			x: 1.0d
+			y: -3.0d
+			subtitle: "A light snack, a source for wool"
+			description: [
+				"As stated previously, breaking leaves with a crook will give you silkworms. Right clicking a silkworm onto leaves will infest them, and spread over time."
+				""
+				"Infested leaves will drop string. But be careful, the infestation will spread to many trees if you don't keep it controlled."
+				""
+				"Silkworms are also edible when cooked."
+			]
+			dependencies: ["5529B57CFCD9ECD9"]
+			id: "1A513920D39EEDD2"
+			tasks: [
+				{
+					id: "3DEEBD5786507B20"
+					type: "item"
+					item: "exnihilosequentia:silkworm"
+				}
+				{
+					id: "225972B72C851D3F"
+					type: "item"
+					item: "minecraft:string"
+				}
+			]
+			rewards: [
+				{
+					id: "42D6366F1160FEB0"
+					type: "item"
+					item: "exnihilosequentia:cooked_silkworm"
+				}
+				{
+					id: "35DB6DB4498814F6"
+					type: "item"
+					item: "minecraft:white_wool"
+				}
+			]
+		}
+		{
+			title: "Sequentia Hammers"
+			x: 1.0d
+			y: 2.5d
+			subtitle: "Smashing"
+			description: ["These hammers are made to break blocks down to other blocks. Check JEI for stat differences."]
+			dependencies: ["0A319D7EBB66BAB9"]
+			id: "3BABFCB8DC040C89"
+			tasks: [{
+				id: "11774C85E4BD52F3"
+				type: "item"
+				title: "Any #exnihilosequentia:hammer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:hammer"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "046A71EDEABBD1F4"
+					type: "item"
+					item: "exnihilosequentia:dust"
+					count: 64
+				}
+				{
+					id: "058FCC6E8D28EF44"
+					type: "item"
+					item: "minecraft:gravel"
+					count: 64
+				}
+				{
+					id: "7C10733B1B21285A"
+					type: "item"
+					item: "minecraft:sand"
+					count: 64
+				}
+				{
+					id: "50C2CAD1DFAD42C2"
+					type: "item"
+					item: "minecraft:cobblestone"
+					count: 64
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			subtitle: "Caution: Fire Hazard"
+			description: ["Add to a barrel of lava to spawn a blaze."]
+			dependencies: ["6B5B7B0308BD8C23"]
+			id: "678D96DFF4D0BFB5"
+			tasks: [{
+				id: "68945950556EFF30"
+				type: "item"
+				item: "exnihilosequentia:blaze_doll"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			subtitle: "Purple eyes are watching you"
+			description: ["Add to a barrel of witch water to spawn an enderman."]
+			dependencies: ["6B5B7B0308BD8C23"]
+			id: "7E21950879E8182A"
+			tasks: [{
+				id: "0DDCCF0574AF2CAE"
+				type: "item"
+				item: "exnihilosequentia:enderman_doll"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			subtitle: "This side up"
+			description: ["Add to a barrel of witch water to spawn a shulker."]
+			dependencies: ["6B5B7B0308BD8C23"]
+			id: "1B13A925B436A727"
+			tasks: [{
+				id: "21649060D2E904A4"
+				type: "item"
+				item: "exnihilosequentia:shulker_doll"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			subtitle: "Protecc"
+			description: ["Add to a barrel of sea water to spawn a guardian."]
+			dependencies: ["6B5B7B0308BD8C23"]
+			id: "60BE775E84C00896"
+			tasks: [{
+				id: "2C460CC51E3FC92B"
+				type: "item"
+				item: "exnihilosequentia:guardian_doll"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.0d
+			subtitle: "Sweet witchery"
+			description: ["Add to a barrel of witch water to spawn a bee."]
+			dependencies: ["6B5B7B0308BD8C23"]
+			id: "780CB2CF691ED6AC"
+			tasks: [{
+				id: "325BF65530991F58"
+				type: "item"
+				item: "exnihilosequentia:bee_doll"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "Needed to create all other dolls"
+			description: ["This is used as a base for all the other dolls."]
+			dependencies: ["23F6531EDD8113EB"]
+			id: "6B5B7B0308BD8C23"
+			tasks: [{
+				id: "0140F1BD283A754A"
+				type: "item"
+				item: "exnihilosequentia:porcelain_doll"
+			}]
+		}
+	]
+}

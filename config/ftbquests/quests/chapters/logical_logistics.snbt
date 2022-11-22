@@ -1,0 +1,50 @@
+{
+	id: "78B3DA0D8A45C6B5"
+	group: "2938FEA7F79DC67A"
+	order_index: 0
+	filename: "logical_logistics"
+	title: "Logical Logistics"
+	icon: "integrateddynamics:variable"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Logical Logistics"
+		icon: "integrateddynamics:variable"
+		x: 0.0d
+		y: 0.0d
+		shape: "rsquare"
+		subtitle: "Easier than it looks"
+		description: [
+			"In the past this mod was a little cumbersome to use. With some recent additions, most of that has changed and it's much less clunky."
+			""
+			"As a supplement to the in-game manual, this part of the quest book aims to guide you through some of the basic concepts the mod has to offer."
+		]
+		dependencies: ["11226CAB8BC02974"]
+		size: 2.0d
+		id: "4DD373EFF5CFDCD6"
+		tasks: [
+			{
+				id: "0AC48F1D7A2D3465"
+				type: "item"
+				item: "integrateddynamics:portable_logic_programmer"
+			}
+			{
+				id: "554F1380A0EC263D"
+				type: "item"
+				item: "integrateddynamics:on_the_dynamics_of_integration"
+			}
+			{
+				id: "38E2089C518C1031"
+				type: "item"
+				item: "integrateddynamics:variable"
+				consume_items: false
+			}
+		]
+		rewards: [{
+			id: "0B550755DFA9DB2A"
+			type: "item"
+			item: "integrateddynamics:variable"
+			count: 40
+		}]
+	}]
+}

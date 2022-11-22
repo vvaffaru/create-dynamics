@@ -1,0 +1,123 @@
+To refresh this file, delete it and run /reload command again! Last updated: Nov 17, 2022, 8:44:51 AM
+
+#forge:crude_oil
+
+#minecraft:water
+- minecraft:water (from Default)
+- minecraft:flowing_water (from Default)
+- exnihilosequentia:sea_water (from ExNihiloSequentia-1.19.2-4.0.0.49-beta.jar)
+- exnihilosequentia:sea_water_flow (from ExNihiloSequentia-1.19.2-4.0.0.49-beta.jar)
+- createaddition:flowing_seed_oil (from createaddition-1.19.2-20221116a.jar)
+- createaddition:seed_oil (from createaddition-1.19.2-20221116a.jar)
+- create_things_and_misc:slime (from create_misc_and_things_1.19.2_1.1B.jar)
+- create_things_and_misc:flowing_slime (from create_misc_and_things_1.19.2_1.1B.jar)
+
+#forge:biodiesel
+- immersiveengineering:biodiesel (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+
+#forge:milk
+- minecraft:milk? (from forge-1.19.2-43.1.52-universal.jar)
+- minecraft:flowing_milk? (from forge-1.19.2-43.1.52-universal.jar)
+
+#forge:herbicide
+- immersiveengineering:herbicide (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+
+#forge:pink_slime
+- industrialforegoing:pink_slime (from industrial-foregoing-1.19.2-3.3.2.0-2.jar)
+
+#forge:biofuel
+- industrialforegoing:biofuel (from industrial-foregoing-1.19.2-3.3.2.0-2.jar)
+- createaddition:flowing_bioethanol (from createaddition-1.19.2-20221116a.jar)
+- createaddition:bioethanol (from createaddition-1.19.2-20221116a.jar)
+
+#forge:plantoil
+- immersiveengineering:plantoil (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+- createaddition:flowing_seed_oil (from createaddition-1.19.2-20221116a.jar)
+- createaddition:seed_oil (from createaddition-1.19.2-20221116a.jar)
+
+#minecraft:lava
+- minecraft:lava (from Default)
+- minecraft:flowing_lava (from Default)
+
+#forge:gaseous
+- immersiveengineering:acetaldehyde (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+
+#biomesoplenty:blood
+- biomesoplenty:blood (from BiomesOPlenty-1.19.2-17.1.1.162.jar)
+- biomesoplenty:flowing_blood (from BiomesOPlenty-1.19.2-17.1.1.162.jar)
+
+#create_enchantment_industry:printer_input
+- create_enchantment_industry:flowing_experience (from create_enchantment_industry-1.19.2-for-create-0.5.0.f-1.1.6.jar)
+- create_enchantment_industry:experience (from create_enchantment_industry-1.19.2-for-create-0.5.0.f-1.1.6.jar)
+- #forge:ink (from create_enchantment_industry-1.19.2-for-create-0.5.0.f-1.1.6.jar)
+
+#forge:ethanol
+- immersiveengineering:ethanol (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+- createaddition:flowing_bioethanol (from createaddition-1.19.2-20221116a.jar)
+- createaddition:bioethanol (from createaddition-1.19.2-20221116a.jar)
+
+#create:bottomless/deny
+
+#forge:meat
+- industrialforegoing:meat (from industrial-foregoing-1.19.2-3.3.2.0-2.jar)
+
+#forge:chocolate
+- create:flowing_chocolate (from create-1.19.2-0.5.0.f.jar)
+- create:chocolate (from create-1.19.2-0.5.0.f.jar)
+
+#forge:sewage
+- industrialforegoing:sewage (from industrial-foregoing-1.19.2-3.3.2.0-2.jar)
+
+#forge:redstone_acid
+- immersiveengineering:redstone_acid (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+
+#create:bottomless/allow
+- minecraft:water (from create-1.19.2-0.5.0.f.jar)
+- minecraft:lava (from create-1.19.2-0.5.0.f.jar)
+
+#forge:concrete
+- immersiveengineering:concrete (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+
+#forge:potion
+- immersiveengineering:potion (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+
+#forge:experience
+- industrialforegoing:essence (from industrial-foregoing-1.19.2-3.3.2.0-2.jar)
+
+#forge:tea
+- create:flowing_tea (from create-1.19.2-0.5.0.f.jar)
+- create:tea (from create-1.19.2-0.5.0.f.jar)
+
+#ae2:blacklisted/annihilation_plane
+
+#immersiveengineering:drill_fuel
+- #forge:biodiesel (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+
+#forge:latex
+- industrialforegoing:latex (from industrial-foregoing-1.19.2-3.3.2.0-2.jar)
+
+#create_enchantment_industry:blaze_enchanter_input
+- create_enchantment_industry:flowing_experience (from create_enchantment_industry-1.19.2-for-create-0.5.0.f-1.1.6.jar)
+- create_enchantment_industry:experience (from create_enchantment_industry-1.19.2-for-create-0.5.0.f-1.1.6.jar)
+- create_enchantment_industry:flowing_hyper_experience (from create_enchantment_industry-1.19.2-for-create-0.5.0.f-1.1.6.jar)
+- create_enchantment_industry:hyper_experience (from create_enchantment_industry-1.19.2-for-create-0.5.0.f-1.1.6.jar)
+
+#forge:honey
+- create:flowing_honey (from create-1.19.2-0.5.0.f.jar)
+- create:honey (from create-1.19.2-0.5.0.f.jar)
+
+#forge:creosote
+- immersiveengineering:creosote (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+
+#forge:sludge
+- industrialforegoing:sludge (from industrial-foregoing-1.19.2-3.3.2.0-2.jar)
+
+#forge:phenolic_resin
+- immersiveengineering:phenolic_resin (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+
+#forge:acetaldehyde
+- immersiveengineering:acetaldehyde (from ImmersiveEngineering-1.19.2-9.0.0-153.jar)
+
+#forge:ink
+- create_enchantment_industry:flowing_ink (from create_enchantment_industry-1.19.2-for-create-0.5.0.f-1.1.6.jar)
+- create_enchantment_industry:ink (from create_enchantment_industry-1.19.2-for-create-0.5.0.f-1.1.6.jar)

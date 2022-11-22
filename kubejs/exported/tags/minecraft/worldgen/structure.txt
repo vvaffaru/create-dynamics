@@ -1,0 +1,85 @@
+To refresh this file, delete it and run /reload command again! Last updated: Nov 17, 2022, 8:44:51 AM
+
+#minecraft:ocean_ruin
+- minecraft:ocean_ruin_cold (from Default)
+- minecraft:ocean_ruin_warm (from Default)
+
+#minecraft:mineshaft
+- minecraft:mineshaft (from Default)
+- minecraft:mineshaft_mesa (from Default)
+
+#minecraft:on_woodland_explorer_maps
+- minecraft:mansion (from Default)
+
+#minecraft:cats_spawn_in
+- minecraft:swamp_hut (from Default)
+
+#minecraft:cats_spawn_as_black
+- minecraft:swamp_hut (from Default)
+
+#quark:soul_bead_target
+- minecraft:fortress (from Quark-3.3-371.jar)
+
+#imst:rare
+- imst:flowerdome (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:pyramid (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:el_dorado (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:dark_tower (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:airship (from [Universal]Immersive_Structures_v2-0-5.jar)
+
+#minecraft:shipwreck
+- minecraft:shipwreck (from Default)
+- minecraft:shipwreck_beached (from Default)
+
+#minecraft:on_ocean_explorer_maps
+- minecraft:monument (from Default)
+
+#imst:lumberjack
+- imst:lumberjack/oak_hut (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:lumberjack/birch_hut (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:lumberjack/spruce_hut (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:lumberjack/jungle_hut (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:lumberjack/acacia_hut (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:lumberjack/dark_oak_hut (from [Universal]Immersive_Structures_v2-0-5.jar)
+
+#minecraft:on_treasure_maps
+- minecraft:buried_treasure (from Default)
+
+#minecraft:eye_of_ender_located
+- minecraft:stronghold (from Default)
+
+#imst:all_structures
+- #imst:common (from [Universal]Immersive_Structures_v2-0-5.jar)
+- #imst:rare (from [Universal]Immersive_Structures_v2-0-5.jar)
+
+#minecraft:ruined_portal
+- minecraft:ruined_portal_desert (from Default)
+- minecraft:ruined_portal_jungle (from Default)
+- minecraft:ruined_portal_mountain (from Default)
+- minecraft:ruined_portal_nether (from Default)
+- minecraft:ruined_portal_ocean (from Default)
+- minecraft:ruined_portal (from Default)
+- minecraft:ruined_portal_swamp (from Default)
+
+#imst:common
+- imst:beehouse (from [Universal]Immersive_Structures_v2-0-5.jar)
+- #imst:lumberjack (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:sunflower_farm (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:terralith/yurt (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:cactus_farm (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:desert_well (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:bandit_camp (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:train_station (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:cocoa_farm (from [Universal]Immersive_Structures_v2-0-5.jar)
+- imst:berry_house (from [Universal]Immersive_Structures_v2-0-5.jar)
+
+#minecraft:village
+- minecraft:village_plains (from Default)
+- minecraft:village_desert (from Default)
+- minecraft:village_savanna (from Default)
+- minecraft:village_snowy (from Default)
+- minecraft:village_taiga (from Default)
+
+#minecraft:dolphin_located
+- #minecraft:ocean_ruin (from Default)
+- #minecraft:shipwreck (from Default)

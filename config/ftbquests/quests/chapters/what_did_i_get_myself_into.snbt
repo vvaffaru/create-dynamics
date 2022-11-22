@@ -1,0 +1,176 @@
+{
+	id: "3C62F472F5D758B0"
+	group: "6E79751208E973B2"
+	order_index: 0
+	filename: "what_did_i_get_myself_into"
+	title: "What Did I Get Myself Into?"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Create Dynamics"
+			icon: "minecraft:campfire"
+			x: -3.0d
+			y: -0.5d
+			shape: "hexagon"
+			subtitle: "(WIP)"
+			description: [
+				"This pack is centered around the mods Create and Integrated Dynamics. "
+				"With these two alone, it is possible to automate nearly everything you can imagine. Along with the main mods, a few others have been added to round out the pack and add some QoL to Minecraft in general."
+				""
+			]
+			size: 2.0d
+			id: "15EDA0CD3B28ED7B"
+			tasks: [
+				{
+					id: "533240DA20D0E6EF"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+				{
+					id: "210DED0D76D46D30"
+					type: "item"
+					item: "integrateddynamics:menril_sapling"
+				}
+			]
+			rewards: [
+				{
+					id: "5972E07FFF1438A3"
+					type: "item"
+					item: "create:andesite_alloy"
+					count: 64
+				}
+				{
+					id: "34F9A42AC3EAD56C"
+					type: "item"
+					item: "integrateddynamics:menril_sapling"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Create"
+			icon: "create:wrench"
+			x: -5.5d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "Hold onto your belts"
+			description: [
+				"For those who are new to Create, welcome to one of the best mods ever made. There is so much possible, it's hard to summarize everything."
+				""
+				"One of the most important points to remember is to familarize yourself with the ponder system in JEI. Create adds a very neat way to visualize almost every aspect of the mod and how the blocks interact/function. Search for @create and hold \"w\" over most all the create machines to view the ponder scene."
+				""
+				"It's suggested to watch a mod spotlight about Create if you've never used it before, but it's not required. Part of the fun is learning, rebuilding, and dialing in a well oiled factory."
+			]
+			dependencies: ["15EDA0CD3B28ED7B"]
+			size: 1.5d
+			id: "7F2E01D05C369FA3"
+			tasks: [{
+				id: "1FA627F0D8B60CEC"
+				type: "item"
+				item: "create:cogwheel"
+			}]
+			rewards: [
+				{
+					id: "0E58F803E2EC5BC3"
+					type: "item"
+					item: "create:wrench"
+				}
+				{
+					id: "2785124DC0C4B061"
+					type: "item"
+					item: "create:light_blue_toolbox"
+				}
+			]
+		}
+		{
+			title: "Integrated Dynamics"
+			icon: "integrateddynamics:wrench"
+			x: -0.5d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "Squeeze and dry"
+			description: [
+				"Getting started with Integrated Dynamics is easy. Just find a menril tree and chop it down for saplings. (Or use the saplings you were given in the previous quest reward.) "
+				""
+				"If you place the drying basin next to the squeezer, it will auto output the liquid resin to the basin and begin drying into a crystalized menril block. It's suggested to put a button or pressure plate next to the squeezer to quickly reset the squeezer."
+			]
+			dependencies: ["15EDA0CD3B28ED7B"]
+			size: 1.5d
+			id: "11226CAB8BC02974"
+			tasks: [
+				{
+					id: "7493AEA29398FD07"
+					type: "item"
+					item: "integrateddynamics:squeezer"
+				}
+				{
+					id: "5119684B87F7CCEC"
+					type: "item"
+					item: "integrateddynamics:drying_basin"
+				}
+			]
+			rewards: [
+				{
+					id: "0FDAC7075513DF0B"
+					type: "item"
+					item: "integrateddynamics:crystalized_menril_block"
+					count: 32
+				}
+				{
+					id: "677E29FD326810C4"
+					type: "item"
+					item: "integrateddynamics:menril_log"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Quality of Life"
+			icon: "rftoolsutility:regenerationplus_module"
+			x: -5.5d
+			y: 2.0d
+			shape: "heart"
+			subtitle: "Making Minecraft better one mod at a time"
+			description: ["These mods are added to improve the QoL and overall balance of modded Minecraft. "]
+			dependencies: ["15EDA0CD3B28ED7B"]
+			size: 1.5d
+			id: "61BAA7CBDCE2512D"
+			tasks: [{
+				id: "56143DE87C0EB014"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "26F553AB5EDB7397"
+				type: "item"
+				item: {
+					id: "tiab:time_in_a_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Kitchen Sink"
+			icon: "cookingforblockheads:sink"
+			x: -0.5d
+			y: 2.0d
+			shape: "diamond"
+			description: ["Not just an infinite water source. Highlighted here are a bunch of useful mods that are worth checking out. If the main mods don't have what you need, a dive into this section might be what you're looking for."]
+			dependencies: ["15EDA0CD3B28ED7B"]
+			size: 1.5d
+			id: "6B959CC0C54B4BFE"
+			tasks: [{
+				id: "323D97D996F8D439"
+				type: "item"
+				item: "cookingforblockheads:sink"
+			}]
+			rewards: [{
+				id: "277F91F1F1F3A7E7"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 6323519157276009505L
+			}]
+		}
+	]
+}

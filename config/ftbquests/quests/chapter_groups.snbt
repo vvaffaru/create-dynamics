@@ -1,0 +1,12 @@
+{
+	chapter_groups: [
+		{ id: "6E79751208E973B2", title: "Introduction" }
+		{ id: "0AD79EFD5DB551F7", title: "Create" }
+		{ id: "2938FEA7F79DC67A", title: "Integrated Dynamics" }
+		{ id: "1C845547E300E479", title: "Getting Started" }
+		{ id: "6C4621CF96444F8A", title: "Establish Yourself" }
+		{ id: "12960CA54495AB71", title: "Exploration" }
+		{ id: "1F2EE91A5663FAC6", title: "Bonus Chapters" }
+		{ id: "29701DF1EC6EE2E7", title: "Misc Mods" }
+	]
+}

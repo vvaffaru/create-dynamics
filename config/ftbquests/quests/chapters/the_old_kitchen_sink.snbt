@@ -1,0 +1,24 @@
+{
+	id: "151C5363097B9F59"
+	group: "29701DF1EC6EE2E7"
+	order_index: 1
+	filename: "the_old_kitchen_sink"
+	title: "The Old Kitchen Sink"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "The Old Kitchen Sink"
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Some Not-So-Random Mods"
+		description: ["Yes, there is a kitchen sink, but that's not all."]
+		dependencies: ["6B959CC0C54B4BFE"]
+		size: 2.0d
+		id: "75B649EF5C8268DF"
+		tasks: [{
+			id: "392177EA8FCECA38"
+			type: "item"
+			item: "cookingforblockheads:sink"
+		}]
+	}]
+}

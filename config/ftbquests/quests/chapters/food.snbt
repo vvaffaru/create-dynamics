@@ -1,0 +1,10 @@
+{
+	id: "3371D012E9D6CC2C"
+	group: "1C845547E300E479"
+	order_index: 1
+	filename: "food"
+	title: "Ending hunger"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}
