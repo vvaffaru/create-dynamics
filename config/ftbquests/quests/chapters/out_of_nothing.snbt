@@ -412,5 +412,40 @@
 				item: "exnihilosequentia:porcelain_doll"
 			}]
 		}
+		{
+			title: "Things that are not Ex Nihilo"
+			icon: "botanypots:terracotta_botany_pot"
+			x: -1.0d
+			y: -2.5d
+			subtitle: "but are adjacent"
+			hide_dependency_lines: true
+			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
+			id: "2E560466530CF186"
+			tasks: [{
+				id: "51473F0B0FF3D35A"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			id: "3996E8627BC39D20"
+			tasks: [{
+				id: "44EBD23B8C242094"
+				type: "item"
+				item: "botanypots:terracotta_botany_pot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			id: "59E5738AD79191DE"
+			tasks: [{
+				id: "385899AA95A85FFA"
+				type: "item"
+				item: "botanypots:terracotta_hopper_botany_pot"
+			}]
+		}
 	]
 }

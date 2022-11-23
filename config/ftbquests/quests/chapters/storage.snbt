@@ -1,9 +1,9 @@
 {
 	id: "78C1B32D5FB83C2B"
 	group: "6C4621CF96444F8A"
-	order_index: 2
+	order_index: 1
 	filename: "storage"
-	title: "Permanent storage"
+	title: "Storage"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [ ]
