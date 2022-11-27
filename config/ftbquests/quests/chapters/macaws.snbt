@@ -6,5 +6,128 @@
 	title: "Macaw's"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "Macaw's Bridges"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Sam Porter Bridges reporting for duty"
+			description: ["This mod adds customizable bridges that can be just about any width and length you want."]
+			hide_dependency_lines: true
+			dependencies: ["19BFE8DB0E5FB3A4"]
+			id: "44D0EF5BF9774AA2"
+			tasks: [{
+				id: "3F484D2AB5D4D45A"
+				type: "item"
+				item: "mcwbridges:oak_log_bridge_middle"
+			}]
+		}
+		{
+			title: "Macaw's Doors"
+			x: -1.5d
+			y: 0.0d
+			subtitle: "People are strange..."
+			description: ["So use fancy doors to keep them OUT!"]
+			hide_dependency_lines: true
+			dependencies: ["19BFE8DB0E5FB3A4"]
+			id: "5837F09BC28BB998"
+			tasks: [{
+				id: "4E846E0E83291043"
+				type: "item"
+				item: "mcwdoors:metal_warning_door"
+			}]
+		}
+		{
+			title: "Macaw's Fences"
+			x: -3.0d
+			y: 0.0d
+			subtitle: "Hi de ho there neighbor"
+			description: ["Remind the people you live next to where their property line is with a fancy fence."]
+			hide_dependency_lines: true
+			dependencies: ["19BFE8DB0E5FB3A4"]
+			id: "4295028679368243"
+			tasks: [{
+				id: "7827C57CB065AD3F"
+				type: "item"
+				item: "mcwfences:oak_picket_fence"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["19BFE8DB0E5FB3A4"]
+			id: "1F01A1E2272E846C"
+			tasks: [{
+				id: "093839654E9AFA6A"
+				type: "item"
+				item: "mcwfences:modern_mud_brick_wall"
+			}]
+		}
+		{
+			title: "Macaw's Lights and Lamps"
+			x: -6.0d
+			y: 0.0d
+			subtitle: "Shine bright like a diamond"
+			description: ["This mod adds fancy lights you can use to really take the immersion to another level."]
+			hide_dependency_lines: true
+			dependencies: ["19BFE8DB0E5FB3A4"]
+			id: "02ADF28F93512618"
+			tasks: [{
+				id: "74979784FEF87142"
+				type: "item"
+				item: "mcwlights:garden_light"
+			}]
+		}
+		{
+			title: "Macaw's Roofs"
+			x: -7.5d
+			y: 0.0d
+			subtitle: "If there was ever a mod that should be in vanilla mc..."
+			description: [
+				"It would most definitely be this one."
+				""
+				"Build roofs with actual roofs instead of stairs!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["19BFE8DB0E5FB3A4"]
+			id: "1FB294ACFF5FE2F0"
+			tasks: [{
+				id: "6BF419187C9CA906"
+				type: "item"
+				item: "mcwroofs:oak_roof"
+			}]
+		}
+		{
+			title: "Macaw's Trapdoors"
+			x: -9.0d
+			y: 0.0d
+			subtitle: "Because we all want to fit in right?"
+			description: ["Trapdoors in every plank variation, as well as some new ones to spice things up."]
+			hide_dependency_lines: true
+			dependencies: ["19BFE8DB0E5FB3A4"]
+			id: "633DF3F92ACE9191"
+			tasks: [{
+				id: "5ADB2BCE68D8BCF0"
+				type: "item"
+				item: "mcwtrpdoors:metal_warning_trapdoor"
+			}]
+		}
+		{
+			icon: "macawsbridgesbop:rope_magic_bridge"
+			x: 2.5d
+			y: 0.0d
+			subtitle: "Fancy blocks to spruce up the place"
+			description: ["You deserve nice things. Treat yourself."]
+			dependencies: ["6B959CC0C54B4BFE"]
+			hide: true
+			size: 2.0d
+			id: "19BFE8DB0E5FB3A4"
+			tasks: [{
+				id: "430261F369B383C9"
+				type: "checkmark"
+				title: "Macaw's"
+			}]
+		}
+	]
 }

@@ -16,6 +16,7 @@
 			subtitle: "Some QoL improvements"
 			description: ["This collection of mods want to make your life easier."]
 			dependencies: ["61BAA7CBDCE2512D"]
+			hide: true
 			size: 2.0d
 			id: "28EEF15784F7C8CC"
 			tasks: [{
@@ -923,6 +924,57 @@
 				id: "351971DB310D8225"
 				type: "checkmark"
 				title: "Time in a bottle standalone"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			subtitle: "Hey you hooligan! Stop leaving graffiti everywhere!"
+			description: [
+				"Ever wander through a stronghold or dungeon only to hopelessly lose your way?"
+				""
+				"Those days are over friend. "
+				""
+				"Craft chalk to help leave breadcrumbs along the paths you take."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "1CD247B154C4CAEC"
+			tasks: [{
+				id: "0EE6D12D41C2490A"
+				type: "item"
+				title: "Any #chalk:chalk"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "chalk:chalk"
+					}
+				}
+			}]
+		}
+		{
+			x: -15.5d
+			y: 4.5d
+			subtitle: "Know the Akashic Tome?"
+			description: [
+				"Well this is an open source rewrite of that mod for versions of Minecraft higher than 1.18.1"
+				""
+				"If you don't know what it does. You're able to consolodate all the mod manuals into one book using the tome."
+			]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "7E82C1588283366A"
+			tasks: [{
+				id: "41DB363D1FEE5D44"
+				type: "item"
+				item: {
+					id: "eccentrictome:tome"
+					Count: 1b
+					tag: {
+						"eccentrictome:mods": { }
+					}
+				}
 			}]
 		}
 	]

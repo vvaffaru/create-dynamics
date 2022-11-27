@@ -6,5 +6,24 @@
 	title: "Mob Grinding Utilities"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [{
+		title: "Mob Grinding Utils"
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Mob farm items and blocks"
+		description: [
+			"Mob Grinding Utils is a mod designed to encourage players to create new ways for farming mobs for drops and experience. Contained in the mod is a fully modular system for players to explore and use to get the most out of their mob farms."
+			""
+			"Please see the CurseForge mod page for further information."
+		]
+		dependencies: ["6B959CC0C54B4BFE"]
+		hide: true
+		size: 2.0d
+		id: "2DEB3BA1C0045AEC"
+		tasks: [{
+			id: "0FDF1527B3FD7387"
+			type: "item"
+			item: "mob_grinding_utils:saw"
+		}]
+	}]
 }

@@ -6,5 +6,813 @@
 	title: "RFTools"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "RFTools"
+			x: 1.0d
+			y: 0.0d
+			subtitle: "Extending the capabilities of Minecraft"
+			description: ["This set of mods adds a number of features to the game that expand on the core as well as provide new functions that are essential to certain automation tasks."]
+			dependencies: ["6B959CC0C54B4BFE"]
+			hide: true
+			size: 2.0d
+			id: "3645838DAA16F493"
+			tasks: [{
+				id: "4EFC10974459AE75"
+				type: "item"
+				item: "rftoolsbase:manual"
+			}]
+			rewards: [{
+				id: "52A20BA1D7E412F9"
+				type: "item"
+				item: "rftoolsbase:smartwrench"
+			}]
+		}
+		{
+			title: "Base"
+			icon: "rftoolsutility:timer"
+			x: -1.5d
+			y: 0.0d
+			hide_dependency_lines: false
+			dependencies: ["3645838DAA16F493"]
+			id: "376B3D50F3DB0F07"
+			tasks: [{
+				id: "7D727ADA8E55340E"
+				type: "item"
+				item: "rftoolsbase:machine_base"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			subtitle: "This one block can do so much"
+			description: [
+				"The builder is a highly underrated block. It's capable of so much yet you rarely ever see people using it to its full potential."
+				""
+				"With it you can not only build objects. You can also copy and paste structures with ease, project shields, quarry for resources or to clear an area. It can also place or pump fluids, enabling you to easily remove water or lava."
+				""
+				"Direwolf20 did a good spotlight of this block and how to use it, highly recommend watching it to learn how shape cards and the shape chamber works."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3645838DAA16F493"]
+			id: "251E760424B95BE7"
+			tasks: [{
+				id: "04C40A6B8D2A24C9"
+				type: "item"
+				item: "rftoolsbuilder:builder"
+			}]
+		}
+		{
+			title: "Power"
+			x: -4.5d
+			y: 0.0d
+			subtitle: "Standalone RFTools power mod"
+			description: ["This mod contains all the power generation and storage blocks from RFTools."]
+			hide_dependency_lines: true
+			dependencies: ["3645838DAA16F493"]
+			id: "646BF6457EBF6D74"
+			tasks: [{
+				id: "6233B8E0AA4C77F5"
+				type: "item"
+				item: "rftoolspower:powercell_card"
+			}]
+		}
+		{
+			title: "Utility"
+			icon: "rftoolsbase:smartwrench"
+			x: -6.0d
+			y: 0.0d
+			subtitle: "General blocks that don't fit in a more specific category"
+			description: ["RFTools Utility is the 1.14+ version of the original RFTools with tons of general tools and utilities. This mod is intended to be used together with RFTools Power and depends on RFTools Base and McJtyLib."]
+			hide_dependency_lines: true
+			dependencies: ["3645838DAA16F493"]
+			id: "0D38CEF69511DF34"
+			tasks: [{
+				id: "3E6FE9F2A2DA08F4"
+				type: "item"
+				item: "rftoolsutility:matter_transmitter"
+			}]
+		}
+		{
+			title: "Crafter"
+			x: -6.0d
+			y: -1.5d
+			dependencies: ["0D38CEF69511DF34"]
+			id: "0C378B701AD70FCA"
+			tasks: [
+				{
+					id: "2089DDCAE2C31409"
+					type: "item"
+					item: "rftoolsutility:crafter1"
+				}
+				{
+					id: "07770A8E382403BD"
+					type: "item"
+					item: "rftoolsutility:crafter2"
+				}
+				{
+					id: "4D691AD2F29EA6A6"
+					type: "item"
+					item: "rftoolsutility:crafter3"
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -3.0d
+			dependencies: ["0C378B701AD70FCA"]
+			id: "5DAA9CDA1FD30632"
+			tasks: [{
+				id: "146EFD06D24D0796"
+				type: "item"
+				item: "rftoolsutility:environmental_controller"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -4.5d
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "1FCB2CF9D9C36AB5"
+			tasks: [{
+				id: "4E7B1B7DF6C96DD9"
+				type: "item"
+				item: "rftoolsutility:logic"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -6.0d
+			dependencies: ["1FCB2CF9D9C36AB5"]
+			id: "0FC13984C736B3EE"
+			tasks: [{
+				id: "3AE4C9F6D682ED31"
+				type: "item"
+				item: "rftoolsutility:screen"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -7.5d
+			dependencies: ["0FC13984C736B3EE"]
+			id: "47B0434BAAB804F0"
+			tasks: [{
+				id: "53D34D60F69C3CF4"
+				type: "item"
+				item: "rftoolsutility:spawner"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -7.5d
+			dependencies: ["532B0B44EF50F502"]
+			id: "621A5FFF03F586DA"
+			tasks: [{
+				id: "42141F54638D270E"
+				type: "item"
+				item: "rftoolscontrol:tank"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -9.0d
+			dependencies: ["47B0434BAAB804F0"]
+			id: "57605D476CA374A2"
+			tasks: [{
+				id: "3D6115525AE6347F"
+				type: "item"
+				item: "rftoolsutility:matter_transmitter"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -9.0d
+			dependencies: ["57605D476CA374A2"]
+			id: "38BBE17AA124C903"
+			tasks: [{
+				id: "2A87D1B593117B2A"
+				type: "item"
+				item: "rftoolsutility:matter_receiver"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -9.0d
+			dependencies: ["38BBE17AA124C903"]
+			id: "79B50D244DD61A74"
+			tasks: [{
+				id: "4D80A730852CAC6A"
+				type: "item"
+				item: "rftoolsutility:matter_booster"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["3645838DAA16F493"]
+			id: "7BF31E0BF4596F75"
+			tasks: [{
+				id: "2CA8929D174052AC"
+				type: "item"
+				item: "rftoolsstorage:modular_storage"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 1.5d
+			dependencies: ["7BF31E0BF4596F75"]
+			id: "29A431B471D4EC9A"
+			tasks: [{
+				id: "3ED509F1F6EB1FA4"
+				type: "item"
+				item: "rftoolsstorage:storage_scanner"
+			}]
+		}
+		{
+			title: "Tablet"
+			x: -7.5d
+			y: 3.0d
+			dependencies: ["29A431B471D4EC9A"]
+			dependency_requirement: "one_completed"
+			id: "34E791556DD6A4AD"
+			tasks: [
+				{
+					id: "00E20B294B509FB0"
+					type: "item"
+					item: "rftoolsbase:tablet"
+				}
+				{
+					id: "02C93CA3B3D55C9D"
+					type: "item"
+					item: "rftoolsbase:tablet_filled"
+				}
+				{
+					id: "777B2D9EC53FC3C6"
+					type: "item"
+					item: "rftoolsutility:tablet_redstone"
+				}
+				{
+					id: "7BEA12BAF82F3498"
+					type: "item"
+					item: "rftoolsutility:tablet_screen"
+				}
+				{
+					id: "112F5AA6FBE50D53"
+					type: "item"
+					item: "rftoolsstorage:tablet_scanner"
+				}
+				{
+					id: "710E3329D8DE0433"
+					type: "item"
+					item: "rftoolscontrol:tablet_processor"
+				}
+			]
+		}
+		{
+			title: "Storage Modules"
+			x: -9.0d
+			y: 3.0d
+			subtitle: "Augmentation system"
+			description: [
+				"These modules all enhance the storage related items and blocks."
+				""
+				"They're well documented in JEI so hover over the modules above to see what they all do."
+			]
+			dependencies: ["34E791556DD6A4AD"]
+			dependency_requirement: "one_completed"
+			id: "79BB24083F674665"
+			tasks: [
+				{
+					id: "683773351977687E"
+					type: "item"
+					item: "rftoolsstorage:storage_module0"
+				}
+				{
+					id: "40B70974022D0EF7"
+					type: "item"
+					item: "rftoolsstorage:storage_module1"
+				}
+				{
+					id: "3047CE060B537CE2"
+					type: "item"
+					item: "rftoolsstorage:storage_module2"
+				}
+				{
+					id: "72F627CFBE2907E5"
+					type: "item"
+					item: "rftoolsstorage:storage_module3"
+				}
+				{
+					id: "2A3AE94845DBCB50"
+					type: "item"
+					item: "rftoolsstorage:storage_module6"
+				}
+				{
+					id: "03D5C0A78471CCDA"
+					type: "item"
+					item: {
+						id: "rftoolsstorage:storage_control_module"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7F1118EA753BD9AF"
+					type: "item"
+					item: {
+						id: "rftoolsstorage:dump_module"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: 0.0d
+			dependencies: ["1868358D028CED6A"]
+			id: "22A0AC145EF87D69"
+			tasks: [{
+				id: "3BBD08457E817454"
+				type: "item"
+				item: "rftoolscontrol:processor"
+			}]
+		}
+		{
+			title: "CPU Core"
+			x: -10.5d
+			y: 1.5d
+			subtitle: "Required to run programs"
+			dependencies: ["22A0AC145EF87D69"]
+			dependency_requirement: "one_completed"
+			id: "78D987D226E62B31"
+			tasks: [
+				{
+					id: "288A61ECA80BCE87"
+					type: "item"
+					item: "rftoolscontrol:cpu_core_500"
+				}
+				{
+					id: "15CC746429F21331"
+					type: "item"
+					item: "rftoolscontrol:cpu_core_1000"
+				}
+				{
+					id: "41AC538F1D2AB6F0"
+					type: "item"
+					item: "rftoolscontrol:cpu_core_2000"
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: -1.5d
+			dependencies: ["22A0AC145EF87D69"]
+			id: "7275E75A9BD390E9"
+			tasks: [{
+				id: "5106A2D9FD8F0BBA"
+				type: "item"
+				item: "rftoolscontrol:workbench"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -3.0d
+			dependencies: ["7275E75A9BD390E9"]
+			id: "04D79378B1F88A5E"
+			tasks: [{
+				id: "30419F4E0A1A6BF5"
+				type: "item"
+				item: "rftoolscontrol:programmer"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -4.5d
+			dependencies: ["04D79378B1F88A5E"]
+			id: "4F6A2376DAB625A8"
+			tasks: [{
+				id: "579A15EFFA2E4AD4"
+				type: "item"
+				item: "rftoolscontrol:craftingstation"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -6.0d
+			dependencies: ["4F6A2376DAB625A8"]
+			id: "532B0B44EF50F502"
+			tasks: [{
+				id: "760B6CE8984D9DF8"
+				type: "item"
+				item: "rftoolscontrol:node"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 1.5d
+			dependencies: ["78D987D226E62B31"]
+			id: "5D682273E3DD8C77"
+			tasks: [{
+				id: "770066E5BAFF3C72"
+				type: "item"
+				item: "rftoolscontrol:ram_chip"
+			}]
+		}
+		{
+			title: "RFTools Control"
+			x: -9.0d
+			y: 0.0d
+			subtitle: "Logistics and monitoring"
+			description: [
+				"RFTools Control is an addon mod for RFTools which adds automation control using a visual grid based programming language. Using opcodes that you arrange in a grid you can move items around, control redstone, check energy (RF) and so on. You can access regular inventories but this mod also supports direct access to a storage scanner controlled system. In the future it will also provide a way to the storage scanner to autocraft items. This is not yet fully implemented however."
+				""
+				"The two main blocks in this mod are the programmer which is used to create programs and the processor that executes those programs. Networking is also provided."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3645838DAA16F493"]
+			id: "1868358D028CED6A"
+			tasks: [{
+				id: "5EDF26AFB72F075F"
+				type: "item"
+				item: "rftoolscontrol:card_base"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -6.0d
+			dependencies: ["532B0B44EF50F502"]
+			id: "5C9B70E9B765F1FC"
+			tasks: [{
+				id: "10F78EA94CEB3E1A"
+				type: "item"
+				item: {
+					id: "rftoolscontrol:network_identifier"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -13.5d
+			y: -6.0d
+			dependencies: ["5C9B70E9B765F1FC"]
+			dependency_requirement: "one_completed"
+			id: "6DD368CD3A5EF7C8"
+			tasks: [
+				{
+					id: "0658C135AE029CBF"
+					type: "item"
+					item: "rftoolscontrol:network_card"
+				}
+				{
+					id: "0A5D985BBEACE619"
+					type: "item"
+					item: "rftoolscontrol:advanced_network_card"
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: -1.5d
+			dependencies: ["1868358D028CED6A"]
+			id: "2A8D003F624D361F"
+			tasks: [{
+				id: "335635AA325D3478"
+				type: "item"
+				item: "rftoolscontrol:graphics_card"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -3.0d
+			dependencies: ["04D79378B1F88A5E"]
+			id: "51B1CEBF639256DD"
+			tasks: [{
+				id: "09F10F111A8CA021"
+				type: "item"
+				item: "rftoolscontrol:token"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -3.0d
+			dependencies: ["04D79378B1F88A5E"]
+			id: "4274645324637E99"
+			tasks: [{
+				id: "50D5627F48D282EA"
+				type: "item"
+				item: "rftoolscontrol:program_card"
+			}]
+		}
+		{
+			title: "Screen Modules"
+			x: -12.0d
+			y: 0.0d
+			dependencies: ["22A0AC145EF87D69"]
+			dependency_requirement: "one_completed"
+			id: "3463A6F04D8D0B1F"
+			tasks: [
+				{
+					id: "74D61C4B750D7FF8"
+					type: "item"
+					item: {
+						id: "rftoolscontrol:console_module"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3913F66DB224F0BC"
+					type: "item"
+					item: {
+						id: "rftoolscontrol:vectorart_module"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "185D999A87767E75"
+					type: "item"
+					item: {
+						id: "rftoolscontrol:interaction_module"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5E9231E4C65989E0"
+					type: "item"
+					item: {
+						id: "rftoolscontrol:variable_module"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 1.5d
+			dependencies: ["2517E6D9AF4D483F"]
+			dependency_requirement: "one_completed"
+			id: "291CBB77D093627F"
+			tasks: [
+				{
+					id: "696370DA1EB554A5"
+					type: "item"
+					item: "rftoolspower:cell1"
+				}
+				{
+					id: "316C02844EAB9DDF"
+					type: "item"
+					item: "rftoolspower:cell2"
+				}
+				{
+					id: "3D89AFA720CB6367"
+					type: "item"
+					item: "rftoolspower:cell3"
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			dependencies: ["251E760424B95BE7"]
+			id: "60A571951A0B770F"
+			tasks: [{
+				id: "523AD8B177E67ADC"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_def"
+			}]
+		}
+		{
+			title: "Fluid Pump Cards"
+			x: -3.0d
+			y: 3.0d
+			dependencies: ["60A571951A0B770F"]
+			dependency_requirement: "one_completed"
+			id: "4B526AE2F4CA44AA"
+			tasks: [
+				{
+					id: "23B1BEDD92582C62"
+					type: "item"
+					item: "rftoolsbuilder:shape_card_liquid"
+				}
+				{
+					id: "4FC3F574FF28F162"
+					type: "item"
+					item: "rftoolsbuilder:shape_card_pump"
+				}
+				{
+					id: "109A19F4E7E76087"
+					type: "item"
+					item: "rftoolsbuilder:shape_card_pump_clear"
+				}
+			]
+		}
+		{
+			title: "Quarry Cards"
+			x: -3.0d
+			y: 4.5d
+			dependencies: ["4B526AE2F4CA44AA"]
+			dependency_requirement: "one_completed"
+			id: "55090CDA00ADC771"
+			tasks: [
+				{
+					id: "3F34F6F2B7380567"
+					type: "item"
+					item: "rftoolsbuilder:shape_card_quarry"
+				}
+				{
+					id: "5A5D71304E50767A"
+					type: "item"
+					item: "rftoolsbuilder:shape_card_quarry_clear"
+				}
+				{
+					id: "340A026D0573C5E0"
+					type: "item"
+					item: "rftoolsbuilder:shape_card_quarry_clear_fortune"
+				}
+				{
+					id: "32730760E786A8D2"
+					type: "item"
+					item: "rftoolsbuilder:shape_card_quarry_clear_silk"
+				}
+				{
+					id: "5E189CB5FB748EB5"
+					type: "item"
+					item: "rftoolsbuilder:shape_card_quarry_fortune"
+				}
+				{
+					id: "6637BC08495F8B4F"
+					type: "item"
+					item: "rftoolsbuilder:shape_card_quarry_silk"
+				}
+			]
+		}
+		{
+			title: "Void Card"
+			x: -3.0d
+			y: 6.0d
+			dependencies: ["55090CDA00ADC771"]
+			dependency_requirement: "one_completed"
+			id: "5DC1052140410962"
+			tasks: [{
+				id: "4060BA389287165A"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_void"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 3.0d
+			dependencies: ["291CBB77D093627F"]
+			dependency_requirement: "one_completed"
+			id: "3DBAEF904E0F3F30"
+			tasks: [
+				{
+					id: "0E3A39E41510A0C0"
+					type: "item"
+					item: "rftoolspower:power_monitor"
+				}
+				{
+					id: "1CB4BD5B43527143"
+					type: "item"
+					item: "rftoolspower:power_level"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			dependencies: ["646BF6457EBF6D74"]
+			dependency_requirement: "one_completed"
+			id: "2517E6D9AF4D483F"
+			tasks: [
+				{
+					id: "45575599A264ACDB"
+					type: "item"
+					item: "rftoolspower:power_core1"
+				}
+				{
+					id: "75F45589371F8DDF"
+					type: "item"
+					item: "rftoolspower:power_core2"
+				}
+				{
+					id: "3522A9984FB6AD00"
+					type: "item"
+					item: "rftoolspower:power_core3"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 3.0d
+			dependencies: ["2517E6D9AF4D483F"]
+			dependency_requirement: "one_completed"
+			id: "088D625538015309"
+			tasks: [
+				{
+					id: "4AAC9234B99C7B2C"
+					type: "item"
+					item: "rftoolspower:dimensionalcell"
+				}
+				{
+					id: "043886884A3B0B34"
+					type: "item"
+					item: "rftoolspower:dimensionalcell_advanced"
+				}
+				{
+					id: "73588126ED53F64C"
+					type: "item"
+					item: "rftoolspower:dimensionalcell_simple"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 4.5d
+			dependencies: ["088D625538015309"]
+			id: "51E4D78685BE5A52"
+			tasks: [{
+				id: "0594AEA9A2A13EF7"
+				type: "item"
+				item: "rftoolspower:blazing_generator"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 4.5d
+			dependencies: ["51E4D78685BE5A52"]
+			id: "44D7349289D7E7CD"
+			tasks: [{
+				id: "11E2E7AD6E546E97"
+				type: "item"
+				item: "rftoolspower:blazing_agitator"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 4.5d
+			dependencies: ["44D7349289D7E7CD"]
+			id: "4A2051F07E7BC62E"
+			tasks: [{
+				id: "6170B2A13D0E290D"
+				type: "item"
+				item: "rftoolspower:blazing_rod"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 4.5d
+			dependencies: ["4A2051F07E7BC62E"]
+			id: "3BF1281D87DA1F36"
+			tasks: [{
+				id: "31F3CC5B93ABE115"
+				type: "item"
+				item: "rftoolspower:blazing_infuser"
+			}]
+		}
+		{
+			title: "Endergenic Generator"
+			x: -4.5d
+			y: 6.0d
+			dependencies: ["51E4D78685BE5A52"]
+			dependency_requirement: "one_completed"
+			id: "5F038DE199DBB557"
+			tasks: [
+				{
+					id: "02C611C5B4430D34"
+					type: "item"
+					item: "rftoolspower:ender_monitor"
+				}
+				{
+					id: "58E6D2738D1CED2A"
+					type: "item"
+					item: "rftoolspower:pearl_injector"
+				}
+				{
+					id: "697BCC1D60CFE5E5"
+					type: "item"
+					item: "rftoolspower:endergenic"
+				}
+			]
+		}
+	]
 }

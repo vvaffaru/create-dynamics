@@ -6,5 +6,39 @@
 	title: "Immersive Engineering"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [{
+		title: "Immersive Engineering"
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Industrial age technology"
+		description: [
+			"Immersive Engineering is a tech mod with a certain charm, based on the ideas and concepts, and with most assets created by Damien Hazard."
+			""
+			"Overall, it's about realism-inspired technology:Instead of glowing red tubes, it offers actual, hanging powerlines.Instead of one block that magically spits out dusts when ore is put in, it offers a crusher, a big multiblock (5x3x3) that features rotating wheels and spits out particles as it breaks the ore.Instead of a Laser that turns power into magical light and ores, it offers an Excavator, another massive, resource intensive, multiblock (3x7x8) which digs ores out of the ground with a big rotating bucketwheel."
+			""
+			"See the in-game manual for extensive documentation."
+		]
+		dependencies: ["6B959CC0C54B4BFE"]
+		hide: true
+		size: 2.0d
+		id: "3EC17BCF37F8524B"
+		tasks: [
+			{
+				id: "3AF59863B95A955C"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}
+			{
+				id: "0927B5E20D576761"
+				type: "item"
+				item: "immersiveengineering:manual"
+			}
+		]
+	}]
 }

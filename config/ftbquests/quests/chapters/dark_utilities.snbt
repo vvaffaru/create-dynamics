@@ -6,5 +6,20 @@
 	title: "Dark Utilities"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [{
+		title: "Dark Utilities"
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Dirty deeds done dirt cheap"
+		description: ["The Dark Utilities mod adds many new items and blocks which expand upon the vanilla game. This mod aims to be useful in a wide range of circumstances while also adding fun and interesting mechanics. You can learn more about the mod by checking out the wiki. All blocks and items in the mod also have tooltips with a brief summary of what they do."]
+		dependencies: ["6B959CC0C54B4BFE"]
+		hide: true
+		size: 2.0d
+		id: "03578C0DFF48BFB0"
+		tasks: [{
+			id: "71102108BF7FA1AB"
+			type: "item"
+			item: "darkutils:charm_portal"
+		}]
+	}]
 }

@@ -6,5 +6,26 @@
 	title: "Quark"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [{
+		title: "Quark"
+		icon: "minecraft:beacon"
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Change your game, not your gameplay"
+		description: [
+			"Quark is a mod for Minecraft Java Edition, aiming to enhance the base game, using a very simple motto: Anything added to Quark could also be added to the default game without compromising its gameplay style. The name of the mod derives from this focus on small, simple change: Like quarks, each individual feature is small, but they build into a larger whole."
+			""
+			"Every feature in Quark can be disabled and tweaked individually. When you load up the game, you'll see a q button in your main menu. Clicking this button lets you configure the mod. You can tweak everything just your way, or even disable things you don't like!"
+			""
+			"Visit https://quarkmod.net for further information."
+		]
+		dependencies: ["6B959CC0C54B4BFE"]
+		hide: true
+		size: 2.0d
+		id: "49ECF613CF1ABC18"
+		tasks: [{
+			id: "6E1BAF022D60AACA"
+			type: "checkmark"
+		}]
+	}]
 }

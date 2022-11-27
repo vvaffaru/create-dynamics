@@ -4,7 +4,25 @@
 	order_index: 2
 	filename: "food"
 	title: "Ending hunger"
+	icon: "cookingforblockheads:oven"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [{
+		icon: "cookingforblockheads:oven"
+		x: 0.0d
+		y: 0.0d
+		subtitle: "In order to live, one must eat"
+		description: [
+			"There are a couple mods in this pack dedicated to food. Some others may add little bits here and there, but Cooking for Blockheads and Farmer's Delight are the main ones for now. More could potentially come later as they become available for this Minecraft/Forge version."
+			""
+			"See the Misc Mods section for more information about these two."
+		]
+		size: 2.0d
+		id: "39E09FE7FF10F65E"
+		tasks: [{
+			id: "46BCEECC537A2E4C"
+			type: "checkmark"
+			title: "Mmm... Food"
+		}]
+	}]
 }

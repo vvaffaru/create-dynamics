@@ -82,6 +82,7 @@
 			subtitle: "Tier 1"
 			description: ["The first tier of upgrades for the sieve mesh. You'll want to get these as soon as possible."]
 			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
 			id: "269CD81C19007882"
 			tasks: [{
 				id: "6FABEAD8108C00B0"
@@ -143,7 +144,7 @@
 		}
 		{
 			title: "Sequentia Barrels"
-			x: -0.5d
+			x: -1.5d
 			y: 0.0d
 			subtitle: "This is a versatile early game block"
 			description: [
@@ -154,6 +155,7 @@
 				"Barrels are able to spawn mobs as well. Search for @exnihilo in JEI and right click on one of the barrels for more information."
 			]
 			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
 			id: "23F6531EDD8113EB"
 			tasks: [{
 				id: "51173CF5F0A68106"
@@ -182,7 +184,7 @@
 		}
 		{
 			title: "Sequentia Crucible"
-			x: -0.5d
+			x: -1.5d
 			y: 1.5d
 			subtitle: "Melt various blocks and items into fluids"
 			description: [
@@ -220,7 +222,7 @@
 		{
 			title: "Sequentia Crook"
 			x: 1.0d
-			y: -2.0d
+			y: -4.0d
 			subtitle: "I /am/ a crook"
 			description: [
 				"Silkworms are obtained by breaking leaves with a crook."
@@ -228,6 +230,7 @@
 				"They all have some minor stat differences, but basically do the same job."
 			]
 			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
 			id: "5529B57CFCD9ECD9"
 			tasks: [{
 				id: "50338D786ED32F41"
@@ -251,7 +254,7 @@
 		{
 			title: "Silkworms"
 			x: 1.0d
-			y: -3.0d
+			y: -5.0d
 			subtitle: "A light snack, a source for wool"
 			description: [
 				"As stated previously, breaking leaves with a crook will give you silkworms. Right clicking a silkworm onto leaves will infest them, and spread over time."
@@ -289,11 +292,12 @@
 		}
 		{
 			title: "Sequentia Hammers"
-			x: 1.0d
-			y: 2.5d
+			x: -1.0d
+			y: -3.0d
 			subtitle: "Smashing"
 			description: ["These hammers are made to break blocks down to other blocks. Check JEI for stat differences."]
 			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
 			id: "3BABFCB8DC040C89"
 			tasks: [{
 				id: "11774C85E4BD52F3"
@@ -335,7 +339,7 @@
 			]
 		}
 		{
-			x: -3.0d
+			x: -5.0d
 			y: -2.0d
 			subtitle: "Caution: Fire Hazard"
 			description: ["Add to a barrel of lava to spawn a blaze."]
@@ -348,7 +352,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -5.0d
 			y: 2.0d
 			subtitle: "Purple eyes are watching you"
 			description: ["Add to a barrel of witch water to spawn an enderman."]
@@ -361,7 +365,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -5.0d
 			y: 1.0d
 			subtitle: "This side up"
 			description: ["Add to a barrel of witch water to spawn a shulker."]
@@ -374,7 +378,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -5.0d
 			y: 0.0d
 			subtitle: "Protecc"
 			description: ["Add to a barrel of sea water to spawn a guardian."]
@@ -387,7 +391,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -5.0d
 			y: -1.0d
 			subtitle: "Sweet witchery"
 			description: ["Add to a barrel of witch water to spawn a bee."]
@@ -400,7 +404,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -2.5d
 			y: 0.0d
 			subtitle: "Needed to create all other dolls"
 			description: ["This is used as a base for all the other dolls."]
@@ -415,12 +419,19 @@
 		{
 			title: "Things that are not Ex Nihilo"
 			icon: "botanypots:terracotta_botany_pot"
-			x: -1.0d
-			y: -2.5d
-			subtitle: "but are adjacent"
+			x: 5.5d
+			y: 0.0d
+			subtitle: "...but are adjacent"
+			description: [
+				"These mods are added to help you acquire any resource you may be lacking or struggling to find."
+				""
+				"Some things are really handy to always have a supply of. We're not all robots and can't do everything all at once."
+				""
+				"At least there are some helpful tools to reduce the stress of locating what you need, in the quantity you require."
+			]
 			hide_dependency_lines: true
-			dependencies: ["0A319D7EBB66BAB9"]
-			hide: true
+			dependencies: ["15EDA0CD3B28ED7B"]
+			hide: false
 			id: "2E560466530CF186"
 			tasks: [{
 				id: "51473F0B0FF3D35A"
@@ -428,8 +439,12 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -3.5d
+			x: 6.5d
+			y: -1.0d
+			subtitle: "Mr. Miyagi would be proud"
+			description: ["Back once again to help fulfill your lumber needs until you get a Create farm up and running."]
+			dependencies: ["2E560466530CF186"]
+			hide: true
 			id: "3996E8627BC39D20"
 			tasks: [{
 				id: "44EBD23B8C242094"
@@ -438,13 +453,330 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -4.5d
+			x: 6.5d
+			y: -2.0d
+			subtitle: "There's a hole in the bucket"
+			description: [
+				"Same as the regular pot, just with a hopper all in one so you can automatically collect your tiny trees."
+				""
+				"Place an inventory below. As long as it has enough slots to accept all the output items, it will continue logging for you until the attached inventory is full."
+			]
+			dependencies: ["3996E8627BC39D20"]
 			id: "59E5738AD79191DE"
 			tasks: [{
 				id: "385899AA95A85FFA"
 				type: "item"
 				item: "botanypots:terracotta_hopper_botany_pot"
+			}]
+		}
+		{
+			title: "Roost Ultimate"
+			x: 8.0d
+			y: 0.0d
+			subtitle: "Port of Roost + Chickens + More Chickens"
+			description: [
+				"There is a lot going on with this mod, but not much documentation."
+				""
+				"The following quests will attempt to guide you through the breeding process."
+				""
+				"Check the CurseForge mod page, and Wiki for more information."
+			]
+			dependencies: ["2E560466530CF186"]
+			hide: true
+			id: "2DACCD4364807F15"
+			tasks: [{
+				id: "1014E01A796D6920"
+				type: "item"
+				title: "Any #forge:roost/chickens"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:roost/chickens"
+					}
+				}
+			}]
+		}
+		{
+			title: "Cobble for Days"
+			disable_toast: true
+			x: 6.5d
+			y: 1.0d
+			subtitle: "You've mined enough of this for multiple lifetimes by now"
+			description: [
+				"Time to let a machine do the work."
+				""
+				"Place the generator, and then a storage block above it. The generator will continue producing cobble until the inventory is full."
+			]
+			dependencies: ["2E560466530CF186"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "68CF6E1B27C4E9E0"
+			tasks: [
+				{
+					id: "2E911002D606D6CE"
+					type: "item"
+					item: "cobblefordays:tier_1"
+				}
+				{
+					id: "4E5791F5AE695E1D"
+					type: "item"
+					item: "cobblefordays:tier_2"
+				}
+				{
+					id: "14A5FF7B0C3ECA6F"
+					type: "item"
+					item: "cobblefordays:tier_3"
+				}
+				{
+					id: "7B11646B583B54DD"
+					type: "item"
+					item: "cobblefordays:tier_4"
+				}
+				{
+					id: "2AB7EEB108452398"
+					type: "item"
+					item: "cobblefordays:tier_5"
+				}
+			]
+			rewards: [{
+				id: "455DBD015B48CA6E"
+				type: "item"
+				item: "functionalstorage:spruce_1"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 2.0d
+			dependencies: ["68CF6E1B27C4E9E0"]
+			id: "27466C7AF4FD8CBD"
+			tasks: [{
+				id: "6375AE3B4810D70E"
+				type: "item"
+				item: "cobblefordays:tier_1"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 3.0d
+			dependencies: ["27466C7AF4FD8CBD"]
+			id: "2E96B3723B004EDD"
+			tasks: [{
+				id: "02B3CFB881E50A41"
+				type: "item"
+				item: "cobblefordays:tier_2"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 4.0d
+			dependencies: ["2E96B3723B004EDD"]
+			id: "7F955CAB0586EC10"
+			tasks: [{
+				id: "2627150E492A8C08"
+				type: "item"
+				item: "cobblefordays:tier_3"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			dependencies: ["7F955CAB0586EC10"]
+			id: "5F94BC75021F4C64"
+			tasks: [{
+				id: "07B330C6EEC9DD9A"
+				type: "item"
+				item: "cobblefordays:tier_4"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			dependencies: ["5F94BC75021F4C64"]
+			id: "594406632BE607E8"
+			tasks: [{
+				id: "70A5A3AB820D7154"
+				type: "item"
+				item: "cobblefordays:tier_5"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			subtitle: "Possibly PETA Approved"
+			description: [
+				"Crafting a chicken on a stick allows you to capture a chicken and add it to your inventory."
+				""
+				"With the stick in your main hand, right click a chicken in the world to capture it."
+			]
+			dependencies: ["2DACCD4364807F15"]
+			id: "60A1A0BC90B8D7BB"
+			tasks: [{
+				id: "27F5FC4480BD4DED"
+				type: "item"
+				item: {
+					id: "chicken_roost:chicken_stick"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: -1.5d
+			subtitle: "Tier 1"
+			description: ["Chickens in this tier: Acacia, Amethyst, Andesite, Birch, Charged Certus Quartz, Chicken, Cobble, Dark Oak, Diorite, Feather, Fluix, Granite, Gravel, Honeycomb, Jungle, Nautilus Shell, Nether Brick, Oak, Prismarine, Queen Slime, Sand, Spruce, Stone, Tinted Glass, Wool"]
+			dependencies: ["32B25BDD3BC5C481"]
+			id: "69001239BD34210F"
+			tasks: [{
+				id: "62CC0A9F037530ED"
+				type: "item"
+				item: "chicken_roost:roostv_1"
+			}]
+		}
+		{
+			x: 14.5d
+			y: -1.5d
+			subtitle: "Tier 2"
+			description: ["Chickens in this tier: Apple, Beetroot, Bone, Bone Meal, Carrot, Charcoal, Coal, Crimson, Flint, Glass, Glow Berries, Ink, Melon, Netherrack, Paper, Snow, Sugar, Sweet Berries, Warped Stem"]
+			dependencies: ["69001239BD34210F"]
+			id: "6FC88BD1ECAF86A2"
+			tasks: [{
+				id: "0C4F0C507E15E45F"
+				type: "item"
+				item: "chicken_roost:roostv_2"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -1.5d
+			subtitle: "Tier 3"
+			description: ["Chickens in this tier: Basalt, Clay, Copper, Leather, Rabbit Hide, Soul Sand, Soul Soil, Spider Eye, Sponge, String"]
+			dependencies: ["6FC88BD1ECAF86A2"]
+			id: "6F3619628B46FA9D"
+			tasks: [{
+				id: "2792EB4902F6443B"
+				type: "item"
+				item: "chicken_roost:roostv_3"
+			}]
+		}
+		{
+			x: 15.5d
+			y: 0.0d
+			subtitle: "Tier 4"
+			description: ["Chickens in this tier: Aluminium, Coke, Iron, Lapis, Lead, Magma Cream, Nether Wart, Obsidian, Redstone, Rotten, Slime, Sulfur, Tin, Zinc"]
+			dependencies: ["6F3619628B46FA9D"]
+			id: "47AD4167944278A1"
+			tasks: [{
+				id: "0A7A3587871F6C4B"
+				type: "item"
+				item: "chicken_roost:roostv_4"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			subtitle: "Tier 5"
+			description: ["Chickens in this tier: Blaze Powder, Blaze Rod, Chorus Fruit, Ender Pearl, Endstone, Glowstone, Gold, Nether Quartz, Silicon, Silver, TNT"]
+			dependencies: ["47AD4167944278A1"]
+			id: "0CD562CBBA5D7903"
+			tasks: [{
+				id: "087B2B87283DB440"
+				type: "item"
+				item: "chicken_roost:roostv_5"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 0.0d
+			subtitle: "Tier 6"
+			description: ["Chickens in this tier: Certus Quartz, Emerald, Eye of Ender, Ghast Tear"]
+			dependencies: ["0CD562CBBA5D7903"]
+			id: "2F072C74DD4A506D"
+			tasks: [{
+				id: "59186C6CF99A7A3F"
+				type: "item"
+				item: "chicken_roost:roostv_6"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 1.5d
+			subtitle: "Tier 7"
+			description: ["Chickens in this tier: Diamond, Nether Star, Netherite, Nickel"]
+			dependencies: ["2F072C74DD4A506D"]
+			id: "205967A661C7FE6E"
+			tasks: [{
+				id: "3AEBEBE4979FA8B6"
+				type: "item"
+				item: "chicken_roost:roostv_7"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 1.5d
+			subtitle: "Tier 8"
+			description: ["Chickens in this tier: Platinum"]
+			dependencies: ["205967A661C7FE6E"]
+			id: "5B23E6119E6DF6CF"
+			tasks: [{
+				id: "22F3E598A7CE0802"
+				type: "item"
+				item: "chicken_roost:roostv_8"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 1.5d
+			subtitle: "Tier 9"
+			description: ["Chickens in this tier: Unobtanium"]
+			dependencies: ["5B23E6119E6DF6CF"]
+			id: "00CF8428131EBA7B"
+			tasks: [{
+				id: "7536359227D7E20A"
+				type: "item"
+				item: "chicken_roost:roostv_9"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 0.0d
+			subtitle: "Chicken + food = resources"
+			description: [
+				"After you have your empty roost placed in the world, you need to craft a hay bale and place the hay into the roost with a right click."
+				""
+				"Then another right click will open the GUI where you can place a chicken and some food."
+				""
+				"All the resources are tier based and require the right tier roost for the type of resource your chicken will output."
+			]
+			dependencies: ["60A1A0BC90B8D7BB"]
+			id: "32B25BDD3BC5C481"
+			tasks: [{
+				id: "4DE005372D52CBFB"
+				type: "item"
+				item: "chicken_roost:roost_empty"
+			}]
+		}
+		{
+			title: "The birbs and the birbs"
+			x: 10.5d
+			y: -1.5d
+			subtitle: "Big birbs in, little birbs out"
+			description: [
+				"The breeder block is where you breed more/new/better chickens."
+				""
+				"The way it works is by adding seeds to the top left slot, and captured chickens of any type into the two slots to the right of the seeds."
+				""
+				"They pull the curtains and after a few moments new chickens are output into the remaining top slots."
+			]
+			dependencies: ["60A1A0BC90B8D7BB"]
+			id: "2308968B5802A3A9"
+			tasks: [{
+				id: "2625C7FEB94E69BE"
+				type: "item"
+				item: "chicken_roost:breeder"
 			}]
 		}
 	]

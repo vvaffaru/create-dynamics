@@ -6,5 +6,949 @@
 	title: "Tooling up"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: -3.0d
+			y: 6.5d
+			dependencies: ["39B4701C76BFAD96"]
+			dependency_requirement: "one_completed"
+			id: "4E4130C2DE46162A"
+			tasks: [
+				{
+					id: "65F5064D6B20B8C8"
+					type: "item"
+					item: {
+						id: "mbtools:wooden_paxel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "51992F7C07019F12"
+					type: "item"
+					item: {
+						id: "mbtools:stone_paxel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "422F74CA1AA82327"
+					type: "item"
+					item: {
+						id: "mbtools:copper_paxel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "476F42DFDA240042"
+					type: "item"
+					item: {
+						id: "mbtools:iron_paxel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "034A0654404DBD15"
+					type: "item"
+					item: {
+						id: "mbtools:golden_paxel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "49829BD7F0CC4D06"
+					type: "item"
+					item: {
+						id: "mbtools:diamond_paxel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Netherite Ingots"
+			x: -3.0d
+			y: 2.0d
+			dependencies: ["39B4701C76BFAD96"]
+			dependency_requirement: "one_completed"
+			id: "38AF1D6D907C5CF3"
+			tasks: [
+				{
+					id: "773B038EA7C76D7C"
+					type: "item"
+					item: "mbtools:iron_netherite_ingot"
+				}
+				{
+					id: "49486B21CBB67696"
+					type: "item"
+					item: "mbtools:golden_netherite_ingot"
+				}
+				{
+					id: "6F3C989510BBC6F3"
+					type: "item"
+					item: "mbtools:diamond_netherite_ingot"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["38AF1D6D907C5CF3"]
+			id: "270846FC39A36627"
+			tasks: [
+				{
+					id: "406F3FFCE6556E1A"
+					type: "item"
+					item: {
+						id: "mbtools:iron_netherite_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "210E2F5E26F7F03F"
+					type: "item"
+					item: {
+						id: "mbtools:iron_netherite_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "14B7CF41FE0A04CC"
+					type: "item"
+					item: {
+						id: "mbtools:iron_netherite_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6A7346F387077185"
+					type: "item"
+					item: {
+						id: "mbtools:iron_netherite_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			dependencies: ["38AF1D6D907C5CF3"]
+			id: "02ECF3C8917AEF8E"
+			tasks: [
+				{
+					id: "3BC5AC11DB78CD5A"
+					type: "item"
+					item: {
+						id: "mbtools:golden_netherite_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "165B942AFE0397BC"
+					type: "item"
+					item: {
+						id: "mbtools:golden_netherite_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1B41787598ACA42C"
+					type: "item"
+					item: {
+						id: "mbtools:golden_netherite_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "34BAFE672404BE7E"
+					type: "item"
+					item: {
+						id: "mbtools:golden_netherite_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			dependencies: ["38AF1D6D907C5CF3"]
+			id: "63AB11A3EF33198A"
+			tasks: [
+				{
+					id: "295DED24E8A28B7E"
+					type: "item"
+					item: {
+						id: "mbtools:diamond_netherite_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "55D91D83015B198A"
+					type: "item"
+					item: {
+						id: "mbtools:diamond_netherite_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4D8B60770E315C22"
+					type: "item"
+					item: {
+						id: "mbtools:diamond_netherite_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "42E21E15A3838BCE"
+					type: "item"
+					item: {
+						id: "mbtools:diamond_netherite_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: -1.0d
+			dependencies: ["38AF1D6D907C5CF3"]
+			dependency_requirement: "one_completed"
+			id: "23B0233AB910D725"
+			tasks: [
+				{
+					id: "0B7C4C12E6A3D2BC"
+					type: "item"
+					item: {
+						id: "mbtools:iron_netherite_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7610D454B03FE2BD"
+					type: "item"
+					item: {
+						id: "mbtools:golden_netherite_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "35888A30C5D141EC"
+					type: "item"
+					item: {
+						id: "mbtools:diamond_netherite_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 3.0d
+			dependencies: ["38AF1D6D907C5CF3"]
+			dependency_requirement: "one_completed"
+			id: "725919A49E2B6948"
+			tasks: [
+				{
+					id: "2DBC0D9F514E2A55"
+					type: "item"
+					item: {
+						id: "mbtools:iron_netherite_armor_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "42097C8C67493770"
+					type: "item"
+					item: {
+						id: "mbtools:golden_netherite_armor_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "40D90857F7E1CACB"
+					type: "item"
+					item: {
+						id: "mbtools:diamond_netherite_armor_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 4.5d
+			dependencies: ["38AF1D6D907C5CF3"]
+			dependency_requirement: "one_completed"
+			id: "3C621388AAA67102"
+			tasks: [
+				{
+					id: "4709107E787745CB"
+					type: "item"
+					item: {
+						id: "mbtools:iron_netherite_armor_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "26295AFBFE665F86"
+					type: "item"
+					item: {
+						id: "mbtools:golden_netherite_armor_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "202C9E187E31EAAD"
+					type: "item"
+					item: {
+						id: "mbtools:diamond_netherite_armor_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 4.5d
+			dependencies: ["38AF1D6D907C5CF3"]
+			dependency_requirement: "one_completed"
+			id: "30B5C60A0CD9D8F5"
+			tasks: [
+				{
+					id: "1222B0BEC2EDED9D"
+					type: "item"
+					item: {
+						id: "mbtools:iron_netherite_armor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "08430A97B1699604"
+					type: "item"
+					item: {
+						id: "mbtools:golden_netherite_armor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "24532A8190957C87"
+					type: "item"
+					item: {
+						id: "mbtools:diamond_netherite_armor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 3.0d
+			dependencies: ["38AF1D6D907C5CF3"]
+			dependency_requirement: "one_completed"
+			id: "24D528A723D8E560"
+			tasks: [
+				{
+					id: "62FC3FA489E84270"
+					type: "item"
+					item: {
+						id: "mbtools:iron_netherite_armor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "22782C653ED891CC"
+					type: "item"
+					item: {
+						id: "mbtools:golden_netherite_armor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0AB26295D49EE807"
+					type: "item"
+					item: {
+						id: "mbtools:diamond_netherite_armor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Enderite"
+			x: 0.0d
+			y: 3.5d
+			dependencies: ["78FC4F787CC350F4"]
+			id: "237D7323C09F4945"
+			tasks: [
+				{
+					id: "4E12530B7E470606"
+					type: "item"
+					item: "mbtools:enderite_scrap"
+				}
+				{
+					id: "3662FB3CD48882AE"
+					type: "item"
+					item: "mbtools:ender_steel"
+				}
+			]
+			rewards: [{
+				id: "692ABAE56A0978DC"
+				type: "item"
+				item: "mbtools:enderite_ingot"
+				count: 8
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			dependencies: ["237D7323C09F4945"]
+			id: "1636872C5645AEFE"
+			tasks: [{
+				id: "2F9270FC72B9FA7D"
+				type: "item"
+				item: {
+					id: "mbtools:enderite_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.5d
+			dependencies: ["237D7323C09F4945"]
+			id: "58DFB5F64D15F9E2"
+			tasks: [
+				{
+					id: "7861439AC23C703F"
+					type: "item"
+					item: {
+						id: "mbtools:enderite_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "664C1902F35E7BA7"
+					type: "item"
+					item: {
+						id: "mbtools:enderite_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "154F422A114CA912"
+					type: "item"
+					item: {
+						id: "mbtools:enderite_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6E1F235B4A343E42"
+					type: "item"
+					item: {
+						id: "mbtools:enderite_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "5B44BBA1C7C47338"
+				type: "item"
+				item: "mbtools:block_of_enderite"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			dependencies: ["237D7323C09F4945"]
+			id: "2D6CE2B994899A50"
+			tasks: [
+				{
+					id: "04AFFFBE9A4D3DC8"
+					type: "item"
+					item: {
+						id: "mbtools:enderite_armor_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3110D020AC6408E8"
+					type: "item"
+					item: {
+						id: "mbtools:enderite_armor_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3B2205EB04933CFE"
+					type: "item"
+					item: {
+						id: "mbtools:enderite_armor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2964A82346355C19"
+					type: "item"
+					item: {
+						id: "mbtools:enderite_armor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			subtitle: "Drops Ender Scrap"
+			description: ["Ore can be found in outer end islands above y30 and below y50."]
+			dependencies: ["39B4701C76BFAD96"]
+			id: "78FC4F787CC350F4"
+			tasks: [{
+				id: "3C9FA22880720EEA"
+				type: "item"
+				item: "mbtools:enderite_ore"
+			}]
+		}
+		{
+			title: "More - Better Tools"
+			icon: {
+				id: "mbtools:diamond_netherite_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.0d
+			y: 4.0d
+			subtitle: "Mo' Betta"
+			description: [
+				"This mod adds some improved tools for mid-late game."
+				""
+				"Check the CurseForge mod page for more information."
+			]
+			size: 2.0d
+			id: "39B4701C76BFAD96"
+			tasks: [{
+				id: "42648344B9DA42C2"
+				type: "checkmark"
+				title: "More & Better Tools"
+			}]
+		}
+		{
+			title: "Spades!"
+			x: -11.0d
+			y: 4.0d
+			subtitle: "Can you dig it?"
+			description: ["Affects a 3x3 area of things you can dig."]
+			dependency_requirement: "one_completed"
+			size: 2.0d
+			id: "4151FEE38C87037E"
+			tasks: [
+				{
+					id: "58AFAB85A54325A2"
+					type: "item"
+					item: {
+						id: "spades_extension:wooden_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5A597E40B8E51D6C"
+					type: "item"
+					item: {
+						id: "spades_extension:stone_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "592C01BFEA1AF2C0"
+					type: "item"
+					item: {
+						id: "spades_extension:iron_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6ACA47C70B7AAAC9"
+					type: "item"
+					item: {
+						id: "spades_extension:golden_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "22815DAC8D4D8F1E"
+					type: "item"
+					item: {
+						id: "spades_extension:diamond_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7201BDD3115973AF"
+					type: "item"
+					item: {
+						id: "spades_extension:netherite_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5D3BC952DB1425D1"
+					type: "item"
+					item: {
+						id: "spades_extension:enhanced_wooden_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "159A08DDB22C0DB6"
+					type: "item"
+					item: {
+						id: "spades_extension:enhanced_stone_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3B3C1EC499F99685"
+					type: "item"
+					item: {
+						id: "spades_extension:enhanced_iron_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7429F1A30597C6AA"
+					type: "item"
+					item: {
+						id: "spades_extension:enhanced_golden_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6BF031955E1A73B2"
+					type: "item"
+					item: {
+						id: "spades_extension:enhanced_diamond_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5D69D99D4C3F5AFE"
+					type: "item"
+					item: {
+						id: "spades_extension:enhanced_netherite_spade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Superior Hammers!"
+			x: -15.0d
+			y: 4.0d
+			subtitle: "Smashing!"
+			description: ["Mines a 3x3 area."]
+			dependency_requirement: "one_completed"
+			size: 2.0d
+			id: "1550047FC8B2B9FF"
+			tasks: [
+				{
+					id: "11635376AEEB5DCC"
+					type: "item"
+					item: {
+						id: "hammers:wooden_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4C79F43350BBC1E5"
+					type: "item"
+					item: {
+						id: "hammers:stone_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "59C9A9F27BEF196C"
+					type: "item"
+					item: {
+						id: "hammers:iron_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "56483542154ED7DB"
+					type: "item"
+					item: {
+						id: "hammers:golden_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5A658CF39E0A4918"
+					type: "item"
+					item: {
+						id: "hammers:diamond_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "411BC8A2E7515626"
+					type: "item"
+					item: {
+						id: "hammers:netherite_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "63E60556F5CF7A12"
+					type: "item"
+					item: {
+						id: "hammers:enhanced_wooden_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "14FE92A27B36D730"
+					type: "item"
+					item: {
+						id: "hammers:enhanced_stone_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3058989772E1FE9A"
+					type: "item"
+					item: {
+						id: "hammers:enhanced_iron_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "719A72058D6E7D27"
+					type: "item"
+					item: {
+						id: "hammers:enhanced_golden_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "471B315F8EA15CA9"
+					type: "item"
+					item: {
+						id: "hammers:enhanced_diamond_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "11ACC70C71F2DE51"
+					type: "item"
+					item: {
+						id: "hammers:enhanced_netherite_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
 }

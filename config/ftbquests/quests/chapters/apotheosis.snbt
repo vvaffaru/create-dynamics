@@ -6,5 +6,33 @@
 	title: "Apotheosis"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [{
+		title: "Exaltation to divine"
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Voxel based divinization"
+		description: [
+			"Apotheosis is a content mod that allows you to become stronger than ever before, while trying to stay true to vanilla mechanics at heart. Every feature is carefully put together to feel cohesive and complete."
+			""
+			"For detailed information, refer to the in-game guidebook, the Chronicle of Shadows.  You can create one with a book and a gold ingot. Some modpacks may change or alter content, and content that is disabled will not be visible in the book.  Alongside JEI, every bit of information is available in-game."
+			""
+			"Also see the CurseForge mod page for more information."
+		]
+		dependencies: ["6B959CC0C54B4BFE"]
+		hide: true
+		size: 2.0d
+		id: "57AB7B4A2E04191C"
+		tasks: [{
+			id: "36799A4A4D06D825"
+			type: "item"
+			item: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "apotheosis:apoth_chronicle"
+				}
+			}
+			match_nbt: true
+		}]
+	}]
 }

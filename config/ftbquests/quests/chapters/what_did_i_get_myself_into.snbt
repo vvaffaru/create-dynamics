@@ -151,22 +151,50 @@
 			}]
 		}
 		{
-			title: "Kitchen Sink"
+			title: "Misc Mods"
 			icon: "cookingforblockheads:sink"
 			x: -0.5d
 			y: 2.0d
 			shape: "diamond"
-			description: ["Not just an infinite water source. Highlighted here are a bunch of useful mods that are worth checking out. If the main mods don't have what you need, a dive into this section might be what you're looking for."]
+			subtitle: "The Old Kitchen Sink"
+			description: ["Not just an infinite water source. Completing this quest unlocks a new section in the book highlighting a bunch of useful mods that are worth checking out. If the main mods don't have what you need, a dive into this section might be what you're looking for."]
 			dependencies: ["15EDA0CD3B28ED7B"]
 			size: 1.5d
 			id: "6B959CC0C54B4BFE"
 			tasks: [{
-				id: "323D97D996F8D439"
-				type: "item"
-				item: "cookingforblockheads:sink"
+				id: "51BA5296783FAE3D"
+				type: "checkmark"
 			}]
 			rewards: [{
 				id: "277F91F1F1F3A7E7"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 6323519157276009505L
+			}]
+		}
+		{
+			icon: "supplementaries:hanging_sign_dark_oak"
+			x: -3.0d
+			y: 4.0d
+			subtitle: "THANK YOU"
+			description: [
+				"To everyone who created the mods that went into this pack. To everyone who helped troubleshoot issues. To everyone who contributed to development."
+				""
+				"You have my deepest thanks for all the hard work everyone has done to make modded Minecraft, and this pack, what it is today."
+				""
+				"Much of the information and descriptive text in this quest book was taken directly from the CurseForge mod pages and github Wikis."
+				""
+				"The intent to include it in-game is to make it so players don't have to alt-tab out of Minecraft for information as frequently."
+			]
+			size: 1.5d
+			id: "3B08C98C54D32E71"
+			tasks: [{
+				id: "1DE6761CE6C1C279"
+				type: "checkmark"
+				title: "Credits"
+			}]
+			rewards: [{
+				id: "61B1542ECA101ED0"
 				type: "random"
 				exclude_from_claim_all: true
 				table_id: 6323519157276009505L

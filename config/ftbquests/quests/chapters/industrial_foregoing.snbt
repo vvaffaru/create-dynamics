@@ -6,5 +6,33 @@
 	title: "Industrial Foregoing"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [{
+		title: "Industrial Foregoing"
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Machines for everything"
+		description: [
+			"Industrial Foregoing is a mod that allows you to automate most of minecraft's functions."
+			""
+			"Whatever the main two pack mods can't do, it's more than likely this mod can."
+			""
+			"To start with Industrial Foregoing you need to collect latex using a Tree Fluid Extractor and placing it in front of a log, then use a Latex Processing Unit with some water and power to make tiny piles of rubber. Read the manual for more info."
+		]
+		dependencies: ["6B959CC0C54B4BFE"]
+		hide: false
+		size: 2.0d
+		id: "4F90CBE53BA06EBA"
+		tasks: [{
+			id: "4EC740FB3F63BA30"
+			type: "item"
+			item: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "industrialforegoing:industrial_foregoing"
+				}
+			}
+			match_nbt: true
+		}]
+	}]
 }

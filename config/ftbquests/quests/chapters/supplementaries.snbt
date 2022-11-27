@@ -6,5 +6,28 @@
 	title: "Supplementaries"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [{
+		title: "Supplementaries"
+		x: 0.0d
+		y: 0.0d
+		subtitle: "This mod is kind of a big deal"
+		description: [
+			"Supplementaries is a highly configurable Forge mod focused on adding valuable content which fills the gaps vanilla has. Its features are tailored to be functional, aesthetically viable, and complementary to preexisting content and provide many new ways to enhance your Vanilla+ experience."
+			""
+			"https://youtu.be/avG7OTcsJA0"
+			""
+			"The github Wiki for this mod is well documented and worth taking a look if you want to know more about all the features present."
+			""
+			"https://github.com/MehVahdJukaar/Supplementaries/"
+		]
+		dependencies: ["6B959CC0C54B4BFE"]
+		hide: true
+		size: 2.0d
+		id: "63BE60B28DB7D5AC"
+		tasks: [{
+			id: "014D4D551D8B3D0B"
+			type: "item"
+			item: "supplementaries:globe"
+		}]
+	}]
 }

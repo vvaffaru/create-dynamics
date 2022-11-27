@@ -1,0 +1,707 @@
+{
+	id: "151C5363097B9F59"
+	group: "29701DF1EC6EE2E7"
+	order_index: 11
+	filename: "the_old_kitchen_sink"
+	title: "The Old Kitchen Sink"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Old Kitchen Sink"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Some Not-So-Random Mods"
+			description: ["In addition to all the QoL mods in the pack, these mods are included to help fill any gaps the main mods leave. There are a few for that are for aesthetic/decorative purposes only, but most of them are included for specific functions to expand the capabilities of your creations."]
+			dependencies: ["6B959CC0C54B4BFE"]
+			hide: true
+			size: 2.0d
+			id: "75B649EF5C8268DF"
+			tasks: [{
+				id: "392177EA8FCECA38"
+				type: "item"
+				item: "cookingforblockheads:sink"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.5d
+			subtitle: "Itsy bitsy"
+			description: ["The most basic of CM's. If you don't need a real big setup, this is perfect for a simple design that still needs to fit in a small place. Size is 3x3x3"]
+			dependencies: ["43441B5DD402A77D"]
+			id: "10454340CA033A48"
+			tasks: [{
+				id: "263B851EBCDA2700"
+				type: "item"
+				item: "compactmachines:machine_tiny"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			subtitle: "Slightly bigger"
+			description: ["The use case for a CM of this size is somewhat limited, but if it's all you have resources for, take advantage of as much size as you can. Size is 5x5x5"]
+			dependencies: ["10454340CA033A48"]
+			id: "5F4D8F69CC2D028B"
+			tasks: [{
+				id: "683ACB0F09DEC111"
+				type: "item"
+				item: "compactmachines:machine_small"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.5d
+			subtitle: "Your average machine size"
+			description: ["This machine will allow for more spacial utilization. Size is 7x7x7"]
+			dependencies: ["5F4D8F69CC2D028B"]
+			id: "30C21AC7A4CFC2D0"
+			tasks: [{
+				id: "553BD96EB0A5F456"
+				type: "item"
+				item: "compactmachines:machine_normal"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -6.0d
+			subtitle: "Bigger than average"
+			description: ["It's larger than normal, smaller than giant. Size is 9x9x9"]
+			dependencies: ["30C21AC7A4CFC2D0"]
+			id: "72664D64A4092AB3"
+			tasks: [{
+				id: "4007319999682F08"
+				type: "item"
+				item: "compactmachines:machine_large"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -7.5d
+			subtitle: "Nearly the biggest"
+			description: ["If you are looking for a larger space than just large, giant is for you. Size is 11x11x11"]
+			dependencies: ["72664D64A4092AB3"]
+			id: "3B1F2046DBD12224"
+			tasks: [{
+				id: "77705EE0A0D59C35"
+				type: "item"
+				item: "compactmachines:machine_giant"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -9.0d
+			subtitle: "M A X I M U M"
+			description: ["For those machines that need all the space you can muster. Size is 13x13x13"]
+			dependencies: ["3B1F2046DBD12224"]
+			id: "71C8E94F2446291D"
+			tasks: [{
+				id: "6ACE6099D260B9A8"
+				type: "item"
+				item: "compactmachines:machine_maximum"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Some sort of quantum magic"
+			description: [
+				"Tunnels provide a link from inside the compact machine dimension to the overworld, and vice versa."
+				""
+				"They work by placing a tunnel somewhere inside your compact machine. The personal shrinking device is then used by right clicking the tunnel to change the block face that connects the overworld to the inside of the tunnel."
+				""
+				"The direction of flow through the tunnel depends on the blocks (cables, pipes, etc.) connected on both sides."
+			]
+			dependencies: ["43441B5DD402A77D"]
+			id: "7D95717C70D02F8F"
+			tasks: [{
+				id: "251C719180C8466B"
+				type: "item"
+				item: {
+						id: "compactmachines:tunnel"
+						Count: 1b
+						tag: {
+							definition: {
+								id: "compactmachines:energy"
+							}
+						}
+					}
+				}
+				{
+					id: "116F4EAC0184E2CC"
+					type: "item"
+					item: {
+						id: "compactmachines:tunnel"
+						Count: 1b
+						tag: {
+							definition: {
+								id: "compactmachines:fluid"
+							}
+						}
+					}
+				}
+				{
+					id: "03D526A27444E94A"
+					type: "item"
+					item: {
+						id: "compactmachines:tunnel"
+						Count: 1b
+						tag: {
+							definition: {
+								id: "compactmachines:item"
+							}
+						}
+					}
+				}
+				{
+			title: "Vacuum Chest"
+			icon: "resistantvacuumchest:vacuum_chest"
+			x: -9.5d
+			y: 3.0d
+			subtitle: "No more dropped item spam"
+			description: ["Use this to collect items in a configurable radius and deposit into an inventory below."]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "3C638D789CFD4945"
+			tasks: [{
+				id: "31CA0E61FA758011"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Travel Anchors"
+			icon: "travelanchors:travel_anchor"
+			x: -8.0d
+			y: 3.0d
+			subtitle: "Standalone EnderIO style travel anchors"
+			description: [
+				"Features a travel anchor, travel staff and two new enchantments. Teleports the player by aiming at the desired anchor point and shift + right-clicking."
+				""
+				"Mods available:"
+				"- Teleportation: allows you to teleport like with the travel staff"
+				"- Range I-III: increases the max range you can teleport"
+			]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "3E98B5664C1A3C85"
+			tasks: [{
+				id: "2881369F00B86312"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Trash Cans"
+			icon: "trashcans:item_trash_can"
+			x: -6.5d
+			y: 3.0d
+			subtitle: "This is a legitimate waste management operation"
+			description: ["Check our tax records if you think otherwise. "]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "3839F55948A33B9A"
+			tasks: [{
+				id: "135EC0ABA22DF1ED"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Trading post"
+			icon: "tradingpost:trading_post"
+			x: -5.0d
+			y: 3.0d
+			subtitle: "A man stands before you looking to trade"
+			description: ["Adds one simple block, which when used allows you to trade with all villagers in a configurable area at once. The table looks really fancy and includes a neat animation!"]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "18DF2DC18F524717"
+			tasks: [{
+				id: "0DF4F627939F7B00"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Time in a Bottle"
+			icon: {
+				id: "tiab:time_in_a_bottle"
+				Count: 1b
+				tag: { }
+			}
+			x: -3.5d
+			y: 3.0d
+			subtitle: "Save every day until eternity passes away"
+			description: ["This item allows you to accelerate the rate at which blocks tick. It passively collects time while in your inventory which you can consume by right clicking a block with it. The first click requires 30 Seconds, the second 60, the third 120 the fourth 240 and the fifth 480. The speed at which the block ticks doubles with each click. The effect lasts 30 seconds."]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "6292C276D4F579CD"
+			tasks: [{
+				id: "3A10B0C35AD71736"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Simply Light"
+			icon: "simplylight:illuminant_slab"
+			x: -17.0d
+			y: 1.5d
+			subtitle: "a lighting mod with a simplistic design"
+			description: [
+				"Modern look and feel with an architecture view in mind"
+				""
+				"All lamps are simple blocks with no tile entities or particles involved."
+				""
+				"The benefits include causing little strain on performance compared to using a large number of torches."
+				""
+				"Many shapes to choose from. Lamps can be waterlogged."
+			]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "3E386E328601566A"
+			tasks: [{
+				id: "1A16043E5D0BB19A"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Simply Backpacks"
+			icon: {
+				id: "simplybackpacks:rarebackpack"
+				Count: 1b
+				tag: { }
+			}
+			x: -15.5d
+			y: 1.5d
+			subtitle: "A simple tiered backpack mod, for your item storage needs"
+			description: [
+				"Current Features:"
+				"- Openable via hotkey"
+				"- Hotkey toggleable item auto-pickup with whitelist/blacklist support"
+				"- Upgradeable via crafting"
+				"- Can supply items to Building Gadgets when not in bauble slot"
+			]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "66154D7869401A5E"
+			tasks: [{
+				id: "6AFC6C746D4EC52D"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Re-Chiseled"
+			icon: "rechiseled:chisel"
+			x: -14.0d
+			y: 1.5d
+			subtitle: "But there's a stone cutter now... Yea yea yea..."
+			description: [
+				"Need to change a block texture while you're out building and don't want to run back inside to the stone cutter?"
+				""
+				"Run out of building blocks and need to quickly chisel some more?"
+				""
+				"At this point in modded Minecraft I think we all know what the chisel does. This one isn't fancy in any way, except that it doesn't have durability."
+			]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "4B1A39C797A3236B"
+			tasks: [{
+				id: "3C6445E4E741ECFB"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Portable Tables"
+			icon: "portable_tables:portable_crafting_table"
+			x: -12.5d
+			y: 1.5d
+			subtitle: "Saving you time in the long run"
+			description: [
+				"The item this mod adds is a very simple, yet powerful tool to have in your inventory at all times. (At least until you have a wireless crafting grid of some sorts.)"
+				""
+				"As the name implies, it's a portable crafting table. No need to place one while you're not near the closest table or away from your base."
+			]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "629639F1C1345EC0"
+			tasks: [{
+				id: "6BEFB151F91F36D6"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Pig Pen Cipher"
+			icon: "rftoolsutility:tablet_screen"
+			x: -11.0d
+			y: 1.5d
+			subtitle: "-------FORPLACEMENTONLY-------- figure out how to use ppc"
+			description: ["-------FORPLACEMENTONLY-------- figure out how to use ppc"]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "59882A7C26D8271D"
+			tasks: [{
+				id: "74CFF3106AB85E6E"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Paragliders"
+			icon: "paraglider:deku_leaf"
+			x: -9.5d
+			y: 1.5d
+			subtitle: "BotW spice in your Minecraft life"
+			description: [
+				"This mod adds some items inspired by The Legend of Zelda: Breath of the Wild."
+				""
+				"The main intent on adding it to the pack was to include the paragliders to make early game exploration a little easier."
+				""
+				"It's also got a heart container and stamina vessel system. Obtaining these two items is said to involve talking to a peculiar statue of some foreign goddess. Keep your eyes open in villages."
+				""
+				"There's rumor about another type of statue with a pair of horns. He has suspicious bargains, manipulating your life force in exchange for money. Seek him in villages, underground, and the Nether."
+			]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "08DB3A60F8F9BA00"
+			tasks: [{
+				id: "0778B4620082B8AC"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "OpenBlocks Elevator"
+			icon: "elevatorid:elevator_light_blue"
+			x: -8.0d
+			y: 1.5d
+			subtitle: "Traverse the vertical and the horizontal"
+			description: [
+				"This mod is pretty common to find in most major modpacks. It's easy to use and is balanced so that you're not spamming a bunch of them when you first start."
+				""
+				"You can have any blocks between them, aside from the two above to stand on. As long as they are on the same X or Z coordinate, place two down with some distance between them. Sneak while standing on one, and you'll go down, jump and you'll go up."
+				""
+				"Camouflage elevators by simply right clicking with any block."
+			]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "5CF70CDFDDC03B75"
+			tasks: [{
+				id: "7FE7EA8A40164ECB"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Mob Grinding Utils"
+			icon: "mob_grinding_utils:saw"
+			x: -6.5d
+			y: 1.5d
+			subtitle: "This is perfectly normal right?"
+			description: [
+				"The items in this mod are all designed for a single purpose. Farming mobs."
+				""
+				"There are many ways to build your farm, and a lot of parts you can utilize to make your it do what you want."
+			]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "12BA80FC1531AAAE"
+			tasks: [{
+				id: "53EDB5406CE5EB5C"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Mob Catcher"
+			icon: "mob_catcher:diamond_mob_catcher"
+			x: -5.0d
+			y: 1.5d
+			subtitle: "Catch and release"
+			description: [
+				"The diamond catcher works on passive mobs."
+				"The netherite catcher works on hostile mobs."
+				""
+				"Does not work on boss mobs like the Dragon, Wither, etc."
+			]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "6520D62812A3C924"
+			tasks: [{
+				id: "79460D8C65128663"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Iron Furnaces"
+			icon: "ironfurnaces:iron_furnace"
+			x: -3.5d
+			y: 1.5d
+			subtitle: "cpw's inspired"
+			description: [
+				"Adds a few different tiers of furnaces."
+				""
+				"Push smelting to the absolute limit with extraordinary smelting speed, reconfigurable sides, augments for smoking and blasting and much more."
+				""
+				"See github Wiki for more information."
+			]
+			hide_dependency_lines: true
+ 			dependencies: ["75B649EF5C8268DF"]
+ 			id: "3F44F463644CFF26"
+			tasks: [{
+				id: "6A100CFBBB82901A"
+				type: "checkmark"
+			}]
+		}
+		
+				{
+					title: "GraveStone Mod"
+					icon: "graveyard:cobblestone_gravestone"
+					x: -17.0d
+					y: 0.0d
+					subtitle: "Don't lose your sh-tuff"
+					description: [
+						"By now this is a pretty common feature in a modpack. This one doesn't sport any fancy features or make a bunch of changes to gameplay."
+						""
+						"It just works."
+						""
+						"When you die you receive a note with a list of all the items you died with. A grave is created at the site of your death which contains all your items to retrieve at your convenience."
+					]
+					hide_dependency_lines: true
+					dependencies: ["75B649EF5C8268DF"]
+					id: "693B2BE83505999E"
+					tasks: [{
+						id: "0F3CBB3465F27C29"
+						type: "checkmark"
+					}]
+				}
+				{
+					title: "GoProne"
+					icon: "minecraft:oak_trapdoor"
+					x: -15.5d
+					y: 0.0d
+					subtitle: "Snake? SNAKE?! SNAKE!!!"
+					description: [
+						"Do you need to lay down and go prone?"
+						""
+						"Now you can assign a hotkey to do so. No more need to set up a trap door and break it at just the right time."
+					]
+					hide_dependency_lines: true
+					dependencies: ["75B649EF5C8268DF"]
+					id: "33AD0E419194050D"
+					tasks: [{
+						id: "2A5D32143CB36A1C"
+						type: "checkmark"
+					}]
+				}
+				{
+					title: "Farmer's Delight"
+					icon: "farmersdelight:roast_chicken_block"
+					x: -14.0d
+					y: 0.0d
+					subtitle: ""Gently" expanding on cooking and farming"
+					description: [
+						"Using a simple cooking system and a few familiar ingredients, you'll be able to prepare a wide variety of hearty meals: from sandwiches to salads and stews, from beautiful desserts to mouth-watering feasts, no ingredient will be left behind in your kitchen!"
+						""
+						"It also introduces a rich set of utilities: a way to improve the very soil your crops grow in, a brand new kind of tool to scavenge resources with, cute decorations for your builds, and many blocks and items to help you on your adventure!"
+						""
+						"There are in-game advancements already premade if you press the L key (default), as well as a getting started guide on the mod's github Wiki page."
+					]
+					hide_dependency_lines: true
+					dependencies: ["75B649EF5C8268DF"]
+					id: "057F8AB25256786F"
+					tasks: [{
+						id: "6DED1BE2C746D6B4"
+						type: "checkmark"
+					}]
+				}
+				{
+					title: "Nature's Compass"
+					icon: {
+						id: "naturescompass:naturescompass"
+						Count: 1b
+						tag: { }
+					}
+					x: -12.5d
+					y: 0.0d
+					subtitle: "Looking for a specific biome?"
+					description: [
+						"Using this mod is one of the most helpful exploration tools for trying to find biomes."
+						""
+						"By right clicking when it's in your hand, you can search for any biome in the pack."
+						""
+						"Once you have one selected from the GUI, holding and looking in the direction that the compass needle is pointing will get you headed on your way."
+					]
+					hide_dependency_lines: true
+					dependencies: ["75B649EF5C8268DF"]
+					id: "33ACAFDDDDFDEC9F"
+					tasks: [{
+						id: "08D82A56B7394C1F"
+						type: "checkmark"
+					}]
+				}
+				{
+					title: "Explorer's Compass"
+					icon: {
+						id: "explorerscompass:explorerscompass"
+						Count: 1b
+						tag: { }
+					}
+					x: -11.0d
+					y: 0.0d
+					subtitle: "Sometimes those who wander are actually lost"
+					description: [
+						"This mod tries to help with that by giving you a compass that points to the structures that are in the world."
+						""
+						"It works like the Nature's Compass. You right click to choose a structure, and the compass needle will point in the direction of the structure you selected."
+					]
+					hide_dependency_lines: true
+					dependencies: ["75B649EF5C8268DF"]
+					id: "7B95BE9D6DBCC0EB"
+					tasks: [{
+						id: "052C72B09FAE1239"
+						type: "checkmark"
+					}]
+				}
+				{
+					title: "Engineer's Decor"
+					icon: "engineersdecor:sign_decor"
+					x: -9.5d
+					y: 0.0d
+					subtitle: "Industrial age decorum"
+					description: [
+						"This pack has a lot of factory vibe going on. Why not make them look the part?"
+						""
+						"Hopefully these dynamic additions will inspire you to get that creative spark."
+					]
+					hide_dependency_lines: true
+					dependencies: ["75B649EF5C8268DF"]
+					id: "5C3BA26DA21CCDF6"
+					tasks: [{
+						id: "48BBFAEE28875B18"
+						type: "checkmark"
+					}]
+				}
+				{
+					title: "Ender Crop"
+					icon: "endercrop:ender_seeds"
+					x: -8.0d
+					y: 0.0d
+					subtitle: "Non-violent ender pearl source?"
+					description: [
+						"Are you tired of killing thousands of innocent end people to fulfil your pearly needs?"
+						""
+						"Grow them instead!"
+					]
+					hide_dependency_lines: true
+					dependencies: ["75B649EF5C8268DF"]
+					id: "32CFF05795FD243F"
+					tasks: [{
+						id: "1CDAC58332F0B9C2"
+						type: "checkmark"
+					}]
+				}
+				{
+					title: "Dank Storage"
+					icon: "dankstorage:dank_7"
+					x: -6.5d
+					y: 0.0d
+					subtitle: "It's back baby!"
+					description: [
+						"This mod or one like it has been missing from a number of packs I've played recently so I decided to fix that."
+						""
+						"For those not familiar with the mod/concept. It's a container with two modes, bag and construct. Holding the bag and right clicking while in bag mode lets you configure what items the dank collects. Right clicking while in construct mode uses the blocks you collect and places them into the world. Holding sneak + mouse-wheel to cycles through which block type is to be placed."
+					]
+					hide_dependency_lines: true
+					dependencies: ["75B649EF5C8268DF"]
+					id: "384677F9F7C1E81C"
+					tasks: [{
+						id: "75A63F77594FF058"
+						type: "checkmark"
+					}]
+				}
+				{
+					title: "Cooking for Blockheads"
+					icon: "cookingforblockheads:cooking_table"
+					x: -5.0d
+					y: 0.0d
+					subtitle: "Gordon Ramsay would be proud"
+					description: ["This mod allows you to make some pretty cool kitchens, while also adding to the immersive experience and making things a little more flavorful."]
+					hide_dependency_lines: true
+					dependencies: ["75B649EF5C8268DF"]
+					id: "747FE79F892A01E6"
+					tasks: [{
+						id: "4CCB1DA28D792EB6"
+						type: "checkmark"
+					}]
+				}
+				{
+					title: "Compact Machines"
+					icon: "compactmachines:personal_shrinking_device"
+					x: -3.5d
+					y: 0.0d
+					subtitle: "Fit complex processes in a block"
+					description: [
+						"Have you ever wanted to do something complicated, but need to keep your design footprint small, or don't have much room to work with?"
+						""
+						"Compact Machines creates a tiny pocket dimension you can put just about anything into as long as it fits in the machine tier you craft."
+						""
+						"They come in different sizes so you can pick and choose the one you've got enough resources for, or access to."
+						""
+						"The process for making these has been simplified greatly. They can now be crafted in a 3x3 grid. No more multi-block setup required."
+					]
+					hide_dependency_lines: true
+					dependencies: ["75B649EF5C8268DF"]
+					id: "43441B5DD402A77D"
+					tasks: [{
+						id: "393ADBE26740951C"
+						type: "item"
+						item: "compactmachines:personal_shrinking_device"
+					}]
+					rewards: [{
+						id: "5EB3208CF5DBC817"
+						type: "item"
+						item: "compactmachines:wall"
+						count: 8
+					}]
+				}
+
+			]
+		rewards: [
+			{
+				id: "10898BBC5CD14598"
+				type: "item"
+				item: {
+					id: "compactmachines:tunnel"
+					Count: 1b
+					tag: {
+						definition: {
+							id: "compactmachines:energy"
+						}
+					}
+				}
+				count: 16
+			}
+			{
+				id: "2E123F411D2D312D"
+				type: "item"
+				item: {
+					id: "compactmachines:tunnel"
+					Count: 1b
+					tag: {
+						definition: {
+							id: "compactmachines:fluid"
+						}
+					}
+				}
+				count: 16
+			}
+			{
+				id: "5BDF6956BE61928F"
+				type: "item"
+				item: {
+					id: "compactmachines:tunnel"
+					Count: 1b
+					tag: {
+						definition: {
+							id: "compactmachines:item"
+						}
+					}
+				}
+				count: 16
+			}
+		]
+	]
+}
