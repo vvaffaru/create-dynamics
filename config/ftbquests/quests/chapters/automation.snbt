@@ -6,5 +6,313 @@
 	title: "Automate"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "Automation"
+			icon: "create:mechanical_arm"
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["3C62F472F5D758B0"]
+			size: 3.0d
+			id: "5183C05BE6F56C0D"
+			tasks: [{
+				id: "15B8E6C5F2C243DD"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+		}
+		{
+			title: "Applied Energistics 2"
+			icon: "ae2:singularity"
+			x: -4.0d
+			y: -4.0d
+			dependencies: ["5183C05BE6F56C0D"]
+			size: 2.0d
+			id: "4DD0BA1396B2D9BB"
+			tasks: [{
+				id: "06ACBD729860DB86"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Create"
+			icon: "create:large_cogwheel"
+			x: 4.0d
+			y: 4.0d
+			subtitle: "Gear ratios are your best friend"
+			description: ["See the main chapter \"Create\" for information about all this mod has to offer."]
+			dependencies: ["5183C05BE6F56C0D"]
+			size: 2.0d
+			id: "4044EA051A6CBB09"
+			tasks: [{
+				id: "72ACF06AC953B3BB"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Integrated Dynamics"
+			icon: "integrateddynamics:on_the_dynamics_of_integration"
+			x: -4.0d
+			y: 4.0d
+			subtitle: "If Create can't do it, ID most likely can."
+			description: ["See the main chapter \"Integrated Dynamics\" for information about all this mod has to offer."]
+			dependencies: ["5183C05BE6F56C0D"]
+			size: 2.0d
+			id: "0BE0B71289036BE3"
+			tasks: [{
+				id: "46D21710CA111917"
+				type: "item"
+				item: "integrateddynamics:on_the_dynamics_of_integration"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			subtitle: "Pick it up, pick it up, pick it up"
+			description: ["As the name implies, these collect items in an area and then places them into an inventory below the collector."]
+			dependencies: ["5183C05BE6F56C0D"]
+			size: 2.0d
+			id: "704463C52EA78FD4"
+			tasks: [
+				{
+					id: "260CBDCB99D8922F"
+					type: "item"
+					item: "itemcollectors:basic_collector"
+				}
+				{
+					id: "354B5D1B9B7D89C1"
+					type: "item"
+					item: "itemcollectors:advanced_collector"
+				}
+			]
+		}
+		{
+			title: "Functional Storage"
+			icon: {
+				id: "functionalstorage:configuration_tool"
+				Count: 1b
+				tag: {
+					Mode: "LOCKING"
+				}
+			}
+			x: 4.0d
+			y: -4.0d
+			subtitle: "Keys to the castle"
+			description: [
+				"The key system has been overhauled in this mod."
+				""
+				"Instead of a bunch of different keys to perform a few tasks, they've been consolodated into two tools."
+				""
+				"Functions of the configuration tool: lock/unlock, show/hide quantities, show/hide item renders, and finally show/hide upgrade renders."
+				""
+				"Hover mouse over linking tool for in-depth description."
+			]
+			dependencies: ["5183C05BE6F56C0D"]
+			size: 2.0d
+			id: "3326EBDF99B75051"
+			tasks: [
+				{
+					id: "4566CAEB64D0AD70"
+					type: "item"
+					item: {
+						id: "functionalstorage:configuration_tool"
+						Count: 1b
+						tag: {
+							Mode: "LOCKING"
+						}
+					}
+				}
+				{
+					id: "6874E618664CAA2A"
+					type: "item"
+					item: {
+						id: "functionalstorage:linking_tool"
+						Count: 1b
+						tag: {
+							Action: "ADD"
+							Mode: "SINGLE"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Laser I/O"
+			icon: "laserio:laser_node"
+			x: 0.0d
+			y: -5.0d
+			subtitle: "Direwolf20's at it again"
+			description: [
+				"This mod is based. "
+				""
+				"The configuration options are very robust, and enable players to create some quite useful logistics."
+				""
+				"https://youtu.be/o22Pq9NmTSY"
+			]
+			dependencies: ["5183C05BE6F56C0D"]
+			size: 2.0d
+			id: "740A08B26F238B9E"
+			tasks: [{
+				id: "56BC14F042F3D8F0"
+				type: "item"
+				item: "laserio:laser_node"
+			}]
+		}
+		{
+			title: "Wooden Hopper"
+			icon: "woodenhopper:wooden_hopper"
+			x: -4.0d
+			y: 0.0d
+			subtitle: "First hopper"
+			description: ["This is probably going to be one of the first parts of automation you add. They're cheap to make, but don't really have the greatest flow speed. It's also recommended to use mod options instead of tons of hoppers because spamming too many causes lag."]
+			dependencies: ["5183C05BE6F56C0D"]
+			size: 2.0d
+			id: "43B7133CAED031A0"
+			tasks: [{
+				id: "268150EE77EFB56A"
+				type: "item"
+				item: "woodenhopper:wooden_hopper"
+			}]
+		}
+		{
+			title: "Xnet"
+			icon: "xnet:controller"
+			x: 0.0d
+			y: 5.0d
+			dependencies: ["5183C05BE6F56C0D"]
+			size: 2.0d
+			id: "06F783D705B23C3F"
+			tasks: [{
+				id: "1642C4CB3AB7C503"
+				type: "item"
+				item: "xnet:controller"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -5.5d
+			subtitle: "Cracking the digital whip"
+			description: ["Connects multiple drawers together in a unique way by using a linking tool."]
+			dependencies: ["3326EBDF99B75051"]
+			id: "14F39308B553B0AC"
+			tasks: [{
+				id: "33C9BB760A70BC49"
+				type: "item"
+				item: "functionalstorage:storage_controller"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -6.5d
+			subtitle: "Yoink"
+			description: ["Take from the target and put it in the drawer."]
+			dependencies: ["3326EBDF99B75051"]
+			id: "0A3DC0A72D11AFDA"
+			tasks: [{
+				id: "7550E973F476A0E0"
+				type: "item"
+				item: {
+					id: "functionalstorage:puller_upgrade"
+					Count: 1b
+					tag: {
+						Direction: "down"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: -5.5d
+			subtitle: "Yeet"
+			description: ["Remove from the drawer and put into the target."]
+			dependencies: ["3326EBDF99B75051"]
+			id: "1E0A3FDB1319754A"
+			tasks: [{
+				id: "1D4B0E65E02316B7"
+				type: "item"
+				item: {
+					id: "functionalstorage:pusher_upgrade"
+					Count: 1b
+					tag: {
+						Direction: "down"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: -7.5d
+			subtitle: "A utility upgrade"
+			description: ["Gives the drawer redstone functionality."]
+			dependencies: ["3326EBDF99B75051"]
+			id: "25EFBD4EFD8F5858"
+			tasks: [{
+				id: "666242F0AE280C49"
+				type: "item"
+				item: {
+					id: "functionalstorage:redstone_upgrade"
+					Count: 1b
+					tag: {
+						Slot: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.5d
+			y: -8.5d
+			subtitle: "Now this is what I'm talkin' about"
+			description: [
+				"After all this time using storage drawers mods, someone finally added this very useful drawer."
+				""
+				"This one block will most likely be a cornerstone in many automation setups."
+			]
+			dependencies: ["3326EBDF99B75051"]
+			id: "1B62DBC04F27E47B"
+			tasks: [{
+				id: "4B3772FC9FED1D6E"
+				type: "item"
+				item: "functionalstorage:ender_drawer"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.5d
+			subtitle: "Eliminate some tedium"
+			description: ["Easily convert between block to item variants, and vice versa."]
+			dependencies: ["3326EBDF99B75051"]
+			id: "1D20A14A057E5B11"
+			tasks: [{
+				id: "05E5E856308657F9"
+				type: "item"
+				item: "functionalstorage:compacting_drawer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.5d
+			subtitle: "(FPO)"
+			description: ["Find info for this block."]
+			dependencies: ["1180C5B002A94799"]
+			id: "6F359F96304967D6"
+			tasks: [{
+				id: "42962412DFF06C66"
+				type: "item"
+				item: "laserio:laser_connector"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.0d
+			subtitle: "Configure electromagnetic radiation beams"
+			description: ["This wrench will help you to set all the I/O for this mod."]
+			dependencies: ["740A08B26F238B9E"]
+			id: "1180C5B002A94799"
+			tasks: [{
+				id: "3B0AF4A3559C9F70"
+				type: "item"
+				item: "laserio:laser_wrench"
+			}]
+		}
+	]
 }

@@ -7,22 +7,77 @@
 	icon: "cookingforblockheads:oven"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		icon: "cookingforblockheads:oven"
-		x: 0.0d
-		y: 0.0d
-		subtitle: "In order to live, one must eat"
-		description: [
-			"There are a couple mods in this pack dedicated to food. Some others may add little bits here and there, but Cooking for Blockheads and Farmer's Delight are the main ones for now. More could potentially come later as they become available for this Minecraft/Forge version."
-			""
-			"See the Misc Mods section for more information about these two."
-		]
-		size: 2.0d
-		id: "39E09FE7FF10F65E"
-		tasks: [{
-			id: "46BCEECC537A2E4C"
-			type: "checkmark"
-			title: "Mmm... Food"
-		}]
-	}]
+	quests: [
+		{
+			icon: "cookingforblockheads:oven"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "In order to live, one must eat"
+			description: [
+				"There are a couple mods in this pack dedicated to food. Some others may add little bits here and there, but Cooking for Blockheads and Farmer's Delight are the main ones for now. More could potentially come later as they become available for this Minecraft/Forge version."
+				""
+				"See the Misc Mods section for more information about these two."
+			]
+			dependencies: ["3C62F472F5D758B0"]
+			size: 2.0d
+			id: "39E09FE7FF10F65E"
+			tasks: [{
+				id: "46BCEECC537A2E4C"
+				type: "checkmark"
+				title: "Mmm... Food"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -2.5d
+			dependencies: ["39E09FE7FF10F65E"]
+			id: "2CFE7A2D1769492E"
+			tasks: [
+				{
+					id: "6CF9E4E9B5B19A9B"
+					type: "item"
+					item: "cookingforblockheads:recipe_book"
+				}
+				{
+					id: "6ADFE7C8ACC54E45"
+					type: "item"
+					item: "cookingforblockheads:no_filter_edition"
+				}
+				{
+					id: "1B40EC378CEF0BF1"
+					type: "item"
+					item: "cookingforblockheads:crafting_book"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -2.5d
+			dependencies: [
+				"2CFE7A2D1769492E"
+				"39E09FE7FF10F65E"
+			]
+			id: "46865BF7FBC09A77"
+			tasks: [{
+				id: "1A8831AAB5C8BF20"
+				type: "item"
+				item: "farmersdelight:roast_chicken_block"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: [
+				"2CFE7A2D1769492E"
+				"46865BF7FBC09A77"
+				"39E09FE7FF10F65E"
+			]
+			id: "7BA660AF2D215689"
+			tasks: [{
+				id: "2CE025E8D5753A51"
+				type: "item"
+				item: "alexsmobs:cooked_lobster_tail"
+			}]
+		}
+	]
 }

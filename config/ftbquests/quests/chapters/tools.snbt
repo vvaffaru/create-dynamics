@@ -10,8 +10,11 @@
 		{
 			x: -3.0d
 			y: 6.5d
-			dependencies: ["39B4701C76BFAD96"]
+			subtitle: "Triple threat"
+			description: ["Combining an axe, pickaxe and shovel into a crafting grid with two sticks gives you a paxel. If you want a single tool that does (most) it all, this one is for you."]
+			dependencies: ["3C62F472F5D758B0"]
 			dependency_requirement: "one_completed"
+			size: 1.5d
 			id: "4E4130C2DE46162A"
 			tasks: [
 				{
@@ -109,375 +112,142 @@
 		}
 		{
 			x: -1.5d
-			y: 1.5d
+			y: 1.0d
+			subtitle: "See JEI for tool stats and enchants"
 			dependencies: ["38AF1D6D907C5CF3"]
 			id: "270846FC39A36627"
-			tasks: [
-				{
-					id: "406F3FFCE6556E1A"
-					type: "item"
-					item: {
-						id: "mbtools:iron_netherite_shovel"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "6A7346F387077185"
+				type: "item"
+				item: {
+					id: "mbtools:iron_netherite_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-				{
-					id: "210E2F5E26F7F03F"
-					type: "item"
-					item: {
-						id: "mbtools:iron_netherite_pickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "14B7CF41FE0A04CC"
-					type: "item"
-					item: {
-						id: "mbtools:iron_netherite_axe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "6A7346F387077185"
-					type: "item"
-					item: {
-						id: "mbtools:iron_netherite_hoe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			}]
 		}
 		{
 			x: -3.0d
 			y: 0.5d
+			subtitle: "See JEI for tool stats and enchants"
 			dependencies: ["38AF1D6D907C5CF3"]
 			id: "02ECF3C8917AEF8E"
-			tasks: [
-				{
-					id: "3BC5AC11DB78CD5A"
-					type: "item"
-					item: {
-						id: "mbtools:golden_netherite_shovel"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "4380CF0DB9C25EE1"
+				type: "item"
+				item: {
+					id: "mbtools:iron_netherite_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-				{
-					id: "165B942AFE0397BC"
-					type: "item"
-					item: {
-						id: "mbtools:golden_netherite_pickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "1B41787598ACA42C"
-					type: "item"
-					item: {
-						id: "mbtools:golden_netherite_axe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "34BAFE672404BE7E"
-					type: "item"
-					item: {
-						id: "mbtools:golden_netherite_hoe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			}]
 		}
 		{
 			x: -4.5d
-			y: 1.5d
+			y: 1.0d
+			subtitle: "See JEI for tool stats and enchants"
 			dependencies: ["38AF1D6D907C5CF3"]
 			id: "63AB11A3EF33198A"
-			tasks: [
-				{
-					id: "295DED24E8A28B7E"
-					type: "item"
-					item: {
-						id: "mbtools:diamond_netherite_shovel"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "6E80EA4EDC065687"
+				type: "item"
+				item: {
+					id: "mbtools:iron_netherite_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-				{
-					id: "55D91D83015B198A"
-					type: "item"
-					item: {
-						id: "mbtools:diamond_netherite_pickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "4D8B60770E315C22"
-					type: "item"
-					item: {
-						id: "mbtools:diamond_netherite_axe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "42E21E15A3838BCE"
-					type: "item"
-					item: {
-						id: "mbtools:diamond_netherite_hoe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			}]
 		}
 		{
-			x: -3.0d
-			y: -1.0d
+			x: -1.2261904761904745d
+			y: 1.9880952380952621d
+			subtitle: "See JEI for sword stats and enchants"
 			dependencies: ["38AF1D6D907C5CF3"]
 			dependency_requirement: "one_completed"
 			id: "23B0233AB910D725"
-			tasks: [
-				{
-					id: "0B7C4C12E6A3D2BC"
-					type: "item"
-					item: {
-						id: "mbtools:iron_netherite_sword"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "0B7C4C12E6A3D2BC"
+				type: "item"
+				item: {
+					id: "mbtools:iron_netherite_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-				{
-					id: "7610D454B03FE2BD"
-					type: "item"
-					item: {
-						id: "mbtools:golden_netherite_sword"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "35888A30C5D141EC"
-					type: "item"
-					item: {
-						id: "mbtools:diamond_netherite_sword"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			}]
 		}
 		{
-			x: -6.0d
-			y: 3.0d
-			dependencies: ["38AF1D6D907C5CF3"]
-			dependency_requirement: "one_completed"
-			id: "725919A49E2B6948"
-			tasks: [
-				{
-					id: "2DBC0D9F514E2A55"
-					type: "item"
-					item: {
-						id: "mbtools:iron_netherite_armor_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "42097C8C67493770"
-					type: "item"
-					item: {
-						id: "mbtools:golden_netherite_armor_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "40D90857F7E1CACB"
-					type: "item"
-					item: {
-						id: "mbtools:diamond_netherite_armor_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-		}
-		{
-			x: -6.0d
-			y: 4.5d
+			x: -7.0d
+			y: 4.0d
+			subtitle: "See JEI for armor stats and enchants"
 			dependencies: ["38AF1D6D907C5CF3"]
 			dependency_requirement: "one_completed"
 			id: "3C621388AAA67102"
-			tasks: [
-				{
-					id: "4709107E787745CB"
-					type: "item"
-					item: {
-						id: "mbtools:iron_netherite_armor_chestplate"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "4709107E787745CB"
+				type: "item"
+				item: {
+					id: "mbtools:iron_netherite_armor_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-				{
-					id: "26295AFBFE665F86"
-					type: "item"
-					item: {
-						id: "mbtools:golden_netherite_armor_chestplate"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "202C9E187E31EAAD"
-					type: "item"
-					item: {
-						id: "mbtools:diamond_netherite_armor_chestplate"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			}]
 		}
 		{
-			x: -7.5d
-			y: 4.5d
+			x: -8.0d
+			y: 4.0d
+			subtitle: "See JEI for armor stats and enchants"
 			dependencies: ["38AF1D6D907C5CF3"]
 			dependency_requirement: "one_completed"
 			id: "30B5C60A0CD9D8F5"
-			tasks: [
-				{
-					id: "1222B0BEC2EDED9D"
-					type: "item"
-					item: {
-						id: "mbtools:iron_netherite_armor_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "1222B0BEC2EDED9D"
+				type: "item"
+				item: {
+					id: "mbtools:iron_netherite_armor_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-				{
-					id: "08430A97B1699604"
-					type: "item"
-					item: {
-						id: "mbtools:golden_netherite_armor_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "24532A8190957C87"
-					type: "item"
-					item: {
-						id: "mbtools:diamond_netherite_armor_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			}]
 		}
 		{
-			x: -7.5d
-			y: 3.0d
+			x: -8.0d
+			y: 2.5d
+			subtitle: "See JEI for armor stats and enchants"
 			dependencies: ["38AF1D6D907C5CF3"]
 			dependency_requirement: "one_completed"
 			id: "24D528A723D8E560"
-			tasks: [
-				{
-					id: "62FC3FA489E84270"
-					type: "item"
-					item: {
-						id: "mbtools:iron_netherite_armor_leggings"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "62FC3FA489E84270"
+				type: "item"
+				item: {
+					id: "mbtools:iron_netherite_armor_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-				{
-					id: "22782C653ED891CC"
-					type: "item"
-					item: {
-						id: "mbtools:golden_netherite_armor_leggings"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "0AB26295D49EE807"
-					type: "item"
-					item: {
-						id: "mbtools:diamond_netherite_armor_leggings"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			}]
 		}
 		{
 			title: "Enderite"
-			x: 0.0d
+			x: 0.5d
 			y: 3.5d
+			subtitle: "Some of the strongest metal in the universe"
+			description: ["By combining some enderite scrap and ender steel in a crafting grid you can make enderite ingots."]
 			dependencies: ["78FC4F787CC350F4"]
+			hide: true
 			id: "237D7323C09F4945"
 			tasks: [
 				{
@@ -499,8 +269,9 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 2.0d
+			x: 1.7738095238095184d
+			y: 3.4642857142857366d
+			subtitle: "See JEI for sword stats and enchants"
 			dependencies: ["237D7323C09F4945"]
 			id: "1636872C5645AEFE"
 			tasks: [{
@@ -516,56 +287,22 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 3.5d
+			x: 1.0d
+			y: 2.0d
+			subtitle: "See JEI for tool stats and enchants"
 			dependencies: ["237D7323C09F4945"]
 			id: "58DFB5F64D15F9E2"
-			tasks: [
-				{
-					id: "7861439AC23C703F"
-					type: "item"
-					item: {
-						id: "mbtools:enderite_shovel"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "664C1902F35E7BA7"
+				type: "item"
+				item: {
+					id: "mbtools:enderite_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-				{
-					id: "664C1902F35E7BA7"
-					type: "item"
-					item: {
-						id: "mbtools:enderite_pickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "154F422A114CA912"
-					type: "item"
-					item: {
-						id: "mbtools:enderite_axe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "6E1F235B4A343E42"
-					type: "item"
-					item: {
-						id: "mbtools:enderite_hoe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			}]
 			rewards: [{
 				id: "5B44BBA1C7C47338"
 				type: "item"
@@ -573,69 +310,47 @@
 			}]
 		}
 		{
-			x: 1.5d
+			x: 1.0d
 			y: 5.0d
+			subtitle: "See JEI for armor stats and enchants"
 			dependencies: ["237D7323C09F4945"]
 			id: "2D6CE2B994899A50"
-			tasks: [
-				{
-					id: "04AFFFBE9A4D3DC8"
-					type: "item"
-					item: {
-						id: "mbtools:enderite_armor_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "04AFFFBE9A4D3DC8"
+				type: "item"
+				item: {
+					id: "mbtools:enderite_armor_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-				{
-					id: "3110D020AC6408E8"
-					type: "item"
-					item: {
-						id: "mbtools:enderite_armor_chestplate"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "3B2205EB04933CFE"
-					type: "item"
-					item: {
-						id: "mbtools:enderite_armor_leggings"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "2964A82346355C19"
-					type: "item"
-					item: {
-						id: "mbtools:enderite_armor_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			}]
 		}
 		{
-			x: 0.0d
-			y: 5.5d
+			x: -1.0d
+			y: 3.5d
 			subtitle: "Drops Ender Scrap"
-			description: ["Ore can be found in outer end islands above y30 and below y50."]
+			description: ["Enderite ore can be found in outer end islands above y30 and below y50."]
 			dependencies: ["39B4701C76BFAD96"]
 			id: "78FC4F787CC350F4"
-			tasks: [{
-				id: "3C9FA22880720EEA"
-				type: "item"
-				item: "mbtools:enderite_ore"
-			}]
+			tasks: [
+				{
+					id: "76DA2D6D2F892897"
+					type: "dimension"
+					title: "Visit The End"
+					dimension: "minecraft:the_end"
+				}
+				{
+					id: "26C77037722857FC"
+					type: "observation"
+					title: "Lay eyes on enderite"
+					icon: "mbtools:enderite_ore"
+					timer: 0L
+					observe_type: 0
+					to_observe: "mbtools:enderite_ore"
+				}
+			]
 		}
 		{
 			title: "More - Better Tools"
@@ -654,20 +369,24 @@
 				""
 				"Check the CurseForge mod page for more information."
 			]
+			hide_dependency_lines: true
+			dependencies: ["11A5F13C90826AA4"]
+			hide: true
 			size: 2.0d
 			id: "39B4701C76BFAD96"
 			tasks: [{
-				id: "42648344B9DA42C2"
-				type: "checkmark"
-				title: "More & Better Tools"
+				id: "30F9537929B2019A"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
 			}]
 		}
 		{
 			title: "Spades!"
-			x: -11.0d
-			y: 4.0d
+			x: -10.0d
+			y: 4.464285714285715d
 			subtitle: "Can you dig it?"
 			description: ["Affects a 3x3 area of things you can dig."]
+			dependencies: ["3C62F472F5D758B0"]
 			dependency_requirement: "one_completed"
 			size: 2.0d
 			id: "4151FEE38C87037E"
@@ -808,10 +527,11 @@
 		}
 		{
 			title: "Superior Hammers!"
-			x: -15.0d
-			y: 4.0d
+			x: -9.928571428571423d
+			y: 2.0d
 			subtitle: "Smashing!"
 			description: ["Mines a 3x3 area."]
+			dependencies: ["3C62F472F5D758B0"]
 			dependency_requirement: "one_completed"
 			size: 2.0d
 			id: "1550047FC8B2B9FF"
@@ -949,6 +669,489 @@
 					}
 				}
 			]
+		}
+		{
+			title: "Visit The Nether"
+			x: -3.0d
+			y: 5.375d
+			subtitle: "I know it's hell but it's worth it"
+			description: ["There's some stuff you need in The Nether, so you might as well get a portal opened."]
+			dependencies: ["3C62F472F5D758B0"]
+			hide: false
+			size: 0.5d
+			id: "11A5F13C90826AA4"
+			tasks: [{
+				id: "1D7CB03E2AB4AE77"
+				type: "dimension"
+				secret: true
+				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			x: -0.5119047619047592d
+			y: 1.178571428571452d
+			subtitle: "See JEI for sword stats and enchants"
+			dependencies: ["23B0233AB910D725"]
+			id: "03B5ABDAE9DF3BC5"
+			tasks: [{
+				id: "63D31E6044692014"
+				type: "item"
+				item: {
+					id: "mbtools:golden_netherite_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			subtitle: "See JEI for sword stats and enchants"
+			dependencies: ["03B5ABDAE9DF3BC5"]
+			id: "1FEC0E6054824F8B"
+			tasks: [{
+				id: "51C42EDF71232E12"
+				type: "item"
+				item: {
+					id: "mbtools:diamond_netherite_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			subtitle: "See JEI for tool stats and enchants"
+			dependencies: ["02ECF3C8917AEF8E"]
+			id: "6C812E6F5A5DFC0B"
+			tasks: [{
+				id: "315F76AADECDC116"
+				type: "item"
+				item: {
+					id: "mbtools:golden_netherite_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			subtitle: "See JEI for tool stats and enchants"
+			dependencies: ["6C812E6F5A5DFC0B"]
+			id: "18CE0FF02A99AE0E"
+			tasks: [{
+				id: "2771D24BB49B9369"
+				type: "item"
+				item: {
+					id: "mbtools:diamond_netherite_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "See JEI for tool stats and enchants"
+			dependencies: ["270846FC39A36627"]
+			id: "027FD80CF9EBB1B5"
+			tasks: [{
+				id: "5F0CD690F1037335"
+				type: "item"
+				item: {
+					id: "mbtools:iron_netherite_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			subtitle: "See JEI for tool stats and enchants"
+			dependencies: ["027FD80CF9EBB1B5"]
+			id: "5F03211DD237A1FE"
+			tasks: [{
+				id: "23131DCC7F4C002E"
+				type: "item"
+				item: {
+					id: "mbtools:diamond_netherite_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			subtitle: "See JEI for tool stats and enchants"
+			dependencies: ["63AB11A3EF33198A"]
+			id: "789EB8DAF54D12CD"
+			tasks: [{
+				id: "3A6FC1B811AFEBC0"
+				type: "item"
+				item: {
+					id: "mbtools:golden_netherite_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.5d
+			y: -1.0d
+			subtitle: "See JEI for tool stats and enchants"
+			dependencies: ["789EB8DAF54D12CD"]
+			id: "00EC55A4FD97A72B"
+			tasks: [{
+				id: "77FB5E48BCCCC9C4"
+				type: "item"
+				item: {
+					id: "mbtools:diamond_netherite_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.0d
+			subtitle: "See JEI for tool stats and enchants"
+			dependencies: ["10CB88397065B51E"]
+			id: "5627DCAAFAFE287A"
+			tasks: [{
+				id: "78D16B7B6FE3BCCB"
+				type: "item"
+				item: {
+					id: "mbtools:golden_netherite_shovel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.0d
+			subtitle: "See JEI for tool stats and enchants"
+			dependencies: ["5627DCAAFAFE287A"]
+			id: "078E93344CD0FC4D"
+			tasks: [{
+				id: "6185FF1FEAA7AC9E"
+				type: "item"
+				item: {
+					id: "mbtools:diamond_netherite_shovel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.0d
+			subtitle: "See JEI for tool stats and enchants"
+			dependencies: ["38AF1D6D907C5CF3"]
+			id: "10CB88397065B51E"
+			tasks: [{
+				id: "265F14D29E233A16"
+				type: "item"
+				item: {
+					id: "mbtools:diamond_netherite_shovel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -7.0d
+			y: 1.5d
+			subtitle: "See JEI for armor stats and enchants"
+			dependencies: ["1DE25160F838075C"]
+			id: "39D45DF8D4B4FA4E"
+			tasks: [{
+				id: "6DD1C3E3D3588AED"
+				type: "item"
+				item: {
+					id: "mbtools:golden_netherite_armor_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -7.0d
+			y: 0.5d
+			subtitle: "See JEI for armor stats and enchants"
+			dependencies: ["39D45DF8D4B4FA4E"]
+			id: "50109667555F00B4"
+			tasks: [{
+				id: "3CC97BA4BCD39AA7"
+				type: "item"
+				item: {
+					id: "mbtools:diamond_netherite_armor_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -7.0d
+			y: 5.0d
+			subtitle: "See JEI for armor stats and enchants"
+			dependencies: ["3C621388AAA67102"]
+			id: "2D00AFB37A978691"
+			tasks: [{
+				id: "1C29E04262E55E8D"
+				type: "item"
+				item: {
+					id: "mbtools:golden_netherite_armor_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -7.0d
+			y: 6.0d
+			subtitle: "See JEI for armor stats and enchants"
+			dependencies: ["2D00AFB37A978691"]
+			id: "0E17E7BDAFC7AB3E"
+			tasks: [{
+				id: "29C370EF0A87827D"
+				type: "item"
+				item: {
+					id: "mbtools:diamond_netherite_armor_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 5.0d
+			subtitle: "See JEI for armor stats and enchants"
+			dependencies: ["30B5C60A0CD9D8F5"]
+			id: "5E412B9A2CC4B174"
+			tasks: [{
+				id: "5C8FDECE3998184E"
+				type: "item"
+				item: {
+					id: "mbtools:golden_netherite_armor_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 6.0d
+			subtitle: "See JEI for armor stats and enchants"
+			dependencies: ["5E412B9A2CC4B174"]
+			id: "52A41E0ACBBEBBA2"
+			tasks: [{
+				id: "1E3FD6A66995C422"
+				type: "item"
+				item: {
+					id: "mbtools:diamond_netherite_armor_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 1.5d
+			subtitle: "See JEI for armor stats and enchants"
+			dependencies: ["24D528A723D8E560"]
+			id: "794B4A6E3762DB30"
+			tasks: [{
+				id: "2BC11F0A8524015E"
+				type: "item"
+				item: {
+					id: "mbtools:golden_netherite_armor_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.5d
+			subtitle: "See JEI for armor stats and enchants"
+			dependencies: ["794B4A6E3762DB30"]
+			id: "2BC0DF68C2B276C0"
+			tasks: [{
+				id: "3BFF91F9391466AF"
+				type: "item"
+				item: {
+					id: "mbtools:diamond_netherite_armor_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -7.0d
+			y: 2.5d
+			subtitle: "See JEI for armor stats and enchants"
+			hide_dependency_lines: false
+			dependencies: ["38AF1D6D907C5CF3"]
+			id: "1DE25160F838075C"
+			tasks: [{
+				id: "2F5E44DE3B134139"
+				type: "item"
+				item: {
+					id: "mbtools:iron_netherite_armor_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.5d
+			dependencies: ["58DFB5F64D15F9E2"]
+			id: "1E9BE4CC7835C8B3"
+			tasks: [{
+				id: "04B54191FDD823B8"
+				type: "item"
+				item: {
+					id: "mbtools:enderite_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			dependencies: ["1E9BE4CC7835C8B3"]
+			id: "521E8B07221ADC0A"
+			tasks: [{
+				id: "6099830F2673D98D"
+				type: "item"
+				item: {
+					id: "mbtools:enderite_shovel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			dependencies: ["521E8B07221ADC0A"]
+			id: "17D25768C8F34B01"
+			tasks: [{
+				id: "51DC3B9764A07F9F"
+				type: "item"
+				item: {
+					id: "mbtools:enderite_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.5d
+			subtitle: "See JEI for armor stats and enchants"
+			dependencies: ["2D6CE2B994899A50"]
+			id: "53DD2E34EF7C3FD0"
+			tasks: [{
+				id: "23F2D439B5577F0B"
+				type: "item"
+				item: {
+					id: "mbtools:enderite_armor_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			subtitle: "See JEI for armor stats and enchants"
+			dependencies: ["53DD2E34EF7C3FD0"]
+			id: "6CEA6B94988A66CC"
+			tasks: [{
+				id: "2C318632027B477E"
+				type: "item"
+				item: {
+					id: "mbtools:enderite_armor_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			subtitle: "See JEI for armor stats and enchants"
+			dependencies: ["6CEA6B94988A66CC"]
+			id: "4FED9BED999679F5"
+			tasks: [{
+				id: "4E465CC356905D00"
+				type: "item"
+				item: {
+					id: "mbtools:enderite_armor_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 	]
 }

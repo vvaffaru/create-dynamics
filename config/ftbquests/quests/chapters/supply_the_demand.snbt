@@ -4,7 +4,436 @@
 	order_index: 3
 	filename: "supply_the_demand"
 	title: "Supplying demand"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "Late Game Resource Procurement"
+			x: 0.5d
+			y: 0.0d
+			subtitle: "Sieves and chickens only get you so far"
+			description: [
+				"At some point in mid-late game you'll probably want to stop mining for resources alltogether."
+				""
+				"The multi-block laser drill from Industrial Foregoing can facilitate those needs."
+				""
+				"The fluid laser base is also a thing. All of these blocks are outlined in the in-game manual as well as JEI."
+				""
+				"It's suggested that you look up a tutorial on how to efficiently point as many lasers as possible at the base block."
+			]
+			dependencies: ["3C62F472F5D758B0"]
+			size: 2.0d
+			id: "5F4759DFD4F588E2"
+			tasks: [
+				{
+					id: "024ECFE9DB1BEB68"
+					type: "item"
+					item: "industrialforegoing:laser_drill"
+				}
+				{
+					id: "40E0CD2A7554ECFF"
+					type: "item"
+					item: "industrialforegoing:ore_laser_base"
+				}
+			]
+		}
+		{
+			title: "Ore Laser Base"
+			x: -2.0d
+			y: 2.5d
+			subtitle: "Based resources"
+			description: [
+				"To form the multi-block you need to start with the base. The weight (drop chance) for resources changes based on the biome you place it in, and depth you set in the GUI."
+				""
+				"For your first setup you'll probably just want a 3x3 area. It will be in the shape of a + pattern with the base in the center."
+				""
+				"The base is not powered, don't connect it to your power system."
+			]
+			dependencies: ["5F4759DFD4F588E2"]
+			size: 1.25d
+			id: "07156A2B36FF19B1"
+			tasks: [{
+				id: "7041ED5619D4E9A3"
+				type: "questsadditions:place"
+				block_type: 0
+				block: "industrialforegoing:ore_laser_base"
+				value: 1L
+				replaced: "minecraft:air"
+				replace: false
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			subtitle: "Aiming the fourth beam"
+			description: [
+				"The last laser should complete the + pattern in the 3x3 area you've designated to build this multi-block."
+				""
+				"Make sure all the lasers have one block space between the base and the laser, and that all the black holes are pointed towards the base."
+				""
+				"This doesn't have to be the last laser, you can place many more. 9+ per block face, so at least 54 lasers."
+				""
+				"Each one requires power, so take that into account when adding more lasers."
+			]
+			dependencies: ["226E32DCBEB4871F"]
+			id: "6739BE474B419A12"
+			tasks: [{
+				id: "591BA8C44B6B6A03"
+				type: "questsadditions:place"
+				block_type: 0
+				block: "industrialforegoing:laser_drill"
+				value: 1L
+				replaced: "minecraft:air"
+				replace: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			subtitle: "Aiming the first beam"
+			description: [
+				"Place the first laser two blocks away from the base, with the black hole facing towards the base."
+				""
+				"This block requires power."
+			]
+			dependencies: ["07156A2B36FF19B1"]
+			id: "6DC5DB0CD9119917"
+			tasks: [{
+				id: "350EEFF367144992"
+				type: "questsadditions:place"
+				block_type: 0
+				block: "industrialforegoing:laser_drill"
+				value: 1L
+				replaced: "minecraft:air"
+				replace: false
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.5d
+			subtitle: "Aiming the second beam"
+			description: [
+				"Place the next laser on the opposite side of the base, two blocks away, with the black hole facing towards the base."
+				""
+				"This block requires power."
+			]
+			dependencies: ["6DC5DB0CD9119917"]
+			id: "08A792CE6FACF17F"
+			tasks: [{
+				id: "37C623046D9E6F89"
+				type: "questsadditions:place"
+				block_type: 0
+				block: "industrialforegoing:laser_drill"
+				value: 1L
+				replaced: "minecraft:air"
+				replace: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			subtitle: "Aiming the third beam"
+			description: [
+				"From here you want to follow the same pattern as 1 and 2, just rotated 90 degrees. Again, placing the next laser two blocks away, with the black hole facing towards the base."
+				""
+				"This block requires power."
+			]
+			dependencies: ["08A792CE6FACF17F"]
+			id: "226E32DCBEB4871F"
+			tasks: [{
+				id: "25994933825E805B"
+				type: "questsadditions:place"
+				block_type: 0
+				block: "industrialforegoing:laser_drill"
+				value: 1L
+				replaced: "minecraft:air"
+				replace: false
+			}]
+		}
+		{
+			title: "Fluid Laser Base"
+			x: 3.0d
+			y: 2.5d
+			subtitle: "Digital straw"
+			description: [
+				"This multi-block is built just the same as its Ore companion. Depending on what lens you use, you might have to place an entity directly below the base, and keep it there without it destroying your whole setup. *Glares at Wither*"
+				""
+				"Designate a 3x3 area and place all the blocks in a + pattern. Each laser should have a block space between it and the base, with the black holes pointed at the base."
+				""
+				"The base is not powered, don't connect it to your power system."
+			]
+			dependencies: ["5F4759DFD4F588E2"]
+			size: 1.25d
+			id: "48DCA18F9A62622F"
+			tasks: [{
+				id: "532BE9D9B0C77ACC"
+				type: "questsadditions:place"
+				block_type: 0
+				block: "industrialforegoing:fluid_laser_base"
+				value: 1L
+				replaced: "minecraft:air"
+				replace: false
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.5d
+			subtitle: "Aiming the fourth beam"
+			description: [
+				"The last laser should complete the + pattern in the 3x3 area you've designated to build this multi-block."
+				""
+				"Make sure all the lasers have one block space between the base and the laser, and that all the black holes are pointed towards the base."
+				""
+				"This doesn't have to be the last laser, you can place many more. 9+ per block face, so at least 54 lasers."
+				""
+				"Each one requires power, so take that into account when adding more lasers."
+			]
+			dependencies: ["48888AC7E198B0D1"]
+			id: "502EE6A51C7BCD58"
+			tasks: [{
+				id: "7B7CC2569BCCE996"
+				type: "questsadditions:place"
+				block_type: 0
+				block: "industrialforegoing:laser_drill"
+				value: 1L
+				replaced: "minecraft:air"
+				replace: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			subtitle: "Aiming the third beam"
+			description: [
+				"From here you want to follow the same pattern as 1 and 2, just rotated 90 degrees. Again, placing the next laser two blocks away, with the black hole facing towards the base."
+				""
+				"This block requires power."
+			]
+			dependencies: ["5284573B9686FEAD"]
+			id: "48888AC7E198B0D1"
+			tasks: [{
+				id: "54C87A9163D8848D"
+				type: "questsadditions:place"
+				block_type: 0
+				block: "industrialforegoing:laser_drill"
+				value: 1L
+				replaced: "minecraft:air"
+				replace: false
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.5d
+			subtitle: "Aiming the second beam"
+			description: [
+				"Place the next laser on the opposite side of the base, two blocks away, with the black hole facing towards the base."
+				""
+				"This block requires power."
+			]
+			dependencies: ["20AF3D3DEBFCF8E6"]
+			id: "5284573B9686FEAD"
+			tasks: [{
+				id: "36FEA13F9FFFD9E6"
+				type: "questsadditions:place"
+				block_type: 0
+				block: "industrialforegoing:laser_drill"
+				value: 1L
+				replaced: "minecraft:air"
+				replace: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			subtitle: "Aiming the first beam"
+			description: [
+				"Place the first laser two blocks away from the base, with the black hole facing towards the base."
+				""
+				"This block requires power."
+			]
+			dependencies: ["48DCA18F9A62622F"]
+			id: "20AF3D3DEBFCF8E6"
+			tasks: [{
+				id: "3062C13789916719"
+				type: "questsadditions:place"
+				block_type: 0
+				block: "industrialforegoing:laser_drill"
+				value: 1L
+				replaced: "minecraft:air"
+				replace: false
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "5252E1548FC9E341"
+			tasks: [{
+				id: "6D6E98F202A391AF"
+				type: "item"
+				item: "industrialforegoing:laser_lens8"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "7CCE59E9CDFAB1A9"
+			tasks: [{
+				id: "661CD72A2C2B1DB4"
+				type: "item"
+				item: "industrialforegoing:laser_lens7"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "1582E1F0F3301791"
+			tasks: [{
+				id: "5406C4CAE72CAF93"
+				type: "item"
+				item: "industrialforegoing:laser_lens6"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "129534C7690AACB9"
+			tasks: [{
+				id: "3DE2063D5F7B8006"
+				type: "item"
+				item: "industrialforegoing:laser_lens5"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "69F5DBC2D3BF74CF"
+			tasks: [{
+				id: "075DBA3FAA7E8941"
+				type: "item"
+				item: "industrialforegoing:laser_lens4"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "326874BCAC9B254F"
+			tasks: [{
+				id: "39271E6E1B52722F"
+				type: "item"
+				item: "industrialforegoing:laser_lens3"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "491DF2DEE99FEC24"
+			tasks: [{
+				id: "3019404DA0A0D90F"
+				type: "item"
+				item: "industrialforegoing:laser_lens2"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "4F4E54EE37DEA814"
+			tasks: [{
+				id: "38F9717654536B36"
+				type: "item"
+				item: "industrialforegoing:laser_lens0"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "7FFB050427F445C7"
+			tasks: [{
+				id: "0B60ED0034694231"
+				type: "item"
+				item: "industrialforegoing:laser_lens9"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "7747499D41F2439F"
+			tasks: [{
+				id: "1F85C718B1BD6182"
+				type: "item"
+				item: "industrialforegoing:laser_lens10"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "05DD88060F2E0431"
+			tasks: [{
+				id: "0ADE81EECCF39F1D"
+				type: "item"
+				item: "industrialforegoing:laser_lens11"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "0F1A6182D247D6E5"
+			tasks: [{
+				id: "68FC02A5A06226B2"
+				type: "item"
+				item: "industrialforegoing:laser_lens13"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "5652BCB003AE15A8"
+			tasks: [{
+				id: "32030C687C30E4AB"
+				type: "item"
+				item: "industrialforegoing:laser_lens14"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -3.5d
+			dependencies: ["0345704DA6AE76FB"]
+			id: "3636D7948A296FBC"
+			tasks: [{
+				id: "4D4323CE1E5C068B"
+				type: "item"
+				item: "industrialforegoing:laser_lens15"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			subtitle: "Sephia"
+			description: [
+				"This will probably be one of the first lenses you craft because it increases the drop chance of iron."
+				""
+				"For quick access to the resources dropped by each lens, JEI is your friend. Right click the lens, and then click the Laser Base tab if there is one."
+			]
+			dependencies: ["5F4759DFD4F588E2"]
+			id: "0345704DA6AE76FB"
+			tasks: [{
+				id: "58505F02DA4093E7"
+				type: "item"
+				item: "industrialforegoing:laser_lens12"
+			}]
+		}
+	]
 }

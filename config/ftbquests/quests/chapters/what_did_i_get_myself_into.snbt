@@ -21,18 +21,10 @@
 			]
 			size: 2.0d
 			id: "15EDA0CD3B28ED7B"
-			tasks: [
-				{
-					id: "533240DA20D0E6EF"
-					type: "item"
-					item: "create:andesite_alloy"
-				}
-				{
-					id: "210DED0D76D46D30"
-					type: "item"
-					item: "integrateddynamics:menril_sapling"
-				}
-			]
+			tasks: [{
+				id: "565EC0D6A59DA310"
+				type: "checkmark"
+			}]
 			rewards: [
 				{
 					id: "5972E07FFF1438A3"

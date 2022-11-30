@@ -6,5 +6,1989 @@
 	title: "Storage"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "Spamming Chests Still?"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "There are better options"
+			description: ["Sure vanilla chests will start you out and they work fine in early game, but this pack is full of storage solutions."]
+			dependencies: ["3C62F472F5D758B0"]
+			size: 2.0d
+			id: "557F8285FC549008"
+			tasks: [{
+				id: "28ABD5E0AE9BB069"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+		}
+		{
+			title: "Applied Energistics 2"
+			icon: {
+				id: "ae2:item_storage_cell_256k"
+				Count: 1b
+				tag: { }
+			}
+			x: 5.0d
+			y: 0.0d
+			subtitle: "The storage side of AE2"
+			description: [
+				"AE2 has an extensive storage system included in the mod."
+				""
+				"For permanent late game storage, it's probably one of the most robust options available."
+				""
+				"While the channels system can be a little difficult to learn and design around, once you understand the core concepts, it becomes a powerful tool at your disposal."
+				""
+				"See the Automation chapter of this quest book for more information about how channels work. There are also many guides on YouTube, etc. that do a great job of breaking down how this mod functions."
+			]
+			dependencies: ["557F8285FC549008"]
+			size: 1.5d
+			id: "397E6B026859443F"
+			tasks: [{
+				id: "4E9A815F9DB65392"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Functional Storage"
+			icon: "functionalstorage:oak_4"
+			x: -4.5d
+			y: 0.0d
+			subtitle: "Adjacent to Storage Drawers"
+			description: [
+				"This mod adds function to the game, similar to the mod Storage Drawers, but expands on it a bit."
+				""
+				"With an updated look and feel, it also includes a number of useful features:"
+				""
+				"- Pulling Upgrade"
+				"- Pushing Upgrade"
+				"- Collecting Upgrade"
+				"- Armory Cabinet"
+				"- Storage Upgrades"
+				"- Storage Controller"
+				"- Unique Linking System"
+				"- Ender Drawers"
+			]
+			dependencies: ["557F8285FC549008"]
+			size: 1.5d
+			id: "193E0292DE78AA4E"
+			tasks: [{
+				id: "797D0BC29D826A28"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Integrated Dynamics"
+			icon: "integratedterminals:terminal_storage_portable"
+			x: -2.25d
+			y: 3.0d
+			subtitle: "Logical storage solutions"
+			description: [
+				"ID offers a very strong storage solution that is easily implemented in early-mid game."
+				""
+				"It boasts some of the fastest item transfer times. As with the rest of ID, it's also quite robust in terms of logistic control."
+				""
+				"See the CurseForge mod page for Integrated Terminals for in-depth information about the storage system."
+			]
+			dependencies: ["557F8285FC549008"]
+			size: 1.5d
+			id: "1D0F4E1540B8BD20"
+			tasks: [{
+				id: "73A17F53758A71E3"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			dependencies: ["04DE3A6982EEAFFE"]
+			id: "6AF19DECD0EFF1B3"
+			tasks: [{
+				id: "75C2F3AC2F6F5427"
+				type: "item"
+				item: "enderstorage:ender_chest"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.5d
+			dependencies: ["6787A3C49A430366"]
+			dependency_requirement: "one_completed"
+			id: "0347BDD0A6E783EC"
+			tasks: [
+				{
+					id: "1EEDFB7A9FEB77D4"
+					type: "item"
+					item: "ironchest:iron_chest"
+				}
+				{
+					id: "14C4D09141822808"
+					type: "item"
+					item: "ironchest:trapped_iron_chest"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			dependencies: ["72FF0A16D0D87729"]
+			id: "7018CB3FE20C6193"
+			tasks: [{
+				id: "12104FC2050424D9"
+				type: "item"
+				item: "metalbarrels:iron_barrel"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			dependencies: ["04DE3A6982EEAFFE"]
+			id: "101077A435C99673"
+			tasks: [{
+				id: "7323523242DB2137"
+				type: "item"
+				item: "enderstorage:ender_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			dependencies: ["04DE3A6982EEAFFE"]
+			id: "3768F2AAFFC83662"
+			tasks: [{
+				id: "535F67E5E6F1B844"
+				type: "item"
+				item: "enderstorage:ender_pouch"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			dependencies: ["1A637D5EE97445E7"]
+			id: "72FF0A16D0D87729"
+			tasks: [{
+				id: "146CCFB5E7959316"
+				type: "item"
+				item: "metalbarrels:copper_barrel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -6.0d
+			dependencies: ["7018CB3FE20C6193"]
+			id: "709223EF6F630814"
+			tasks: [{
+				id: "731D9FB0D30F6410"
+				type: "item"
+				item: "metalbarrels:gold_barrel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -9.0d
+			dependencies: ["5509E9879DFC905B"]
+			id: "0C8A873C87E32DA2"
+			tasks: [{
+				id: "2242047141864D5A"
+				type: "item"
+				item: "metalbarrels:diamond_barrel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -10.5d
+			dependencies: ["0C8A873C87E32DA2"]
+			id: "72160D18E2E92979"
+			tasks: [{
+				id: "75C4FD0C60542DE8"
+				type: "item"
+				item: "metalbarrels:obsidian_barrel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -7.5d
+			dependencies: ["709223EF6F630814"]
+			id: "5509E9879DFC905B"
+			tasks: [{
+				id: "26D82C03D399BDAB"
+				type: "item"
+				item: "metalbarrels:silver_barrel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -13.5d
+			dependencies: ["0C8A873C87E32DA2"]
+			id: "62355F0B9B0C9B04"
+			tasks: [{
+				id: "2D3438CBD2D2B916"
+				type: "item"
+				item: "metalbarrels:crystal_barrel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -12.0d
+			dependencies: ["72160D18E2E92979"]
+			id: "57E5DBF37837B91C"
+			tasks: [{
+				id: "1C634849F77F79EE"
+				type: "item"
+				item: "metalbarrels:netherite_barrel"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.0d
+			dependencies: ["0347BDD0A6E783EC"]
+			dependency_requirement: "one_completed"
+			id: "2C07D50F933E763D"
+			tasks: [
+				{
+					id: "015E295FF1335CEA"
+					type: "item"
+					item: "ironchest:gold_chest"
+				}
+				{
+					id: "4AC5AC7B8054F881"
+					type: "item"
+					item: "ironchest:trapped_gold_chest"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -7.5d
+			dependencies: ["2C07D50F933E763D"]
+			dependency_requirement: "one_completed"
+			id: "083A82BED6EF767B"
+			tasks: [
+				{
+					id: "32D1F16FE3BDFAF6"
+					type: "item"
+					item: "ironchest:diamond_chest"
+				}
+				{
+					id: "03990EB038592C5C"
+					type: "item"
+					item: "ironchest:trapped_diamond_chest"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			dependencies: ["0E3078F68B71465C"]
+			dependency_requirement: "one_completed"
+			id: "6787A3C49A430366"
+			tasks: [
+				{
+					id: "35F863D38F408A73"
+					type: "item"
+					item: "ironchest:copper_chest"
+				}
+				{
+					id: "415A355C5AD5350C"
+					type: "item"
+					item: "ironchest:trapped_copper_chest"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -9.0d
+			dependencies: ["083A82BED6EF767B"]
+			dependency_requirement: "one_completed"
+			id: "0C1469EC41BA4B87"
+			tasks: [
+				{
+					id: "1B7301E46EE3F005"
+					type: "item"
+					item: "ironchest:crystal_chest"
+				}
+				{
+					id: "45318CD5DB7AA8AA"
+					type: "item"
+					item: "ironchest:trapped_crystal_chest"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -10.5d
+			dependencies: ["0C1469EC41BA4B87"]
+			dependency_requirement: "one_completed"
+			id: "0ADED8D64D67367A"
+			tasks: [
+				{
+					id: "53BE1D466BBD1751"
+					type: "item"
+					item: "ironchest:obsidian_chest"
+				}
+				{
+					id: "09D2CF9EE4A8132C"
+					type: "item"
+					item: "ironchest:trapped_obsidian_chest"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -12.0d
+			hide_dependency_lines: true
+			dependencies: ["0E3078F68B71465C"]
+			dependency_requirement: "one_completed"
+			id: "322B85BD59C1331D"
+			tasks: [
+				{
+					id: "3B83AE3CE6854219"
+					type: "item"
+					item: "ironchest:dirt_chest"
+				}
+				{
+					id: "75A9E1083468826A"
+					type: "item"
+					item: "ironchest:trapped_dirt_chest"
+				}
+			]
+		}
+		{
+			title: "Copper Chest Upgrade"
+			x: -3.0d
+			y: -3.0d
+			dependencies: ["0E3078F68B71465C"]
+			dependency_requirement: "one_completed"
+			id: "500DBCF4E6178F04"
+			tasks: [{
+				id: "7D9A572E33E3F2DD"
+				type: "item"
+				item: "ironchest:wood_to_copper_chest_upgrade"
+			}]
+		}
+		{
+			title: "Iron Chest Upgrade"
+			x: -3.0d
+			y: -4.5d
+			dependencies: ["500DBCF4E6178F04"]
+			dependency_requirement: "one_completed"
+			id: "759469B7FAFBC47D"
+			tasks: [
+				{
+					id: "749DBE7AC4131E77"
+					type: "item"
+					item: "ironchest:copper_to_iron_chest_upgrade"
+				}
+				{
+					id: "1904A7329C601FA7"
+					type: "item"
+					item: "ironchest:wood_to_iron_chest_upgrade"
+				}
+			]
+		}
+		{
+			title: "Gold Chest Upgrade"
+			x: -3.0d
+			y: -6.0d
+			dependencies: ["759469B7FAFBC47D"]
+			dependency_requirement: "one_completed"
+			id: "23FF239977F6DE30"
+			tasks: [{
+				id: "597BB8CCBDD5E824"
+				type: "item"
+				item: "ironchest:iron_to_gold_chest_upgrade"
+			}]
+		}
+		{
+			title: "Diamond Chest Upgrade"
+			x: -3.0d
+			y: -7.5d
+			dependencies: ["23FF239977F6DE30"]
+			dependency_requirement: "one_completed"
+			id: "740FA0401F335A94"
+			tasks: [{
+				id: "7F6FC3BAC70D2BC9"
+				type: "item"
+				item: "ironchest:gold_to_diamond_chest_upgrade"
+			}]
+		}
+		{
+			title: "Crystal Chest Upgrade"
+			x: -3.0d
+			y: -9.0d
+			dependencies: ["740FA0401F335A94"]
+			dependency_requirement: "one_completed"
+			id: "6420A78A88268A4A"
+			tasks: [{
+				id: "7F6A607419E45520"
+				type: "item"
+				item: "ironchest:diamond_to_crystal_chest_upgrade"
+			}]
+		}
+		{
+			title: "Obsidian Chest Upgrade"
+			x: -3.0d
+			y: -10.5d
+			dependencies: ["740FA0401F335A94"]
+			dependency_requirement: "one_completed"
+			id: "1C58D5EF0360A286"
+			tasks: [{
+				id: "32CF769C82E20FCD"
+				type: "item"
+				item: "ironchest:diamond_to_obsidian_chest_upgrade"
+			}]
+		}
+		{
+			title: "Copper Barrel Upgrade"
+			x: 3.0d
+			y: -3.0d
+			dependencies: ["1A637D5EE97445E7"]
+			dependency_requirement: "one_completed"
+			id: "50D12D244EB32455"
+			tasks: [{
+				id: "7BAC6DC729313BF3"
+				type: "item"
+				item: "metalbarrels:wood_to_copper"
+			}]
+		}
+		{
+			title: "Iron Barrel Upgrade"
+			x: 3.0d
+			y: -4.5d
+			dependencies: ["50D12D244EB32455"]
+			dependency_requirement: "one_completed"
+			id: "67AA11007CF01B30"
+			tasks: [
+				{
+					id: "25BA45B5C4399C92"
+					type: "item"
+					item: "metalbarrels:copper_to_iron"
+				}
+				{
+					id: "5B6230854D4E40D7"
+					type: "item"
+					item: "metalbarrels:wood_to_iron"
+				}
+			]
+		}
+		{
+			title: "Gold Barrel Upgrade"
+			x: 3.0d
+			y: -6.0d
+			dependencies: ["67AA11007CF01B30"]
+			dependency_requirement: "one_completed"
+			id: "5EDC2C878CDDC2A2"
+			tasks: [
+				{
+					id: "0ECAB325B06E8B41"
+					type: "item"
+					item: "metalbarrels:iron_to_gold"
+				}
+				{
+					id: "08F16790BFB4110D"
+					type: "item"
+					item: "metalbarrels:wood_to_gold"
+				}
+				{
+					id: "3FCAF0111975062F"
+					type: "item"
+					item: "metalbarrels:silver_to_gold"
+				}
+				{
+					id: "640473A534296C13"
+					type: "item"
+					item: "metalbarrels:copper_to_gold"
+				}
+			]
+		}
+		{
+			title: "Diamond Barrel Upgrade"
+			x: 3.0d
+			y: -9.0d
+			dependencies: ["1BAEE302FA9D8D43"]
+			dependency_requirement: "one_completed"
+			id: "5DCB60E4672862BB"
+			tasks: [
+				{
+					id: "4E877446E8983428"
+					type: "item"
+					item: "metalbarrels:gold_to_diamond"
+				}
+				{
+					id: "2A536234BBEBD78B"
+					type: "item"
+					item: "metalbarrels:wood_to_diamond"
+				}
+				{
+					id: "4AA8D1756D598C24"
+					type: "item"
+					item: "metalbarrels:iron_to_diamond"
+				}
+				{
+					id: "51D42FED4835A2FC"
+					type: "item"
+					item: "metalbarrels:copper_to_diamond"
+				}
+			]
+		}
+		{
+			title: "Obsidian Barrel Upgrade"
+			x: 3.0d
+			y: -10.5d
+			dependencies: ["5DCB60E4672862BB"]
+			dependency_requirement: "one_completed"
+			id: "472AD49D6F132E75"
+			tasks: [
+				{
+					id: "787F2DFD7F9613D3"
+					type: "item"
+					item: "metalbarrels:diamond_to_obsidian"
+				}
+				{
+					id: "0D672E7BE5DBBD21"
+					type: "item"
+					item: "metalbarrels:wood_to_obsidian"
+				}
+				{
+					id: "13FB47D738DC3109"
+					type: "item"
+					item: "metalbarrels:copper_to_obsidian"
+				}
+				{
+					id: "305F46DDBFA196D5"
+					type: "item"
+					item: "metalbarrels:silver_to_obsidian"
+				}
+				{
+					id: "052A5202B68E185C"
+					type: "item"
+					item: "metalbarrels:gold_to_obsidian"
+				}
+				{
+					id: "6F7B5CC8B76A1C50"
+					type: "item"
+					item: "metalbarrels:iron_to_obsidian"
+				}
+			]
+		}
+		{
+			title: "Silver Barrel Upgrade"
+			x: 3.0d
+			y: -7.5d
+			dependencies: ["5EDC2C878CDDC2A2"]
+			dependency_requirement: "one_completed"
+			id: "1BAEE302FA9D8D43"
+			tasks: [
+				{
+					id: "672F4656053FCC82"
+					type: "item"
+					item: "metalbarrels:iron_to_silver"
+				}
+				{
+					id: "0F7ABEA2814C8F24"
+					type: "item"
+					item: "metalbarrels:wood_to_silver"
+				}
+				{
+					id: "6955B73B17A19CD6"
+					type: "item"
+					item: "metalbarrels:copper_to_silver"
+				}
+			]
+		}
+		{
+			title: "Netherite Barrel Upgrade"
+			x: 3.0d
+			y: -12.0d
+			dependencies: ["472AD49D6F132E75"]
+			dependency_requirement: "one_completed"
+			id: "385CEE9A624A2938"
+			tasks: [
+				{
+					id: "3B34B1611F285416"
+					type: "item"
+					item: "metalbarrels:obsidian_to_netherite"
+				}
+				{
+					id: "30AE685C51ECDC4A"
+					type: "item"
+					item: "metalbarrels:wood_to_netherite"
+				}
+			]
+		}
+		{
+			title: "Crystal Barrel Upgrade"
+			x: 3.0d
+			y: -13.5d
+			dependencies: ["5DCB60E4672862BB"]
+			dependency_requirement: "one_completed"
+			id: "041018EBD8959DF6"
+			tasks: [
+				{
+					id: "5EB84350792742E2"
+					type: "item"
+					item: "ironchest:diamond_to_crystal_chest_upgrade"
+				}
+				{
+					id: "4B0E36C8C890C5C5"
+					type: "item"
+					item: "metalbarrels:wood_to_crystal"
+				}
+				{
+					id: "065E3EEBD64F4479"
+					type: "item"
+					item: "metalbarrels:copper_to_crystal"
+				}
+				{
+					id: "0F48131338030B05"
+					type: "item"
+					item: "metalbarrels:iron_to_crystal"
+				}
+				{
+					id: "0838F616307D2992"
+					type: "item"
+					item: "metalbarrels:silver_to_crystal"
+				}
+				{
+					id: "779A91B78F0C2B3D"
+					type: "item"
+					item: "metalbarrels:gold_to_crystal"
+				}
+				{
+					id: "2C6C2733DF980D97"
+					type: "item"
+					item: "metalbarrels:diamond_to_crystal"
+				}
+			]
+		}
+		{
+			title: "Iron Chests"
+			icon: "ironchest:iron_chest"
+			x: -1.5d
+			y: -1.5d
+			subtitle: "Extending the life of vanilla chests"
+			description: [
+				"This mod will make vanilla chests a viable option through mid-late game."
+				""
+				"The upgrades are easy to craft and allow you to increase the chest size while it's placed in the world."
+			]
+			dependencies: ["557F8285FC549008"]
+			id: "0E3078F68B71465C"
+			tasks: [{
+				id: "076C6C7684B18C8F"
+				type: "checkmark"
+				title: "Iron Chests"
+			}]
+		}
+		{
+			title: "Iron Barrels"
+			icon: "metalbarrels:iron_barrel"
+			x: 1.5d
+			y: -1.5d
+			subtitle: "It was inevitable"
+			description: ["You knew it was bound to happen. This mod does the same thing as Iron Chests, just to barrels instead."]
+			dependencies: ["557F8285FC549008"]
+			id: "1A637D5EE97445E7"
+			tasks: [{
+				id: "359E318504D0781A"
+				type: "checkmark"
+			}]
+		}
+		{
+			icon: "minecraft:end_portal_frame"
+			x: 0.0d
+			y: -1.5d
+			subtitle: "Xenotech or magic? You decide."
+			description: [
+				"This mod enables you to create linked ender chests based on a channel system."
+				""
+				"The way you set a channel for the two chests you want to link is by right clicking one of the three white bars on top of the chest with any color dye. The same functionality works for the ender tank. With the pouch, simply right click a dyed chest to link the pouch to that channel."
+				""
+				"Right clicking the chest with a diamond will make it a private chest so only you can access it."
+			]
+			dependencies: ["557F8285FC549008"]
+			id: "04DE3A6982EEAFFE"
+			tasks: [{
+				id: "398457FC443E789C"
+				type: "checkmark"
+				title: "Ender Storage"
+			}]
+		}
+		{
+			title: "RFTools"
+			x: 2.25d
+			y: 3.0d
+			subtitle: "Not just your average storage blocks"
+			description: [
+				"This mod adds a unique flavor to interacting with a lot of chests."
+				""
+				"It has a basic storage block that accepts upgrade modules to increase the stack allotment for items you put in it."
+				""
+				"But that's not all."
+				""
+				"What makes it unique is that it adds a block called a storage scanner that looks for any inventory block in a specific radius around the scanner, and displays all the items it finds in one GUI. That way you don't have to go searching all over your base to find where you put that one item in that one chest."
+			]
+			dependencies: ["557F8285FC549008"]
+			dependency_requirement: "one_completed"
+			size: 1.5d
+			id: "76E25F8C9EB38553"
+			tasks: [
+				{
+					id: "4542B28B860221A6"
+					type: "item"
+					item: "rftoolsbase:tablet"
+				}
+				{
+					id: "2C36EF90E05456A4"
+					type: "item"
+					item: "rftoolsstorage:storage_scanner"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 4.5d
+			dependencies: ["76E25F8C9EB38553"]
+			id: "56B7066820C06647"
+			tasks: [{
+				id: "5674CE1586927EA7"
+				type: "item"
+				item: "rftoolsstorage:storage_scanner"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.5d
+			dependencies: ["76E25F8C9EB38553"]
+			id: "71EB413DCAF9BE44"
+			tasks: [{
+				id: "5FF93B5CD0A11B75"
+				type: "item"
+				item: "rftoolsstorage:modular_storage"
+			}]
+		}
+		{
+			title: "Storage Upgrade Modules"
+			x: 5.5d
+			y: 3.5d
+			subtitle: "Stack 'em up high"
+			description: [
+				"These modules increase the modular storage block capacity."
+				""
+				"Tier 1 - 100 stacks"
+				"Tier 2 - 200 stacks"
+				"Tier 3 - 300 stacks"
+				"Tier 4 - 500 stacks"
+			]
+			dependencies: ["71EB413DCAF9BE44"]
+			dependency_requirement: "one_completed"
+			secret: true
+			id: "1597B964114F8A27"
+			tasks: [
+				{
+					id: "4D675B58E3B59250"
+					type: "item"
+					item: "rftoolsstorage:storage_module0"
+				}
+				{
+					id: "2489668A6FFA5ADB"
+					type: "item"
+					item: "rftoolsstorage:storage_module1"
+				}
+				{
+					id: "275F61B56BB38190"
+					type: "item"
+					item: "rftoolsstorage:storage_module2"
+				}
+				{
+					id: "38D00DCEE386DACF"
+					type: "item"
+					item: "rftoolsstorage:storage_module3"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 6.0d
+			subtitle: "Remote access granted"
+			description: [
+				"Adding this module to a tablet enables you to access a storage module remotely if you are near the scanner. If the module is chunkloaded, it even works across dimensions."
+				""
+				"Can also be placed into a screen to monitor 9 different item types."
+			]
+			hide_dependency_lines: true
+			dependencies: ["76E25F8C9EB38553"]
+			id: "6A99E39A5EA2B7F1"
+			tasks: [{
+				id: "15FBAE805A3DC3F2"
+				type: "item"
+				item: {
+					id: "rftoolsstorage:storage_control_module"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 7.5d
+			subtitle: "Not a number 2"
+			description: [
+				"A module for a screen that allows you to dump a lot of items into a linked storage scanner."
+				""
+				"Sneak right click a scanner while holding the module to set the target."
+			]
+			hide_dependency_lines: true
+			dependencies: ["76E25F8C9EB38553"]
+			id: "14ECF87330A0DCFF"
+			tasks: [{
+				id: "3AF5E1AE90A4ECB0"
+				type: "item"
+				item: {
+					id: "rftoolsstorage:dump_module"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			subtitle: "For the modular storage block"
+			description: [
+				"Supports a remote inventory."
+				""
+				"Link to another storage module in the remote storage block."
+			]
+			dependencies: ["71EB413DCAF9BE44"]
+			id: "5A99C8A3E11E8B1D"
+			tasks: [{
+				id: "7A44E9FB9C98866D"
+				type: "item"
+				item: "rftoolsstorage:storage_module6"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: ["1D0F4E1540B8BD20"]
+			id: "30A39EF8E9C6CC88"
+			tasks: [
+				{
+					id: "0C0C48CC12CAADF6"
+					type: "item"
+					item: "integratedterminals:part_terminal_storage"
+				}
+				{
+					id: "65D6F4913587B310"
+					type: "item"
+					item: "integratedterminals:part_terminal_crafting_job"
+				}
+				{
+					id: "08255FCF177E3AFE"
+					type: "item"
+					item: "integratedterminals:terminal_storage_portable"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 6.0d
+			hide_dependency_lines: true
+			dependencies: ["1D0F4E1540B8BD20"]
+			id: "699E9E594725368F"
+			tasks: [{
+				id: "5DFD7893191A629B"
+				type: "item"
+				item: "integratedtunnels:part_interface_item"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 7.5d
+			hide_dependency_lines: true
+			dependencies: ["1D0F4E1540B8BD20"]
+			id: "0AC79226D61A7162"
+			tasks: [{
+				id: "38B3BE8486513521"
+				type: "item"
+				item: "integratedtunnels:part_interface_fluid"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 9.0d
+			hide_dependency_lines: true
+			dependencies: ["1D0F4E1540B8BD20"]
+			id: "5702045C5CB3CB31"
+			tasks: [{
+				id: "1C1DD06897FB99B9"
+				type: "item"
+				item: "integratedtunnels:part_interface_energy"
+			}]
+		}
+		{
+			title: "Standard Importers"
+			x: -4.0d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: ["1D0F4E1540B8BD20"]
+			id: "6BCB152D4BE3D2E0"
+			tasks: [
+				{
+					id: "43D2175CE9E10ED3"
+					type: "item"
+					item: "integratedtunnels:part_importer_item"
+				}
+				{
+					id: "0BFF73519B48E512"
+					type: "item"
+					item: "integratedtunnels:part_importer_fluid"
+				}
+				{
+					id: "62C1D96BE2695653"
+					type: "item"
+					item: "integratedtunnels:part_importer_energy"
+				}
+			]
+		}
+		{
+			title: "Standard Exporters"
+			x: -5.5d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: ["1D0F4E1540B8BD20"]
+			id: "155E017DD9DD5117"
+			tasks: [
+				{
+					id: "5546FDDD6BB7A2D6"
+					type: "item"
+					item: "integratedtunnels:part_exporter_item"
+				}
+				{
+					id: "03AA4C7984300B47"
+					type: "item"
+					item: "integratedtunnels:part_exporter_fluid"
+				}
+				{
+					id: "3123BA2C79A9F2EB"
+					type: "item"
+					item: "integratedtunnels:part_exporter_energy"
+				}
+			]
+		}
+		{
+			title: "World Exporters"
+			x: -5.5d
+			y: 6.0d
+			hide_dependency_lines: true
+			dependencies: ["1D0F4E1540B8BD20"]
+			id: "0A2C2F8087503E76"
+			tasks: [
+				{
+					id: "484489313C86FE7F"
+					type: "item"
+					item: "integratedtunnels:part_exporter_world_item"
+				}
+				{
+					id: "3A33EABBB5978732"
+					type: "item"
+					item: "integratedtunnels:part_exporter_world_fluid"
+				}
+				{
+					id: "32D221D9C5A0AE51"
+					type: "item"
+					item: "integratedtunnels:part_exporter_world_block"
+				}
+				{
+					id: "7F9173128E1BFBEB"
+					type: "item"
+					item: "integratedtunnels:part_exporter_world_energy"
+				}
+			]
+		}
+		{
+			title: "World Importers"
+			x: -4.0d
+			y: 6.0d
+			hide_dependency_lines: true
+			dependencies: ["1D0F4E1540B8BD20"]
+			id: "4CA3DEADC047187D"
+			tasks: [
+				{
+					id: "7EB96417A2074874"
+					type: "item"
+					item: "integratedtunnels:part_importer_world_item"
+				}
+				{
+					id: "2B7AC6E8774B8E41"
+					type: "item"
+					item: "integratedtunnels:part_importer_world_fluid"
+				}
+				{
+					id: "31C287684633EA68"
+					type: "item"
+					item: "integratedtunnels:part_importer_world_block"
+				}
+				{
+					id: "2D869AE4767B7D5A"
+					type: "item"
+					item: "integratedtunnels:part_importer_world_energy"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 7.5d
+			hide_dependency_lines: true
+			dependencies: ["1D0F4E1540B8BD20"]
+			id: "330D9B51E66D5E29"
+			tasks: [
+				{
+					id: "03AF747ADA3F6650"
+					type: "item"
+					item: "integrateddynamics:part_inventory_reader"
+				}
+				{
+					id: "523E33FA17C9B2A3"
+					type: "item"
+					item: "integrateddynamics:part_inventory_writer"
+				}
+			]
+		}
+		{
+			title: "1x1"
+			x: -6.0d
+			y: 0.0d
+			dependencies: ["193E0292DE78AA4E"]
+			id: "50CEDC4EF41ED036"
+			tasks: [
+				{
+					id: "59FF4F856EC91A72"
+					type: "item"
+					title: "Any #functionalstorage:drawer"
+					item: "functionalstorage:oak_1"
+				}
+				{
+					id: "0699A69549CDF981"
+					type: "item"
+					item: "functionalstorage:spruce_1"
+				}
+				{
+					id: "479CCD34F92E911F"
+					type: "item"
+					item: "functionalstorage:birch_1"
+				}
+				{
+					id: "5634631313A7B9F2"
+					type: "item"
+					item: "functionalstorage:jungle_1"
+				}
+				{
+					id: "01B230592B8F3380"
+					type: "item"
+					item: "functionalstorage:acacia_1"
+				}
+				{
+					id: "456012A6B5EA79D7"
+					type: "item"
+					item: "functionalstorage:dark_oak_1"
+				}
+				{
+					id: "30403AEBA5E3A34E"
+					type: "item"
+					item: "functionalstorage:crimson_1"
+				}
+				{
+					id: "0BC2957FD1538115"
+					type: "item"
+					item: "functionalstorage:warped_1"
+				}
+				{
+					id: "2B54EFB9978FC8F8"
+					type: "item"
+					item: "functionalstorage:framed_1"
+				}
+				{
+					id: "4C570288C86809C4"
+					type: "item"
+					item: "functionalstorage:mangrove_1"
+				}
+			]
+		}
+		{
+			title: "1x2"
+			x: -7.5d
+			y: 0.0d
+			dependencies: ["50CEDC4EF41ED036"]
+			id: "565BD00F31ADBCD4"
+			tasks: [
+				{
+					id: "28FB790D4494E14B"
+					type: "item"
+					item: "functionalstorage:oak_2"
+				}
+				{
+					id: "343B05A8A2CAFFA2"
+					type: "item"
+					item: "functionalstorage:spruce_2"
+				}
+				{
+					id: "338F5C5930ACF2B5"
+					type: "item"
+					item: "functionalstorage:birch_2"
+				}
+				{
+					id: "124CB87C59E294F6"
+					type: "item"
+					item: "functionalstorage:jungle_2"
+				}
+				{
+					id: "3D9D9BDC0319A1C0"
+					type: "item"
+					item: "functionalstorage:acacia_2"
+				}
+				{
+					id: "64489F3606C2393B"
+					type: "item"
+					item: "functionalstorage:dark_oak_2"
+				}
+				{
+					id: "60DEE1BA9C1D8844"
+					type: "item"
+					item: "functionalstorage:crimson_2"
+				}
+				{
+					id: "4D5DC733DB3E043B"
+					type: "item"
+					item: "functionalstorage:warped_2"
+				}
+				{
+					id: "7696B43400A0A4AA"
+					type: "item"
+					item: "functionalstorage:framed_2"
+				}
+				{
+					id: "48D54A627369E201"
+					type: "item"
+					item: "functionalstorage:mangrove_2"
+				}
+			]
+		}
+		{
+			title: "2x2"
+			x: -9.0d
+			y: 0.0d
+			dependencies: ["565BD00F31ADBCD4"]
+			id: "3FF77498C2AB012A"
+			tasks: [
+				{
+					id: "5C917F9B375F35E3"
+					type: "item"
+					item: "functionalstorage:oak_4"
+				}
+				{
+					id: "1D61B9667C73519B"
+					type: "item"
+					item: "functionalstorage:spruce_4"
+				}
+				{
+					id: "3F9F05052329A43C"
+					type: "item"
+					item: "functionalstorage:birch_4"
+				}
+				{
+					id: "52E95A61ED09D7E6"
+					type: "item"
+					item: "functionalstorage:jungle_4"
+				}
+				{
+					id: "0F7772D4C3BCDE88"
+					type: "item"
+					item: "functionalstorage:acacia_4"
+				}
+				{
+					id: "0C136FA7ABDC718B"
+					type: "item"
+					item: "functionalstorage:dark_oak_4"
+				}
+				{
+					id: "03B737A1D3C1FFEE"
+					type: "item"
+					item: "functionalstorage:crimson_4"
+				}
+				{
+					id: "063A541031D89C71"
+					type: "item"
+					item: "functionalstorage:warped_4"
+				}
+				{
+					id: "740EEB48716E85B7"
+					type: "item"
+					item: "functionalstorage:framed_4"
+				}
+				{
+					id: "6FD0B7F56069D89A"
+					type: "item"
+					item: "functionalstorage:mangrove_4"
+				}
+			]
+		}
+		{
+			x: -13.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["193E0292DE78AA4E"]
+			id: "44BCAA5D5938A314"
+			tasks: [{
+				id: "07F4B7F81E5B255A"
+				type: "item"
+				item: "functionalstorage:armory_cabinet"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["193E0292DE78AA4E"]
+			id: "7E73C803A09AF252"
+			tasks: [{
+				id: "471CA3B2A1CEFA16"
+				type: "item"
+				item: "functionalstorage:storage_controller"
+			}]
+		}
+		{
+			x: -15.0d
+			y: 0.0d
+			dependencies: ["7E73C803A09AF252"]
+			id: "4FC95C4AD50B1FBB"
+			tasks: [{
+				id: "12EB79307FFF5239"
+				type: "item"
+				item: {
+					id: "functionalstorage:linking_tool"
+					Count: 1b
+					tag: {
+						Action: "ADD"
+						Mode: "SINGLE"
+					}
+				}
+			}]
+		}
+		{
+			x: -15.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["193E0292DE78AA4E"]
+			id: "770023D3AFEA4441"
+			tasks: [{
+				id: "06A9CC55747FA937"
+				type: "item"
+				item: {
+					id: "functionalstorage:configuration_tool"
+					Count: 1b
+					tag: {
+						Mode: "LOCKING"
+					}
+				}
+			}]
+		}
+		{
+			x: -10.5d
+			y: 0.0d
+			dependencies: ["193E0292DE78AA4E"]
+			id: "2FACA45D55536AA0"
+			tasks: [{
+				id: "1AFB2BCB2D53AC0E"
+				type: "item"
+				item: "functionalstorage:ender_drawer"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 0.0d
+			dependencies: ["193E0292DE78AA4E"]
+			id: "38514C7045F115F8"
+			tasks: [{
+				id: "4569DAE384EE2D1A"
+				type: "item"
+				item: "functionalstorage:compacting_drawer"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["193E0292DE78AA4E"]
+			id: "418B47F01F3D2071"
+			tasks: [{
+				id: "5B31BF28471EE7AA"
+				type: "item"
+				item: "functionalstorage:copper_upgrade"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 1.5d
+			dependencies: ["418B47F01F3D2071"]
+			id: "3E7E05D8948154F1"
+			tasks: [{
+				id: "708EED1798D9F68A"
+				type: "item"
+				item: "functionalstorage:gold_upgrade"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 3.0d
+			dependencies: ["3E7E05D8948154F1"]
+			id: "1EDB3ACCCF5F2175"
+			tasks: [{
+				id: "214F057359A3F732"
+				type: "item"
+				item: "functionalstorage:diamond_upgrade"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 4.5d
+			dependencies: ["1EDB3ACCCF5F2175"]
+			id: "178175C9506A674F"
+			tasks: [{
+				id: "2FD006153D76D2D3"
+				type: "item"
+				item: "functionalstorage:netherite_upgrade"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 6.0d
+			hide_dependency_lines: true
+			dependencies: ["418B47F01F3D2071"]
+			id: "7564E2A88C4E7DDA"
+			tasks: [{
+				id: "19BD1A54A7DB6A2A"
+				type: "item"
+				item: "functionalstorage:iron_downgrade"
+			}]
+		}
+		{
+			x: -18.0d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["193E0292DE78AA4E"]
+			id: "1B845AD4D3E3DEC8"
+			tasks: [{
+				id: "291A964D3DF81B2D"
+				type: "item"
+				item: {
+					id: "functionalstorage:collector_upgrade"
+					Count: 1b
+					tag: {
+						Direction: "down"
+					}
+				}
+			}]
+		}
+		{
+			x: -18.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["193E0292DE78AA4E"]
+			id: "7495C64B61A44296"
+			tasks: [{
+				id: "32D1CB51441F95B6"
+				type: "item"
+				item: {
+					id: "functionalstorage:puller_upgrade"
+					Count: 1b
+					tag: {
+						Direction: "down"
+					}
+				}
+			}]
+		}
+		{
+			x: -18.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["193E0292DE78AA4E"]
+			id: "0D79D858B923BB84"
+			tasks: [{
+				id: "5DAB65A221F0F6F8"
+				type: "item"
+				item: {
+					id: "functionalstorage:pusher_upgrade"
+					Count: 1b
+					tag: {
+						Direction: "down"
+					}
+				}
+			}]
+		}
+		{
+			x: -18.0d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: ["193E0292DE78AA4E"]
+			id: "3BF4484C98C83C82"
+			tasks: [{
+				id: "4C47D6D82B6E92B8"
+				type: "item"
+				item: "functionalstorage:void_upgrade"
+			}]
+		}
+		{
+			x: -18.0d
+			y: 6.0d
+			hide_dependency_lines: true
+			dependencies: ["193E0292DE78AA4E"]
+			id: "1F2482996F15C482"
+			tasks: [{
+				id: "171168BB641773BC"
+				type: "item"
+				item: {
+					id: "functionalstorage:redstone_upgrade"
+					Count: 1b
+					tag: {
+						Slot: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			dependencies: ["397E6B026859443F"]
+			id: "3BC4A573FE560FFE"
+			tasks: [
+				{
+					id: "3A8AA21D670C211C"
+					type: "item"
+					item: "ae2:drive"
+				}
+				{
+					id: "585EA7FA78B1A9F4"
+					type: "item"
+					item: {
+						id: "ae2:item_storage_cell_1k"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["3BC4A573FE560FFE"]
+			id: "78FDC78DDB86664B"
+			tasks: [{
+				id: "43E0F14DE01FA3C2"
+				type: "item"
+				item: "ae2:storage_bus"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["397E6B026859443F"]
+			id: "3AE52F96F5FA520F"
+			tasks: [{
+				id: "2508AF5460928830"
+				type: "item"
+				item: "ae2:import_bus"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["397E6B026859443F"]
+			id: "14B99655CBCF6843"
+			tasks: [{
+				id: "7E312255F65A32D4"
+				type: "item"
+				item: "ae2:export_bus"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["397E6B026859443F"]
+			dependency_requirement: "one_completed"
+			id: "3C2FBC963DD18B2B"
+			tasks: [
+				{
+					id: "4B2588D6913020BD"
+					type: "item"
+					item: "ae2:interface"
+				}
+				{
+					id: "438D799178884484"
+					type: "item"
+					item: "ae2:cable_interface"
+				}
+			]
+		}
+		{
+			x: 12.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["3BC4A573FE560FFE"]
+			id: "1DDB7E66BA37A5CC"
+			tasks: [{
+				id: "3D23C32A5C7DBE36"
+				type: "item"
+				item: "ae2:cell_component_1k"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 1.5d
+			dependencies: ["1DDB7E66BA37A5CC"]
+			id: "5B44E6877B1CD52B"
+			tasks: [{
+				id: "596CCEA0A94AC0EF"
+				type: "item"
+				item: "ae2:cell_component_4k"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 3.0d
+			dependencies: ["5B44E6877B1CD52B"]
+			id: "14C9CF81D7B14323"
+			tasks: [{
+				id: "775B201A70181138"
+				type: "item"
+				item: "ae2:cell_component_16k"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 4.5d
+			dependencies: ["14C9CF81D7B14323"]
+			id: "34351D94DD23681E"
+			tasks: [{
+				id: "19CF76A459969F5E"
+				type: "item"
+				item: "ae2:cell_component_64k"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 6.0d
+			dependencies: ["34351D94DD23681E"]
+			id: "0E3AE36DB25137E7"
+			tasks: [{
+				id: "7182765703C77F93"
+				type: "item"
+				item: "ae2:cell_component_256k"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			dependencies: ["0E3AE36DB25137E7"]
+			id: "33BD4714EF4C9AB8"
+			tasks: [{
+				id: "46B1E036577EEA75"
+				type: "item"
+				item: "ae2additions:super_cell_component_1024k"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 1.5d
+			dependencies: ["33BD4714EF4C9AB8"]
+			id: "01A0326FA8110903"
+			tasks: [{
+				id: "6B28C2E0098BB405"
+				type: "item"
+				item: "ae2additions:super_cell_component_4096k"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 3.0d
+			dependencies: ["01A0326FA8110903"]
+			id: "3A60569959BE0C46"
+			tasks: [{
+				id: "71C89444EA8420B8"
+				type: "item"
+				item: "ae2additions:super_cell_component_16m"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 4.5d
+			dependencies: ["3A60569959BE0C46"]
+			id: "448E8F4C089ADA50"
+			tasks: [{
+				id: "269A3E8E88E8B8C1"
+				type: "item"
+				item: "ae2additions:super_cell_component_65m"
+			}]
+		}
+		{
+			x: 15.5d
+			y: 0.0d
+			dependencies: ["448E8F4C089ADA50"]
+			id: "4469B35271039E23"
+			tasks: [{
+				id: "4475E13FCFAD2252"
+				type: "item"
+				item: "megacells:cell_component_256m"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["397E6B026859443F"]
+			id: "14FEC88BD21A3660"
+			tasks: [{
+				id: "4D2BE11A077BC47D"
+				type: "item"
+				item: "megacells:bulk_cell_component"
+			}]
+		}
+		{
+			title: "Portable Item Cell"
+			x: 18.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["397E6B026859443F"]
+			id: "0C7CAFEBDDA10193"
+			tasks: [
+				{
+					id: "48DE95D148EAD87D"
+					type: "item"
+					item: {
+						id: "ae2:portable_item_cell_1k"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "47AFF5DC477B1162"
+					type: "item"
+					item: {
+						id: "ae2:portable_item_cell_4k"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "2FF0895EA020CA36"
+					type: "item"
+					item: {
+						id: "ae2:portable_item_cell_16k"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "05D216E2D4AEB303"
+					type: "item"
+					item: {
+						id: "ae2:portable_item_cell_64k"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "19B57F4970FD464A"
+					type: "item"
+					item: {
+						id: "ae2:portable_item_cell_256k"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "Portable Fluid Cell"
+			x: 21.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["397E6B026859443F"]
+			id: "5292C02FB73B0EE3"
+			tasks: [
+				{
+					id: "6495EEC249FC1CD8"
+					type: "item"
+					item: {
+						id: "ae2:portable_fluid_cell_1k"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "0A71A7209442062A"
+					type: "item"
+					item: {
+						id: "ae2:portable_fluid_cell_4k"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "4FEB661F69DD6C38"
+					type: "item"
+					item: {
+						id: "ae2:portable_fluid_cell_16k"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "57F456862945B4E3"
+					type: "item"
+					item: {
+						id: "ae2:portable_fluid_cell_64k"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "3F56494A1F3A2190"
+					type: "item"
+					item: {
+						id: "ae2:portable_fluid_cell_256k"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "MEGA Portable Item Cell"
+			x: 20.0d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["397E6B026859443F"]
+			id: "23431459D0B9F32A"
+			tasks: [
+				{
+					id: "1481BA010BBE753F"
+					type: "item"
+					item: {
+						id: "megacells:portable_item_cell_1m"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "1F0BE849AF822B48"
+					type: "item"
+					item: {
+						id: "megacells:portable_item_cell_4m"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "6888BB8B193BA9D1"
+					type: "item"
+					item: {
+						id: "megacells:portable_item_cell_16m"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "1DA7DD04B4C8DE94"
+					type: "item"
+					item: {
+						id: "megacells:portable_item_cell_64m"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "4039BF55F16538BE"
+					type: "item"
+					item: {
+						id: "megacells:portable_item_cell_256m"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "MEGA Portable Fluid Cell"
+			x: 23.0d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["397E6B026859443F"]
+			id: "2D55390FE9DEBDC1"
+			tasks: [
+				{
+					id: "2DFC088A53DF9EE9"
+					type: "item"
+					item: {
+						id: "megacells:portable_fluid_cell_1m"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "4A63B8ABAC287B95"
+					type: "item"
+					item: {
+						id: "megacells:portable_fluid_cell_4m"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "5EA382C33C6BB9BB"
+					type: "item"
+					item: {
+						id: "megacells:portable_fluid_cell_16m"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "195244AC02FA357C"
+					type: "item"
+					item: {
+						id: "megacells:portable_fluid_cell_64m"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "35B89815FCD9314E"
+					type: "item"
+					item: {
+						id: "megacells:portable_fluid_cell_256m"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["397E6B026859443F"]
+			id: "35CA132E6B4E1B7B"
+			tasks: [{
+				id: "6F1753F5B67E0E79"
+				type: "item"
+				item: "ae2:terminal"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -1.5d
+			dependencies: ["35CA132E6B4E1B7B"]
+			id: "062447F54043F577"
+			tasks: [{
+				id: "6E5188B7BD7B36A5"
+				type: "item"
+				item: "ae2:wireless_terminal"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["1DDB7E66BA37A5CC"]
+			id: "01858B67CC06E520"
+			tasks: [{
+				id: "7DBBB12DDC3C0EC0"
+				type: "item"
+				item: "ae2:item_cell_housing"
+			}]
+		}
+		{
+			x: 14.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["1DDB7E66BA37A5CC"]
+			id: "09E56E3D35FF953F"
+			tasks: [{
+				id: "6778D0EC094B34B8"
+				type: "item"
+				item: "ae2:fluid_cell_housing"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["1DDB7E66BA37A5CC"]
+			id: "382A699E74B62AF9"
+			tasks: [{
+				id: "7135CB587B665868"
+				type: "item"
+				item: "ae2additions:super_cell_housing"
+			}]
+		}
+		{
+			x: 17.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["1DDB7E66BA37A5CC"]
+			id: "12DCA9D20BC37872"
+			tasks: [{
+				id: "41EE5D36244EF80B"
+				type: "item"
+				item: "ae2additions:disk_fluid_housing"
+			}]
+		}
+		{
+			x: 18.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["1DDB7E66BA37A5CC"]
+			id: "61783A61262E4AF3"
+			tasks: [{
+				id: "026DCA47938F5AD8"
+				type: "item"
+				item: "megacells:mega_item_cell_housing"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["1DDB7E66BA37A5CC"]
+			id: "54E35DBCB3CF684D"
+			tasks: [{
+				id: "3446C546C65A2607"
+				type: "item"
+				item: "megacells:mega_fluid_cell_housing"
+			}]
+		}
+		{
+			x: 21.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["1DDB7E66BA37A5CC"]
+			id: "0376C9F3A572FEC7"
+			tasks: [{
+				id: "28CF4B7CE6DD459F"
+				type: "item"
+				item: "ae2things:disk_housing"
+			}]
+		}
+	]
 }

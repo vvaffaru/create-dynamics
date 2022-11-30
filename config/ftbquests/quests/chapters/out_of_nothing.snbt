@@ -25,7 +25,7 @@
 				""
 				"Multi-sieve sifting is possible by placing additional sieves nearby on the same Y level. Attached sieves will attempt to use other sieves nearby."
 			]
-			dependencies: ["15EDA0CD3B28ED7B"]
+			dependencies: ["3C62F472F5D758B0"]
 			size: 2.0d
 			id: "0A319D7EBB66BAB9"
 			tasks: [
@@ -548,6 +548,8 @@
 		{
 			x: 7.5d
 			y: 2.0d
+			subtitle: "40 ticks = 1 cobble"
+			description: ["Holds 64 cobble in the internal buffer."]
 			dependencies: ["68CF6E1B27C4E9E0"]
 			id: "27466C7AF4FD8CBD"
 			tasks: [{
@@ -559,6 +561,8 @@
 		{
 			x: 8.5d
 			y: 3.0d
+			subtitle: "20 ticks = 1 cobble"
+			description: ["Holds 128 cobble in the internal buffer."]
 			dependencies: ["27466C7AF4FD8CBD"]
 			id: "2E96B3723B004EDD"
 			tasks: [{
@@ -570,6 +574,8 @@
 		{
 			x: 7.5d
 			y: 4.0d
+			subtitle: "10 ticks = 1 cobble"
+			description: ["Holds 256 cobble in the internal buffer."]
 			dependencies: ["2E96B3723B004EDD"]
 			id: "7F955CAB0586EC10"
 			tasks: [{
@@ -581,6 +587,8 @@
 		{
 			x: 6.5d
 			y: 3.0d
+			subtitle: "5 ticks = 1 cobble"
+			description: ["Holds 512 cobble in the internal buffer."]
 			dependencies: ["7F955CAB0586EC10"]
 			id: "5F94BC75021F4C64"
 			tasks: [{
@@ -592,6 +600,8 @@
 		{
 			x: 5.5d
 			y: 2.0d
+			subtitle: "1 tick = 1 cobble"
+			description: ["Holds 1024 cobble in the internal buffer."]
 			dependencies: ["5F94BC75021F4C64"]
 			id: "594406632BE607E8"
 			tasks: [{
@@ -777,6 +787,149 @@
 				id: "2625C7FEB94E69BE"
 				type: "item"
 				item: "chicken_roost:breeder"
+			}]
+		}
+		{
+			x: 3.75d
+			y: 4.125d
+			subtitle: "See JEI for a complete list of materials that this block sieves to."
+			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
+			size: 0.75d
+			id: "7F78B36C497C5D49"
+			tasks: [{
+				id: "5748B3A7D6C9764D"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.125d
+			subtitle: "See JEI for a complete list of materials that this block sieves to."
+			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
+			size: 0.75d
+			id: "67D4F2C17C7A8E32"
+			tasks: [{
+				id: "3A85A2B2D0F96A7C"
+				type: "item"
+				item: "minecraft:dirt"
+			}]
+		}
+		{
+			title: "Sand"
+			x: 1.5d
+			y: 4.125d
+			subtitle: "See JEI for a complete list of materials that this block sieves to."
+			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
+			size: 0.75d
+			id: "7A837CF44C7B1850"
+			tasks: [{
+				id: "339340EA9ED5E1D3"
+				type: "item"
+				title: "Any #minecraft:sand"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:sand"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.75d
+			y: 4.125d
+			subtitle: "See JEI for a complete list of materials that this block sieves to."
+			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
+			size: 0.75d
+			id: "4E80B82854E41F15"
+			tasks: [{
+				id: "7A88BA9014FCC322"
+				type: "item"
+				item: "exnihilosequentia:dust"
+			}]
+		}
+		{
+			x: -0.75d
+			y: 4.125d
+			subtitle: "See JEI for a complete list of materials that this block sieves to."
+			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
+			size: 0.75d
+			id: "1A88D6A196A0D5D2"
+			tasks: [{
+				id: "4BA20BAC9C984A54"
+				type: "item"
+				item: "exnihilosequentia:crushed_end_stone"
+			}]
+		}
+		{
+			x: 2.25d
+			y: 4.125d
+			subtitle: "See JEI for a complete list of materials that this block sieves to."
+			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
+			size: 0.75d
+			id: "5F9ECAF4D284804B"
+			tasks: [{
+				id: "6E475738DF92475C"
+				type: "item"
+				item: "minecraft:coarse_dirt"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.125d
+			subtitle: "See JEI for a complete list of materials that this block sieves to."
+			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
+			size: 0.75d
+			id: "6318476C81225A2F"
+			tasks: [{
+				id: "1D52EC0F3F1B2023"
+				type: "item"
+				item: "exnihilosequentia:crushed_netherrack"
+			}]
+		}
+		{
+			title: "Crushed Sky Stone"
+			x: 4.5d
+			y: -1.5d
+			subtitle: "See JEI for a complete list of materials that this block sieves to."
+			dependencies: ["21BB62EAC038875A"]
+			hide: true
+			size: 0.75d
+			id: "5E07689329A83B7E"
+			tasks: [{
+				id: "2C13550FF099C064"
+				type: "item"
+				item: "exnihiloae:crushed_sky_stone"
+			}]
+		}
+		{
+			title: "Leaves"
+			x: 1.5d
+			y: 3.375d
+			subtitle: "See JEI for a complete list of materials that this block sieves to."
+			dependencies: ["0A319D7EBB66BAB9"]
+			hide: true
+			size: 0.75d
+			id: "6EBF3311A2A81D56"
+			tasks: [{
+				id: "1D5F337260FEE8EC"
+				type: "item"
+				title: "Any #minecraft:leaves"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:leaves"
+					}
+				}
 			}]
 		}
 	]

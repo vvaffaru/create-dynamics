@@ -6,5 +6,2720 @@
 	title: "Electrify"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "Power Up"
+			icon: "immersiveengineering:light_bulb"
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["3C62F472F5D758B0"]
+			size: 2.0d
+			id: "14D1207A05829445"
+			tasks: [{
+				id: "7250B8771F6D88AA"
+				type: "checkmark"
+				title: "Power Up"
+			}]
+		}
+		{
+			title: "Immersive Engineering"
+			icon: "immersiveengineering:manual"
+			x: 6.0d
+			y: 0.0d
+			subtitle: "Bzzzt!"
+			description: [
+				"IE has a very well written and detailed in-game manual. This part of the quest book is not intended as a replacement for that manual, more of a rewards system to inspire you to explore what the mod has to offer. The following quests will help guide you through its energy system."
+				""
+				"Please reference the manual for the most detailed information. There is an entire section titled \"Power, wires and generators.\""
+			]
+			dependencies: ["14D1207A05829445"]
+			size: 1.5d
+			id: "3FCCD70FA62EB4BD"
+			tasks: [{
+				id: "3A3F90A36219E0EA"
+				type: "item"
+				item: "immersiveengineering:manual"
+			}]
+		}
+		{
+			title: "Powah!"
+			x: -6.0d
+			y: 0.0d
+			subtitle: "https://youtu.be/CggB-gdA1ok"
+			description: [
+				"This mod brings a lot to the table in terms of power generation, storage and transportation. Each machine and generator has 7 tiers of progression."
+				""
+				"The in-game manual is very in-depth and gives a lot of detailed information about all the blocks and items added."
+			]
+			dependencies: ["14D1207A05829445"]
+			size: 1.5d
+			id: "075926266ABF400B"
+			tasks: [{
+				id: "517963DB9DBB6AED"
+				type: "item"
+				item: "powah:book"
+			}]
+		}
+		{
+			title: "Flux Networks"
+			icon: "fluxnetworks:flux_core"
+			x: -3.0d
+			y: 3.75d
+			subtitle: "Wireless power done right"
+			description: ["Flux Networks gives you the ability to build Wireless Energy Networks. It allows you to customize these networks and manage the flow of energy across your world. By removing the need to have cables going everywhere, this mod can help to decrease lag and save you time. Power can also be transferred across dimensions making energy management simple."]
+			dependencies: ["14D1207A05829445"]
+			size: 1.5d
+			id: "2E0CD9F32061DDDB"
+			tasks: [{
+				id: "0BF03454B6A31489"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "RFTools"
+			x: 3.0d
+			y: -3.75d
+			subtitle: "RFTools standalone power mod"
+			description: [
+				"This mod adds all the power blocks from RFTools."
+				""
+				"As with many RFTools machines, make sure to check JEI to see if the machine can be infused. This can greatly increase efficiency and speed."
+			]
+			dependencies: ["14D1207A05829445"]
+			size: 1.5d
+			id: "09F845F82B587355"
+			tasks: [{
+				id: "3620A3382E3F6394"
+				type: "item"
+				item: "rftoolspower:powercell_card"
+			}]
+		}
+		{
+			title: "AE2"
+			x: 3.0d
+			y: 3.75d
+			subtitle: "Powering your AE2 setup"
+			description: [
+				"First step in getting power into your AE2 system is the energy acceptor. You connect any power cable or flux point to the energy acceptor, and place an AE2 energy cell next to the acceptor."
+				""
+				"That is the most basic setup."
+				""
+				"Energy cells form a multiblock when placed together."
+			]
+			dependencies: ["14D1207A05829445"]
+			size: 1.5d
+			id: "47DA051A60521E4A"
+			tasks: [{
+				id: "52A5C8EAA020FB91"
+				type: "item"
+				item: "ae2:energy_acceptor"
+			}]
+		}
+		{
+			title: "Integrated Dynamics"
+			x: 0.0d
+			y: -5.25d
+			subtitle: "Quick and easy"
+			description: ["While ID doesn't add much in the way of power generation, it's an easy start for early game. You can expand the battery capacity just by combining them in a crafting grid."]
+			dependencies: ["14D1207A05829445"]
+			size: 1.5d
+			id: "18884846C546BAC1"
+			tasks: [
+				{
+					id: "38661127BF3C68F7"
+					type: "item"
+					item: {
+						id: "integrateddynamics:energy_battery"
+						Count: 1b
+						tag: {
+							energy: 0
+						}
+					}
+					match_nbt: true
+					weak_nbt_match: true
+				}
+				{
+					id: "5A27F2213D575FA1"
+					type: "item"
+					item: "integrateddynamics:coal_generator"
+				}
+			]
+			rewards: [{
+				id: "5BBB9C3AD4617AA1"
+				type: "item"
+				item: {
+					id: "integrateddynamics:energy_battery"
+					Count: 1b
+					tag: {
+						energy: 0
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "Power Core"
+			x: 4.0d
+			y: -5.0d
+			description: ["These are required to craft power cells."]
+			dependencies: ["09F845F82B587355"]
+			hide: true
+			id: "3B90C139824D0BD1"
+			tasks: [
+				{
+					id: "35A11C5383321537"
+					type: "item"
+					item: "rftoolspower:power_core1"
+				}
+				{
+					id: "041ADB292A822F97"
+					type: "item"
+					item: "rftoolspower:power_core2"
+				}
+				{
+					id: "09F5D808086C929E"
+					type: "item"
+					item: "rftoolspower:power_core3"
+				}
+			]
+		}
+		{
+			title: "Dimensional Cells"
+			x: 5.0d
+			y: -6.0d
+			subtitle: "A big disconnected multi-block?"
+			description: [
+				"Dimensional Cells are special in that they don't need to be touching or formed into any special shape to create a multi-block."
+				""
+				"You can add more as you need them, and it increases the overall energy storage. As the name implies, they work across dimensions, so this is a wireless power solution of sorts."
+			]
+			dependencies: ["09F845F82B587355"]
+			hide: true
+			id: "0F636CD27CF85969"
+			tasks: [
+				{
+					id: "305C6E5CFFC06821"
+					type: "item"
+					item: "rftoolspower:dimensionalcell_simple"
+				}
+				{
+					id: "4281E426EB039D2A"
+					type: "item"
+					item: "rftoolspower:dimensionalcell"
+				}
+				{
+					id: "05561F20BEED7E6A"
+					type: "item"
+					item: "rftoolspower:dimensionalcell_advanced"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -9.0d
+			subtitle: "Transmuting agitation into energy"
+			description: ["After 'agitating' blaze rods for fuel, this generator uses them to produce energy."]
+			dependencies: ["0A9355DB8030A05C"]
+			id: "54C476D1620DA37A"
+			tasks: [{
+				id: "59D67D85EC8271AF"
+				type: "item"
+				item: "rftoolspower:blazing_generator"
+			}]
+		}
+		{
+			title: "Endergenic Generator"
+			icon: "rftoolsbase:infused_enderpearl"
+			x: 7.0d
+			y: -8.0d
+			subtitle: "Like pearls in the rain, all these moments will be lost to TPS"
+			description: [
+				"The endergenic generator is not the most easy multi-block to setup due to the process of tuning timing. All servers/clients seem to behave differently, so it takes a little fiddling."
+				""
+				"If you get it working efficiently though, this generator can carry you most the way through end-game."
+			]
+			dependencies: ["09F845F82B587355"]
+			hide: true
+			id: "413F09BC75D5470B"
+			tasks: [
+				{
+					id: "65B1DF1CC31B19F9"
+					type: "item"
+					item: "rftoolspower:ender_monitor"
+				}
+				{
+					id: "2E8BA479D50BB8E8"
+					type: "item"
+					item: "rftoolspower:pearl_injector"
+				}
+				{
+					id: "5772403FBEA70121"
+					type: "item"
+					item: "rftoolspower:endergenic"
+				}
+				{
+					id: "66172D043D3576E1"
+					type: "item"
+					item: "rftoolsbase:infused_enderpearl"
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -4.0d
+			subtitle: "Multi-block power storage"
+			description: [
+				"These cells connect to form a multi-block."
+				""
+				"Right click with a wrench to toggle I/O."
+			]
+			dependencies: ["3B90C139824D0BD1"]
+			id: "2AC38366CBEFF6FA"
+			tasks: [
+				{
+					id: "640E0E038A434952"
+					type: "item"
+					item: "rftoolspower:cell1"
+				}
+				{
+					id: "59B4B3BF6DF90835"
+					type: "item"
+					item: "rftoolspower:cell2"
+				}
+				{
+					id: "101B1EE311A94C2E"
+					type: "item"
+					item: "rftoolspower:cell3"
+				}
+			]
+		}
+		{
+			title: "Power sensors"
+			x: 6.0d
+			y: -3.0d
+			subtitle: "Orwell would be proud"
+			description: [
+				"The power monitor sends a signal based on how much power is in the target block."
+				""
+				"The power level block shows a digit representing the amount of power in the target block. It will also send out a redstone signal with the same amount."
+			]
+			dependencies: ["2AC38366CBEFF6FA"]
+			id: "6D0F7446642472B2"
+			tasks: [
+				{
+					id: "62535E39B215B0F0"
+					type: "item"
+					item: "rftoolspower:power_monitor"
+				}
+				{
+					id: "6E6C11B38ADC06D1"
+					type: "item"
+					item: "rftoolspower:power_level"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -7.0d
+			subtitle: "I'm getting real agitated in here"
+			description: ["This device can 'agitate' blaze rods for use in the blazing generator."]
+			dependencies: ["09F845F82B587355"]
+			hide: true
+			id: "48A0BFA588126C5B"
+			tasks: [{
+				id: "08BCD3005D5F541C"
+				type: "item"
+				item: "rftoolspower:blazing_agitator"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -8.0d
+			subtitle: "This is the product of my agitation"
+			description: ["An energized version of blaze rods to be used as fuel in the blazing generator."]
+			dependencies: ["48A0BFA588126C5B"]
+			id: "0A9355DB8030A05C"
+			tasks: [{
+				id: "17C24C998398398C"
+				type: "item"
+				item: "rftoolspower:blazing_rod"
+			}]
+		}
+		{
+			title: "Panels"
+			x: -3.0d
+			y: -3.75d
+			subtitle: "Make like a tree, and leaf"
+			description: [
+				"There's a reason nature picked photosynthesis to generate energy. It's very dependable."
+				""
+				"This mod adds 8 tiers of solar panels as well as a unique upgrade system."
+				""
+				"They will automatically share their energy when next to each other, so you don't need to connect each one with a cable as long as they're directly adjacent."
+			]
+			dependencies: ["14D1207A05829445"]
+			dependency_requirement: "one_completed"
+			size: 1.5d
+			id: "080817AA7CF754B5"
+			tasks: [
+				{
+					id: "2CD9152D3500265E"
+					type: "item"
+					item: "solarflux:sp_1"
+				}
+				{
+					id: "7E57DB32A3660684"
+					type: "item"
+					item: "solarflux:sp_2"
+				}
+				{
+					id: "5BB305455125FD49"
+					type: "item"
+					item: "solarflux:sp_3"
+				}
+				{
+					id: "069DFF97A8810C5D"
+					type: "item"
+					item: "solarflux:sp_4"
+				}
+				{
+					id: "1046169A45937E27"
+					type: "item"
+					item: "solarflux:sp_5"
+				}
+				{
+					id: "1073C7D9A4D5401B"
+					type: "item"
+					item: "solarflux:sp_6"
+				}
+				{
+					id: "66457B0D1C390733"
+					type: "item"
+					item: "solarflux:sp_7"
+				}
+				{
+					id: "78D5349B7D9A5DB9"
+					type: "item"
+					item: "solarflux:sp_8"
+				}
+			]
+		}
+		{
+			title: "Upgrades"
+			icon: "solarflux:blank_upgrade"
+			x: -4.0d
+			y: -5.0d
+			subtitle: "A solar panel can do what?"
+			description: ["This mod adds some unique upgrades to solar panels that are worth checking out even if just for the novelty."]
+			hide_dependency_lines: false
+			dependencies: ["080817AA7CF754B5"]
+			hide: true
+			id: "279AE665D497A8B9"
+			tasks: [{
+				id: "0F46433AE0A71FE0"
+				type: "item"
+				item: "solarflux:blank_upgrade"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -6.0d
+			subtitle: "Optimizing things"
+			description: ["Up to 20, 20 = 2x gen"]
+			dependencies: ["279AE665D497A8B9"]
+			hide: true
+			id: "06C59E1E44257CE0"
+			tasks: [{
+				id: "1A7A9FD861B25192"
+				type: "item"
+				item: "solarflux:efficiency_upgrade"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -5.0d
+			subtitle: "Moving right along"
+			description: ["Up to 10, 10 = 2.5x transfer"]
+			dependencies: ["279AE665D497A8B9"]
+			id: "7EFDA04AD1591D40"
+			tasks: [{
+				id: "667F126787497AF9"
+				type: "item"
+				item: "solarflux:transfer_rate_upgrade"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -4.0d
+			subtitle: "Thicc"
+			description: ["Up to 10, 10 = 2x capacity"]
+			dependencies: ["279AE665D497A8B9"]
+			id: "66EA034C27A1E2D0"
+			tasks: [{
+				id: "3DE7250BEE65F8E2"
+				type: "item"
+				item: "solarflux:capacity_upgrade"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -7.0d
+			subtitle: "No mo' co'"
+			description: ["Put a solar panel on top of your furnace to fuel it."]
+			dependencies: ["279AE665D497A8B9"]
+			id: "44222C02D3DBEE13"
+			tasks: [{
+				id: "28F1364CE3E1DBB1"
+				type: "item"
+				item: "solarflux:furnace_upgrade"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -7.0d
+			subtitle: "Solar AOE"
+			description: ["When installed, the solar panel will output energy to machines attached, in a 5 block range."]
+			dependencies: ["279AE665D497A8B9"]
+			id: "18A4DDEBC3CB1BFE"
+			tasks: [{
+				id: "3E9D14584E18BE6A"
+				type: "item"
+				item: "solarflux:traversal_upgrade"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -8.0d
+			subtitle: "Pick up a seat and stay a while"
+			description: ["When installed, the solar panel will charge players nearby."]
+			dependencies: ["279AE665D497A8B9"]
+			id: "1EEBB2AC4DF50B38"
+			tasks: [{
+				id: "62A437B43C416003"
+				type: "item"
+				item: "solarflux:dispersive_upgrade"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -9.0d
+			subtitle: "Wireless power targeting"
+			description: ["Before installing, you must link it to the block it will send energy to. When installed, the solar panel will output energy to the linked block within a 16 block range."]
+			dependencies: ["279AE665D497A8B9"]
+			id: "2AF24E72FF2D9721"
+			tasks: [{
+				id: "12F3EC211FB3B04B"
+				type: "item"
+				item: "solarflux:block_charging_upgrade"
+			}]
+		}
+		{
+			title: "The First Items Needed"
+			x: -9.0d
+			y: 1.0d
+			subtitle: "The basics"
+			description: ["These items are some of the fundamental components used to craft things in this mod."]
+			dependencies: ["287D39C87524664C"]
+			id: "2ECB7864134CA2DE"
+			tasks: [
+				{
+					id: "63D87FEAF94558BF"
+					type: "item"
+					item: "powah:dielectric_rod"
+				}
+				{
+					id: "4182738F3F5AFD2C"
+					type: "item"
+					item: "powah:dielectric_rod_horizontal"
+				}
+				{
+					id: "366B1141C652609E"
+					type: "item"
+					item: "powah:dielectric_casing"
+				}
+				{
+					id: "65D21AE59C5F9776"
+					type: "item"
+					item: {
+						id: "powah:wrench"
+						Count: 1b
+						tag: {
+							PowahWrenchNBT: { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: 0.0d
+			subtitle: "Electrical protectant"
+			description: ["Using either blaze powder or a bucket of lava, some clay and coal or charcoal, the most basic resource for this mod is created."]
+			dependencies: ["075926266ABF400B"]
+			hide: true
+			id: "287D39C87524664C"
+			tasks: [{
+				id: "70785BC1868BF2E9"
+				type: "item"
+				item: "powah:dielectric_paste"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "0E6FB1816E9B54CD"
+			tasks: [{
+				id: "52D36E05933754B3"
+				type: "item"
+				item: "powah:furnator_starter"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 1.5d
+			dependencies: ["0E6FB1816E9B54CD"]
+			hide: true
+			id: "0AA0BC43066959C7"
+			tasks: [{
+				id: "0A8F8E811F8C901A"
+				type: "item"
+				item: "powah:furnator_basic"
+			}]
+		}
+		{
+			x: -12.5d
+			y: 2.5d
+			dependencies: ["0AA0BC43066959C7"]
+			id: "2A64656779400973"
+			tasks: [{
+				id: "1D8BC4C0C3853445"
+				type: "item"
+				item: "powah:furnator_hardened"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 3.5d
+			dependencies: ["2A64656779400973"]
+			id: "52A5AEC42805794C"
+			tasks: [{
+				id: "4FF11DA4C1C08EB4"
+				type: "item"
+				item: "powah:furnator_blazing"
+			}]
+		}
+		{
+			x: -14.5d
+			y: 4.5d
+			dependencies: ["52A5AEC42805794C"]
+			id: "1B28365FAEEE549C"
+			tasks: [{
+				id: "6D045964EFF670FE"
+				type: "item"
+				item: "powah:furnator_niotic"
+			}]
+		}
+		{
+			x: -15.5d
+			y: 5.5d
+			dependencies: ["1B28365FAEEE549C"]
+			id: "712C0BCE476B960E"
+			tasks: [{
+				id: "047FCA429C3363E5"
+				type: "item"
+				item: "powah:furnator_niotic"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 6.5d
+			dependencies: ["712C0BCE476B960E"]
+			id: "084B46004F092E34"
+			tasks: [{
+				id: "0EFB1C1DEF98BC89"
+				type: "item"
+				item: "powah:furnator_nitro"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "788BD60254BF486A"
+			tasks: [{
+				id: "3EAB33D161ED2A2E"
+				type: "item"
+				item: "powah:magmator_starter"
+			}]
+		}
+		{
+			x: -14.5d
+			y: -1.5d
+			dependencies: ["788BD60254BF486A"]
+			hide: true
+			id: "529B383B349F792A"
+			tasks: [{
+				id: "366B7A92472D5DA0"
+				type: "item"
+				item: "powah:magmator_basic"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -2.5d
+			dependencies: ["529B383B349F792A"]
+			id: "72D7B0ADA69A6EB9"
+			tasks: [{
+				id: "27A3AFF9E23D3EB9"
+				type: "item"
+				item: "powah:magmator_hardened"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -3.5d
+			dependencies: ["72D7B0ADA69A6EB9"]
+			id: "5542E970D93A1352"
+			tasks: [{
+				id: "1F1B7BEFB3D16D3A"
+				type: "item"
+				item: "powah:magmator_blazing"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -4.5d
+			dependencies: ["5542E970D93A1352"]
+			id: "789614E43F6C23F1"
+			tasks: [{
+				id: "54080EA54538D405"
+				type: "item"
+				item: "powah:magmator_niotic"
+			}]
+		}
+		{
+			x: -18.5d
+			y: -5.5d
+			dependencies: ["789614E43F6C23F1"]
+			id: "0FA242DF377CD601"
+			tasks: [{
+				id: "73934C178E348F80"
+				type: "item"
+				item: "powah:magmator_spirited"
+			}]
+		}
+		{
+			x: -19.5d
+			y: -6.5d
+			dependencies: ["0FA242DF377CD601"]
+			id: "1A8BA59E696F4923"
+			tasks: [{
+				id: "7BF311B0D4423741"
+				type: "item"
+				item: "powah:magmator_nitro"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "3AEA0EA2D396339D"
+			tasks: [{
+				id: "5BD830D0348ED4AE"
+				type: "item"
+				item: "powah:thermo_generator_starter"
+			}]
+		}
+		{
+			x: -14.5d
+			y: 1.5d
+			dependencies: ["3AEA0EA2D396339D"]
+			hide: true
+			id: "187D14F655C0F692"
+			tasks: [{
+				id: "747677F06B1BF5DD"
+				type: "item"
+				item: "powah:thermo_generator_basic"
+			}]
+		}
+		{
+			x: -15.5d
+			y: 2.5d
+			dependencies: ["187D14F655C0F692"]
+			id: "3CC24F21970C6773"
+			tasks: [{
+				id: "5D7D30002F0542C1"
+				type: "item"
+				item: "powah:thermo_generator_hardened"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 3.5d
+			dependencies: ["3CC24F21970C6773"]
+			id: "261669D6D51FD3B5"
+			tasks: [{
+				id: "4ED95591839F53B8"
+				type: "item"
+				item: "powah:thermo_generator_blazing"
+			}]
+		}
+		{
+			x: -17.5d
+			y: 4.5d
+			dependencies: ["261669D6D51FD3B5"]
+			id: "1C336C0F3E171AFF"
+			tasks: [{
+				id: "4FCC9A94A4B6AF96"
+				type: "item"
+				item: "powah:thermo_generator_niotic"
+			}]
+		}
+		{
+			x: -18.5d
+			y: 5.5d
+			dependencies: ["1C336C0F3E171AFF"]
+			id: "3BA402560E0973B0"
+			tasks: [{
+				id: "085AAFBA7AABD841"
+				type: "item"
+				item: "powah:thermo_generator_spirited"
+			}]
+		}
+		{
+			x: -19.5d
+			y: 6.5d
+			dependencies: ["3BA402560E0973B0"]
+			id: "7A4ABB43A04C862F"
+			tasks: [{
+				id: "32FA0E4F46D3FF36"
+				type: "item"
+				item: "powah:thermo_generator_nitro"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "0AA8BF02A2A1A797"
+			tasks: [{
+				id: "264AD1A5A9578E12"
+				type: "item"
+				item: "powah:solar_panel_starter"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -1.5d
+			dependencies: ["0AA8BF02A2A1A797"]
+			hide: true
+			id: "50867D1C91004BF0"
+			tasks: [{
+				id: "1BB5031954446E0C"
+				type: "item"
+				item: "powah:solar_panel_basic"
+			}]
+		}
+		{
+			x: -18.5d
+			y: -2.5d
+			dependencies: ["50867D1C91004BF0"]
+			id: "7CFD3EE83FD52AC1"
+			tasks: [{
+				id: "04A29ED61DBC324D"
+				type: "item"
+				item: "powah:solar_panel_hardened"
+			}]
+		}
+		{
+			x: -19.5d
+			y: -3.5d
+			dependencies: ["7CFD3EE83FD52AC1"]
+			id: "51CD031E56977CF4"
+			tasks: [{
+				id: "550A64167EF8BA3E"
+				type: "item"
+				item: "powah:solar_panel_blazing"
+			}]
+		}
+		{
+			x: -20.5d
+			y: -4.5d
+			dependencies: ["51CD031E56977CF4"]
+			id: "73441252888EB3EC"
+			tasks: [{
+				id: "41A3EB00C59B2192"
+				type: "item"
+				item: "powah:solar_panel_niotic"
+			}]
+		}
+		{
+			x: -21.5d
+			y: -5.5d
+			dependencies: ["73441252888EB3EC"]
+			id: "39F23291456E26B3"
+			tasks: [{
+				id: "1C8CA20B317A1A08"
+				type: "item"
+				item: "powah:solar_panel_spirited"
+			}]
+		}
+		{
+			x: -22.5d
+			y: -6.5d
+			dependencies: ["39F23291456E26B3"]
+			id: "7B47CF20F09213F1"
+			tasks: [{
+				id: "6BB56C29DDE5F910"
+				type: "item"
+				item: "powah:solar_panel_nitro"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "34379DBA75FA3DFB"
+			tasks: [{
+				id: "216D1578F9B44DFC"
+				type: "item"
+				item: "powah:reactor_starter"
+			}]
+		}
+		{
+			x: -17.5d
+			y: 1.5d
+			dependencies: ["34379DBA75FA3DFB"]
+			hide: true
+			id: "5D8F17581C29482B"
+			tasks: [{
+				id: "0BEA9667E03ED2FF"
+				type: "item"
+				item: "powah:reactor_basic"
+			}]
+		}
+		{
+			x: -18.5d
+			y: 2.5d
+			dependencies: ["5D8F17581C29482B"]
+			id: "0AB703BA1621018D"
+			tasks: [{
+				id: "76523F5F7AF70E20"
+				type: "item"
+				item: "powah:reactor_hardened"
+			}]
+		}
+		{
+			x: -19.5d
+			y: 3.5d
+			dependencies: ["0AB703BA1621018D"]
+			id: "3526C45D4C27FE36"
+			tasks: [{
+				id: "07D1DB3D020EC7D5"
+				type: "item"
+				item: "powah:reactor_blazing"
+			}]
+		}
+		{
+			x: -20.5d
+			y: 4.5d
+			dependencies: ["3526C45D4C27FE36"]
+			id: "1702E6409D4F0B41"
+			tasks: [{
+				id: "09DB709D3D5FAE3F"
+				type: "item"
+				item: "powah:reactor_niotic"
+			}]
+		}
+		{
+			x: -21.5d
+			y: 5.5d
+			dependencies: ["1702E6409D4F0B41"]
+			id: "4EA01431941933AD"
+			tasks: [{
+				id: "02D34004DC0D85CE"
+				type: "item"
+				item: "powah:reactor_spirited"
+			}]
+		}
+		{
+			x: -22.5d
+			y: 6.5d
+			dependencies: ["4EA01431941933AD"]
+			id: "3BC506397EE10080"
+			tasks: [{
+				id: "018E90D84CCB1788"
+				type: "item"
+				item: "powah:reactor_nitro"
+			}]
+		}
+		{
+			title: "Energy Cables"
+			x: -9.0d
+			y: -1.0d
+			subtitle: "Wired energy transmission"
+			dependencies: ["287D39C87524664C"]
+			id: "096E774E7ABC841C"
+			tasks: [
+				{
+					id: "02DC0CC1F34477E7"
+					type: "item"
+					item: "powah:energy_cable_starter"
+				}
+				{
+					id: "1877835D2E627B9D"
+					type: "item"
+					item: "powah:energy_cable_basic"
+				}
+				{
+					id: "1F45FA31BF714856"
+					type: "item"
+					item: "powah:energy_cable_hardened"
+				}
+				{
+					id: "078F6248F47FE32F"
+					type: "item"
+					item: "powah:energy_cable_blazing"
+				}
+				{
+					id: "23664FBF2AAA1B4E"
+					type: "item"
+					item: "powah:energy_cable_niotic"
+				}
+				{
+					id: "56C4C7A88F990A50"
+					type: "item"
+					item: "powah:energy_cable_spirited"
+				}
+				{
+					id: "2A86EB6F4D85280A"
+					type: "item"
+					item: "powah:energy_cable_nitro"
+				}
+			]
+		}
+		{
+			x: -19.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "2BDAEF42AFBCB7F2"
+			tasks: [{
+				id: "47F1E423A3985530"
+				type: "item"
+				item: "powah:energy_cell_starter"
+			}]
+		}
+		{
+			x: -20.5d
+			y: -1.5d
+			dependencies: ["2BDAEF42AFBCB7F2"]
+			hide: true
+			id: "75FDDF119C386A40"
+			tasks: [{
+				id: "6211335DD1DA3CEC"
+				type: "item"
+				item: "powah:energy_cell_basic"
+			}]
+		}
+		{
+			x: -21.5d
+			y: -2.5d
+			dependencies: ["75FDDF119C386A40"]
+			id: "578EBD51B0020B52"
+			tasks: [{
+				id: "7A6F643C2C954E5F"
+				type: "item"
+				item: "powah:energy_cell_hardened"
+			}]
+		}
+		{
+			x: -22.5d
+			y: -3.5d
+			dependencies: ["578EBD51B0020B52"]
+			id: "05F9BA0E052A027F"
+			tasks: [{
+				id: "0402020621ACFF6E"
+				type: "item"
+				item: "powah:energy_cell_blazing"
+			}]
+		}
+		{
+			x: -23.5d
+			y: -4.5d
+			dependencies: ["05F9BA0E052A027F"]
+			id: "2A64651B9F44E866"
+			tasks: [{
+				id: "3F1CC7C0B1ED34FA"
+				type: "item"
+				item: "powah:energy_cell_niotic"
+			}]
+		}
+		{
+			x: -24.5d
+			y: -5.5d
+			dependencies: ["2A64651B9F44E866"]
+			id: "66D786023B37910C"
+			tasks: [{
+				id: "422CFF85E15F4419"
+				type: "item"
+				item: "powah:energy_cell_spirited"
+			}]
+		}
+		{
+			x: -25.5d
+			y: -6.5d
+			dependencies: ["66D786023B37910C"]
+			id: "7F806D214DB52EC3"
+			tasks: [{
+				id: "1F4ACC87E528EA2F"
+				type: "item"
+				item: "powah:energy_cell_nitro"
+			}]
+		}
+		{
+			x: -19.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "5748589C62BE10AF"
+			tasks: [{
+				id: "4C2C0FAE8405F576"
+				type: "item"
+				item: "powah:ender_cell_starter"
+			}]
+		}
+		{
+			x: -20.5d
+			y: 1.5d
+			dependencies: ["5748589C62BE10AF"]
+			hide: true
+			id: "04B1F42DDBEEB560"
+			tasks: [{
+				id: "4B570B69CFA3DB93"
+				type: "item"
+				item: "powah:ender_cell_basic"
+			}]
+		}
+		{
+			x: -21.5d
+			y: 2.5d
+			dependencies: ["04B1F42DDBEEB560"]
+			id: "18CA47E71C54FA25"
+			tasks: [{
+				id: "07B70E1F717AB86C"
+				type: "item"
+				item: "powah:ender_cell_hardened"
+			}]
+		}
+		{
+			x: -22.5d
+			y: 3.5d
+			dependencies: ["18CA47E71C54FA25"]
+			id: "1EB28E1B40664CAE"
+			tasks: [{
+				id: "1446B484B546F1B6"
+				type: "item"
+				item: "powah:ender_cell_blazing"
+			}]
+		}
+		{
+			x: -23.5d
+			y: 4.5d
+			dependencies: ["1EB28E1B40664CAE"]
+			id: "534ADFDB39BD2EC9"
+			tasks: [{
+				id: "41E884473D570CD2"
+				type: "item"
+				item: "powah:ender_cell_niotic"
+			}]
+		}
+		{
+			x: -24.5d
+			y: 5.5d
+			dependencies: ["534ADFDB39BD2EC9"]
+			id: "510B7DEBA5B5F5D1"
+			tasks: [{
+				id: "59AC8D8C9A120483"
+				type: "item"
+				item: "powah:ender_cell_spirited"
+			}]
+		}
+		{
+			x: -25.5d
+			y: 6.5d
+			dependencies: ["510B7DEBA5B5F5D1"]
+			id: "6B48EDAC765ACC6D"
+			tasks: [{
+				id: "4C816126FC4538E0"
+				type: "item"
+				item: "powah:ender_cell_nitro"
+			}]
+		}
+		{
+			title: "Ender Gates"
+			x: -18.5d
+			y: 0.5d
+			subtitle: "Lite version of Ender Cells"
+			description: [
+				"Transfer energy from the adjacent block into the Ender network."
+				""
+				"Unlike Ender Cells, you can't upgrade the Ender network from it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			dependency_requirement: "one_completed"
+			id: "3913BD627A88D596"
+			tasks: [
+				{
+					id: "6B61F85404232D05"
+					type: "item"
+					item: "powah:ender_gate_starter"
+				}
+				{
+					id: "44FFE29E5A585A56"
+					type: "item"
+					item: "powah:ender_gate_basic"
+				}
+				{
+					id: "3C24393B56502C79"
+					type: "item"
+					item: "powah:ender_gate_hardened"
+				}
+				{
+					id: "45A7E75509768B3C"
+					type: "item"
+					item: "powah:ender_gate_blazing"
+				}
+				{
+					id: "2D3010A1729F6677"
+					type: "item"
+					item: "powah:ender_gate_niotic"
+				}
+				{
+					id: "4AC21FDEF9EA5DF9"
+					type: "item"
+					item: "powah:ender_gate_spirited"
+				}
+				{
+					id: "1BAB195618105917"
+					type: "item"
+					item: "powah:ender_gate_nitro"
+				}
+			]
+		}
+		{
+			x: -11.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "3153188F65805ABA"
+			tasks: [{
+				id: "15A1048F72E206B4"
+				type: "item"
+				item: "powah:energizing_orb"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "621273A84F2BEF76"
+			tasks: [{
+				id: "549A119D7D9C9D25"
+				type: "item"
+				item: "powah:energizing_rod_starter"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -1.5d
+			dependencies: ["621273A84F2BEF76"]
+			hide: true
+			id: "742AF79270BAE5D4"
+			tasks: [{
+				id: "3115E2DBC98AB8D9"
+				type: "item"
+				item: "powah:energizing_rod_basic"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -2.5d
+			dependencies: ["742AF79270BAE5D4"]
+			id: "0534A62BB3771C2A"
+			tasks: [{
+				id: "453E040136DB1F6A"
+				type: "item"
+				item: "powah:energizing_rod_hardened"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -3.5d
+			dependencies: ["0534A62BB3771C2A"]
+			id: "631300C80174EFD3"
+			tasks: [{
+				id: "4DBE9B1E9E0B64F6"
+				type: "item"
+				item: "powah:energizing_rod_blazing"
+			}]
+		}
+		{
+			x: -14.5d
+			y: -4.5d
+			dependencies: ["631300C80174EFD3"]
+			id: "5AF5401C1BAE8E71"
+			tasks: [{
+				id: "3010AD6630FE50AD"
+				type: "item"
+				item: "powah:energizing_rod_niotic"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -5.5d
+			dependencies: ["5AF5401C1BAE8E71"]
+			id: "72297BD7269A1F2E"
+			tasks: [{
+				id: "172E4E36D8AB63D5"
+				type: "item"
+				item: "powah:energizing_rod_niotic"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -6.5d
+			dependencies: ["72297BD7269A1F2E"]
+			id: "4A1CA8EC46C00683"
+			tasks: [{
+				id: "327ED939C2523D77"
+				type: "item"
+				item: "powah:energizing_rod_nitro"
+			}]
+		}
+		{
+			x: -22.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "0D72E45897DBEBF2"
+			tasks: [{
+				id: "4FC235D47C0EDABE"
+				type: "item"
+				item: "powah:player_transmitter_starter"
+			}]
+		}
+		{
+			x: -23.5d
+			y: -1.5d
+			dependencies: ["0D72E45897DBEBF2"]
+			hide: true
+			id: "31FA19ED39151B9D"
+			tasks: [{
+				id: "4986E4DDB8BB274E"
+				type: "item"
+				item: "powah:player_transmitter_basic"
+			}]
+		}
+		{
+			x: -24.5d
+			y: -2.5d
+			dependencies: ["31FA19ED39151B9D"]
+			id: "74F4398F2215ABF0"
+			tasks: [{
+				id: "3623F797AE00CFAB"
+				type: "item"
+				item: "powah:player_transmitter_hardened"
+			}]
+		}
+		{
+			x: -25.5d
+			y: -3.5d
+			dependencies: ["74F4398F2215ABF0"]
+			id: "4B447A0F34B486A0"
+			tasks: [{
+				id: "0152AB2FC865FC55"
+				type: "item"
+				item: "powah:player_transmitter_blazing"
+			}]
+		}
+		{
+			x: -26.5d
+			y: -4.5d
+			dependencies: ["4B447A0F34B486A0"]
+			id: "0228A7F3BB863475"
+			tasks: [{
+				id: "34EA83E06BE493B4"
+				type: "item"
+				item: "powah:player_transmitter_niotic"
+			}]
+		}
+		{
+			x: -27.5d
+			y: -5.5d
+			dependencies: ["0228A7F3BB863475"]
+			id: "4C52C2088F3976BF"
+			tasks: [{
+				id: "798E300AB50D8600"
+				type: "item"
+				item: "powah:player_transmitter_spirited"
+			}]
+		}
+		{
+			x: -28.5d
+			y: -6.5d
+			dependencies: ["4C52C2088F3976BF"]
+			id: "6581675E5B307FDF"
+			tasks: [{
+				id: "77795D1B72FC07FC"
+				type: "item"
+				item: "powah:player_transmitter_nitro"
+			}]
+		}
+		{
+			x: -22.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "3D1D36392BEA58A0"
+			tasks: [{
+				id: "1D8D43C644E6068C"
+				type: "item"
+				item: "powah:energy_hopper_starter"
+			}]
+		}
+		{
+			x: -23.5d
+			y: 1.5d
+			dependencies: ["3D1D36392BEA58A0"]
+			hide: true
+			id: "337E2C4B685FA563"
+			tasks: [{
+				id: "2F6007A2B268F609"
+				type: "item"
+				item: "powah:energy_hopper_basic"
+			}]
+		}
+		{
+			x: -24.5d
+			y: 2.5d
+			dependencies: ["337E2C4B685FA563"]
+			id: "3490ECDECB7709A9"
+			tasks: [{
+				id: "1CCDE94BD4B0F97F"
+				type: "item"
+				item: "powah:energy_hopper_hardened"
+			}]
+		}
+		{
+			x: -25.5d
+			y: 3.5d
+			dependencies: ["3490ECDECB7709A9"]
+			id: "57E1E7FDCA8B46E7"
+			tasks: [{
+				id: "3A7705188222AAB3"
+				type: "item"
+				item: "powah:energy_hopper_blazing"
+			}]
+		}
+		{
+			x: -26.5d
+			y: 4.5d
+			dependencies: ["57E1E7FDCA8B46E7"]
+			id: "6391497B85DF1B22"
+			tasks: [{
+				id: "6DC2BCA2EBE15235"
+				type: "item"
+				item: "powah:energy_hopper_niotic"
+			}]
+		}
+		{
+			x: -27.5d
+			y: 5.5d
+			dependencies: ["6391497B85DF1B22"]
+			id: "3B1465DCE8883FA8"
+			tasks: [{
+				id: "71F140617D1C9A51"
+				type: "item"
+				item: "powah:energy_hopper_spirited"
+			}]
+		}
+		{
+			x: -28.5d
+			y: 6.5d
+			dependencies: ["3B1465DCE8883FA8"]
+			id: "3C490E5DF7306855"
+			tasks: [{
+				id: "56645FA00CD0D8B7"
+				type: "item"
+				item: "powah:energy_hopper_nitro"
+			}]
+		}
+		{
+			x: -25.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "6292140E1011054A"
+			tasks: [{
+				id: "1C9BA9638146535C"
+				type: "item"
+				item: "powah:energy_discharger_starter"
+			}]
+		}
+		{
+			x: -26.5d
+			y: -1.5d
+			dependencies: ["6292140E1011054A"]
+			hide: true
+			id: "456823079C710388"
+			tasks: [{
+				id: "1A9318CFC8B36DD4"
+				type: "item"
+				item: "powah:energy_discharger_basic"
+			}]
+		}
+		{
+			x: -27.5d
+			y: -2.5d
+			dependencies: ["456823079C710388"]
+			id: "78D994946679E68D"
+			tasks: [{
+				id: "575E7CC46CB86A4F"
+				type: "item"
+				item: "powah:energy_discharger_hardened"
+			}]
+		}
+		{
+			x: -28.5d
+			y: -3.5d
+			dependencies: ["78D994946679E68D"]
+			id: "55A03BBC592F2EBC"
+			tasks: [{
+				id: "1570C4559EF5FB96"
+				type: "item"
+				item: "powah:energy_discharger_blazing"
+			}]
+		}
+		{
+			x: -29.5d
+			y: -4.5d
+			dependencies: ["55A03BBC592F2EBC"]
+			id: "47CA411C48EB6A18"
+			tasks: [{
+				id: "78BB7311C84F1E1A"
+				type: "item"
+				item: "powah:energy_discharger_niotic"
+			}]
+		}
+		{
+			x: -30.5d
+			y: -5.5d
+			dependencies: ["47CA411C48EB6A18"]
+			id: "6B6268141AE6BCCB"
+			tasks: [{
+				id: "3337436DCD1519F4"
+				type: "item"
+				item: "powah:energy_discharger_spirited"
+			}]
+		}
+		{
+			x: -31.5d
+			y: -6.5d
+			dependencies: ["6B6268141AE6BCCB"]
+			id: "3A5685F932F52E31"
+			tasks: [{
+				id: "1EE24DE43741E7C6"
+				type: "item"
+				item: "powah:energy_discharger_nitro"
+			}]
+		}
+		{
+			title: "Battery"
+			x: -9.5d
+			y: -2.0d
+			subtitle: "This is a battery, in 2022+ we all know what they do"
+			description: [
+				"Charges items in the player's inventory, but also works to expand the capacity of ender networks."
+				""
+				"See the in-game manual for further details."
+			]
+			dependencies: ["096E774E7ABC841C"]
+			dependency_requirement: "one_completed"
+			id: "07DF46A1CFBD69B2"
+			tasks: [
+				{
+					id: "6F102662462D249F"
+					type: "item"
+					item: {
+						id: "powah:battery_starter"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "3AA11063947A4EE5"
+					type: "item"
+					item: {
+						id: "powah:battery_basic"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "408BB869EEE6B235"
+					type: "item"
+					item: {
+						id: "powah:battery_hardened"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "5B6721095923D5B3"
+					type: "item"
+					item: {
+						id: "powah:battery_blazing"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "7AEFCDB0D3C28A30"
+					type: "item"
+					item: {
+						id: "powah:battery_niotic"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "2720BF3BA734D173"
+					type: "item"
+					item: {
+						id: "powah:battery_spirited"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "62A4C73F2C5E94E2"
+					type: "item"
+					item: {
+						id: "powah:battery_nitro"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: 4.0d
+			subtitle: "Electric crystals of compressed dihydrogenmonoxide"
+			description: ["I'm actually not sure what these are for aside from throwing at people or blazes maybe?"]
+			dependencies: ["38411D4FD459A319"]
+			id: "037C0C36B56CDFE4"
+			tasks: [{
+				id: "5E38F90208C8EC9B"
+				type: "item"
+				item: "powah:charged_snowball"
+			}]
+		}
+		{
+			x: -21.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "0265B62BF0D9F6F4"
+			tasks: [{
+				id: "2034E5A208308D15"
+				type: "item"
+				item: "powah:player_aerial_pearl"
+			}]
+		}
+		{
+			x: -22.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			dependency_requirement: "one_completed"
+			id: "19377F469DB1A84F"
+			tasks: [
+				{
+					id: "76D24CCC29E2784C"
+					type: "item"
+					item: "powah:binding_card"
+				}
+				{
+					id: "1BD786B079D0AF8B"
+					type: "item"
+					item: "powah:binding_card_dim"
+				}
+			]
+		}
+		{
+			x: -15.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "5A89D3375AADFD3A"
+			tasks: [{
+				id: "4B6D9FB5BE5483C0"
+				type: "item"
+				item: "powah:lens_of_ender"
+			}]
+		}
+		{
+			x: -15.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["287D39C87524664C"]
+			id: "38584D0351C36AE2"
+			tasks: [{
+				id: "4417FC646C999877"
+				type: "item"
+				item: "powah:uraninite"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 3.0d
+			subtitle: "You're as cold as ice"
+			description: ["This is used to help improve efficiency of the reactor. Setting up an automation to keep a certain amount in the system is highly recommended."]
+			dependencies: ["7CC721F4471CF844"]
+			id: "38411D4FD459A319"
+			tasks: [{
+				id: "79E5B87FFABA16FA"
+				type: "item"
+				item: "powah:dry_ice"
+			}]
+		}
+		{
+			title: "Capacitors"
+			x: -9.5d
+			y: 2.0d
+			subtitle: "Holding steady"
+			description: ["These are used to upgrade all the machines, each with their respective tier."]
+			dependencies: ["2ECB7864134CA2DE"]
+			id: "7CC721F4471CF844"
+			tasks: [
+				{
+					id: "57AE9909758A90E6"
+					type: "item"
+					item: "powah:capacitor_basic_tiny"
+				}
+				{
+					id: "196A0C1D43E7593A"
+					type: "item"
+					item: "powah:capacitor_basic"
+				}
+				{
+					id: "5C53E1D31DD7BCD6"
+					type: "item"
+					item: "powah:capacitor_basic_large"
+				}
+				{
+					id: "4B187CB2B1FA4F6B"
+					type: "item"
+					item: "powah:capacitor_hardened"
+				}
+				{
+					id: "6FB0D0A3D2C85552"
+					type: "item"
+					item: "powah:capacitor_blazing"
+				}
+				{
+					id: "0D44DB3FB14F2CFD"
+					type: "item"
+					item: "powah:capacitor_niotic"
+				}
+				{
+					id: "55472B1552AEB522"
+					type: "item"
+					item: "powah:capacitor_spirited"
+				}
+				{
+					id: "6AF2BFE00C8124B3"
+					type: "item"
+					item: "powah:capacitor_nitro"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -3.0d
+			subtitle: "Blazing Crystal component"
+			description: ["Required to craft blazing tier machines and items."]
+			dependencies: ["07DF46A1CFBD69B2"]
+			id: "762838DF46A222E8"
+			tasks: [{
+				id: "5C0C004B57656CA6"
+				type: "item"
+				item: "powah:crystal_blazing"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 5.0d
+			subtitle: "Beam me up Scotty, energize, and punch it"
+			description: ["Used to craft mostly hardened tier machines but also for a couple other things. See JEI for full list."]
+			dependencies: ["037C0C36B56CDFE4"]
+			id: "06E4F8D8277E62C6"
+			tasks: [{
+				id: "3067DE3BAF037978"
+				type: "item"
+				item: "powah:steel_energized"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -4.0d
+			subtitle: "Niotic Crystal component"
+			description: ["Required to craft niotic tier machines and items."]
+			dependencies: ["762838DF46A222E8"]
+			id: "57D2A5A2F059387E"
+			tasks: [{
+				id: "3F9F92AA95DA34DB"
+				type: "item"
+				item: "powah:crystal_niotic"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -5.0d
+			subtitle: "Spirited Crystal Component"
+			description: ["Required to craft spirited tier machines and items."]
+			dependencies: ["57D2A5A2F059387E"]
+			id: "22B663C45849A56E"
+			tasks: [{
+				id: "20FF81D058D4F426"
+				type: "item"
+				item: "powah:crystal_spirited"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -6.0d
+			subtitle: "Nitro Crystal Component"
+			description: ["Required to craft blazing tier machines and items."]
+			dependencies: ["22B663C45849A56E"]
+			id: "20FBC7340B0F5D0E"
+			tasks: [{
+				id: "647E14B4432685BD"
+				type: "item"
+				item: "powah:crystal_nitro"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			subtitle: "Low-Voltage"
+			dependencies: ["3CC2C917AC18B954"]
+			id: "6BD6EE903F30D02D"
+			tasks: [{
+				id: "038D51D259E815D2"
+				type: "item"
+				item: "immersiveengineering:connector_lv"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 1.0d
+			subtitle: "Medium Voltage"
+			dependencies: ["6BD6EE903F30D02D"]
+			id: "3FCFB7D917BEAF27"
+			tasks: [{
+				id: "3F8C11E9030C7490"
+				type: "item"
+				item: "immersiveengineering:connector_mv"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 1.0d
+			subtitle: "High-Voltage"
+			dependencies: ["3FCFB7D917BEAF27"]
+			id: "1FC78EFDD31B60EB"
+			tasks: [{
+				id: "55A17294CF8F0C4F"
+				type: "item"
+				item: "immersiveengineering:connector_hv"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -0.5d
+			subtitle: "Low-Voltage"
+			dependencies: ["045261DCF53AEE8F"]
+			id: "1EAC802469320CC9"
+			tasks: [{
+				id: "481D203F6C3B3AB7"
+				type: "item"
+				item: "immersiveengineering:connector_lv_relay"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -0.5d
+			subtitle: "Medium-Voltage"
+			dependencies: ["1EAC802469320CC9"]
+			id: "7E02BDEE446E9307"
+			tasks: [{
+				id: "2D246793B600DFE6"
+				type: "item"
+				item: "immersiveengineering:connector_mv_relay"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -0.5d
+			subtitle: "High-Voltage"
+			dependencies: ["7E02BDEE446E9307"]
+			id: "3FB02894A51B4239"
+			tasks: [{
+				id: "7A8FBA6C6022D526"
+				type: "item"
+				item: "immersiveengineering:connector_hv_relay"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -3.0d
+			subtitle: "LV > MV or MV > LV"
+			description: ["Transforms voltage from Low to Medium and vice versa."]
+			dependencies: ["180BF57A48EBD1FC"]
+			id: "3878F2BD4928E060"
+			tasks: [{
+				id: "049F321C45D2D57C"
+				type: "item"
+				item: "immersiveengineering:transformer"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -3.5d
+			subtitle: "MV > HV or HV > MV"
+			description: ["Transforms voltage from medium to high, and vice versa."]
+			dependencies: ["3878F2BD4928E060"]
+			id: "77F751289958757B"
+			tasks: [{
+				id: "5A821801CB68F089"
+				type: "item"
+				item: "immersiveengineering:transformer_hv"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -2.5d
+			subtitle: "Not a voltage transformer!"
+			description: [
+				"This block is a measurement device for electrical power. It can be hooked up in any powerline and will keep track of energy transferred through it, returning an average Flux/t upon rightclick."
+				""
+				"It's included here to highlight this, as well as clear up any potential confusion when searching the JEI."
+			]
+			dependencies: ["0F8F395802AFB6F4"]
+			id: "180BF57A48EBD1FC"
+			tasks: [{
+				id: "35E4CD0C0FACFDBC"
+				type: "item"
+				item: "immersiveengineering:current_transformer"
+			}]
+		}
+		{
+			title: "Wires"
+			x: 8.0d
+			y: 2.5d
+			subtitle: "Cutting them all by hand is not advised"
+			description: [
+				"To start out you'll need a pair of wire cutters, but eventually you'll want to automate a metal press to make these for you."
+				""
+				"See in-game manual for information on how to place them and what blocks accept what."
+				""
+				"If wires burn up or electrocute you, don't say we didn't warn you."
+			]
+			dependencies: ["3FCCD70FA62EB4BD"]
+			hide: true
+			min_required_tasks: 2
+			id: "75529BAC071517AC"
+			tasks: [
+				{
+					id: "2AAF6F108C8CE3DE"
+					type: "item"
+					item: {
+						id: "immersiveengineering:wirecutter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "18F99A3CF26A3DFC"
+					type: "item"
+					item: "immersiveengineering:wire_copper"
+				}
+				{
+					id: "0B5A502E3C8332C8"
+					type: "item"
+					item: "immersiveengineering:wire_electrum"
+				}
+				{
+					id: "2F7EEAADF692C56F"
+					type: "item"
+					item: "immersiveengineering:wire_aluminum"
+				}
+				{
+					id: "7432B5D9ED95665C"
+					type: "item"
+					item: "immersiveengineering:wire_steel"
+				}
+			]
+			rewards: [{
+				id: "6DFFCB0AC2CDDC68"
+				type: "item"
+				item: "immersiveengineering:mold_wire"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 3.0d
+			subtitle: "Low-Voltage"
+			dependencies: ["75529BAC071517AC"]
+			dependency_requirement: "one_completed"
+			id: "2D852C100C03D4AB"
+			tasks: [
+				{
+					id: "5F38A64467EF89A0"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper"
+				}
+				{
+					id: "642E8A36E9F0BCAE"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper_ins"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 3.5d
+			subtitle: "Medium-Voltage"
+			dependencies: ["2D852C100C03D4AB"]
+			dependency_requirement: "one_completed"
+			id: "7B0C3BCE3FA0547B"
+			tasks: [
+				{
+					id: "066F289C63155E22"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum"
+				}
+				{
+					id: "096B31271A368041"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum_ins"
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 4.0d
+			subtitle: "!Caution High-Voltage!"
+			description: ["With great power comes great responsibility. Can cause death."]
+			dependencies: ["7B0C3BCE3FA0547B"]
+			id: "6DF6C6FAD16ECF0C"
+			tasks: [{
+				id: "696BCCF2F29E4965"
+				type: "item"
+				item: "immersiveengineering:wirecoil_steel"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.0d
+			subtitle: "Block I/O"
+			description: [
+				"Connectors are inputs and outputs for the energy-net."
+				""
+				"If you want to connect power to something that uses it, or connect a generator to the net, these are what you need."
+				""
+				"Connectors can also be turned into something called feedthrough insulators. These allow wires to pass from one side to the other. Simply right click on one of two opposing connectors attached to a block to create the feedthrough. You can transmit both power and redstone this way."
+				""
+				"See in-game manual for rate limits."
+			]
+			dependencies: ["3FCCD70FA62EB4BD"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "3CC2C917AC18B954"
+			tasks: [
+				{
+					id: "7A7158970EA47146"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+				}
+				{
+					id: "316F133416321DAB"
+					type: "item"
+					item: "immersiveengineering:connector_mv"
+				}
+				{
+					id: "176000E647833ABF"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -0.5d
+			subtitle: "Don't cross the streams"
+			description: [
+				"Relays connect transformers and other wires to each other."
+				""
+				"If you want to extend power lines, or create hubs to connect multiple wires to the same point, these are what you need."
+			]
+			dependencies: ["3FCCD70FA62EB4BD"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "045261DCF53AEE8F"
+			tasks: [
+				{
+					id: "0A2C900194C35466"
+					type: "item"
+					item: "immersiveengineering:connector_lv_relay"
+				}
+				{
+					id: "270E4446F636B040"
+					type: "item"
+					item: "immersiveengineering:connector_mv_relay"
+				}
+				{
+					id: "2396BB2C8106B14E"
+					type: "item"
+					item: "immersiveengineering:connector_hv_relay"
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			subtitle: "More than meets the eye"
+			description: [
+				"Aside from the current transformer, these blocks allow you to transition between different types of wire."
+				""
+				"Note that HV Transformers can step down to LV or MV, so you don't need to chain two transformers."
+				""
+				"You can attach transformers to wooden poles as shown in the manual, however only non-HV Transformers can be placed like this."
+			]
+			dependencies: ["3FCCD70FA62EB4BD"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "0F8F395802AFB6F4"
+			tasks: [
+				{
+					id: "2B16ECE9E32708BB"
+					type: "item"
+					item: "immersiveengineering:current_transformer"
+				}
+				{
+					id: "5CC0BE693AA3F486"
+					type: "item"
+					item: "immersiveengineering:transformer"
+				}
+				{
+					id: "6E312B77E603B277"
+					type: "item"
+					item: "immersiveengineering:transformer_hv"
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: 3.0d
+			dependencies: ["75529BAC071517AC"]
+			id: "41B5A6A2E1FC572E"
+			tasks: [{
+				id: "5035EAE2EB2C5AA7"
+				type: "item"
+				item: "immersiveengineering:voltmeter"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -2.5d
+			subtitle: "Low-Voltage"
+			description: [
+				"IE's energy storage blocks. Use the Engineer's Hammer to configure I/O. Blue = In, Orange = Out, No color = no connection."
+				""
+				"Sneak while using the hammer to configure the side opposite to the one you clicked."
+			]
+			dependencies: ["0F8F395802AFB6F4"]
+			id: "419B95C98765E31E"
+			tasks: [{
+				id: "1FDDFF7D8A1C5498"
+				type: "item"
+				item: "immersiveengineering:capacitor_lv"
+			}]
+		}
+		{
+			x: 14.0d
+			y: -2.5d
+			subtitle: "Medium-Voltage"
+			dependencies: ["419B95C98765E31E"]
+			id: "08932B7116FA0EA9"
+			tasks: [{
+				id: "250622618D81EA79"
+				type: "item"
+				item: "immersiveengineering:capacitor_mv"
+			}]
+		}
+		{
+			x: 15.0d
+			y: -2.5d
+			subtitle: "High-Voltage"
+			dependencies: ["08932B7116FA0EA9"]
+			id: "5765007FEB5CB1B4"
+			tasks: [{
+				id: "5DFE1965762005F5"
+				type: "item"
+				item: "immersiveengineering:capacitor_hv"
+			}]
+		}
+		{
+			title: "Water Wheel And Dynamo"
+			x: 14.0d
+			y: 3.0d
+			subtitle: "Early Power Generation"
+			description: ["This is one of the easiest methods to setup some constant power generation. It's nothing to write home about, but for just getting off your feet it should do the trick."]
+			dependencies: ["41B5A6A2E1FC572E"]
+			id: "66F50D8140F837E7"
+			tasks: [
+				{
+					id: "5E970B111E07FCA3"
+					type: "item"
+					item: "immersiveengineering:dynamo"
+				}
+				{
+					id: "5872579137ED79EA"
+					type: "item"
+					item: "immersiveengineering:watermill"
+				}
+			]
+		}
+		{
+			x: 15.0d
+			y: 3.0d
+			subtitle: "A mighty wind"
+			description: ["Along side a water wheel, the two of these will keep your batteries full in early game."]
+			dependencies: ["66F50D8140F837E7"]
+			id: "10C47C1CE4DE80E8"
+			tasks: [
+				{
+					id: "27F545F5DCCC5025"
+					type: "item"
+					item: "immersiveengineering:windmill"
+				}
+				{
+					id: "5078A16B941216BE"
+					type: "item"
+					item: "immersiveengineering:windmill_sail"
+				}
+			]
+		}
+		{
+			x: 16.0d
+			y: -2.5d
+			subtitle: "Not a transformer"
+			description: [
+				"This switch stops the flow of power through wires. They're handy for situations where you want to cut power to specific machines or to isolate sections of your base/factory."
+				""
+				"You can only connect one wire type to a switch at a time, no mixing voltages in switches."
+				""
+				"Control all your lights easily with one wireable switch."
+			]
+			dependencies: ["5765007FEB5CB1B4"]
+			id: "2C190625C3DA323D"
+			tasks: [{
+				id: "601EEAD8CE395E6E"
+				type: "item"
+				item: "immersiveengineering:breaker_switch"
+			}]
+		}
+		{
+			x: 17.0d
+			y: -2.5d
+			subtitle: "Claping switches like it's 1989"
+			description: [
+				"Similar to a normal breaker except it can't be operated manually."
+				""
+				"Instead, it will require a redstone signal to break the connection."
+				""
+				"In return, this device is insulated well enough to allow the connection of HV wires as well."
+			]
+			dependencies: ["2C190625C3DA323D"]
+			id: "09B487C5164B2300"
+			tasks: [{
+				id: "3C23D6AB950D0409"
+				type: "item"
+				item: "immersiveengineering:redstone_breaker"
+			}]
+		}
+		{
+			x: 18.0d
+			y: -2.5d
+			subtitle: "Red line of fate"
+			description: ["These wires transmit redstone signals over long distances without losing any signal strength."]
+			dependencies: ["09B487C5164B2300"]
+			id: "60095C943168B2C7"
+			tasks: [{
+				id: "2D32DF7AF8BCC072"
+				type: "item"
+				item: "immersiveengineering:wirecoil_redstone"
+			}]
+		}
+		{
+			x: 16.5d
+			y: 0.0d
+			subtitle: "Adjacent to comparators in spirit"
+			description: [
+				"These blocks function similar to comparators, reading inventories for how full they are."
+				""
+				"Not only that, but they can be configured with a certain signal threshold and will only output if that threshold is met - similar to a comparator."
+				""
+				"Additionally they can operate on two channels, sending on one and receiving on another."
+				""
+				"All these settings are configured using an Engineer's Screwdriver. Please see the in-game manual for more information."
+			]
+			dependencies: ["1A4F7414C5F6AD0B"]
+			id: "31EDD08FE073CC15"
+			tasks: [{
+				id: "4488368C7B874B91"
+				type: "item"
+				item: "immersiveengineering:connector_probe"
+			}]
+		}
+		{
+			x: 15.5d
+			y: 0.0d
+			subtitle: "Redstone I/O + relay"
+			description: [
+				"These connectors work just like the others, except redstone wires don't require a relay; connectors and relays are the same block."
+				""
+				"The Engineer's Screwdriver is used to configure between in- and out- modes, and to set one of 16 colored frequencies."
+			]
+			dependencies: ["5C49BCD3F4115126"]
+			id: "1A4F7414C5F6AD0B"
+			tasks: [{
+				id: "5DAB0D00BFD7B4BF"
+				type: "item"
+				item: "immersiveengineering:connector_redstone"
+			}]
+		}
+		{
+			x: 17.5d
+			y: 0.0d
+			subtitle: "Multi-color redstone signal interface"
+			description: [
+				"These blocks are designed to be attached to other blocks that can accept colored redstone signals."
+				""
+				"The interface connector is innert and does not posses a color, input- or output-state. But it does allow blocks such as the Item Batcher to interface directly with the wire network."
+			]
+			dependencies: ["31EDD08FE073CC15"]
+			id: "0AF1A0EEC0C0FEB0"
+			tasks: [{
+				id: "5815453C88056F61"
+				type: "item"
+				item: "immersiveengineering:connector_bundled"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 0.0d
+			subtitle: "Turing complete"
+			description: [
+				"It's advised that you read the in-game manual for information about this table."
+				""
+				"*This is not the engineer's workbench*"
+				"(Found in the \"Automation\" chapter.)"
+				""
+				"The circuit table enables you to create small logic circuits."
+			]
+			dependencies: ["3FCCD70FA62EB4BD"]
+			hide: true
+			size: 1.25d
+			id: "2113F5D457081290"
+			tasks: [{
+				id: "2DC00DC182FBF06E"
+				type: "item"
+				item: "immersiveengineering:circuit_table"
+			}]
+			rewards: [
+				{
+					id: "500D732DEFDEE1CA"
+					type: "item"
+					item: "immersiveengineering:circuit_board"
+				}
+				{
+					id: "7F5D41F317FACFA6"
+					type: "item"
+					item: "immersiveengineering:electron_tube"
+					count: 16
+				}
+				{
+					id: "22DA45E9AFC3CE66"
+					type: "item"
+					item: "immersiveengineering:wire_lead"
+					count: 16
+				}
+				{
+					id: "7BF90B659FF079F5"
+					type: "item"
+					item: "immersiveengineering:wire_copper"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			subtitle: "Modern industrialization"
+			description: ["The in-game manual has an in-depth write up about this block and how to use it. "]
+			dependencies: ["2113F5D457081290"]
+			id: "5C49BCD3F4115126"
+			tasks: [{
+				id: "360B1D8DA09325B0"
+				type: "item"
+				item: "immersiveengineering:logic_unit"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 3.0d
+			dependencies: ["10C47C1CE4DE80E8"]
+			id: "00657BE3BF2ABFDB"
+			tasks: [{
+				id: "5C34C51A8C8D1EBA"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+		}
+		{
+			title: "Diesel Generator"
+			icon: "immersiveengineering:biodiesel_bucket"
+			x: 17.0d
+			y: 3.0d
+			subtitle: "Some of that multi-block goodness"
+			description: [
+				"The diesel generator requires a decent supply of biodiesel, so make sure you setup a production line to automate it before you try to depend on this to power your base."
+				""
+				"The in-game manual has a lot more information about it than can fit in this little guide. It also has a 3D preview of the structure that cycles through each level to help show you where to place everything."
+			]
+			dependencies: ["00657BE3BF2ABFDB"]
+			id: "1A50497269115EB2"
+			tasks: [
+				{
+					id: "09B4341112E92598"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 9L
+				}
+				{
+					id: "5108286E28EEFF12"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "1509D9D7FDC7330C"
+					type: "item"
+					item: "immersiveengineering:generator"
+					count: 4L
+				}
+				{
+					id: "6C68CDA661C958AE"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 13L
+				}
+				{
+					id: "520F5C7B2CAE5458"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "0F48816F1310B1A7"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+			]
+		}
+		{
+			x: 18.0d
+			y: 3.0d
+			subtitle: "Thunderstruck!"
+			description: [
+				"This multiblock allows you to harness the power of lightning to charge your batteries."
+				""
+				"You can improve your chances of being struck by creating a \"net\" of steel fences connected to the topmost fence."
+				""
+				"See the in-game manual for a multi-block preview and placement guide."
+			]
+			dependencies: ["1A50497269115EB2"]
+			id: "0DD5D84BD0074AF7"
+			tasks: [
+				{
+					id: "4B9E69A543615EEB"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 4L
+				}
+				{
+					id: "264C8A5A7F6292C6"
+					type: "item"
+					item: "immersiveengineering:coil_hv"
+					count: 3L
+				}
+				{
+					id: "4D995FE7AE4A02D8"
+					type: "item"
+					item: "immersiveengineering:treated_fence"
+					count: 4L
+				}
+				{
+					id: "20D61C68C9E92857"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "52058E4A21F30328"
+					type: "item"
+					item: "immersiveengineering:coil_lv"
+					count: 8L
+				}
+				{
+					id: "326FF8F378444A74"
+					type: "item"
+					item: "immersiveengineering:capacitor_hv"
+					count: 4L
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 5.0d
+			subtitle: "Can you hear the bedrock calling?"
+			description: [
+				"Because the first batch of flux dust is gonna require you to dig down to some bedrock."
+				""
+				"In order to make it, bring a block of obsidian with you."
+				""
+				"Place the obsidian so that there is one block space between it and bedrock. Throw some redstone underneath the obsidian block, and left click the obsidian. (See JEI)"
+				""
+			]
+			dependencies: ["2E0CD9F32061DDDB"]
+			hide: true
+			id: "6344D3D47FC65E2D"
+			tasks: [{
+				id: "74EBDA7676C61757"
+				type: "item"
+				item: "fluxnetworks:flux_dust"
+			}]
+			rewards: [{
+				id: "270CE33D812391FC"
+				type: "item"
+				item: "fluxnetworks:flux_block"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 6.0d
+			subtitle: "Keep this one"
+			description: [
+				"Since you've made some flux, you can use a flux block to create more, just the same way you did with bedrock. Except now you don't have to setup automation at the bottom of your world to do so."
+				""
+				"Right click flux dust in JEI for details."
+			]
+			dependencies: ["6344D3D47FC65E2D"]
+			id: "2D9EBF719C4F4061"
+			tasks: [{
+				id: "334B432821090458"
+				type: "item"
+				item: "fluxnetworks:flux_block"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 7.0d
+			subtitle: "GUI configuration"
+			description: [
+				"The Flux Configurator is a tool that can access the GUI that is shared by all of the Flux Networks machines and items. You can right click with it in hand to open the GUI and connect it to a network using the Network Selection tab. Then you can use the Flux Configurator to change or monitor the connected network. "
+				""
+				"The Flux Configurator can also be used to copy settings from Flux Networks devices. Shift right click on a Flux Plug, Flux Point, Flux Controller, or Flux Storage unit to copy its settings into the Flux Configurator. Now right clicking on any Flux Networks devices with the Flux Configurator will transfer the saved settings into the device..."
+			]
+			dependencies: ["2D9EBF719C4F4061"]
+			id: "54ABC6895B3006B8"
+			tasks: [{
+				id: "4DED281F0905BE45"
+				type: "item"
+				item: "fluxnetworks:flux_configurator"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			subtitle: "Required for most blocks"
+			description: ["These are a basic component to building most the blocks in this mod."]
+			dependencies: ["6344D3D47FC65E2D"]
+			id: "6EE5B99D3F48A079"
+			tasks: [{
+				id: "3D5BF2A3824EC3D3"
+				type: "item"
+				item: "fluxnetworks:flux_core"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 7.0d
+			subtitle: "Won't work without it"
+			description: [
+				"Without a storage your flux network won't function. Each network only needs one storage unless you're depending on it alone to store all your power."
+				""
+				"Assuming by the time you get to this point in the pack, you'll already have an energy storage solution in place though."
+			]
+			dependencies: ["2D9EBF719C4F4061"]
+			id: "5B9FBB30F961D813"
+			tasks: [{
+				id: "69668266B28BE0EE"
+				type: "item"
+				item: "fluxnetworks:basic_flux_storage"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 8.0d
+			subtitle: "Larger capacity than the basic model"
+			description: ["It's definitely worth it to upgrade up to the higher tier storages. "]
+			dependencies: ["5B9FBB30F961D813"]
+			id: "11A5D3D95B4F6108"
+			tasks: [{
+				id: "72B415D8D4D83FA1"
+				type: "item"
+				item: "fluxnetworks:herculean_flux_storage"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 9.0d
+			subtitle: "Set it and forget it"
+			description: ["The biggest of the three. All you need is one."]
+			dependencies: ["11A5D3D95B4F6108"]
+			id: "15E3EF6FCD5DE6CC"
+			tasks: [{
+				id: "29D0512C0F759F70"
+				type: "item"
+				item: "fluxnetworks:gargantuan_flux_storage"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 8.0d
+			subtitle: "The brains of this operation"
+			description: ["The Flux Controller enables the player to configure inventory charging. This charging works with infinite range across all dimensions. Place the Flux Controller down and select a network to connect it to in the Network Selection tab. Now navigate to the Wireless Charging tab. Click on any of the dark blue areas to enable them (Armor Slots, Baubles Slots, Main Inventory, Hotbar Slots, Left Hand, Right Hand). Make sure Enable Wireless is on (the switch is green) and hit Apply. The Flux Controller will charge any items in the enabled areas of your inventory automatically using energy from the network. Each network can only have one Flux Controller. "]
+			dependencies: ["54ABC6895B3006B8"]
+			id: "159EEEB76A61BFEB"
+			tasks: [{
+				id: "2E3DCC6F7F230E69"
+				type: "item"
+				item: "fluxnetworks:flux_controller"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 8.0d
+			subtitle: "Insert power into the network"
+			description: ["Use flux plugs on anything that generates power. They take energy from the block they are attached to and put it into your network."]
+			dependencies: ["54ABC6895B3006B8"]
+			id: "2EF760FD597B2402"
+			tasks: [{
+				id: "41A3F7032A65CFE8"
+				type: "item"
+				item: "fluxnetworks:flux_plug"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 9.0d
+			subtitle: "Remove power from the network"
+			description: ["Use flux points on things that need power. Points pull energy from the network and put it into the block they are attached to."]
+			dependencies: ["2EF760FD597B2402"]
+			id: "0248968BC09A5073"
+			tasks: [{
+				id: "722C783849A79435"
+				type: "item"
+				item: "fluxnetworks:flux_point"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			subtitle: "Tier one"
+			description: ["Stores 200k AE each."]
+			dependencies: ["47DA051A60521E4A"]
+			hide: true
+			id: "40DFBDFCD3AB8712"
+			tasks: [{
+				id: "3057D25D23FC3CFC"
+				type: "item"
+				item: {
+					id: "ae2:energy_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 6.0d
+			subtitle: "Tier two"
+			description: ["Stores 1.6 million AE each."]
+			dependencies: ["40DFBDFCD3AB8712"]
+			id: "720054CA7CDF3D84"
+			tasks: [{
+				id: "625CECF4F829C84E"
+				type: "item"
+				item: {
+					id: "ae2:dense_energy_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.0d
+			subtitle: "Tier three"
+			description: ["Stores 12.8 million AE each."]
+			dependencies: ["720054CA7CDF3D84"]
+			id: "5F6A3FF8D73DA071"
+			tasks: [{
+				id: "2DCF82DB8C83561E"
+				type: "item"
+				item: {
+					id: "megacells:mega_energy_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
 }

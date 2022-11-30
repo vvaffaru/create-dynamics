@@ -3,7 +3,7 @@
 	group: "12960CA54495AB71"
 	order_index: 0
 	filename: "to_the_end_and_back"
-	title: "To the End and Back"
+	title: "To The End and Back"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -13,6 +13,8 @@
 			y: 0.0d
 			subtitle: "I m m e r s i o n"
 			description: ["This selection of mods are intended to get you out in the world. When you do, it also hopes to not bore you to pieces with the same old endless landscapes we're all used to."]
+			dependencies: ["3C62F472F5D758B0"]
+			hide: true
 			size: 2.0d
 			id: "6B3D8FE0D75F1783"
 			tasks: [{
@@ -26,21 +28,42 @@
 			icon: "alexsmobs:animal_dictionary"
 			x: -2.5d
 			y: 0.0d
+			subtitle: "Biodiversity"
+			description: [
+				"Alex's Mobs is a Forge mod that adds 87 new mobs to Minecraft. All of these mobs fall into either two categories: most of them are real world creatures, like Grizzly Bears, Roadrunners, Orcas, etc; but some of them are purely fictional, like the Endergade and Bone Serpent. "
+				""
+				"All of these creatures fulfill a necessary purpose, and either have unique drops, mechanics or functions, as there are no purely aesthetic creatures. That said, they also help make some environments in the game feel more alive. The models, textures, animations and AI are all stylistically compatible with the vanilla game's latest additions. "
+				""
+				"See the in-game manual and CurseForge mod page for more information."
+			]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "70E5089A5A3913F2"
-			tasks: [{
-				id: "010541BA812C227B"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "02ADD986883BB65F"
+					type: "questsadditions:use"
+					block_type: 0
+					block: "alexsmobs:animal_dictionary"
+					value: 1L
+					checkItem: false
+					isItemInteraction: false
+				}
+				{
+					id: "4C4F6E6780FF834B"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "Awesome Dungeon"
 			icon: "quark:gold_bars"
 			x: -4.0d
 			y: 0.0d
+			subtitle: "Bodacious"
+			description: ["This mod adds structures/dungeons to your world. Dungeons have mobspawner and chests with loot. See CurseForge mod page for more information."]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "3182D5B946E0ECB1"
 			tasks: [{
 				id: "3E08615189EEA952"
@@ -52,8 +75,10 @@
 			icon: "minecraft:bell"
 			x: -5.5d
 			y: 0.0d
+			subtitle: "The HoA approved a bunch of new projects"
+			description: ["See CurseForge mod page for more information."]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "47D8BABEDB080BEC"
 			tasks: [{
 				id: "067E05D24A6E0A52"
@@ -65,8 +90,10 @@
 			icon: "biomesoplenty:willow_sapling"
 			x: -7.0d
 			y: 0.0d
+			subtitle: "How many biomes you got? A lot."
+			description: ["Biomes O' Plenty is an expansive biome mod for Minecraft that adds a slew of new, unique biomes to the Overworld and Nether!  To go along with the new biomes, it adds new plants, flowers, trees, building blocks, and much more!"]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "254B896B21B9CA50"
 			tasks: [{
 				id: "65BCC5B84FA0A6BD"
@@ -84,8 +111,10 @@
 			}
 			x: -8.5d
 			y: 0.0d
+			subtitle: "Extradimensional dungeon diver"
+			description: ["Dimensional Dungeons adds limitless procedurally generated dungeons to Minecraft! These dungeons are all placed in a single, separate dimension which can be accessed from a portal anywhere on the Overworld. (Such as in your base!) This makes the dungeons themselves renewable and it provides challenging, replayable content. See the in-game manual and CurseForge mod page for more information."]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "2CDD344A404D419F"
 			tasks: [{
 				id: "2D6EA7A2C7B28574"
@@ -97,8 +126,10 @@
 			icon: "apotheosis:superior_sigil_of_enhancement"
 			x: -10.0d
 			y: 0.0d
+			subtitle: "Enhance 48 left. Stop. Pan right. Stop. Enhance 54 and magnify 25 percent."
+			description: ["By now 26 new dungeons and structures are included in our mod. They all fit a medieval/fantasy theme and could fit along other fantasy or RPG-like Mods. Some of our structures also look like they could be an upgraded version of a vanilla structure or a variant to them. Get ready to find huge mazes under trees, castles, towers and forgotten temples. We hope you have fun! See CurseForge mod page for more information. "]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "626A14EF95D50E51"
 			tasks: [{
 				id: "665E6F1D5D8EB3AB"
@@ -116,8 +147,10 @@
 			}
 			x: -11.5d
 			y: 0.0d
+			subtitle: "Dungeon math"
+			description: ["Dungeons Plus adds 7 new dungeons to the game with maps to guide you on a journey between them."]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "6588862EE0230FDC"
 			tasks: [{
 				id: "07EE5DF0C0E26086"
@@ -129,8 +162,10 @@
 			icon: "minecraft:honeycomb"
 			x: -13.0d
 			y: 0.0d
+			subtitle: "More I M M E R S I O N"
+			description: ["This mod adds various new structures to Minecraft's overworld. The final goal is to add more structures that perfectly fit Minecraft worlds. This mod adds multiple buildings that suit the ambience and aesthetics of that biome. This pack will add around 30 unique structures to the game by completion. See CurseForge mod page for more information."]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "6F3BAFBF45126F53"
 			tasks: [{
 				id: "3AB22CB143DCE3DF"
@@ -142,8 +177,10 @@
 			icon: "mcwlights:purple_ceiling_light"
 			x: -14.5d
 			y: 0.0d
+			subtitle: "We're all about integration in this pack"
+			description: ["Integrated Dungeons and Structures (aka IDAS) is a mod that adds heavily detailed structures using blocks and mobs from Quark, Alex’s Mobs, and Create, with optional integrated with Biomes O' Plenty. I got sick of installing structure mods into a pack and roaming the world, only to find vanilla items and nothing of difficulty anywhere. I love detailed builds and Create machines, so I decided to make a mod that adds exactly what I’ve been missing. Beautiful and challenging dungeons and structures packed with lore that are fully integrated into multiple core forge mods. See CurseForge mod page for more information. (Note: Description written by mod dev, and that's who \"I\" is.)"]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "7FA1604E8F49DEF8"
 			tasks: [{
 				id: "686E401E7BC7329D"
@@ -155,8 +192,10 @@
 			icon: "minecraft:compass"
 			x: -2.5d
 			y: 1.5d
+			subtitle: "Never lose your way again"
+			description: ["JourneyMap is a client+server mod for Forge which maps your Minecraft world in real-time as you explore. You can view the map in a web browser or in-game as a Minimap or full-screen. See CurseForge mod page for more information. "]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "04DC7E87295A86CA"
 			tasks: [{
 				id: "65FDC25C9486414C"
@@ -168,8 +207,10 @@
 			icon: "minecraft:dirt_path"
 			x: -4.0d
 			y: 1.5d
+			subtitle: "I M M E R S I O N"
+			description: ["The more you walk along a path, the more distinct and defined it becomes. The blocks you walk on have a small chance of changing to another block. The current progression of blocks is Grass Block -> Grass Path -> Coarse Dirt -> Gravel -> Cobblestone/Andesite/Granite/Diorite -> Stone/Polished Andesite/Polished Granite/Polished Diorite -> Smooth Stone -> Stone Bricks. If you're in a sandy biome, the progression is more limited purely because of the lack of sand-based blocks in Minecraft. The order of blocks is currently Sand -> Sandstone -> Smooth Sandstone -> Cut Sandstone -> Terracotta. See CurseForge mod page for more information."]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "3CC4FC8D08A36C95"
 			tasks: [{
 				id: "38F601C335362065"
@@ -181,8 +222,10 @@
 			icon: "stalwart_dungeons:soul_magma_bricks"
 			x: -5.5d
 			y: 1.5d
+			subtitle: "Imposing strength"
+			description: ["The mod named \"Stalwart Dungeons\" is a mod created for the MCrea mod racing modding competition organized by BricoGeek and Doo89. This is a \"boss and dungeon\" type mod because it was the theme of the competition. Here are the three dungeons. They are all generable using an item in the creative inventory. See CurseForge mod page for more information."]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "18E077B84E572760"
 			tasks: [{
 				id: "39018599F3AB0538"
@@ -194,8 +237,10 @@
 			icon: "graveyard:gravestone"
 			x: -7.0d
 			y: 1.5d
+			subtitle: "Spookeh"
+			description: ["The Graveyard adds new spooky biomes, structures, mobs and blocks to make your minecraft adventure more thrilling and challenging. Every structure, mob and biome was built with a lot of attention to detail to create an immersive experience for you. See CurseForge mod page for more information. "]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "6A2093C1EE41E6F6"
 			tasks: [{
 				id: "30F33626C13DD1EE"
@@ -207,8 +252,10 @@
 			icon: "waystones:waystone"
 			x: -8.5d
 			y: 1.5d
+			subtitle: "Some of the only magic in the pack"
+			description: ["This mod adds waystone blocks that the player can return to once they've been activated, either through a Warp Scroll, a rechargeable Warp Stone, or by using an existing waystone to hop from one to the other. See CurseForge mod page for more information."]
 			hide_dependency_lines: true
-			dependencies: ["75DB977DA7CBC326"]
+			dependencies: ["6B3D8FE0D75F1783"]
 			id: "1CF649E9D847D6B3"
 			tasks: [{
 				id: "357C5E35FE6E057E"
@@ -220,6 +267,8 @@
 			icon: "minecraft:prismarine_wall"
 			x: -4.0d
 			y: -1.5d
+			subtitle: "Tubular"
+			description: ["See CurseForge mod page for more information."]
 			dependencies: ["3182D5B946E0ECB1"]
 			id: "0B7192DFCF0B4A43"
 			tasks: [{
@@ -232,6 +281,8 @@
 			icon: "mcwfences:nether_brick_railing_gate"
 			x: -4.0d
 			y: -3.0d
+			subtitle: "Fire"
+			description: ["See CurseForge mod page for more information."]
 			dependencies: ["0B7192DFCF0B4A43"]
 			id: "566D0A7748207EE2"
 			tasks: [{
@@ -244,6 +295,8 @@
 			icon: "mcwfences:end_brick_railing_gate"
 			x: -4.0d
 			y: -4.5d
+			subtitle: "Xenogeon"
+			description: ["See CurseForge mod page for more information. "]
 			dependencies: ["566D0A7748207EE2"]
 			id: "5781B1EABB1C04F5"
 			tasks: [{
@@ -276,6 +329,8 @@
 			icon: "graveyard:skull_on_pike"
 			x: -7.0d
 			y: 3.0d
+			subtitle: "Even spookehurr"
+			description: ["The Graveyard Biomes adds new spooky biomes to make your minecraft adventure more thrilling and challenging. Every biome was built with a lot of attention to detail to create an immersive experience for you. See CurseForge mod page for more information."]
 			dependencies: ["6A2093C1EE41E6F6"]
 			id: "0925D260C8E69752"
 			tasks: [{
@@ -288,6 +343,8 @@
 			icon: "waystones:sharestone"
 			x: -8.5d
 			y: 3.0d
+			subtitle: "Glider + toer = yep"
+			description: ["This mod adds adds tall towers into Minecraft, inspired by Towers Of The Wild, which was inspired by The Legend Of Zelda : Breath Of The Wild. If you are wondering where the mod logo was created, I used the help of NightCafe Creator's AI which you can use as well for free! See CurseForge mod page for more information. "]
 			dependencies: ["1CF649E9D847D6B3"]
 			id: "58BAEE8B9B2661F6"
 			tasks: [{

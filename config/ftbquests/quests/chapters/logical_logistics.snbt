@@ -3,48 +3,733 @@
 	group: "2938FEA7F79DC67A"
 	order_index: 0
 	filename: "logical_logistics"
-	title: "Logical Logistics"
+	title: "Logical logistics"
 	icon: "integrateddynamics:variable"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		title: "Logical Logistics"
-		icon: "integrateddynamics:variable"
-		x: 0.0d
-		y: 0.0d
-		shape: "rsquare"
-		subtitle: "Easier than it looks"
-		description: [
-			"In the past this mod was a little cumbersome to use. With some recent additions, most of that has changed and it's much less clunky."
-			""
-			"As a supplement to the in-game manual, this part of the quest book aims to guide you through some of the basic concepts the mod has to offer."
-		]
-		dependencies: ["11226CAB8BC02974"]
-		size: 2.0d
-		id: "4DD373EFF5CFDCD6"
-		tasks: [
-			{
-				id: "0AC48F1D7A2D3465"
-				type: "item"
-				item: "integrateddynamics:portable_logic_programmer"
-			}
-			{
-				id: "554F1380A0EC263D"
-				type: "item"
-				item: "integrateddynamics:on_the_dynamics_of_integration"
-			}
-			{
-				id: "38E2089C518C1031"
+	quests: [
+		{
+			title: "Logical Logistics"
+			icon: "integrateddynamics:variable"
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Easier than it looks"
+			description: [
+				"In the past this mod was a little cumbersome to use. With some recent additions, most of that has changed and it's much less clunky."
+				""
+				"As a supplement to the in-game manual, this part of the quest book aims to guide you through some of the basic concepts the mod has to offer."
+			]
+			dependencies: ["11226CAB8BC02974"]
+			size: 2.0d
+			id: "4DD373EFF5CFDCD6"
+			tasks: [
+				{
+					id: "0AC48F1D7A2D3465"
+					type: "item"
+					item: "integrateddynamics:portable_logic_programmer"
+				}
+				{
+					id: "554F1380A0EC263D"
+					type: "item"
+					item: "integrateddynamics:on_the_dynamics_of_integration"
+				}
+				{
+					id: "38E2089C518C1031"
+					type: "item"
+					item: "integrateddynamics:variable"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "0B550755DFA9DB2A"
 				type: "item"
 				item: "integrateddynamics:variable"
-				consume_items: false
-			}
-		]
-		rewards: [{
-			id: "0B550755DFA9DB2A"
-			type: "item"
-			item: "integrateddynamics:variable"
-			count: 40
-		}]
-	}]
+				count: 40
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["4DD373EFF5CFDCD6"]
+			id: "3B1F9CBDB5EBA4B2"
+			tasks: [{
+				id: "57EF05C6C617D863"
+				type: "checkmark"
+				title: "Menril"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			dependencies: ["3B1F9CBDB5EBA4B2"]
+			id: "4E8EA4ED65EAF8C9"
+			tasks: [{
+				id: "4C4C4896491D7057"
+				type: "item"
+				item: "integrateddynamics:menril_sapling"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			dependencies: ["4E8EA4ED65EAF8C9"]
+			id: "3618947FEB92B5DD"
+			tasks: [{
+				id: "6715B1321F3CE4AA"
+				type: "item"
+				item: "integrateddynamics:menril_log"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			dependencies: ["4E8EA4ED65EAF8C9"]
+			id: "29D86BCAD0D747F0"
+			tasks: [{
+				id: "46B8268AA9B44BFD"
+				type: "item"
+				item: "integrateddynamics:menril_log_filled"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 6.0d
+			dependencies: ["3B1F9CBDB5EBA4B2"]
+			id: "7B554C5697ABC679"
+			tasks: [{
+				id: "08DBCC316CE0E943"
+				type: "item"
+				item: "integrateddynamics:menril_berries"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 1.0d
+			dependencies: ["2C8CCB4E14A65782"]
+			id: "176255E091C24995"
+			tasks: [{
+				id: "25D48A382138B713"
+				type: "item"
+				item: "integrateddynamics:crystalized_menril_block"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 4.0d
+			dependencies: ["3B1F9CBDB5EBA4B2"]
+			id: "015A6B63AD3FF45A"
+			tasks: [{
+				id: "06E7E285392AB0B5"
+				type: "item"
+				item: "integrateddynamics:crystalized_menril_chunk"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 2.0d
+			dependencies: ["2C8CCB4E14A65782"]
+			id: "76AFBBD377CB9573"
+			tasks: [{
+				id: "0CEE1BA873EBAFF9"
+				type: "item"
+				item: "integrateddynamics:crystalized_chorus_block"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 2.0d
+			dependencies: ["76AFBBD377CB9573"]
+			id: "1BA6825982F287B0"
+			tasks: [{
+				id: "217437C2BF40C22C"
+				type: "item"
+				item: "integrateddynamics:crystalized_chorus_chunk"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			dependencies: ["3B1F9CBDB5EBA4B2"]
+			id: "12EAC903C1135102"
+			tasks: [{
+				id: "3FDE95EA4A5D1A3A"
+				type: "item"
+				item: "integrateddynamics:on_the_dynamics_of_integration"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			dependencies: ["12EAC903C1135102"]
+			id: "2371BCFE7F0684C5"
+			tasks: [
+				{
+					id: "3FE37D386A70AD1C"
+					type: "item"
+					item: "integrateddynamics:squeezer"
+				}
+				{
+					id: "10F41453A0760846"
+					type: "item"
+					item: "integrateddynamics:mechanical_squeezer"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 0.0d
+			dependencies: ["2371BCFE7F0684C5"]
+			id: "2C8CCB4E14A65782"
+			tasks: [
+				{
+					id: "31B3C7BECEEE8490"
+					type: "item"
+					item: "integrateddynamics:drying_basin"
+				}
+				{
+					id: "48A71305214CE89B"
+					type: "item"
+					item: "integrateddynamics:mechanical_drying_basin"
+				}
+			]
+		}
+		{
+			x: -12.0d
+			y: 0.0d
+			dependencies: ["2C8CCB4E14A65782"]
+			id: "252CF0DFFF3F9B92"
+			tasks: [{
+				id: "5732DFB60470179E"
+				type: "item"
+				item: "integrateddynamics:coal_generator"
+			}]
+		}
+		{
+			x: -14.0d
+			y: 0.0d
+			dependencies: ["252CF0DFFF3F9B92"]
+			id: "1E2BF2F67955C725"
+			tasks: [{
+				id: "2E8CC4CFFE8397F6"
+				type: "item"
+				item: {
+					id: "integrateddynamics:energy_battery"
+					Count: 1b
+					tag: {
+						energy: 0
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -16.0d
+			y: 0.0d
+			dependencies: ["1E2BF2F67955C725"]
+			id: "2AB13F9308081798"
+			tasks: [
+				{
+					id: "1A11A3C10809D8D6"
+					type: "item"
+					item: "integrateddynamics:logic_programmer"
+				}
+				{
+					id: "7923194C297DA925"
+					type: "item"
+					item: "integrateddynamics:portable_logic_programmer"
+				}
+			]
+		}
+		{
+			x: -16.0d
+			y: 1.0d
+			dependencies: ["2AB13F9308081798"]
+			id: "4ADE966D4CB63F1E"
+			tasks: [{
+				id: "204D101CC7C9B3A9"
+				type: "item"
+				item: "integrateddynamics:variable"
+			}]
+		}
+		{
+			x: -18.0d
+			y: 0.0d
+			dependencies: ["2AB13F9308081798"]
+			id: "28A076916F069328"
+			tasks: [{
+				id: "05FAD0695518D676"
+				type: "item"
+				item: "integrateddynamics:variablestore"
+			}]
+		}
+		{
+			x: -20.0d
+			y: 0.0d
+			dependencies: ["28A076916F069328"]
+			id: "38767676866C8760"
+			tasks: [
+				{
+					id: "2BCDE6123FE9D43B"
+					type: "item"
+					item: "integrateddynamics:part_display_panel"
+				}
+				{
+					id: "306DA82BD1BE267F"
+					type: "item"
+					item: "integrateddynamics:part_static_light_panel"
+				}
+				{
+					id: "7E25217163488BB1"
+					type: "item"
+					item: "integrateddynamics:part_dynamic_light_panel"
+				}
+			]
+		}
+		{
+			x: -22.0d
+			y: 0.0d
+			dependencies: ["38767676866C8760"]
+			id: "0EBDB4C49F5B56AE"
+			tasks: [
+				{
+					id: "29C6F2FA9659C4B8"
+					type: "item"
+					item: "integratedterminals:part_terminal_storage"
+				}
+				{
+					id: "2EF7A9A0E1FE87F2"
+					type: "item"
+					item: "integratedterminals:part_terminal_crafting_job"
+				}
+				{
+					id: "702FD3EAF6B60BF6"
+					type: "item"
+					item: "integratedterminals:terminal_storage_portable"
+				}
+				{
+					id: "6647941CF5A3FCC2"
+					type: "item"
+					item: "integratedcrafting:part_interface_crafting"
+				}
+			]
+		}
+		{
+			x: -24.0d
+			y: 0.0d
+			dependencies: ["0EBDB4C49F5B56AE"]
+			id: "03EEDE30DEF797EC"
+			tasks: [
+				{
+					id: "6685E79643CC84F1"
+					type: "item"
+					item: "integratednbt:nbt_extractor"
+				}
+				{
+					id: "3FB09CB8EEB90371"
+					type: "item"
+					item: {
+						id: "integratednbt:nbt_extractor_remote"
+						Count: 1b
+						tag: {
+							integratednbt: { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -26.0d
+			y: 0.0d
+			dependencies: ["03EEDE30DEF797EC"]
+			id: "01B0B6393B5BB3A9"
+			tasks: [{
+				id: "6A01FFB1D4A55364"
+				type: "item"
+				item: "integrateddynamics:materializer"
+			}]
+		}
+		{
+			x: -28.0d
+			y: 0.0d
+			dependencies: ["01B0B6393B5BB3A9"]
+			id: "3F31350342339770"
+			tasks: [{
+				id: "4A3453A4DDCB8DC6"
+				type: "item"
+				item: "integrateddynamics:cable"
+			}]
+		}
+		{
+			x: -28.0d
+			y: 1.0d
+			dependencies: ["3F31350342339770"]
+			id: "7FBAEA8892D92878"
+			tasks: [
+				{
+					id: "3C05E1E2F5F6C3CC"
+					type: "item"
+					item: "integratedtunnels:part_interface_item"
+				}
+				{
+					id: "6FB81951039D02A3"
+					type: "item"
+					item: "integratedtunnels:part_interface_fluid"
+				}
+				{
+					id: "6D7EAC68C24F87B1"
+					type: "item"
+					item: "integratedtunnels:part_interface_energy"
+				}
+			]
+		}
+		{
+			x: -28.0d
+			y: 2.0d
+			dependencies: ["3F31350342339770"]
+			id: "5A1A194F8E6DBE09"
+			tasks: [
+				{
+					id: "1BA011EB627A1DDD"
+					type: "item"
+					item: "integratedtunnels:part_interface_filter_item"
+				}
+				{
+					id: "21DCE905EFB55921"
+					type: "item"
+					item: "integratedtunnels:part_interface_filter_fluid"
+				}
+				{
+					id: "5FB8A20ADE39F84E"
+					type: "item"
+					item: "integratedtunnels:part_interface_filter_energy"
+				}
+			]
+		}
+		{
+			x: -28.0d
+			y: 3.0d
+			dependencies: ["3F31350342339770"]
+			id: "1719F3080C941BE7"
+			tasks: [
+				{
+					id: "02BDE767CE060856"
+					type: "item"
+					item: "integratedtunnels:part_exporter_item"
+				}
+				{
+					id: "6F0A25855FA11FD7"
+					type: "item"
+					item: "integratedtunnels:part_exporter_fluid"
+				}
+				{
+					id: "2C04E19348140EBB"
+					type: "item"
+					item: "integratedtunnels:part_exporter_energy"
+				}
+				{
+					id: "31DCDAE04D3E53E3"
+					type: "item"
+					item: "integratedtunnels:part_exporter_world_item"
+				}
+				{
+					id: "5985DBD8A59B8F91"
+					type: "item"
+					item: "integratedtunnels:part_exporter_world_fluid"
+				}
+				{
+					id: "33BF092C4E3B3743"
+					type: "item"
+					item: "integratedtunnels:part_exporter_world_energy"
+				}
+			]
+		}
+		{
+			x: -27.0d
+			y: 4.0d
+			dependencies: ["0F81291C6E2EE4AA"]
+			id: "72DC68E6DE2EC7E1"
+			tasks: [{
+				id: "7FE48135F1C79AC0"
+				type: "item"
+				item: "integrateddynamics:part_audio_reader"
+			}]
+		}
+		{
+			x: -26.0d
+			y: 4.0d
+			dependencies: ["0F81291C6E2EE4AA"]
+			id: "140BA021D275B78F"
+			tasks: [{
+				id: "6C814DF4C711B477"
+				type: "item"
+				item: "integrateddynamics:part_block_reader"
+			}]
+		}
+		{
+			x: -25.0d
+			y: 4.0d
+			dependencies: ["0F81291C6E2EE4AA"]
+			id: "448E235F386CD1DF"
+			tasks: [{
+				id: "67B1EBFDFEA4F739"
+				type: "item"
+				item: "integrateddynamics:part_entity_reader"
+			}]
+		}
+		{
+			x: -24.0d
+			y: 4.0d
+			dependencies: ["0F81291C6E2EE4AA"]
+			id: "6263EE34EBB4AA2F"
+			tasks: [{
+				id: "67731E575CADF951"
+				type: "item"
+				item: "integrateddynamics:part_extradimensional_reader"
+			}]
+		}
+		{
+			x: -23.0d
+			y: 4.0d
+			dependencies: ["0F81291C6E2EE4AA"]
+			id: "42A5FE877BE19CD6"
+			tasks: [{
+				id: "23F54C8971991C87"
+				type: "item"
+				item: "integrateddynamics:part_fluid_reader"
+			}]
+		}
+		{
+			x: -22.0d
+			y: 4.0d
+			dependencies: ["0F81291C6E2EE4AA"]
+			id: "7D71AB609816B1A3"
+			tasks: [{
+				id: "67AA28C4EA2D01F9"
+				type: "item"
+				item: "integrateddynamics:part_inventory_reader"
+			}]
+		}
+		{
+			x: -21.0d
+			y: 4.0d
+			dependencies: ["0F81291C6E2EE4AA"]
+			id: "4FF6F95919827109"
+			tasks: [{
+				id: "5B1A1E73BC4190A1"
+				type: "item"
+				item: "integrateddynamics:part_machine_reader"
+			}]
+		}
+		{
+			x: -20.0d
+			y: 4.0d
+			dependencies: ["0F81291C6E2EE4AA"]
+			id: "7D3AAA7C2C08FDC6"
+			tasks: [{
+				id: "1A05A32DD383E266"
+				type: "item"
+				item: "integrateddynamics:part_network_reader"
+			}]
+		}
+		{
+			x: -19.0d
+			y: 4.0d
+			dependencies: ["0F81291C6E2EE4AA"]
+			id: "2DA8974462C83618"
+			tasks: [{
+				id: "5A248D06AB45E33B"
+				type: "item"
+				item: "integrateddynamics:part_redstone_reader"
+			}]
+		}
+		{
+			x: -18.0d
+			y: 4.0d
+			dependencies: ["0F81291C6E2EE4AA"]
+			id: "317F3892F2201584"
+			tasks: [{
+				id: "6D8EC18384398C28"
+				type: "item"
+				item: "integrateddynamics:part_world_reader"
+			}]
+		}
+		{
+			x: -27.0d
+			y: 5.0d
+			dependencies: ["7A987770CEB1547B"]
+			id: "78461E23864B08C6"
+			tasks: [{
+				id: "437DB7B574FCA811"
+				type: "item"
+				item: "integratedcrafting:part_crafting_writer"
+			}]
+		}
+		{
+			x: -26.0d
+			y: 5.0d
+			dependencies: ["7A987770CEB1547B"]
+			id: "3BFE7DC52557B0ED"
+			tasks: [{
+				id: "38430A16FD86325D"
+				type: "item"
+				item: "integrateddynamics:part_audio_writer"
+			}]
+		}
+		{
+			x: -25.0d
+			y: 5.0d
+			dependencies: ["7A987770CEB1547B"]
+			id: "54D53807030281D7"
+			tasks: [{
+				id: "452E14880B817165"
+				type: "item"
+				item: "integrateddynamics:part_effect_writer"
+			}]
+		}
+		{
+			x: -24.0d
+			y: 5.0d
+			dependencies: ["7A987770CEB1547B"]
+			id: "79F87EA184806D16"
+			tasks: [{
+				id: "0FDDB89DA1E0B5B2"
+				type: "item"
+				item: "integrateddynamics:part_entity_writer"
+			}]
+		}
+		{
+			x: -23.0d
+			y: 5.0d
+			dependencies: ["7A987770CEB1547B"]
+			id: "679A369F9360F2E2"
+			tasks: [{
+				id: "72B32C334964DBC7"
+				type: "item"
+				item: "integrateddynamics:part_machine_writer"
+			}]
+		}
+		{
+			x: -22.0d
+			y: 5.0d
+			dependencies: ["7A987770CEB1547B"]
+			id: "26F3D8EB3FA5BFE4"
+			tasks: [{
+				id: "0E5AD2C486762A2F"
+				type: "item"
+				item: "integrateddynamics:part_inventory_writer"
+			}]
+		}
+		{
+			x: -21.0d
+			y: 5.0d
+			dependencies: ["7A987770CEB1547B"]
+			id: "43401C3AC7E5D32D"
+			tasks: [{
+				id: "1C2E275D261EFDAF"
+				type: "item"
+				item: "integrateddynamics:part_redstone_writer"
+			}]
+		}
+		{
+			x: -27.0d
+			y: 6.0d
+			dependencies: ["7E776010C90E2956"]
+			id: "682EE182882207E3"
+			tasks: [{
+				id: "0E939B7CC1054A57"
+				type: "item"
+				item: "integrateddynamics:part_connector_mono_directional"
+			}]
+		}
+		{
+			x: -26.0d
+			y: 6.0d
+			dependencies: ["7E776010C90E2956"]
+			id: "5D071E10BE736995"
+			tasks: [{
+				id: "755F4F812E21BBD4"
+				type: "item"
+				item: "integrateddynamics:part_connector_omni_directional"
+			}]
+		}
+		{
+			x: -30.0d
+			y: 0.0d
+			dependencies: ["3F31350342339770"]
+			id: "2041C8DAB0562602"
+			tasks: [{
+				id: "3E834181644BE9E3"
+				type: "item"
+				item: "integrateddynamics:proxy"
+			}]
+		}
+		{
+			x: -32.0d
+			y: 0.0d
+			dependencies: ["2041C8DAB0562602"]
+			id: "7843634374396D45"
+			tasks: [{
+				id: "4D2462AD6BBB3A0A"
+				type: "item"
+				item: "integrateddynamics:delay"
+			}]
+		}
+		{
+			x: -34.0d
+			y: 0.0d
+			dependencies: ["7843634374396D45"]
+			id: "7C72D2D26F4A6D1C"
+			tasks: [{
+				id: "210DA293C4FD6DAD"
+				type: "checkmark"
+				title: "Decorative Blocks"
+			}]
+		}
+		{
+			x: -34.0d
+			y: 1.0d
+			dependencies: ["7C72D2D26F4A6D1C"]
+			id: "7701C970E66237AD"
+			tasks: [{
+				id: "28CC01CF690DDBAB"
+				type: "item"
+				item: "integrateddynamics:facade"
+			}]
+		}
+		{
+			x: -28.0d
+			y: 4.0d
+			dependencies: ["3F31350342339770"]
+			id: "0F81291C6E2EE4AA"
+			tasks: [{
+				id: "2AA9487596B4B6A4"
+				type: "checkmark"
+				title: "Readers"
+			}]
+		}
+		{
+			x: -28.0d
+			y: 5.0d
+			dependencies: ["3F31350342339770"]
+			id: "7A987770CEB1547B"
+			tasks: [{
+				id: "61DB3FBF8E53D55A"
+				type: "checkmark"
+				title: "Writers"
+			}]
+		}
+		{
+			x: -28.0d
+			y: 6.0d
+			dependencies: ["3F31350342339770"]
+			id: "7E776010C90E2956"
+			tasks: [{
+				id: "63EE442DFE7A92CC"
+				type: "checkmark"
+				title: "Connectors"
+			}]
+		}
+	]
 }

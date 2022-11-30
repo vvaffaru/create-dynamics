@@ -3,7 +3,7 @@
 	group: "29701DF1EC6EE2E7"
 	order_index: 1
 	filename: "the_old_kitchen_sink"
-	title: "The Old Kitchen Sink"
+	title: "The old kitchen sink"
 	icon: "cookingforblockheads:sink"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
