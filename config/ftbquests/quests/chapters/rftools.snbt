@@ -1,7 +1,7 @@
 {
 	id: "529C1EB3A3903220"
 	group: "29701DF1EC6EE2E7"
-	order_index: 9
+	order_index: 10
 	filename: "rftools"
 	title: "RFTools"
 	default_quest_shape: ""
@@ -109,37 +109,14 @@
 			}]
 		}
 		{
-			title: "Crafter"
 			x: -6.0d
 			y: -1.5d
-			subtitle: "Robots are taking all our jobs"
-			description: ["These blocks let you automate basically every recipe that uses a vanilla crafting table."]
-			dependencies: ["0D38CEF69511DF34"]
-			id: "0C378B701AD70FCA"
-			tasks: [
-				{
-					id: "2089DDCAE2C31409"
-					type: "item"
-					item: "rftoolsutility:crafter1"
-				}
-				{
-					id: "07770A8E382403BD"
-					type: "item"
-					item: "rftoolsutility:crafter2"
-				}
-				{
-					id: "4D691AD2F29EA6A6"
-					type: "item"
-					item: "rftoolsutility:crafter3"
-				}
-			]
-		}
-		{
-			x: -6.0d
-			y: -3.0d
 			subtitle: "Not on my lawn, well maybe..."
 			description: ["Allows you to control various environmental effects in an area. Works similar to a beacon, just with more options."]
-			dependencies: ["0C378B701AD70FCA"]
+			dependencies: [
+				"0C378B701AD70FCA"
+				"0D38CEF69511DF34"
+			]
 			id: "5DAA9CDA1FD30632"
 			tasks: [{
 				id: "146EFD06D24D0796"
@@ -148,25 +125,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -4.5d
-			subtitle: "Highly logical"
-			description: [
-				"This block can combine 3 redstone signal inputs into one output."
-				""
-				"If you hover your mouse over the logic block in JEI and press F1 (default) it will open the RFTools manual entry about how logic is handled."
-			]
-			dependencies: ["5DAA9CDA1FD30632"]
-			id: "1FCB2CF9D9C36AB5"
-			tasks: [{
-				id: "4E7B1B7DF6C96DD9"
-				type: "item"
-				item: "rftoolsutility:logic"
-			}]
-		}
-		{
 			x: -4.5d
-			y: -6.0d
+			y: -3.0d
 			subtitle: "Don't sleep on this underused block"
 			description: [
 				"Screens can be a very powerful tool to help you see information about all types of things. Not just that, but they can be setup with buttons to control things."
@@ -184,7 +144,7 @@
 		}
 		{
 			x: -6.0d
-			y: -7.5d
+			y: -4.5d
 			subtitle: "Not for salmon"
 			description: ["Using the right type of syringe and energized matter you can spawn just about any mob you want."]
 			dependencies: ["6954DF57BE9A07AE"]
@@ -196,21 +156,8 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: 0.0d
-			subtitle: "Fluid crafting"
-			description: ["Holds four different types of fluids. Is meant for use with the processor and can't be accessed directly."]
-			dependencies: ["22A0AC145EF87D69"]
-			id: "621A5FFF03F586DA"
-			tasks: [{
-				id: "42141F54638D270E"
-				type: "item"
-				item: "rftoolscontrol:tank"
-			}]
-		}
-		{
-			x: -1.5d
-			y: -9.0d
+			x: -10.5d
+			y: -6.0d
 			subtitle: "What matters to you matters to us"
 			description: ["Placing this block anywhere in the world allows you to dial it with the dialing device. It needs power so make sure you wire it up before teleporting elsewhere."]
 			dependencies: ["147520B4E0E3DA79"]
@@ -222,8 +169,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -10.5d
+			x: -7.5d
+			y: -7.5d
 			subtitle: "How much matter you got? A lot."
 			description: ["Placing one of these adjacent to a matter teleporter will allow you to teleport to unpowered receivers."]
 			dependencies: ["57605D476CA374A2"]
@@ -236,7 +183,11 @@
 		}
 		{
 			title: "Storage"
-			icon: "rftoolsstorage:tablet_scanner"
+			icon: {
+				id: "ae2:item_storage_cell_256k"
+				Count: 1b
+				tag: { }
+			}
 			x: -7.5d
 			y: 0.0d
 			subtitle: "A unique storage solution"
@@ -248,269 +199,6 @@
 				id: "76BFB847DEC9707A"
 				type: "checkmark"
 			}]
-		}
-		{
-			x: -10.5d
-			y: 0.0d
-			subtitle: "Does compute"
-			description: ["Executes programs when a CPU core is installed. Programs should be written on program cards using the programmer."]
-			dependencies: ["1868358D028CED6A"]
-			id: "22A0AC145EF87D69"
-			tasks: [{
-				id: "3BBD08457E817454"
-				type: "item"
-				item: "rftoolscontrol:processor"
-			}]
-		}
-		{
-			title: "CPU Core"
-			x: -10.5d
-			y: 1.5d
-			subtitle: "Required to run programs"
-			dependencies: ["22A0AC145EF87D69"]
-			dependency_requirement: "one_completed"
-			id: "78D987D226E62B31"
-			tasks: [
-				{
-					id: "288A61ECA80BCE87"
-					type: "item"
-					item: "rftoolscontrol:cpu_core_500"
-				}
-				{
-					id: "15CC746429F21331"
-					type: "item"
-					item: "rftoolscontrol:cpu_core_1000"
-				}
-				{
-					id: "41AC538F1D2AB6F0"
-					type: "item"
-					item: "rftoolscontrol:cpu_core_2000"
-				}
-			]
-		}
-		{
-			x: -10.5d
-			y: -3.0d
-			subtitle: "Do you even work brah?"
-			description: ["General workbench that can be used standalone but works well with the processor."]
-			dependencies: ["22A0AC145EF87D69"]
-			id: "7275E75A9BD390E9"
-			tasks: [{
-				id: "5106A2D9FD8F0BBA"
-				type: "item"
-				item: "rftoolscontrol:workbench"
-			}]
-		}
-		{
-			x: -10.5d
-			y: -1.5d
-			subtitle: "Just like in real life, this one doesn't get paid"
-			description: ["Makes programs on program cards for use in the processor."]
-			dependencies: ["7275E75A9BD390E9"]
-			id: "04D79378B1F88A5E"
-			tasks: [{
-				id: "30419F4E0A1A6BF5"
-				type: "item"
-				item: "rftoolscontrol:programmer"
-			}]
-		}
-		{
-			x: -10.5d
-			y: -4.5d
-			subtitle: "Make it so"
-			description: ["Assists in auto-crafting."]
-			dependencies: ["04D79378B1F88A5E"]
-			id: "4F6A2376DAB625A8"
-			tasks: [{
-				id: "579A15EFFA2E4AD4"
-				type: "item"
-				item: "rftoolscontrol:craftingstation"
-			}]
-		}
-		{
-			x: -10.5d
-			y: -6.0d
-			subtitle: "Appears to be NYI (Not Yet Implemented)"
-			description: ["Can be accessed by a processor with a network card installed."]
-			dependencies: ["4F6A2376DAB625A8"]
-			id: "532B0B44EF50F502"
-			tasks: [{
-				id: "760B6CE8984D9DF8"
-				type: "item"
-				item: "rftoolscontrol:node"
-			}]
-		}
-		{
-			x: -12.0d
-			y: 1.5d
-			subtitle: "Like an elephant"
-			description: ["Expand ram capacity up to eight extra variables. (Max 32)"]
-			dependencies: ["78D987D226E62B31"]
-			id: "5D682273E3DD8C77"
-			tasks: [{
-				id: "770066E5BAFF3C72"
-				type: "item"
-				item: "rftoolscontrol:ram_chip"
-			}]
-		}
-		{
-			title: "Control"
-			x: -9.0d
-			y: 0.0d
-			subtitle: "Logistics and monitoring"
-			description: [
-				"RFTools Control is an addon mod for RFTools which adds automation control using a visual grid based programming language. Using opcodes that you arrange in a grid you can move items around, control redstone, check energy (RF) and so on. You can access regular inventories but this mod also supports direct access to a storage scanner controlled system. In the future it will also provide a way to the storage scanner to autocraft items. This is not yet fully implemented however."
-				""
-				"The two main blocks in this mod are the programmer which is used to create programs and the processor that executes those programs. Networking is also provided."
-			]
-			hide_dependency_lines: true
-			dependencies: ["3645838DAA16F493"]
-			id: "1868358D028CED6A"
-			tasks: [{
-				id: "5EDF26AFB72F075F"
-				type: "item"
-				item: "rftoolscontrol:card_base"
-			}]
-		}
-		{
-			x: -12.0d
-			y: -6.0d
-			subtitle: "NetID"
-			description: ["Allows a processor to directly communicate with another linked processor."]
-			dependencies: ["532B0B44EF50F502"]
-			id: "5C9B70E9B765F1FC"
-			tasks: [{
-				id: "10F78EA94CEB3E1A"
-				type: "item"
-				item: {
-					id: "rftoolscontrol:network_identifier"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-		}
-		{
-			x: -13.5d
-			y: -6.0d
-			subtitle: "That a 1200 baud modem?"
-			description: [
-				"Allows access to nearby nodes. Use 'net setup <name>' in Processor console to setup the network. "
-				""
-				"17x17x17 AOE for the basic one."
-				"31x31x31 AOE for the advanced."
-			]
-			dependencies: ["5C9B70E9B765F1FC"]
-			dependency_requirement: "one_completed"
-			id: "6DD368CD3A5EF7C8"
-			tasks: [
-				{
-					id: "0658C135AE029CBF"
-					type: "item"
-					item: "rftoolscontrol:network_card"
-				}
-				{
-					id: "0A5D985BBEACE619"
-					type: "item"
-					item: "rftoolscontrol:advanced_network_card"
-				}
-			]
-		}
-		{
-			x: -9.0d
-			y: 1.5d
-			subtitle: "Not for mining bitcoin"
-			description: ["Needed to draw vector graphics."]
-			dependencies: ["1868358D028CED6A"]
-			id: "2A8D003F624D361F"
-			tasks: [{
-				id: "335635AA325D3478"
-				type: "item"
-				item: "rftoolscontrol:graphics_card"
-			}]
-		}
-		{
-			x: -12.0d
-			y: -1.5d
-			subtitle: "Sorta like a cookie"
-			description: ["This item doesn't do anything except store information."]
-			dependencies: ["04D79378B1F88A5E"]
-			id: "51B1CEBF639256DD"
-			tasks: [{
-				id: "09F10F111A8CA021"
-				type: "item"
-				item: "rftoolscontrol:token"
-			}]
-		}
-		{
-			x: -9.0d
-			y: -1.5d
-			subtitle: "Like a blank thumbdrive"
-			description: ["You write programs to this card with the programmer."]
-			dependencies: ["04D79378B1F88A5E"]
-			id: "4274645324637E99"
-			tasks: [{
-				id: "50D5627F48D282EA"
-				type: "item"
-				item: "rftoolscontrol:program_card"
-			}]
-		}
-		{
-			title: "Screen Modules"
-			x: -7.5d
-			y: 1.5d
-			subtitle: "Gooey"
-			description: ["Variable modules display variables in a processor. Interaction modules allow you to interact with a processor. Console modules display the console of a processor, can also be used in a tablet. Vector Art modules allow you to show vector art from a processor."]
-			dependencies: ["2A8D003F624D361F"]
-			dependency_requirement: "one_completed"
-			id: "3463A6F04D8D0B1F"
-			tasks: [
-				{
-					id: "74D61C4B750D7FF8"
-					type: "item"
-					item: {
-						id: "rftoolscontrol:console_module"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "3913F66DB224F0BC"
-					type: "item"
-					item: {
-						id: "rftoolscontrol:vectorart_module"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "185D999A87767E75"
-					type: "item"
-					item: {
-						id: "rftoolscontrol:interaction_module"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "5E9231E4C65989E0"
-					type: "item"
-					item: {
-						id: "rftoolscontrol:variable_module"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
 		}
 		{
 			x: -3.0d
@@ -605,7 +293,7 @@
 			x: -3.0d
 			y: 6.0d
 			subtitle: "Black holes on demand"
-			description: ["This card voids blocks in a user defined area."]
+			description: ["This card voids everything in a user defined area."]
 			dependencies: ["55090CDA00ADC771"]
 			dependency_requirement: "one_completed"
 			id: "5DC1052140410962"
@@ -617,7 +305,7 @@
 		}
 		{
 			x: -3.0d
-			y: -6.0d
+			y: -4.0d
 			subtitle: "Lorem ipsum dolor sit amet"
 			description: ["This module allows you to display a line of text on a screen. Multiple lines on the screen require multiple modules."]
 			hide_dependency_lines: true
@@ -637,7 +325,7 @@
 		}
 		{
 			x: 1.5d
-			y: -6.0d
+			y: -4.0d
 			subtitle: "How much power you got? A lot."
 			description: ["This module shows how much power is in a block."]
 			hide_dependency_lines: true
@@ -657,7 +345,7 @@
 		}
 		{
 			x: 1.5d
-			y: -5.0d
+			y: -3.0d
 			subtitle: "Superpowers"
 			description: ["This module also shows how much power is in a block, but it takes a lot more energy to do it."]
 			hide_dependency_lines: true
@@ -677,7 +365,7 @@
 		}
 		{
 			x: 0.0d
-			y: -6.0d
+			y: -4.0d
 			subtitle: "Show me what you got"
 			description: ["This module shows the contents of up to 4 slots of an inventory."]
 			hide_dependency_lines: true
@@ -697,7 +385,7 @@
 		}
 		{
 			x: 0.0d
-			y: -5.0d
+			y: -3.0d
 			subtitle: "SHOW ME WHAT YOU GOT!"
 			description: ["This module also shows the contents of up to 4 slots of an inventory, but it takes a lot more energy to do it."]
 			hide_dependency_lines: true
@@ -717,7 +405,7 @@
 		}
 		{
 			x: 4.5d
-			y: -5.0d
+			y: -3.0d
 			subtitle: "Tick tock doc"
 			description: ["This module displays the current time."]
 			hide_dependency_lines: true
@@ -737,7 +425,7 @@
 		}
 		{
 			x: 3.0d
-			y: -6.0d
+			y: -4.0d
 			subtitle: "How much fluid you got? A lot."
 			description: ["This module shows how much fluid is in a block."]
 			hide_dependency_lines: true
@@ -757,7 +445,7 @@
 		}
 		{
 			x: 3.0d
-			y: -5.0d
+			y: -3.0d
 			subtitle: "Superfluid"
 			description: ["This module also shows how much fluid is in a block, but takes a lot more energy to do it."]
 			hide_dependency_lines: true
@@ -777,7 +465,7 @@
 		}
 		{
 			x: -3.0d
-			y: -5.0d
+			y: -3.0d
 			subtitle: "Tell me what you're working on"
 			description: ["This module displays information about machines as long as the machine supports the system."]
 			hide_dependency_lines: true
@@ -797,7 +485,7 @@
 		}
 		{
 			x: -1.5d
-			y: -6.0d
+			y: -4.0d
 			subtitle: "Clicky"
 			description: ["This module adds a button to the display that is capable of sending a redstone signal. There are a lot of things you can do with a redstone signal in this pack."]
 			hide_dependency_lines: true
@@ -817,7 +505,7 @@
 		}
 		{
 			x: -1.5d
-			y: -5.0d
+			y: -3.0d
 			subtitle: "Going up"
 			description: ["This module adds elevator buttons."]
 			hide_dependency_lines: true
@@ -837,7 +525,7 @@
 		}
 		{
 			x: 4.5d
-			y: -6.0d
+			y: -4.0d
 			subtitle: "Red light"
 			description: ["This module shows the status of a redstone signal."]
 			hide_dependency_lines: true
@@ -857,7 +545,7 @@
 		}
 		{
 			x: 6.0d
-			y: -6.0d
+			y: -4.0d
 			subtitle: "A one e two e three e four"
 			description: ["This module displays the current count of a counter block."]
 			hide_dependency_lines: true
@@ -877,7 +565,7 @@
 		}
 		{
 			x: 6.0d
-			y: -5.0d
+			y: -3.0d
 			subtitle: "20 40 60 80 100 120"
 			description: ["This module also displays the current count of a counter block, but takes a lot more energy to do it."]
 			hide_dependency_lines: true
@@ -897,7 +585,7 @@
 		}
 		{
 			x: -4.5d
-			y: -7.5d
+			y: -4.5d
 			subtitle: "This ain't no ten commandments"
 			description: ["Screens can be a very powerful tool to help you see information about all types of things. Not just that, but they can be setup with buttons to control things. Most all the modules available are to the right. See in-game documentation for more information, hover your mouse over the item while in JEI or inventory and press F1 (default)."]
 			dependencies: ["0FC13984C736B3EE"]
@@ -910,7 +598,7 @@
 		}
 		{
 			x: -3.0d
-			y: -7.5d
+			y: -5.0d
 			subtitle: "Putting more screens in screens"
 			description: ["Link a screen in the world to the module, and then insert it into a tablet to see the contents of the screen on your tablet. You can remotely turn off lights and all the other cool things screens can do."]
 			hide_dependency_lines: true
@@ -930,7 +618,7 @@
 		}
 		{
 			x: -6.0d
-			y: -6.0d
+			y: -3.0d
 			subtitle: "Hey dawg I heard you like monitors so I put a monitor in your monitor"
 			description: [
 				"This block is used to power screens within a certain distance."
@@ -939,7 +627,7 @@
 				""
 				"One controller can power many screens within its range."
 			]
-			dependencies: ["1FCB2CF9D9C36AB5"]
+			dependencies: ["5DAA9CDA1FD30632"]
 			id: "6954DF57BE9A07AE"
 			tasks: [{
 				id: "225659E302A2EA9E"
@@ -949,7 +637,7 @@
 		}
 		{
 			x: -7.5d
-			y: -7.5d
+			y: -4.5d
 			subtitle: "Pokey mob"
 			description: ["By punching a mob with this in your main hand it begins to fill the syringe. Once it's full you can use it in the spawner to respawn that mob."]
 			dependencies: ["47B0434BAAB804F0"]
@@ -962,7 +650,7 @@
 		}
 		{
 			x: -9.0d
-			y: -7.5d
+			y: -4.5d
 			subtitle: "Scotty, do not beam me up with this"
 			description: ["Converts matter to energy and sends that energy to a linked spawner. (Use the wrench to make the link.)"]
 			dependencies: ["47B0434BAAB804F0"]
@@ -975,7 +663,7 @@
 		}
 		{
 			x: -6.0d
-			y: -9.0d
+			y: -6.0d
 			subtitle: "Alright Scotty, this time we're good"
 			description: ["With this device you can \"dial-up\" any available matter receiver in your Minecraft world/server. This requires sufficient power on both ends for a safe teleportation."]
 			dependencies: ["47B0434BAAB804F0"]
@@ -987,8 +675,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -9.0d
+			x: -9.0d
+			y: -6.0d
 			subtitle: "Is it safe?"
 			description: ["Place this block adjacent to the matter teleporter to check the destination status. (Red = bad, green = ok, yellow = ???)"]
 			dependencies: ["57605D476CA374A2"]
@@ -1000,8 +688,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -9.0d
+			x: -7.5d
+			y: -6.0d
 			subtitle: "With great science there is great responsibility"
 			description: ["After dialing a receiver with the dialing device, the will extend a 1x3 tall beam above it. Entering this beam will teleport you to the destination you dialed even if there isn't sufficient power on the other end. Be careful! This could prove to be quite harmful. "]
 			dependencies: ["3CB9A7FBC4A9B6B8"]
@@ -1010,6 +698,333 @@
 				id: "3D6115525AE6347F"
 				type: "item"
 				item: "rftoolsutility:matter_transmitter"
+			}]
+		}
+		{
+			title: "Modules"
+			x: -7.5d
+			y: -1.5d
+			subtitle: "Environmental Controller effects"
+			description: ["These modules add effects to the Environmental Controller to do various different things."]
+			dependencies: ["5DAA9CDA1FD30632"]
+			dependency_requirement: "one_completed"
+			id: "5024D78B0539DA2A"
+			tasks: [
+				{
+					id: "385B2B0D9FCF40DC"
+					type: "item"
+					item: "rftoolsutility:module_template"
+				}
+				{
+					id: "278E9761AD0C9B8D"
+					type: "item"
+					item: "rftoolsutility:moduleplus_template"
+				}
+			]
+		}
+		{
+			x: -18.0d
+			y: -1.5d
+			subtitle: "Inflicts blindness on mobs"
+			description: ["Uses: 0.01 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "30A8EB8FEDDDCE96"
+			tasks: [{
+				id: "3EB93B6A3E777776"
+				type: "item"
+				item: "rftoolsutility:blindness_module"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -1.5d
+			subtitle: "Grants feather falling to players"
+			description: ["Damage is half the normal value. Uses: 0.001 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "03B1A1AEB57514D8"
+			tasks: [{
+				id: "53F02A1AB6459891"
+				type: "item"
+				item: "rftoolsutility:featherfalling_module"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -2.5d
+			description: ["Damage is reduced to zero. Uses: 0.003 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["03B1A1AEB57514D8"]
+			id: "05E6FF2846080159"
+			tasks: [{
+				id: "79F1F2C9E96EADF6"
+				type: "item"
+				item: "rftoolsutility:featherfallingplus_module"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -1.5d
+			subtitle: "Grants haste to players"
+			description: ["Uses: 0.001 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "5CE98F2E9283C608"
+			tasks: [{
+				id: "6AF80C807C4B5C20"
+				type: "item"
+				item: "rftoolsutility:haste_module"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -2.5d
+			subtitle: "Equal to haste III"
+			description: ["Uses: 0.003 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5CE98F2E9283C608"]
+			id: "7C920B731C152581"
+			tasks: [{
+				id: "20C35548BDAA1665"
+				type: "item"
+				item: "rftoolsutility:hasteplus_module"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -1.5d
+			subtitle: "Grants creative type flight to players"
+			description: ["Uses: 0.004 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "1C12DBBA3791219C"
+			tasks: [{
+				id: "4868FC976C3B139A"
+				type: "item"
+				item: "rftoolsutility:flight_module"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -1.5d
+			subtitle: "Grants the glowing enchantment to players"
+			description: ["Uses: 0.001 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "79D1AAF6848651AE"
+			tasks: [{
+				id: "10515C128E17E0C9"
+				type: "item"
+				item: "rftoolsutility:glowing_module"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -1.5d
+			subtitle: "Grants the luck enchantment to players"
+			description: ["Uses: 0.002 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "4CFF9F4A532040CA"
+			tasks: [{
+				id: "000FE014DD0ACC79"
+				type: "item"
+				item: "rftoolsutility:luck_module"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -1.5d
+			subtitle: "Grants night vision to players"
+			description: ["Uses: 0.001 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "3D3D9B7DD706AE62"
+			tasks: [{
+				id: "11A4585DBCD0379B"
+				type: "item"
+				item: "rftoolsutility:nightvision_module"
+			}]
+		}
+		{
+			x: -18.0d
+			y: -5.5d
+			subtitle: "Stops endermen and shulkers from teleporting"
+			description: ["Uses: 0.002 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "74BFCA65E4FFA622"
+			tasks: [{
+				id: "1517B03F2DF9B5FB"
+				type: "item"
+				item: "rftoolsutility:noteleport_module"
+			}]
+		}
+		{
+			x: -19.5d
+			y: -1.5d
+			subtitle: "Prevents hostile mob spawning"
+			description: ["Uses: 0.001 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "130741519EC27961"
+			tasks: [{
+				id: "0B27E4F74991CEEF"
+				type: "item"
+				item: "rftoolsutility:peaceful_module"
+			}]
+		}
+		{
+			x: -18.0d
+			y: -2.5d
+			subtitle: "Inflicts poison on mobs"
+			description: ["Uses: 0.02 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "63B6976616B416D7"
+			tasks: [{
+				id: "08D938E98B793FEB"
+				type: "item"
+				item: "rftoolsutility:poison_module"
+			}]
+		}
+		{
+			x: -21.0d
+			y: -1.5d
+			subtitle: "Grants regeneration to players"
+			description: ["Uses: 0.0015 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "5F783ADFEC1E7D10"
+			tasks: [{
+				id: "4C65FD2FB2710B12"
+				type: "item"
+				item: "rftoolsutility:regeneration_module"
+			}]
+		}
+		{
+			x: -21.0d
+			y: -2.5d
+			subtitle: "Equal to regeneration III"
+			description: ["Uses: 0.0045 RF/t per cubic block."]
+			dependencies: ["5F783ADFEC1E7D10"]
+			id: "338F8830AB39047B"
+			tasks: [{
+				id: "1E20E6D4C729887F"
+				type: "item"
+				item: "rftoolsutility:regenerationplus_module"
+			}]
+		}
+		{
+			x: -22.5d
+			y: -1.5d
+			subtitle: "Grants saturation to players"
+			description: ["Uses: 0.001 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "726A56DFBA860FE9"
+			tasks: [{
+				id: "7ED9095CBA825301"
+				type: "item"
+				item: "rftoolsutility:saturation_module"
+			}]
+		}
+		{
+			x: -22.5d
+			y: -2.5d
+			subtitle: "Equal to saturation III"
+			description: ["Uses: 0.003 RF/t per cubic block."]
+			dependencies: ["726A56DFBA860FE9"]
+			id: "61698161D4D1C1A2"
+			tasks: [{
+				id: "46E6A1F8043207F5"
+				type: "item"
+				item: "rftoolsutility:saturationplus_module"
+			}]
+		}
+		{
+			x: -18.0d
+			y: -3.5d
+			subtitle: "Inflicts slowness on mobs"
+			description: ["Uses: 0.012 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "3DEBCAA5B287D8CE"
+			tasks: [{
+				id: "7542FB573B8C32EF"
+				type: "item"
+				item: "rftoolsutility:slowness_module"
+			}]
+		}
+		{
+			x: -24.0d
+			y: -1.5d
+			subtitle: "Grants speed to players"
+			description: ["Uses: 0.001 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "43E0CD5C572E497B"
+			tasks: [{
+				id: "4F6B3F31314FD8B5"
+				type: "item"
+				item: "rftoolsutility:speed_module"
+			}]
+		}
+		{
+			x: -24.0d
+			y: -2.5d
+			subtitle: "Equal to speed III"
+			description: ["Uses: 0.003 RF/t per cubic block."]
+			dependencies: ["43E0CD5C572E497B"]
+			id: "4EA8D65D3757C689"
+			tasks: [{
+				id: "60E48503B214B13D"
+				type: "item"
+				item: "rftoolsutility:speedplus_module"
+			}]
+		}
+		{
+			x: -25.5d
+			y: -1.5d
+			subtitle: "Grants water breathing to players"
+			description: ["Uses: 0.001 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "515FF77BF3D6E9FC"
+			tasks: [{
+				id: "294E3C478132F210"
+				type: "item"
+				item: "rftoolsutility:waterbreathing_module"
+			}]
+		}
+		{
+			x: -18.0d
+			y: -4.5d
+			subtitle: "Inflicts weakness on mobs"
+			description: ["Uses: 0.01 RF/t per cubic block."]
+			hide_dependency_lines: true
+			dependencies: ["5DAA9CDA1FD30632"]
+			id: "2E062021BDB0945F"
+			tasks: [{
+				id: "45E722AB8D122497"
+				type: "item"
+				item: "rftoolsutility:weakness_module"
+			}]
+		}
+		{
+			icon: "rftoolscontrol:card_base"
+			x: -9.0d
+			y: 0.0d
+			subtitle: "Logistics and monitoring"
+			description: ["See the \"Automation\" chapter in the \"Establish Yourself\" section of this quest book for more information."]
+			hide_dependency_lines: true
+			dependencies: ["3645838DAA16F493"]
+			id: "42BCDFE4C3C95CB5"
+			tasks: [{
+				id: "511A3216C87E6D1D"
+				type: "checkmark"
+				title: "Control"
 			}]
 		}
 	]

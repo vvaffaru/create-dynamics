@@ -23,6 +23,7 @@
 				"This part of the quest book aims to guide you through some of the major aspects this mod has to offer, and provide some examples of what kinds of automation are possible."
 			]
 			dependencies: ["7F2E01D05C369FA3"]
+			hide: true
 			size: 2.0d
 			id: "17FBD2EEC593280D"
 			tasks: [{

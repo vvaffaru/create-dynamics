@@ -16,8 +16,11 @@
 			subtitle: "(WIP)"
 			description: [
 				"This pack is centered around the mods Create and Integrated Dynamics. "
-				"With these two alone, it is possible to automate nearly everything you can imagine. Along with the main mods, a few others have been added to round out the pack and add some QoL to Minecraft in general."
+				"With these two alone, it is possible to automate nearly everything you can imagine. Along with the main mods, a number of others have been added to round out the pack and add some QoL to Minecraft in general."
 				""
+				"If you're unable to progress in the quest book, try looking for quests that have requirements listed or unchecked/incomplete tasks."
+				""
+				"There are a number of rewards just for reading a little bit."
 			]
 			size: 2.0d
 			id: "15EDA0CD3B28ED7B"
@@ -165,32 +168,51 @@
 			}]
 		}
 		{
+			title: "Thank You!"
 			icon: "supplementaries:hanging_sign_dark_oak"
 			x: -3.0d
 			y: 4.0d
-			subtitle: "THANK YOU"
+			subtitle: "Sincerely"
 			description: [
-				"To everyone who created the mods that went into this pack. To everyone who helped troubleshoot issues. To everyone who contributed to development."
+				"To everyone who created the mods that went into this pack. To everyone who helped troubleshoot issues. To everyone who contribute to development. For all the support along the way, you know who you are."
 				""
 				"You have my deepest thanks for all the hard work everyone has done to make modded Minecraft, and this pack, what it is today."
 				""
-				"Much of the information and descriptive text in this quest book was taken directly from the CurseForge mod pages and github Wikis."
+				"Much of the information and descriptive text in this quest book was taken directly from the CurseForge mod pages, in-game documentation and github Wikis."
 				""
 				"The intent to include it in-game is to make it so players don't have to alt-tab out of Minecraft for information as frequently."
 			]
 			size: 1.5d
+			optional: true
 			id: "3B08C98C54D32E71"
 			tasks: [{
-				id: "1DE6761CE6C1C279"
-				type: "checkmark"
-				title: "Credits"
+				id: "6E9C3072F8EF5B13"
+				type: "dimension"
+				title: "Spawn in the world for the first time"
+				disable_toast: true
+				secret: true
+				dimension: "minecraft:overworld"
 			}]
-			rewards: [{
-				id: "61B1542ECA101ED0"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 6323519157276009505L
-			}]
+			rewards: [
+				{
+					id: "36F77DF9F3DB3BC2"
+					type: "item"
+					item: "minecraft:andesite"
+					count: 64
+				}
+				{
+					id: "4FFFA73901538F18"
+					type: "item"
+					item: "minecraft:iron_ore"
+					count: 64
+				}
+				{
+					id: "0705FF3C975947C1"
+					type: "item"
+					item: "minecraft:diamond_ore"
+					count: 8
+				}
+			]
 		}
 	]
 }

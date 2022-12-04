@@ -23,6 +23,7 @@
 				"It's suggested that you look up a tutorial on how to efficiently point as many lasers as possible at the base block."
 			]
 			dependencies: ["3C62F472F5D758B0"]
+			hide: true
 			size: 2.0d
 			id: "5F4759DFD4F588E2"
 			tasks: [

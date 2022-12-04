@@ -1,0 +1,798 @@
+{
+	id: "42CDE4332BAE0829"
+	group: "29701DF1EC6EE2E7"
+	order_index: 3
+	filename: "applied_energistics_2"
+	title: "Applied Energistics 2"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Applied Energistics 2"
+			icon: "ae2:controller"
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["3C62F472F5D758B0"]
+			hide: true
+			size: 2.0d
+			id: "5C4BF85BB5F69605"
+			tasks: [{
+				id: "313A5078B068677F"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Network Connections"
+			icon: "ae2:network_tool"
+			x: -7.0d
+			y: -5.5d
+			subtitle: "I/O, cabling, and more"
+			description: [
+				"This section covers the various different types of connections available in AE2 networks. Multiple upgrade cards are supported by all the different connections except the cables themselves."
+				""
+				"To open the GUIs, right click the items after placing them on a block or cable. "
+				""
+				"So you're not inundated by wall after wall of text in this guide, a lot of information is abridged."
+				""
+				"It's advised to read up on: https://appliedenergistics.github.io for more details. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "15A3646ED5248227"
+			tasks: [{
+				id: "50D5B6B497225C01"
+				type: "item"
+				item: "ae2:network_tool"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -4.0d
+			subtitle: "Share power and nothing else"
+			description: ["A part designed to share energy between two ME Networks without sharing anything else, also used to craft ME Glass Cable."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "4546EF13EED94CFB"
+			tasks: [{
+				id: "0E0469A3F14B7504"
+				type: "item"
+				item: "ae2:quartz_fiber"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -2.5d
+			subtitle: "Up to 8 channels/devices"
+			description: ["This is the bread and butter of cabling for AE2. You can connect up to a maximum of 8 devices, after that you'll need an ME Dense Cable."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "1BC961503991B7A8"
+			tasks: [{
+				id: "0DD17335909A3819"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -2.5d
+			subtitle: "Wool insulation on a powered cable? WCGW?"
+			description: ["A covered, colorable variant of the glass cable. Merely an aesthetic difference, is the same as the glass cables except they are covered."]
+			dependencies: ["1BC961503991B7A8"]
+			id: "5E1401C3A2BCB1CF"
+			tasks: [{
+				id: "0E9E6F0CE25140BD"
+				type: "item"
+				item: "ae2:fluix_covered_cable"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -2.5d
+			subtitle: "400 IQ Cables"
+			description: ["These allow you to visually see how many channels are being used on that line of cables. 1 line = one channel. If the channel system is disabled, these will also be only aesthetic in their function."]
+			dependencies: ["5E1401C3A2BCB1CF"]
+			id: "12FEEAAED0D995D5"
+			tasks: [{
+				id: "5EB16371FF0E5FCB"
+				type: "item"
+				item: "ae2:fluix_smart_cable"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -2.5d
+			subtitle: "Time to open up the flood gates"
+			description: ["Allows for 32 channels/devices to connect to the network as long as the dense cable originates from an ME Controller. Doesn't show how many channels are being used on the cable texture."]
+			dependencies: ["12FEEAAED0D995D5"]
+			id: "055A75E5CC189B72"
+			tasks: [{
+				id: "1BA14AF907CA6251"
+				type: "item"
+				item: "ae2:fluix_covered_dense_cable"
+			}]
+		}
+		{
+			x: -14.5d
+			y: -2.5d
+			subtitle: "Seeing is believing"
+			description: ["32 channel/device capacity, but instead shows how many devices are connected by how many lines are lit up on the texture of the cable. Each line = 1 channel."]
+			dependencies: ["055A75E5CC189B72"]
+			id: "690849E4C7666E5B"
+			tasks: [{
+				id: "7B814207DB799E4F"
+				type: "item"
+				item: "ae2:fluix_smart_dense_cable"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -4.0d
+			subtitle: "Can't touch this"
+			description: ["Place these on cables or other blocks to isolate your cable lines so they don't touch. Useful if you have to put two cables next to each other and don't want to share channels."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "5CE8C060DD87C3E7"
+			tasks: [{
+				id: "20E5D34C733DD97C"
+				type: "item"
+				item: "ae2:cable_anchor"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -7.0d
+			subtitle: "One of the most important network connections"
+			description: [
+				"The ME Interface is the only component which can be used as a part, or as a Block. Crafting an ME interface in either version by itself produces the other version."
+				""
+				"The thin version is useful if you want to provide several different interfaces in a single block of physical space, but each will need its own channel."
+				""
+				"The block form lets multiple other blocks connect to a single ME interface, using only one channel for the interface. The ME Interface acts as an in between when working with pipes, tubes, networks or machines from other mods."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			dependency_requirement: "one_completed"
+			id: "59BD89EE88F27EA3"
+			tasks: [
+				{
+					id: "6C303DEBA1B14086"
+					type: "item"
+					item: "ae2:interface"
+				}
+				{
+					id: "5475A1DCC5BB191C"
+					type: "item"
+					item: "ae2:cable_interface"
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -5.5d
+			subtitle: "For things you want to add to the system"
+			description: ["When attached to an inventory or machine that can output items, it takes all items from the adjacent block and adds them to the ME storage system. Items to be imported can be filtered by whitelist or blacklist with the inverter card."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "6F0D558FD48EBB17"
+			tasks: [{
+				id: "5B2ECF35D3C8E6B0"
+				type: "item"
+				item: "ae2:import_bus"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -5.5d
+			subtitle: "For things you want to remove from the system"
+			description: ["The adjacent block receives specified items when attached to an inventory or machine that can receive them. If a crafting card is inserted and the recipe exists in the system, designated items for export can be auto-crafted if they don't already exist in the system."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "3523432746B35175"
+			tasks: [{
+				id: "0E06AA45C393F2D6"
+				type: "item"
+				item: "ae2:export_bus"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -4.0d
+			subtitle: "A black-hole of sorts"
+			description: ["This item doesn't destroy blocks, it breaks the adjacent block and adds it to the ME storage system."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "6BA68234EAC43413"
+			tasks: [{
+				id: "6CC9D4EBC08A7DC5"
+				type: "item"
+				item: "ae2:annihilation_plane"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -2.5d
+			subtitle: "A white-hole of sorts"
+			description: ["This item places blocks from the ME storage system to an empty adjacent block space, if there is one."]
+			hide_dependency_lines: false
+			dependencies: ["6BA68234EAC43413"]
+			id: "538E00ECFE722D3B"
+			tasks: [{
+				id: "3200D0394A96AB43"
+				type: "item"
+				item: "ae2:formation_plane"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -5.5d
+			subtitle: "Hittin' switches"
+			description: [
+				"A bus which functions similarly to ME Glass Cable or other cables, but it allows its connection state to be toggled via redstone."
+				""
+				"This allows you to cut off a section of a ME Network. When a redstone signal is supplied the part enables the connection. An ME Inverted Toggle Bus provides the reverse behavior by disabling the connection instead."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "4942575473B6F499"
+			tasks: [{
+				id: "6DD8ED0663776E0B"
+				type: "item"
+				item: "ae2:toggle_bus"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -4.0d
+			subtitle: "Thresholds met"
+			description: [
+				"This item will emit a redstone signal when a specified amount of items in the system is met."
+				""
+				"The emitter has to be pointed at the target block in order to send the redstone signal."
+				""
+				"The signal will passthrough 1 block space just like a redstone torch would, for example; it will go through a cable with any network components attached as long as the tip of the emitter points at the target block."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "49E1F5498E8848B0"
+			tasks: [
+				{
+					id: "4FE3CFC7E29413BE"
+					type: "item"
+					item: "ae2:level_emitter"
+				}
+				{
+					id: "4CB8B751D59C4CD7"
+					type: "item"
+					item: "ae2:energy_level_emitter"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -7.0d
+			subtitle: "Disk management"
+			description: [
+				"This block allows you to remove items from disks and insert them into the system, or vice versa. "
+				""
+				"It's useful if you're wanting to pre-format disks to hold only certain items, and need to empty disks that are full of items so that they populate the formatted cells instead."
+				""
+				"Formatting is done in the cell workbench."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "2AFF209C1BDBE001"
+			tasks: [{
+				id: "52C1800B327563A5"
+				type: "item"
+				item: "ae2:io_port"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -1.0d
+			subtitle: "Point to point"
+			description: [
+				"These allow you to create \"tunnels\" between two locations that are connected through a ME Fluix Glass Cable only, saving resources so you don't need to build so many of the dense cables."
+				""
+				"Each pair only requires one channel, so they are very handy to expand the reach of your system as your base grows. Covered more in-depth in the next section, Setting Up Your First Network."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "6E4C5A2AD9C510C0"
+			tasks: [{
+				id: "64AD37A01AE8ED4A"
+				type: "item"
+				item: "ae2:me_p2p_tunnel"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 0.5d
+			subtitle: "Keep a lid on it"
+			description: ["If you're on a MP server and need to keep your system private, this block adds a permissions and id-card system. This is also where you link Wireless Terminals when a security terminal exists on your network, place them in the upper right slot of the security terminal GUI."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "3D68D95CE66E428B"
+			tasks: [{
+				id: "49196A79B0C22A06"
+				type: "item"
+				item: "ae2:security_station"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -1.0d
+			dependencies: ["6E4C5A2AD9C510C0"]
+			id: "598863C8D36852F4"
+			tasks: [{
+				id: "0CFFE210189CC347"
+				type: "item"
+				item: "ae2:redstone_p2p_tunnel"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -1.0d
+			dependencies: ["598863C8D36852F4"]
+			id: "3D15EA5068DF234B"
+			tasks: [{
+				id: "48D1CA9AB90029DE"
+				type: "item"
+				item: "ae2:item_p2p_tunnel"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -1.0d
+			dependencies: ["3D15EA5068DF234B"]
+			id: "0DA6AF72856FA774"
+			tasks: [{
+				id: "4A553DFABC164B4E"
+				type: "item"
+				item: "ae2:fluid_p2p_tunnel"
+			}]
+		}
+		{
+			x: -14.5d
+			y: -1.0d
+			dependencies: ["0DA6AF72856FA774"]
+			id: "2EBB2D7CDF361A68"
+			tasks: [{
+				id: "68E600CA8B964266"
+				type: "item"
+				item: "ae2:fe_p2p_tunnel"
+			}]
+		}
+		{
+			x: -16.0d
+			y: -1.0d
+			dependencies: ["2EBB2D7CDF361A68"]
+			id: "076BC51DABDAC1D8"
+			tasks: [{
+				id: "09F667800A8116D6"
+				type: "item"
+				item: "ae2:light_p2p_tunnel"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 0.5d
+			subtitle: "Scanning life form"
+			description: [
+				"These are used to assign permissions to other users of your ME system. To create one, right click the player you want to make an id for. To make one for yourself, sneak right click."
+				""
+				"To set permissions, place the id you created into your ME Security Terminal and place the card into the slot at the bottom of the GUI. Click the permission icon next to the card for each one you'd like to enable for that player."
+				""
+				"Each card has an encoded identicon that gets attached to the player, every card made for that player will have the same icon. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "224D46781531BB02"
+			tasks: [{
+				id: "03B6D8BC5ECEE27E"
+				type: "item"
+				item: "ae2:biometric_card"
+			}]
+		}
+		{
+			title: "Network Storage"
+			icon: {
+				id: "ae2:item_storage_cell_256k"
+				Count: 1b
+				tag: { }
+			}
+			x: -7.0d
+			y: 2.0d
+			subtitle: "Just a few important things"
+			description: [
+				"These three blocks are pretty important to know about, and are covered more in the Storage chapter of this quest book. "
+				""
+				"The rest of the AE2 storage section can be found in the \"Storage\" chapter of this quest book."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "60491E49D98E695C"
+			tasks: [{
+				id: "59DDA93422159B26"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 2.0d
+			subtitle: "Lemme at my stuff"
+			description: ["An ME Chest gives you the simplest direct access to the contents of storage cells. The ME Chest has two UI's, one is used to place the storage cell inside the device from the sides or bottom, the other is accessed by using the top surface to access the contents. "]
+			dependencies: ["60491E49D98E695C"]
+			id: "142E7BF2A167A7B9"
+			tasks: [{
+				id: "6E18F19C2B395944"
+				type: "item"
+				item: "ae2:chest"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 2.0d
+			subtitle: "Set it and forget it"
+			description: [
+				"The ME Storage Bus, when attached to another inventory block in the world lets you access that inventory via networked functions."
+				""
+				"This allows you to use chests, barrels, or other types of item storage in your networks, and makes them available for auto-crafting, etc."
+				""
+				"If you place a storage bus on an ME Interface the storage bus will be able to interact with the full conents of the target network, unless that interface is configured to store items inside itself, in which case it will see those stored items. "
+			]
+			dependencies: ["5BD0C7DCBF6C413E"]
+			id: "5791778BE71261B2"
+			tasks: [{
+				id: "29E77C4CE3531076"
+				type: "item"
+				item: "ae2:storage_bus"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 2.0d
+			subtitle: "How'd you put all that in there?"
+			description: [
+				"A block designed to do one thing, store Storage Cells. This block holds 10 storage cells so you can tightly pack your storage into a very small space."
+				""
+				"ME Drives show their contents and the storage cell status on the front of the drive face. Its important to note, that without an ME Network this block does nothing. Its only useful when combined with a way to input, and output items, and requires 2 AE/t power to function, and additional power for each Storage Cell stored inside it."
+			]
+			dependencies: ["142E7BF2A167A7B9"]
+			id: "5BD0C7DCBF6C413E"
+			tasks: [{
+				id: "0A7CFC4386556166"
+				type: "item"
+				item: "ae2:drive"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -1.0d
+			subtitle: "I remember"
+			description: ["Creates a unique id frequency for P2P Tunnels."]
+			dependencies: ["6E4C5A2AD9C510C0"]
+			id: "50610DBE667266D7"
+			tasks: [{
+				id: "1F7F08AA892C183F"
+				type: "item"
+				title: "Any #ae2:memory_cards"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "ae2:memory_cards"
+					}
+				}
+			}]
+		}
+		{
+			x: -7.0d
+			y: 3.5d
+			subtitle: "Capable of crafting a single item by itself"
+			description: ["Or attach an interface to it for more capacity."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "7DDC97F19D24700D"
+			tasks: [{
+				id: "6CB5992BAA5E9D7A"
+				type: "item"
+				item: "ae2:molecular_assembler"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.5d
+			subtitle: "Nuts and bolts of auto-crafting"
+			description: ["Block that can store patterns to craft into adjacent blocks if they are capable of performing the recipe and are configured to input on the connected face."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "0A9A28888FC2491F"
+			tasks: [{
+				id: "093590B759AA73D1"
+				type: "item"
+				item: "ae2:pattern_provider"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 3.5d
+			subtitle: "Required to make a new pattern"
+			description: ["Use this in the ME Pattern Encoding Terminal to encode a recipe onto a blank pattern. "]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "749601A2FD6F069D"
+			tasks: [{
+				id: "12C5B2E59793CD25"
+				type: "item"
+				item: "ae2:blank_pattern"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 5.0d
+			subtitle: "Doesn't do anything except fill space"
+			description: ["This block just completes the multi-block structure if they are required to make a cubeoid or rectangle shape."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "2D031E5D45064026"
+			tasks: [{
+				id: "6907BE136E3B4C00"
+				type: "item"
+				item: "ae2:crafting_unit"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 5.0d
+			subtitle: "So helpful"
+			description: ["Adds more parts of a recipe to be crafted simultaneously."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "06025CA829135BA5"
+			tasks: [{
+				id: "628DD68B209CA834"
+				type: "item"
+				item: "ae2:crafting_accelerator"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 6.5d
+			subtitle: "An item buffer for auto crafting jobs"
+			description: ["1,024 bytes of storage can hold 127 Stacks of a single item, or 65 Stacks, while holding 63 Different items."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "7431E7C97B217596"
+			tasks: [{
+				id: "52A67640346C4736"
+				type: "item"
+				item: "ae2:1k_crafting_storage"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 6.5d
+			subtitle: "An item buffer for auto crafting jobs"
+			description: ["4,096 bytes of storage can hold 508 Stacks of a single item, or 260 Stacks, while holding 63 Different items."]
+			dependencies: ["7431E7C97B217596"]
+			id: "42D307D8DC1C1CE0"
+			tasks: [{
+				id: "173408F54D17D6FC"
+				type: "item"
+				item: "ae2:4k_crafting_storage"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 6.5d
+			subtitle: "An item buffer for auto crafting jobs"
+			description: ["16,384 bytes of storage can hold 2,032 Stacks of a single item, or 1,040 Stacks, while holding 63 Different items."]
+			dependencies: ["42D307D8DC1C1CE0"]
+			id: "056E2EAE2EA793D7"
+			tasks: [{
+				id: "7DA128A3C51DC291"
+				type: "item"
+				item: "ae2:16k_crafting_storage"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 6.5d
+			subtitle: "An item buffer for auto crafting jobs"
+			description: ["65,536 bytes of storage can hold 8,128 Stacks of a single item, or 4,160 Stacks, while holding 63 Different items."]
+			dependencies: ["056E2EAE2EA793D7"]
+			id: "54E9AA15D2370724"
+			tasks: [{
+				id: "4887CFBFD38E79B5"
+				type: "item"
+				item: "ae2:64k_crafting_storage"
+			}]
+		}
+		{
+			x: -13.0d
+			y: 6.5d
+			subtitle: "An item buffer for auto crafting jobs"
+			description: ["262,144 bytes of storage can hold 32,512 of a single item, or 16,640 Stacks, while holding 63 Different items."]
+			dependencies: ["54E9AA15D2370724"]
+			id: "5AECBE89612E48BE"
+			tasks: [{
+				id: "459491922A538464"
+				type: "item"
+				item: "ae2:256k_crafting_storage"
+			}]
+		}
+		{
+			x: -14.5d
+			y: 6.5d
+			subtitle: "An item buffer for auto crafting jobs"
+			description: ["1,048,576 bytes of storage can hold 130,048 of a single item, or 66,560 Stacks, while holding 63 Different items."]
+			dependencies: ["5AECBE89612E48BE"]
+			id: "627DA51FF1E17901"
+			tasks: [{
+				id: "2A286C6B47BBF8DE"
+				type: "item"
+				item: "ae2additions:1024k_crafting_storage"
+			}]
+		}
+		{
+			x: -16.0d
+			y: 6.5d
+			subtitle: "An item buffer for auto crafting jobs"
+			description: ["4,194,304 bytes of storage can hold 520,192 of a single item, or 266,240 Stacks, while holding 63 Different items."]
+			dependencies: ["627DA51FF1E17901"]
+			id: "5B06C11F31205012"
+			tasks: [{
+				id: "16D72C77F245D94A"
+				type: "item"
+				item: "ae2additions:4096k_crafting_storage"
+			}]
+		}
+		{
+			x: -17.5d
+			y: 6.5d
+			subtitle: "An item buffer for auto crafting jobs"
+			description: ["16,777,216 bytes of storage can hold 2,080,768 of a single item, or 1,064,960 Stacks, while holding 63 Different items."]
+			dependencies: ["5B06C11F31205012"]
+			id: "3DD3F0667A500381"
+			tasks: [{
+				id: "69EC8445DFD4FEE3"
+				type: "item"
+				item: "ae2additions:16384k_crafting_storage"
+			}]
+		}
+		{
+			x: -19.0d
+			y: 6.5d
+			subtitle: "An item buffer for auto crafting jobs"
+			description: ["67,108,864 bytes of storage can hold 8,323,072 of a single item, or 4,259,840 Stacks, while holding 63 Different items."]
+			dependencies: ["3DD3F0667A500381"]
+			id: "327724A89ACE44F7"
+			tasks: [{
+				id: "639448791D6F3E3F"
+				type: "item"
+				item: "ae2additions:65536k_crafting_storage"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 8.0d
+			subtitle: "Co-Proc for MEGA Crafting CPUs"
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "1007B8E33F83692D"
+			tasks: [{
+				id: "650579939DDEFE74"
+				type: "item"
+				item: "megacells:mega_crafting_accelerator"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 8.0d
+			subtitle: "Space filler for MEGA Crafting CPUs"
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "31BA3027B7D21766"
+			tasks: [{
+				id: "61C317FC80F6E83E"
+				type: "item"
+				item: "megacells:mega_crafting_unit"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 9.5d
+			subtitle: "For when you need to craft a LOT"
+			description: ["1,024,000 bytes of storage can hold 124,023 of a single item, or 62,011 Stacks, while holding 63 Different items."]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "1555FEA739C21FE2"
+			tasks: [{
+				id: "568AA537376AF8F2"
+				type: "item"
+				item: "megacells:1m_crafting_storage"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 9.5d
+			subtitle: "For when you need to craft a LOT"
+			description: ["4,096,000 bytes of storage can hold 496,092 of a single item, or 248,044 Stacks, while holding 63 Different items."]
+			dependencies: ["1555FEA739C21FE2"]
+			id: "49C74333C4AADFC9"
+			tasks: [{
+				id: "4D74765A2F82B151"
+				type: "item"
+				item: "megacells:4m_crafting_storage"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 9.5d
+			subtitle: "For when you need to craft a LOT"
+			description: ["16,384,000 bytes of storage can hold 1,984,368 of a single item, or 992,176 Stacks, while holding 63 Different items."]
+			dependencies: ["49C74333C4AADFC9"]
+			id: "35089F9BBE5DB4E7"
+			tasks: [{
+				id: "7082FE01C2670CEF"
+				type: "item"
+				item: "megacells:16m_crafting_storage"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 9.5d
+			subtitle: "For when you need to craft a LOT"
+			description: ["65,536,000 bytes of storage can hold 7,937,472 of a single item, or 3,968,704 Stacks, while holding 63 Different items."]
+			dependencies: ["35089F9BBE5DB4E7"]
+			id: "3E77A704FEF0DC7B"
+			tasks: [{
+				id: "1142966416AC9639"
+				type: "item"
+				item: "megacells:64m_crafting_storage"
+			}]
+		}
+		{
+			x: -13.0d
+			y: 9.5d
+			subtitle: "For when you need to craft a LOT"
+			description: ["262,144,000 bytes of storage can hold 31,749,888 of a single item, or 15,874,816 Stacks, while holding 63 Different items."]
+			dependencies: ["3E77A704FEF0DC7B"]
+			id: "3D9A6A0AD1E6C150"
+			tasks: [{
+				id: "17CD8FFB219ED6DC"
+				type: "item"
+				item: "megacells:256m_crafting_storage"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 8.0d
+			subtitle: "Monitor for MEGA Crafting CPUs"
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "691CAD91BDBD474E"
+			tasks: [{
+				id: "38802425C528C28D"
+				type: "item"
+				item: "megacells:mega_crafting_monitor"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 5.0d
+			subtitle: "Are you stuck or what?"
+			description: ["Lets you see what the attached crafting computer is working on currently. "]
+			hide_dependency_lines: true
+			dependencies: ["5C4BF85BB5F69605"]
+			id: "773D9DFCE108031A"
+			tasks: [{
+				id: "7240624CD9D74485"
+				type: "item"
+				item: "ae2:crafting_monitor"
+			}]
+		}
+	]
+}

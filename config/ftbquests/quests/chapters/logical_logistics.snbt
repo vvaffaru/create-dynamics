@@ -21,6 +21,7 @@
 				"As a supplement to the in-game manual, this part of the quest book aims to guide you through some of the basic concepts the mod has to offer."
 			]
 			dependencies: ["11226CAB8BC02974"]
+			hide: true
 			size: 2.0d
 			id: "4DD373EFF5CFDCD6"
 			tasks: [

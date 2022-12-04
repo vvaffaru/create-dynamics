@@ -211,6 +211,11 @@
 		#Range: 0 ~ 256
 		pole_length = 16
 
+	[blocks.enderman_head]
+		#Time to increase 1 power level when being looked at
+		#Range: 0 ~ 10000
+		ticks_to_increase_power = 15
+
 #Configure spawning conditions
 [spawns]
 

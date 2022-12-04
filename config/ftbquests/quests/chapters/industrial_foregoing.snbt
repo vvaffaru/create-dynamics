@@ -1,7 +1,7 @@
 {
 	id: "48CB1FDDBDEAE7BE"
 	group: "29701DF1EC6EE2E7"
-	order_index: 5
+	order_index: 6
 	filename: "industrial_foregoing"
 	title: "Industrial Foregoing"
 	default_quest_shape: ""
@@ -19,7 +19,7 @@
 			"To start with Industrial Foregoing you need to collect latex using a Tree Fluid Extractor and placing it in front of a log, then use a Latex Processing Unit with some water and power to make tiny piles of rubber. Read the manual for more info."
 		]
 		dependencies: ["6B959CC0C54B4BFE"]
-		hide: false
+		hide: true
 		size: 2.0d
 		id: "4F90CBE53BA06EBA"
 		tasks: [{

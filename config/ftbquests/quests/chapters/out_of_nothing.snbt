@@ -26,6 +26,7 @@
 				"Multi-sieve sifting is possible by placing additional sieves nearby on the same Y level. Attached sieves will attempt to use other sieves nearby."
 			]
 			dependencies: ["3C62F472F5D758B0"]
+			hide: true
 			size: 2.0d
 			id: "0A319D7EBB66BAB9"
 			tasks: [

@@ -14,6 +14,7 @@
 			subtitle: "There are better options"
 			description: ["Sure vanilla chests will start you out and they work fine in early game, but this pack is full of storage solutions."]
 			dependencies: ["3C62F472F5D758B0"]
+			hide: true
 			size: 2.0d
 			id: "557F8285FC549008"
 			tasks: [{

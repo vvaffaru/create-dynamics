@@ -13,19 +13,21 @@
 			x: 0.0d
 			y: 0.0d
 			dependencies: ["3C62F472F5D758B0"]
+			hide: true
 			size: 3.0d
 			id: "5183C05BE6F56C0D"
 			tasks: [{
-				id: "15B8E6C5F2C243DD"
-				type: "item"
-				item: "create:mechanical_arm"
+				id: "1237D41A4F2FB082"
+				type: "checkmark"
 			}]
 		}
 		{
-			title: "Applied Energistics 2"
+			title: "Applied Energistics 2 (AE2)"
 			icon: "ae2:singularity"
-			x: -4.0d
-			y: -4.0d
+			x: 0.0d
+			y: 5.0d
+			subtitle: "This section is a work in progress (WIP)"
+			description: ["The tutorial series By Mondays - https://youtu.be/o4a-PxucCWA is current and explains things clearly. The rest of this section will attempt to cover the very minimum setup needed to get you started. How you expand upon that is up to you."]
 			dependencies: ["5183C05BE6F56C0D"]
 			size: 2.0d
 			id: "4DD0BA1396B2D9BB"
@@ -37,8 +39,8 @@
 		{
 			title: "Create"
 			icon: "create:large_cogwheel"
-			x: 4.0d
-			y: 4.0d
+			x: -1.0d
+			y: 2.0d
 			subtitle: "Gear ratios are your best friend"
 			description: ["See the main chapter \"Create\" for information about all this mod has to offer."]
 			dependencies: ["5183C05BE6F56C0D"]
@@ -52,8 +54,8 @@
 		{
 			title: "Integrated Dynamics"
 			icon: "integrateddynamics:on_the_dynamics_of_integration"
-			x: -4.0d
-			y: 4.0d
+			x: 1.0d
+			y: 2.0d
 			subtitle: "If Create can't do it, ID most likely can."
 			description: ["See the main chapter \"Integrated Dynamics\" for information about all this mod has to offer."]
 			dependencies: ["5183C05BE6F56C0D"]
@@ -66,25 +68,19 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 0.0d
-			subtitle: "Pick it up, pick it up, pick it up"
-			description: ["As the name implies, these collect items in an area and then places them into an inventory below the collector."]
+			title: "Item Collectors"
+			icon: "itemcollectors:basic_collector"
+			x: -1.0d
+			y: -5.0d
+			subtitle: "Pick up all these and put them there please"
+			description: ["As the name implies, these collect items in an area and then puts them into an inventory below the collector."]
 			dependencies: ["5183C05BE6F56C0D"]
 			size: 2.0d
 			id: "704463C52EA78FD4"
-			tasks: [
-				{
-					id: "260CBDCB99D8922F"
-					type: "item"
-					item: "itemcollectors:basic_collector"
-				}
-				{
-					id: "354B5D1B9B7D89C1"
-					type: "item"
-					item: "itemcollectors:advanced_collector"
-				}
-			]
+			tasks: [{
+				id: "6F9D77659E944BCD"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "Functional Storage"
@@ -95,76 +91,54 @@
 					Mode: "LOCKING"
 				}
 			}
-			x: 4.0d
-			y: -4.0d
-			subtitle: "Keys to the castle"
-			description: [
-				"The key system has been overhauled in this mod."
-				""
-				"Instead of a bunch of different keys to perform a few tasks, they've been consolodated into two tools."
-				""
-				"Functions of the configuration tool: lock/unlock, show/hide quantities, show/hide item renders, and finally show/hide upgrade renders."
-				""
-				"Hover mouse over linking tool for in-depth description."
-			]
+			x: 6.0d
+			y: 0.0d
+			subtitle: "Fresh take on storage drawers"
+			description: [""]
 			dependencies: ["5183C05BE6F56C0D"]
 			size: 2.0d
 			id: "3326EBDF99B75051"
-			tasks: [
-				{
-					id: "4566CAEB64D0AD70"
-					type: "item"
-					item: {
-						id: "functionalstorage:configuration_tool"
-						Count: 1b
-						tag: {
-							Mode: "LOCKING"
-						}
-					}
-				}
-				{
-					id: "6874E618664CAA2A"
-					type: "item"
-					item: {
-						id: "functionalstorage:linking_tool"
-						Count: 1b
-						tag: {
-							Action: "ADD"
-							Mode: "SINGLE"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "10C4103C3E945F45"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "Laser I/O"
 			icon: "laserio:laser_node"
-			x: 0.0d
+			x: 1.0d
 			y: -5.0d
-			subtitle: "Direwolf20's at it again"
+			subtitle: "Do not look directly into the beam of light"
 			description: [
-				"This mod is based. "
+				"Here's a new twist on logistics I/O."
 				""
-				"The configuration options are very robust, and enable players to create some quite useful logistics."
+				"Direwolf20 comes up with some pretty neat ideas."
 				""
-				"https://youtu.be/o22Pq9NmTSY"
+				"The mod itself is really easy to configure after you learn the basics."
+				""
+				"There's even an in-game manual for if you get stuck and need to quickly reference info."
+				""
+				"Check out the official mod spotlight by the man himself: https://youtu.be/o22Pq9NmTSY"
 			]
 			dependencies: ["5183C05BE6F56C0D"]
 			size: 2.0d
 			id: "740A08B26F238B9E"
 			tasks: [{
-				id: "56BC14F042F3D8F0"
-				type: "item"
-				item: "laserio:laser_node"
+				id: "1EA9B5A0B19071B3"
+				type: "checkmark"
 			}]
 		}
 		{
 			title: "Wooden Hopper"
 			icon: "woodenhopper:wooden_hopper"
-			x: -4.0d
-			y: 0.0d
+			x: 4.0d
+			y: 3.0d
 			subtitle: "First hopper"
-			description: ["This is probably going to be one of the first parts of automation you add. They're cheap to make, but don't really have the greatest flow speed. It's also recommended to use mod options instead of tons of hoppers because spamming too many causes lag."]
+			description: [
+				"This is probably going to be one of the first parts of automation you add. They're cheap to make, but don't really have the greatest flow speed."
+				""
+				"It's recommended to use other mod options instead of spamming tons of hoppers."
+			]
 			dependencies: ["5183C05BE6F56C0D"]
 			size: 2.0d
 			id: "43B7133CAED031A0"
@@ -177,8 +151,16 @@
 		{
 			title: "Xnet"
 			icon: "xnet:controller"
-			x: 0.0d
-			y: 5.0d
+			x: -6.0d
+			y: 0.0d
+			subtitle: "GUI based logistics (\"easy\" mode)"
+			description: [
+				"XNet is an item, fluid, energy, and information transportation mod that is all about efficiency. The cable system is designed in such way that you should be able to make huge cable systems without any overhead. Cables (for example) are not tile entities and have very simply models. This makes transporting items accross a cable of 12000 blocks long just as efficient as doing it on a 5 block long cable."
+				""
+				"There is a Wiki setup here: https://wiki.mcjty.eu/mods/index.php?title=XNet that looks to be a pretty well written guide to the mod."
+				""
+				"Since the intent of this pack is to use Integrated Dynamics for logic control, just the basic items added by the mod will be listed here. The Wiki has tutorials about how to set things up."
+			]
 			dependencies: ["5183C05BE6F56C0D"]
 			size: 2.0d
 			id: "06F783D705B23C3F"
@@ -189,11 +171,12 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: -5.5d
-			subtitle: "Cracking the digital whip"
+			x: 10.0d
+			y: 3.5d
+			subtitle: "Lining all the ducks in a row"
 			description: ["Connects multiple drawers together in a unique way by using a linking tool."]
 			dependencies: ["3326EBDF99B75051"]
+			hide: true
 			id: "14F39308B553B0AC"
 			tasks: [{
 				id: "33C9BB760A70BC49"
@@ -202,11 +185,11 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: -6.5d
+			x: 13.0d
+			y: 2.0d
 			subtitle: "Yoink"
 			description: ["Take from the target and put it in the drawer."]
-			dependencies: ["3326EBDF99B75051"]
+			dependencies: ["04C0FEF2127BE164"]
 			id: "0A3DC0A72D11AFDA"
 			tasks: [{
 				id: "7550E973F476A0E0"
@@ -221,11 +204,11 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: -5.5d
+			x: 11.5d
+			y: 2.0d
 			subtitle: "Yeet"
 			description: ["Remove from the drawer and put into the target."]
-			dependencies: ["3326EBDF99B75051"]
+			dependencies: ["04C0FEF2127BE164"]
 			id: "1E0A3FDB1319754A"
 			tasks: [{
 				id: "1D4B0E65E02316B7"
@@ -240,11 +223,11 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: -7.5d
+			x: 14.5d
+			y: 2.0d
 			subtitle: "A utility upgrade"
 			description: ["Gives the drawer redstone functionality."]
-			dependencies: ["3326EBDF99B75051"]
+			dependencies: ["04C0FEF2127BE164"]
 			id: "25EFBD4EFD8F5858"
 			tasks: [{
 				id: "666242F0AE280C49"
@@ -259,15 +242,16 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: -8.5d
-			subtitle: "Now this is what I'm talkin' about"
+			x: 13.5d
+			y: -1.0d
+			subtitle: "The crowning jewel of this mod"
 			description: [
 				"After all this time using storage drawers mods, someone finally added this very useful drawer."
 				""
 				"This one block will most likely be a cornerstone in many automation setups."
 			]
-			dependencies: ["3326EBDF99B75051"]
+			dependencies: ["5A011FF95166DD67"]
+			size: 1.5d
 			id: "1B62DBC04F27E47B"
 			tasks: [{
 				id: "4B3772FC9FED1D6E"
@@ -276,11 +260,12 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: -4.5d
+			x: 11.5d
+			y: 3.5d
 			subtitle: "Eliminate some tedium"
 			description: ["Easily convert between block to item variants, and vice versa."]
 			dependencies: ["3326EBDF99B75051"]
+			hide: true
 			id: "1D20A14A057E5B11"
 			tasks: [{
 				id: "05E5E856308657F9"
@@ -289,11 +274,11 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -8.5d
-			subtitle: "(FPO)"
-			description: ["Find info for this block."]
-			dependencies: ["1180C5B002A94799"]
+			x: 0.5d
+			y: -9.5d
+			subtitle: "Connectors interlinked within connectors interlinked within connectors within one stem"
+			description: ["Laser Connectors can act as a cheaper intermediary point between nodes, allowing you to build a network of interconnected inventories."]
+			dependencies: ["7094B72FDC321B25"]
 			id: "6F359F96304967D6"
 			tasks: [{
 				id: "42962412DFF06C66"
@@ -302,16 +287,2580 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -7.0d
+			x: 4.0d
+			y: -10.0d
 			subtitle: "Configure electromagnetic radiation beams"
 			description: ["This wrench will help you to set all the I/O for this mod."]
-			dependencies: ["740A08B26F238B9E"]
+			dependencies: ["7094B72FDC321B25"]
 			id: "1180C5B002A94799"
 			tasks: [{
 				id: "3B0AF4A3559C9F70"
 				type: "item"
 				item: "laserio:laser_wrench"
+			}]
+		}
+		{
+			title: "Keys to the castle"
+			x: 10.0d
+			y: 2.0d
+			subtitle: "Who needs keys in 2022"
+			description: [
+				"The key system has been overhauled in this mod."
+				""
+				"Instead of a bunch of different keys to perform a few tasks, they've been consolodated into two tools."
+				""
+				"Functions of the configuration tool: lock/unlock, show/hide quantities, show/hide item renders, and finally show/hide upgrade renders."
+				""
+				"Hover your mouse over the linking tool for an in-depth description."
+			]
+			dependencies: ["3326EBDF99B75051"]
+			hide: true
+			id: "13516E40057AFB05"
+			tasks: [
+				{
+					id: "0CF69A2232AFF693"
+					type: "item"
+					item: {
+						id: "functionalstorage:configuration_tool"
+						Count: 1b
+						tag: {
+							Mode: "LOCKING"
+						}
+					}
+				}
+				{
+					id: "60923BE28A8B9D8C"
+					type: "item"
+					item: {
+						id: "functionalstorage:linking_tool"
+						Count: 1b
+						tag: {
+							Action: "ADD"
+							Mode: "SINGLE"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -1.0d
+			subtitle: "Singular compartment"
+			description: ["Singular compartment [Main:] By default this block holds 16 stacks of one item or block types."]
+			dependencies: ["3326EBDF99B75051"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "5A011FF95166DD67"
+			tasks: [
+				{
+					id: "1AFF78ED5C511181"
+					type: "item"
+					item: "functionalstorage:oak_1"
+				}
+				{
+					id: "42B2832B4188735D"
+					type: "item"
+					item: "functionalstorage:spruce_1"
+				}
+				{
+					id: "15F164652B1D3CCF"
+					type: "item"
+					item: "functionalstorage:birch_1"
+				}
+				{
+					id: "5218DA9EB6339DFD"
+					type: "item"
+					item: "functionalstorage:jungle_1"
+				}
+				{
+					id: "310F9BAC80759372"
+					type: "item"
+					item: "functionalstorage:acacia_1"
+				}
+				{
+					id: "72CC984DBFDADB06"
+					type: "item"
+					item: "functionalstorage:dark_oak_1"
+				}
+				{
+					id: "56847B0A5399054D"
+					type: "item"
+					item: "functionalstorage:crimson_1"
+				}
+				{
+					id: "34641052E4649842"
+					type: "item"
+					item: "functionalstorage:warped_1"
+				}
+				{
+					id: "389BDD8F77A3429C"
+					type: "item"
+					item: "functionalstorage:mangrove_1"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -2.5d
+			subtitle: "For your favorite pairing"
+			description: ["This drawer accepts 8 stacks of two different item or block types."]
+			dependencies: ["3326EBDF99B75051"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "1E047BCC31CC5CC7"
+			tasks: [
+				{
+					id: "5EABE0982709FB89"
+					type: "item"
+					item: "functionalstorage:oak_2"
+				}
+				{
+					id: "2EA0B28C44E3285C"
+					type: "item"
+					item: "functionalstorage:spruce_2"
+				}
+				{
+					id: "55B77AA8EA5339C7"
+					type: "item"
+					item: "functionalstorage:birch_2"
+				}
+				{
+					id: "5B3B40FE14C68389"
+					type: "item"
+					item: "functionalstorage:jungle_2"
+				}
+				{
+					id: "35A1185CC164C438"
+					type: "item"
+					item: "functionalstorage:acacia_2"
+				}
+				{
+					id: "583A11BD89A7DFCE"
+					type: "item"
+					item: "functionalstorage:dark_oak_2"
+				}
+				{
+					id: "43798ADD1CF807A3"
+					type: "item"
+					item: "functionalstorage:crimson_2"
+				}
+				{
+					id: "38798DAD6F7DDF75"
+					type: "item"
+					item: "functionalstorage:warped_2"
+				}
+				{
+					id: "521B97EE3B08FADF"
+					type: "item"
+					item: "functionalstorage:mangrove_2"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -4.0d
+			subtitle: "Quad quadradic"
+			description: ["This drawer holds 4 stacks of four different item or block types."]
+			dependencies: ["3326EBDF99B75051"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "477A4EB54A9F02A1"
+			tasks: [
+				{
+					id: "6A3174A8EBE70D2D"
+					type: "item"
+					item: "functionalstorage:oak_4"
+				}
+				{
+					id: "61B68ED0392C2EA3"
+					type: "item"
+					item: "functionalstorage:spruce_4"
+				}
+				{
+					id: "2FD931B81FF4F28D"
+					type: "item"
+					item: "functionalstorage:birch_4"
+				}
+				{
+					id: "004567C8903A8C74"
+					type: "item"
+					item: "functionalstorage:jungle_4"
+				}
+				{
+					id: "59328FA1EACE79B6"
+					type: "item"
+					item: "functionalstorage:acacia_4"
+				}
+				{
+					id: "6C38F448D839EA23"
+					type: "item"
+					item: "functionalstorage:dark_oak_4"
+				}
+				{
+					id: "76360B5E868750BA"
+					type: "item"
+					item: "functionalstorage:crimson_4"
+				}
+				{
+					id: "3C5D4E5B45650D64"
+					type: "item"
+					item: "functionalstorage:warped_4"
+				}
+				{
+					id: "50E6622D6235DA22"
+					type: "item"
+					item: "functionalstorage:mangrove_4"
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: -1.0d
+			subtitle: "Visually aesthetic storage"
+			description: ["Exactly the same as a standard 1x1 except this one is for the interior designers and pleasing visual aesthetic enjoyers out there."]
+			dependencies: ["5A011FF95166DD67"]
+			id: "59507E4D2880C463"
+			tasks: [{
+				id: "6060039AB8319E32"
+				type: "item"
+				item: "functionalstorage:framed_1"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -2.5d
+			subtitle: "Visual aesthetics x2"
+			description: ["The same as a 1x2 except again, this one is for those who like to spend time decorating."]
+			dependencies: ["1E047BCC31CC5CC7"]
+			id: "45E5D27D7E47CDC8"
+			tasks: [{
+				id: "4D9611134EBD725C"
+				type: "item"
+				item: "functionalstorage:framed_2"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -4.0d
+			subtitle: "Quadravisual"
+			description: ["The same as a standard 2x2, only this one is for impressing the socks off all your neighbors."]
+			dependencies: ["477A4EB54A9F02A1"]
+			id: "43ECAFDCEB96090C"
+			tasks: [{
+				id: "457799B770E85AF8"
+				type: "item"
+				item: "functionalstorage:framed_4"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 3.5d
+			subtitle: "The pinnacle of framing"
+			description: ["The magnum opus of framed drawers, this one is pretty fancy."]
+			dependencies: ["1D20A14A057E5B11"]
+			id: "48D3F239E50875C1"
+			tasks: [{
+				id: "106098C8236C8D89"
+				type: "item"
+				item: "functionalstorage:compacting_framed_drawer"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 0.5d
+			description: ["Multiplies drawer storage by 8."]
+			dependencies: ["04C0FEF2127BE164"]
+			id: "24D48809950779A0"
+			tasks: [{
+				id: "73D631EB2B2C7F66"
+				type: "item"
+				item: "functionalstorage:copper_upgrade"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 0.5d
+			description: ["Multiplies drawer storage by 16."]
+			dependencies: ["24D48809950779A0"]
+			id: "2AB8C5FE7FEE4CCB"
+			tasks: [{
+				id: "5A6ABF9C57AD3DD3"
+				type: "item"
+				item: "functionalstorage:gold_upgrade"
+			}]
+		}
+		{
+			x: 14.5d
+			y: 0.5d
+			description: ["Multiplies drawer storage by 24."]
+			dependencies: ["2AB8C5FE7FEE4CCB"]
+			id: "57FB00BC925D208C"
+			tasks: [{
+				id: "0079DF085E1D4551"
+				type: "item"
+				item: "functionalstorage:diamond_upgrade"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.5d
+			description: ["Multiplies drawer storage by 32."]
+			dependencies: ["57FB00BC925D208C"]
+			id: "713E7146BBA7DAC4"
+			tasks: [{
+				id: "56CA27EFC5BD88F6"
+				type: "item"
+				item: "functionalstorage:netherite_upgrade"
+			}]
+		}
+		{
+			x: 17.5d
+			y: 0.5d
+			description: ["Downgrades slots to a maximum of 64 items."]
+			dependencies: ["713E7146BBA7DAC4"]
+			id: "6C7ACAD7014EE45F"
+			tasks: [{
+				id: "029CFAC254188A31"
+				type: "item"
+				item: "functionalstorage:iron_downgrade"
+			}]
+		}
+		{
+			title: "Upgrades"
+			icon: "functionalstorage:creative_vending_upgrade"
+			x: 10.0d
+			y: 0.5d
+			subtitle: "More function!"
+			description: ["These all modify the abilities of drawers. "]
+			dependencies: ["3326EBDF99B75051"]
+			hide: true
+			id: "04C0FEF2127BE164"
+			tasks: [{
+				id: "0DC6D81D702D8420"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 2.0d
+			subtitle: "Black holes for a lag free existence"
+			description: ["These void any amount of items that go in a drawer/slot past the stack capacity."]
+			dependencies: ["04C0FEF2127BE164"]
+			id: "626FAFCD314C3D8E"
+			tasks: [{
+				id: "49F7F0D215366C3E"
+				type: "item"
+				item: "functionalstorage:void_upgrade"
+			}]
+		}
+		{
+			title: "RFTools"
+			icon: "rftoolsutility:sequencer"
+			x: -4.0d
+			y: -3.0d
+			subtitle: "Easy mode tech"
+			description: [
+				"These are included in the pack for ease of use and for quick automations that are typically easier to implement than others. When all else fails or you aren't able to creatively get dynamics out of the pack, here is where to go."
+				""
+				"Also see Misc Mods chapter"
+			]
+			dependencies: ["5183C05BE6F56C0D"]
+			size: 2.0d
+			id: "041E19F64FD9031B"
+			tasks: [{
+				id: "7145A7E58F82E4F9"
+				type: "item"
+				item: "rftoolsbase:machine_base"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.5d
+			subtitle: "Works a 5x5 area"
+			dependencies: ["704463C52EA78FD4"]
+			hide: true
+			id: "09DB9FC0C73C4F52"
+			tasks: [{
+				id: "29CFDA078F0E7284"
+				type: "item"
+				item: "itemcollectors:basic_collector"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -7.5d
+			subtitle: "Works a 7x7 area"
+			dependencies: ["09DB9FC0C73C4F52"]
+			id: "5B2E395F7E1C66BF"
+			tasks: [{
+				id: "4F188179C852CF84"
+				type: "item"
+				item: "itemcollectors:advanced_collector"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -7.5d
+			subtitle: "Step 1"
+			description: ["Probably goes without saying that this should be in your kit before you dive into this or any mod where one is available."]
+			dependencies: ["740A08B26F238B9E"]
+			hide: true
+			id: "1DDA32328E319712"
+			tasks: [{
+				id: "49D5D380B8709190"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "laserio:laseriobook"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -9.0d
+			subtitle: "Connector between two nodes"
+			description: ["Multiple Laser Nodes can be connected directly to each other using the Laser Wrench, however the maximum range is 8 blocks."]
+			dependencies: ["1DDA32328E319712"]
+			id: "7094B72FDC321B25"
+			tasks: [{
+				id: "0E3AFE19827926E9"
+				type: "item"
+				item: "laserio:laser_node"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -8.5d
+			subtitle: "Would you like to see my card?"
+			description: [
+				"The card holder is the solution to all your inventory woes! At least, the ones caused by this mod... Simply craft a Card Holder and right click it to open up the GUI. Cards placed in this GUI can stack up to 64, provided their NBT data matches."
+				""
+				"(Reminder: You can craft cards by themselves to reset their NBT.) Cards can be modified from within the holder - by right clicking on a cardstack (Just like in a laser node.)"
+				""
+				"Note: If the stack size of the card is larger than 1, it will disable the filter and overclocker slots to prevent item duping. #BlameSoaryn By holding shift and right clicking the card holder it will start automatically pulling cards out of your inventory! You can tell this is activated because the card holder starts to glow as if it were enchanted. Shift(default)-right click again to toggle it off. If you have the card holder in your inventory when you open a node, you'll see its cards displayed."
+			]
+			dependencies: ["7094B72FDC321B25"]
+			id: "5E06EE4C80C47A51"
+			tasks: [{
+				id: "1EB16B79C058EBA4"
+				type: "item"
+				item: {
+					id: "laserio:card_holder"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 15
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Cards"
+			icon: "laserio:card_item"
+			x: 2.5d
+			y: -10.5d
+			subtitle: "Just a few"
+			description: [
+				"There are four cards that all do different things. Right clicking a card in your hand will open it's GUI. "
+				""
+				"You can also right click a card inside a node GUI. Check out the in game manual for further in-depth information. The multiple modes are well documented."
+			]
+			dependencies: ["7094B72FDC321B25"]
+			id: "440CD2F6B273317E"
+			tasks: [{
+				id: "54C44CDD3FA96E35"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -12.5d
+			subtitle: "Solid matter beam"
+			description: ["These are used to send items between intentories. Overclocker values are documented in the in-game manual."]
+			dependencies: ["440CD2F6B273317E"]
+			id: "00AA0493EE4CFAC3"
+			tasks: [{
+				id: "2E4231467E95A4A8"
+				type: "item"
+				item: "laserio:card_item"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -12.0d
+			subtitle: "Fluid matter beam"
+			description: ["These are used to send fluid between tanks, etc. Overclocker values are documented in the in-game manual."]
+			dependencies: ["440CD2F6B273317E"]
+			id: "585101D7B89111B6"
+			tasks: [{
+				id: "3DD800326CFAD912"
+				type: "item"
+				item: "laserio:card_fluid"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -11.5d
+			subtitle: "Energy beam "
+			description: ["Used to send energy between things that use power, such as generators, batteries and machines."]
+			dependencies: ["440CD2F6B273317E"]
+			id: "2277616DFE47B820"
+			tasks: [{
+				id: "6B9A0AEFEE03EC1C"
+				type: "item"
+				item: "laserio:card_energy"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -11.0d
+			subtitle: "Signal beam"
+			description: ["These transmit redstone signals across the entire LaserIO network. They have a dedicated 'redstone channel' separate from the other channels that other cards use. Redstone cards have two modes, input and output. Further information can be found in the in-game manual."]
+			dependencies: ["440CD2F6B273317E"]
+			id: "2CFEAAFB0468DCEB"
+			tasks: [{
+				id: "7E2BBD1D255FF8E3"
+				type: "item"
+				item: "laserio:card_redstone"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -13.0d
+			subtitle: "Kicking it up a notch"
+			description: ["Card overclockers allow individual cards to operate more quickly. For example, Item Cards can only extract at most 8 items every 20 ticks (1 second). With 4 overclockers installed they can reach 64 items per 1 tick. See the cards section of the in-game manual for how each card is affected by overclockers."]
+			dependencies: ["440CD2F6B273317E"]
+			id: "65BFCBC2AFC7D3F8"
+			tasks: [{
+				id: "4281B323DD633888"
+				type: "item"
+				item: "laserio:overclocker_card"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -11.0d
+			subtitle: "Make Kingpin proud"
+			description: ["Node overclockers are a more complex component. Each node can only operate on 1 card per side per tick. If there are 3 extractor cards in the side of a node, only the first one will operate during a game tick, and the second will only operate if the first fails to do anything. Each node overclocker installed on the side of a node allows that side to operate on more cards per tick. A total of 8 node overclockers can be installed, allowing all 9 nodes to be operated on. Inserter cards do not need overclockers to function only extractor and stocker cards need them."]
+			dependencies: ["7094B72FDC321B25"]
+			id: "289D8184C515C935"
+			tasks: [{
+				id: "1B3EEF40E6DE9175"
+				type: "item"
+				item: "laserio:overclocker_node"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 8.5d
+			subtitle: "Electric vibration and a little rotation"
+			description: [
+				"The charger does exactly what its name says, charges things.  Place the charger down and the wooden crank on top, it doesn't need to be connected to the network to function as long as you have a crank on it."
+				""
+				"The Vibration chamber can be used to power ME network in a pinch, but is the early power source provided by AE2 that produces power from solid burnable fuel. Vibration chamber generates between 1-10 AE/t depending on burn speed."
+			]
+			dependencies: ["4DD0BA1396B2D9BB"]
+			hide: true
+			id: "7EFA2B1567C35C0A"
+			tasks: [
+				{
+					id: "7844774D7031DD34"
+					type: "item"
+					item: "ae2:charger"
+				}
+				{
+					id: "57BA8AD7CDF36E28"
+					type: "item"
+					item: "ae2:vibration_chamber"
+				}
+				{
+					id: "0567B4EB3D47EC91"
+					type: "item"
+					item: "ae2:crank"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 8.5d
+			subtitle: "Point me to the fallen stars"
+			description: [
+				"Will direct you to the nearest Sky Stone in the current world. Has a max range of about 2,700 blocks."
+				""
+				"If it spins rapidly, the chunk you're standing in contains Sky Stone. If it spins slowly, there is no meteorite in range. Go explore and generate some new terrain. "
+			]
+			dependencies: ["7EFA2B1567C35C0A"]
+			id: "5E523F4BA52C8946"
+			tasks: [{
+				id: "6969734E155EEEA0"
+				type: "item"
+				item: "ae2:meteorite_compass"
+			}]
+		}
+		{
+			title: "Find Meteorite"
+			x: 2.0d
+			y: 8.5d
+			subtitle: "The sky has fallen"
+			description: [
+				"Made out of a blast resistant dark stone of an unknown origin. You'll need some Sky Stone later so you might as well mine some while you're there."
+				""
+				"Inside the meteorite you'll find something new for this version of Minecraft."
+				""
+				"In the center there could be a Mysterious Cube that drops the inscribers needed later on. Under that should be budding quartz blocks/crystals."
+				""
+				"!Don't break these blocks! Some of them can be flawless nodes that are quite rare. "
+			]
+			dependencies: [
+				"7EFA2B1567C35C0A"
+				"5E523F4BA52C8946"
+			]
+			id: "56C8D2A4AB8B1B50"
+			tasks: [{
+				id: "26FBD82F5D8AC4AB"
+				type: "observation"
+				icon: "ae2:sky_stone_block"
+				timer: 0L
+				observe_type: 0
+				to_observe: "ae2:sky_stone_block"
+			}]
+		}
+		{
+			title: "Acquire all 4 inscribers"
+			x: 0.5d
+			y: 10.0d
+			subtitle: "Pressing matters"
+			description: ["These allow you to create the 4 processors needed as base components for many of the items and blocks in this mod."]
+			dependencies: ["56C8D2A4AB8B1B50"]
+			id: "4B1C253FD55EA7FA"
+			tasks: [
+				{
+					id: "5B1948FFD0E22F82"
+					type: "observation"
+					icon: "ae2:mysterious_cube"
+					timer: 0L
+					observe_type: 0
+					to_observe: "ae2:mysterious_cube"
+				}
+				{
+					id: "4C2606F38D4EA9C8"
+					type: "item"
+					item: "ae2:calculation_processor_press"
+				}
+				{
+					id: "365D028AC94ADA16"
+					type: "item"
+					item: "ae2:engineering_processor_press"
+				}
+				{
+					id: "060FB4B71C568909"
+					type: "item"
+					item: "ae2:logic_processor_press"
+				}
+				{
+					id: "0A036A3BF851CF06"
+					type: "item"
+					item: "ae2:silicon_press"
+				}
+			]
+		}
+		{
+			title: "Acquire Quartz"
+			x: 2.0d
+			y: 10.0d
+			subtitle: "An important component resource"
+			description: ["Nether quartz can get you started, but the special type this AE2 adds is called certus quartz."]
+			dependencies: ["4B1C253FD55EA7FA"]
+			id: "359113DDD66BD4D7"
+			tasks: [{
+				id: "1A37D8F3BFFB88A6"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
+		}
+		{
+			title: "Acquire Certus Quartz"
+			x: 3.5d
+			y: 10.0d
+			subtitle: "I'm different"
+			description: ["A special version of quartz added by this mod that is used in a number of crafting recipes."]
+			dependencies: ["359113DDD66BD4D7"]
+			id: "50F61C866E31D9AE"
+			tasks: [{
+				id: "168D11677C3090D2"
+				type: "item"
+				item: "ae2:certus_quartz_crystal"
+			}]
+		}
+		{
+			title: "Acquire Charged Certus Quartz"
+			x: 5.0d
+			y: 10.0d
+			subtitle: "I'm electric"
+			description: ["Acquiring this is done a few different ways. The first you'll probably notice is when some falls out of your sieves. Alternatively, once you have enough spare power, you can use the Charger from this mod, or a Tesla Coil from Create."]
+			dependencies: ["50F61C866E31D9AE"]
+			id: "58E9466C1DB50650"
+			tasks: [{
+				id: "0C9910738822B4AC"
+				type: "item"
+				item: "ae2:charged_certus_quartz_crystal"
+			}]
+		}
+		{
+			title: "Growing Crystals, Recharging Buds"
+			x: 6.5d
+			y: 10.0d
+			subtitle: "This could take a minute"
+			description: [
+				"One of the primary means of collecting quartz is by breaking quartz crystal clusters."
+				""
+				"These grow on budding quartz in a way that is similar to Vanilla amethyst. Budding quartz decays when growing buds, but can be recharged using a Charged Certus Quartz Crystal in a puddle of water."
+				""
+				"New budding quartz can be created the same way by using a Certus Quartz Block."
+			]
+			dependencies: ["58E9466C1DB50650"]
+			id: "709E85F41ECFC8E7"
+			tasks: [{
+				id: "2FF0550FEE6D944A"
+				type: "item"
+				item: "ae2:quartz_cluster"
+			}]
+		}
+		{
+			title: "Craft Quartz Wrench"
+			x: 8.0d
+			y: 11.5d
+			subtitle: "Stronger than it looks"
+			description: ["You'd think the durability of a tool made from quartz would be horrible, but apparently this one is indestructable, unless you throw it in the trash for some weird reason. Can be made out of both kinds of quartz."]
+			dependencies: ["37D979A2E208855D"]
+			id: "07404A87F6B1F58D"
+			tasks: [{
+				id: "7BEEE0C9A714B28A"
+				type: "item"
+				item: "ae2:certus_quartz_wrench"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 11.5d
+			subtitle: "The sharpest crystal in Minecraft"
+			description: ["Used to create Inscriber Name Presses, Cable Anchors, and Cable Facades. Can be made out of both kinds of quartz."]
+			dependencies: ["51FF140E0C2F546F"]
+			id: "37D979A2E208855D"
+			tasks: [
+				{
+					id: "133566F6C3007930"
+					type: "item"
+					item: {
+						id: "ae2:nether_quartz_cutting_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6BD516F8E6CC0E26"
+					type: "item"
+					item: {
+						id: "ae2:nether_quartz_cutting_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 11.5d
+			subtitle: "Cheap alternative to iron tools"
+			description: ["Low on Iron? Got some quartz? You can turn it into a tool that has iron level harvesting and durability. Can be made out of both kinds of quartz."]
+			dependencies: ["628E6F6C0DA4CF62"]
+			dependency_requirement: "one_completed"
+			id: "51FF140E0C2F546F"
+			tasks: [
+				{
+					id: "14D6A8F7716E6921"
+					type: "item"
+					item: {
+						id: "ae2:certus_quartz_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7900B118CAB727A8"
+					type: "item"
+					item: {
+						id: "ae2:certus_quartz_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5F1E91776A43D647"
+					type: "item"
+					item: {
+						id: "ae2:certus_quartz_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "705427CF51B43DAB"
+					type: "item"
+					item: {
+						id: "ae2:certus_quartz_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Acquire Fluix Crystal"
+			x: 3.5d
+			y: 11.5d
+			subtitle: "Like watching paint dry"
+			description: ["This is one of the more tedious parts of this mod. You can speed up the process and fully automate it however."]
+			dependencies: ["55A6BE6020ABB51A"]
+			id: "628E6F6C0DA4CF62"
+			tasks: [{
+				id: "60C2652BE510B86F"
+				type: "item"
+				item: "ae2:fluix_crystal"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 11.5d
+			subtitle: "Faster! FASTER!"
+			description: ["With 4 of these surrounding a source block of water, you can make quick work of fluix crystal growth. Consumes 8 AE/t when plugged in, so connect a toggle bus to your automation so you can turn it off when it's not running."]
+			dependencies: ["709E85F41ECFC8E7"]
+			id: "55A6BE6020ABB51A"
+			tasks: [{
+				id: "52E75B463F083BB8"
+				type: "item"
+				title: "Craft Crystal Growth Accelerator"
+				item: "ae2:quartz_growth_accelerator"
+				count: 4L
+			}]
+		}
+		{
+			x: 5.0d
+			y: 13.0d
+			dependencies: ["07404A87F6B1F58D"]
+			id: "1686EE1B7474FCCB"
+			tasks: [{
+				id: "1785F01F3B819D7F"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 13.0d
+			dependencies: ["1686EE1B7474FCCB"]
+			id: "5A3FC80B8DB22511"
+			tasks: [{
+				id: "48944F2166F2E61D"
+				type: "item"
+				item: "ae2things:advanced_inscriber"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 16.0d
+			dependencies: ["1686EE1B7474FCCB"]
+			id: "01C75281DCB582B1"
+			tasks: [{
+				id: "7650AE476CD8DC07"
+				type: "item"
+				item: "ae2:logic_processor"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 16.0d
+			dependencies: ["1686EE1B7474FCCB"]
+			id: "45835909F3B2DBDD"
+			tasks: [{
+				id: "00D627CE069955D2"
+				type: "item"
+				item: "ae2:calculation_processor"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 16.0d
+			dependencies: ["1686EE1B7474FCCB"]
+			id: "0A8040E45BE531BE"
+			tasks: [{
+				id: "242422B8A2576C2B"
+				type: "item"
+				item: "ae2:engineering_processor"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 14.5d
+			dependencies: ["1686EE1B7474FCCB"]
+			id: "00410D5133BFE75D"
+			tasks: [{
+				id: "3B299AF51C4C3692"
+				type: "item"
+				item: "ae2:printed_silicon"
+			}]
+		}
+		{
+			title: "Duplicate Presses"
+			x: 6.5d
+			y: 13.0d
+			subtitle: "Sharing is caring"
+			description: ["Do your friends want to setup their own AE2 systems but still have yet to find a meteor? You can duplicate your set and give them a set of their own. All it takes is a block of iron placed in the inscriber that has the press you'd like to duplicate."]
+			dependencies: ["1686EE1B7474FCCB"]
+			id: "6AA9125A0FB63875"
+			tasks: [
+				{
+					id: "0FD97E6F87E92187"
+					type: "item"
+					item: "ae2:calculation_processor_press"
+					only_from_crafting: true
+				}
+				{
+					id: "5F2748A5E155B2FD"
+					type: "item"
+					item: "ae2:engineering_processor_press"
+					only_from_crafting: true
+				}
+				{
+					id: "39330DDD2E946C16"
+					type: "item"
+					item: "ae2:logic_processor_press"
+					only_from_crafting: true
+				}
+				{
+					id: "3FBC52F58B60C20B"
+					type: "item"
+					item: "ae2:silicon_press"
+					only_from_crafting: true
+				}
+			]
+		}
+		{
+			title: "Intro to Matter Energy (ME) Tech"
+			x: -2.0d
+			y: 8.5d
+			subtitle: "Its pronounced Emm-Eee, and stands for Matter Energy"
+			description: [
+				"Matter Energy is the main component of Applied Energistics 2, it's like a mad scientist version of a Multi-Block chest, and it can revolutionize your storage situation."
+				""
+				"ME is extremely different then other storage systems in Minecraft, and it might take a little out of the box thinking to get used to; but once you get started vast amounts of storage in tiny spaces, and multiple access terminals are just the tip of the iceberg of what becomes possible."
+				""
+				"Storage Chapter has additional details about the storage system. See AE2 Chapter of \"Misc Mods\" section in this quest book for detailed information about most all the AE2 items."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0A8040E45BE531BE"]
+			size: 1.5d
+			id: "4CEAFDF66D900111"
+			tasks: [{
+				id: "31F593A44A05D7C9"
+				type: "item"
+				item: "ae2:controller"
+			}]
+		}
+		{
+			title: "Setting Up Your First Network"
+			x: -2.0d
+			y: 10.5d
+			subtitle: "Plug it in, plug it in"
+			description: [
+				"The first block you'll want to place is your energy acceptor somewhere close to power cables or at least get an idea of how you want to run power to it."
+				""
+				"You can only use the vibration chamber for so long before adding too many devices will stop your AE2 network from running. Place the ME Drive next to the energy acceptor, and two glass cables above the two blocks."
+				""
+				"Then put the terminals on the glass cables. Terminals and light panels need to be placed on glass or regular cables, they're too big to fit on dense cables. "
+				""
+				"(See ponder scene for ME Controller. -WIP-)"
+			]
+			dependencies: ["4CEAFDF66D900111"]
+			size: 1.25d
+			id: "31F33659B7D23BBE"
+			tasks: [
+				{
+					id: "6CAF73F56D43072E"
+					type: "item"
+					item: "ae2:drive"
+				}
+				{
+					id: "3B258FF01487EF58"
+					type: "item"
+					item: "ae2:crafting_terminal"
+				}
+				{
+					id: "4ECD4F870E50538D"
+					type: "item"
+					item: "ae2:pattern_encoding_terminal"
+				}
+				{
+					id: "3500E7291BF76772"
+					type: "item"
+					item: "ae2:fluix_glass_cable"
+					count: 8L
+				}
+				{
+					id: "0574BD9A58E4731C"
+					type: "item"
+					item: "ae2:energy_acceptor"
+				}
+				{
+					id: "1C1F984C6AE45162"
+					type: "item"
+					item: {
+						id: "ae2:energy_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "Craft A Storage Cell"
+			x: -4.0d
+			y: 10.5d
+			subtitle: "Willy Wonka would be proud"
+			description: [
+				"It's amazing that you can shrink so many items down to such a small space, and they still come back out the same as when you put them in."
+				""
+				"This cell holds 127 stacks of a single item, or 65 stacks while holding 63 different items."
+			]
+			dependencies: ["31F33659B7D23BBE"]
+			id: "595E393C17AB745C"
+			tasks: [{
+				id: "67A6F12FAE620C76"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_1k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			icon: "ae2:drive"
+			x: -5.0d
+			y: 10.5d
+			dependencies: ["595E393C17AB745C"]
+			id: "716924F76BC59E03"
+			tasks: [{
+				id: "531F9EF6A8DD8D5F"
+				type: "checkmark"
+				title: "Place The Storage Cell In ME Drive"
+			}]
+		}
+		{
+			icon: "minecraft:furnace"
+			x: -2.0d
+			y: 12.5d
+			dependencies: ["31F33659B7D23BBE"]
+			size: 1.25d
+			id: "71D08A02CC7AD46F"
+			tasks: [{
+				id: "1CFFEE7D245B55C2"
+				type: "checkmark"
+				title: "Setup First Basic Automation"
+			}]
+		}
+		{
+			title: "Some Basics About Channel Limits"
+			x: -4.0d
+			y: 12.5d
+			dependencies: ["71D08A02CC7AD46F"]
+			id: "3F88DD051CCC5AF6"
+			tasks: [{
+				id: "3006C38C31740448"
+				type: "checkmark"
+				title: "Channel Limits"
+			}]
+		}
+		{
+			title: "ME Controller"
+			x: -5.0d
+			y: 12.5d
+			subtitle: "The hub of technology"
+			dependencies: ["3F88DD051CCC5AF6"]
+			id: "17C5DF16EE10D6FF"
+			tasks: [
+				{
+					id: "2BB96F900877C97C"
+					type: "item"
+					item: "ae2:controller"
+				}
+				{
+					id: "59F5F9002FD31774"
+					type: "item"
+					item: "ae2:fluix_smart_dense_cable"
+					count: 8L
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 12.5d
+			dependencies: ["17C5DF16EE10D6FF"]
+			id: "0839330A45A3596B"
+			tasks: [
+				{
+					id: "312EE53D746CA068"
+					type: "item"
+					item: "ae2:export_bus"
+				}
+				{
+					id: "7C11F945E38EEF86"
+					type: "item"
+					item: "ae2:import_bus"
+				}
+				{
+					id: "7C9DBA039329DC08"
+					type: "item"
+					item: "minecraft:furnace"
+				}
+			]
+		}
+		{
+			title: "P2P Tunnel System"
+			icon: "ae2:me_p2p_tunnel"
+			x: -2.0d
+			y: 14.5d
+			dependencies: ["71D08A02CC7AD46F"]
+			size: 1.25d
+			id: "41DDF9A409243E54"
+			tasks: [{
+				id: "12F565CE822E5AF0"
+				type: "checkmark"
+				title: "P2P Tunnel Concept"
+			}]
+		}
+		{
+			title: "Example P2P Tunnel Setup"
+			x: -4.0d
+			y: 14.5d
+			subtitle: "On point"
+			description: [
+				"After you have everything crafted, place three of the Fluix ME Glass Cables. Look at one end of the cable, so three cables are leading away from you in a row. Place one of the P2P tunnels so the big blue box on the P2P tunnel faces you."
+				""
+				"Repeat this on the other side."
+				""
+			]
+			dependencies: ["41DDF9A409243E54"]
+			id: "439012BC6976AB25"
+			tasks: [
+				{
+					id: "08B19D7B7F703523"
+					type: "item"
+					item: "ae2:me_p2p_tunnel"
+					count: 2L
+				}
+				{
+					id: "5C8360AE272E7A5E"
+					type: "item"
+					item: "ae2:fluix_glass_cable"
+					count: 5L
+				}
+				{
+					id: "101EEB6A05D0874E"
+					type: "item"
+					item: "ae2:quartz_fiber"
+					count: 2L
+				}
+				{
+					id: "5F1F990AA11A6071"
+					type: "item"
+					title: "Any #ae2:memory_cards"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "ae2:memory_cards"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Getting Connected"
+			x: -5.0d
+			y: 14.5d
+			subtitle: "Step 2"
+			description: [
+				"Next place one or two dense cable(s) you saved from before, adjacent to each P2P Tunnel."
+				""
+				"Place a Quartz Fiber on top of the dense cable at each end of the tunnel."
+				""
+				"Lastly, connect the two Quartz Fibers to the center with Fluix ME Glass Cables. (See ponder scene for P2P tunnels. -WIP-)"
+			]
+			dependencies: ["439012BC6976AB25"]
+			id: "27FA91D5826CA426"
+			tasks: [{
+				id: "14FFEA6EE4399A32"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 14.5d
+			subtitle: "Step 3"
+			description: [
+				"If you've connected everything right, you should be able to now take your Memory Card and sneak right click the card on the P2P tunnel that will be your origination."
+				""
+				"Right click the opposite tunnel with the card, and the two should be linked. When you hover your mouse over the tunnel, it should say \"Linked\" and show you the frequency (id.)"
+				""
+				"One memory card can apply its linked input tunnel id to many output tunnels."
+				""
+				"It sounds much harder than it actually is once you get used to it."
+			]
+			dependencies: ["27FA91D5826CA426"]
+			id: "738A3DA49AC8BA2B"
+			tasks: [{
+				id: "1B69D4E833E5FDE7"
+				type: "checkmark"
+				title: "Setting the ID"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 16.5d
+			dependencies: ["41DDF9A409243E54"]
+			size: 1.75d
+			id: "6273ED16AB9169D3"
+			tasks: [{
+				id: "6499C3A927CBB962"
+				type: "checkmark"
+				title: "First Auto-Crafting Setup"
+			}]
+		}
+		{
+			title: "Basic Crafting Computer Setup"
+			x: -4.0d
+			y: 16.5d
+			subtitle: "Can be a cube or rectangle, horizontal or vertical"
+			description: [
+				"This is a really simple example crafting computer setup. "
+				""
+				"The Co-Processing unit helps craft multiple things at a time."
+				""
+				"The crafting monitor tells you what is currently crafting in that computer."
+				""
+				"Crafting storage adds to the capacity of crafting job you can order from the system."
+				""
+				"Finally crafting units don't do anything except fill gaps if you want an inexpensive way to complete the valid shape."
+				""
+				"You can have multiple crafting computers as long as they're not touching. If they touch, they have to form a cuboid, having multiple is recommended to craft parallel jobs at once."
+			]
+			dependencies: ["6273ED16AB9169D3"]
+			id: "6DBC6F7B0FE77BE1"
+			tasks: [
+				{
+					id: "2A09BD74ECF9E6D2"
+					type: "item"
+					item: "ae2:crafting_monitor"
+				}
+				{
+					id: "7BBCB9C582609D7C"
+					type: "item"
+					item: "ae2:crafting_accelerator"
+				}
+				{
+					id: "7D8CF37FAD76F84F"
+					type: "item"
+					item: "ae2:1k_crafting_storage"
+				}
+				{
+					id: "33D49BC25CAA2198"
+					type: "item"
+					item: "ae2:crafting_unit"
+					count: 3L
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 16.5d
+			dependencies: ["6DBC6F7B0FE77BE1"]
+			id: "7BE681E5030EEE25"
+			tasks: [
+				{
+					id: "3CD246700775B811"
+					type: "item"
+					item: "ae2:molecular_assembler"
+					count: 2L
+				}
+				{
+					id: "66E99E18948DD52E"
+					type: "item"
+					item: "ae2:pattern_provider"
+				}
+			]
+		}
+		{
+			title: "Placing The Next Pieces"
+			x: -6.0d
+			y: 16.5d
+			dependencies: ["7BE681E5030EEE25"]
+			id: "56E51BB05DCC768D"
+			tasks: [
+				{
+					id: "68105A73D548A25E"
+					type: "questsadditions:place"
+					block_type: 0
+					block: "ae2:molecular_assembler"
+					value: 1L
+					replaced: "minecraft:air"
+					replace: false
+				}
+				{
+					id: "0FB6E9708174CA18"
+					type: "item"
+					item: "ae2:pattern_encoding_terminal"
+				}
+			]
+		}
+		{
+			title: "Craft Pattern To Make A Chest"
+			x: -7.0d
+			y: 16.5d
+			dependencies: ["56E51BB05DCC768D"]
+			id: "57C19E286F6A02E6"
+			tasks: [{
+				id: "1549A8108B54BDB8"
+				type: "item"
+				item: "ae2:blank_pattern"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 16.5d
+			dependencies: ["57C19E286F6A02E6"]
+			id: "38F9F3099F6ADDC3"
+			tasks: [
+				{
+					id: "66B72887D85A9FCE"
+					type: "questsadditions:place"
+					block_type: 0
+					block: "ae2:pattern_provider"
+					value: 1L
+					replaced: "minecraft:air"
+					replace: false
+				}
+				{
+					id: "7C4A5B978D606D16"
+					type: "questsadditions:place"
+					block_type: 0
+					block: "ae2:molecular_assembler"
+					value: 1L
+					replaced: "minecraft:air"
+					replace: false
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: 16.5d
+			dependencies: ["38F9F3099F6ADDC3"]
+			id: "44EB84E18C87F657"
+			tasks: [
+				{
+					id: "7EDF40196771033D"
+					type: "item"
+					item: "minecraft:furnace"
+				}
+				{
+					id: "10FE6C069CA6A172"
+					type: "item"
+					item: "ae2:pattern_provider"
+				}
+				{
+					id: "5CACE263086FD561"
+					type: "item"
+					item: "ae2:import_bus"
+				}
+				{
+					id: "5D08C32436CB3EED"
+					type: "item"
+					item: "ae2:export_bus"
+				}
+			]
+		}
+		{
+			icon: "ae2:blank_pattern"
+			x: -10.0d
+			y: 16.5d
+			dependencies: ["44EB84E18C87F657"]
+			id: "0578A8766129483C"
+			tasks: [{
+				id: "479AA8A1F1E6F3D5"
+				type: "checkmark"
+				title: "Create Smelting Pattern"
+			}]
+		}
+		{
+			title: "Setting Up The Wireless Terminal"
+			icon: "ae2:wireless_terminal"
+			x: -2.0d
+			y: 18.5d
+			dependencies: ["6273ED16AB9169D3"]
+			size: 1.25d
+			id: "1EAB7660D3EB10A9"
+			tasks: [{
+				id: "5488F664E181F7C8"
+				type: "checkmark"
+				title: "Setting Up The Wireless Tablet"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 18.5d
+			dependencies: ["1EAB7660D3EB10A9"]
+			id: "04BED9D8C6AD817A"
+			tasks: [
+				{
+					id: "746A546F3D0B222B"
+					type: "item"
+					item: "ae2:wireless_access_point"
+				}
+				{
+					id: "5E802D1C2D1B76BD"
+					type: "item"
+					item: "ae2:wireless_booster"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 18.5d
+			dependencies: ["04BED9D8C6AD817A"]
+			id: "6CFD9BA233F778EE"
+			tasks: [{
+				id: "1B756292B17DB54B"
+				type: "item"
+				item: "ae2:security_station"
+			}]
+		}
+		{
+			title: "Screen Modules"
+			x: -5.0d
+			y: -5.5d
+			subtitle: "Gooey"
+			description: ["Variable modules display variables in a processor. Interaction modules allow you to interact with a processor. Console modules display the console of a processor, can also be used in a tablet. Vector Art modules allow you to show vector art from a processor."]
+			dependencies: ["2A8D003F624D361F"]
+			dependency_requirement: "one_completed"
+			id: "3463A6F04D8D0B1F"
+			tasks: [
+				{
+					id: "74D61C4B750D7FF8"
+					type: "item"
+					item: {
+						id: "rftoolscontrol:console_module"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3913F66DB224F0BC"
+					type: "item"
+					item: {
+						id: "rftoolscontrol:vectorart_module"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "185D999A87767E75"
+					type: "item"
+					item: {
+						id: "rftoolscontrol:interaction_module"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5E9231E4C65989E0"
+					type: "item"
+					item: {
+						id: "rftoolscontrol:variable_module"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -5.5d
+			subtitle: "Not for mining bitcoin"
+			description: ["Needed to draw vector graphics."]
+			dependencies: ["1868358D028CED6A"]
+			id: "2A8D003F624D361F"
+			tasks: [{
+				id: "335635AA325D3478"
+				type: "item"
+				item: "rftoolscontrol:graphics_card"
+			}]
+		}
+		{
+			title: "Control"
+			x: -8.0d
+			y: -5.5d
+			subtitle: "Logistics and monitoring"
+			description: [
+				"RFTools Control is an addon mod for RFTools which adds automation control using a visual grid based programming language. Using opcodes that you arrange in a grid you can move items around, control redstone, check energy (RF) and so on. You can access regular inventories but this mod also supports direct access to a storage scanner controlled system. In the future it will also provide a way to the storage scanner to autocraft items. This is not yet fully implemented however."
+				""
+				"The two main blocks in this mod are the programmer which is used to create programs and the processor that executes those programs. Networking is also provided."
+			]
+			dependencies: ["041E19F64FD9031B"]
+			hide: true
+			size: 1.25d
+			id: "1868358D028CED6A"
+			tasks: [{
+				id: "5EDF26AFB72F075F"
+				type: "item"
+				item: "rftoolscontrol:card_base"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -8.5d
+			subtitle: "Like a blank thumbdrive"
+			description: ["You write programs to this card with the programmer."]
+			dependencies: ["04D79378B1F88A5E"]
+			id: "4274645324637E99"
+			tasks: [{
+				id: "50D5627F48D282EA"
+				type: "item"
+				item: "rftoolscontrol:program_card"
+			}]
+		}
+		{
+			title: "CPU Core"
+			x: -6.5d
+			y: -7.0d
+			subtitle: "Required to run programs"
+			dependencies: ["22A0AC145EF87D69"]
+			dependency_requirement: "one_completed"
+			id: "78D987D226E62B31"
+			tasks: [
+				{
+					id: "288A61ECA80BCE87"
+					type: "item"
+					item: "rftoolscontrol:cpu_core_500"
+				}
+				{
+					id: "15CC746429F21331"
+					type: "item"
+					item: "rftoolscontrol:cpu_core_1000"
+				}
+				{
+					id: "41AC538F1D2AB6F0"
+					type: "item"
+					item: "rftoolscontrol:cpu_core_2000"
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -7.0d
+			subtitle: "Does compute"
+			description: ["Executes programs when a CPU core is installed. Programs should be written on program cards using the programmer."]
+			dependencies: ["1868358D028CED6A"]
+			id: "22A0AC145EF87D69"
+			tasks: [{
+				id: "3BBD08457E817454"
+				type: "item"
+				item: "rftoolscontrol:processor"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -8.5d
+			subtitle: "Just like in real life, this one doesn't get paid"
+			description: ["Makes programs on program cards for use in the processor."]
+			dependencies: ["7275E75A9BD390E9"]
+			id: "04D79378B1F88A5E"
+			tasks: [{
+				id: "30419F4E0A1A6BF5"
+				type: "item"
+				item: "rftoolscontrol:programmer"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -10.0d
+			subtitle: "Do you even work brah?"
+			description: ["General workbench that can be used standalone but works well with the processor."]
+			dependencies: ["22A0AC145EF87D69"]
+			id: "7275E75A9BD390E9"
+			tasks: [{
+				id: "5106A2D9FD8F0BBA"
+				type: "item"
+				item: "rftoolscontrol:workbench"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -11.5d
+			subtitle: "Make it so"
+			description: ["Assists in auto-crafting."]
+			dependencies: ["04D79378B1F88A5E"]
+			id: "4F6A2376DAB625A8"
+			tasks: [{
+				id: "579A15EFFA2E4AD4"
+				type: "item"
+				item: "rftoolscontrol:craftingstation"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -13.0d
+			subtitle: "Appears to be NYI (Not Yet Implemented)"
+			description: ["Can be accessed by a processor with a network card installed."]
+			dependencies: ["4F6A2376DAB625A8"]
+			id: "532B0B44EF50F502"
+			tasks: [{
+				id: "760B6CE8984D9DF8"
+				type: "item"
+				item: "rftoolscontrol:node"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -13.0d
+			subtitle: "NetID"
+			description: ["Allows a processor to directly communicate with another linked processor."]
+			dependencies: ["532B0B44EF50F502"]
+			id: "5C9B70E9B765F1FC"
+			tasks: [{
+				id: "10F78EA94CEB3E1A"
+				type: "item"
+				item: {
+					id: "rftoolscontrol:network_identifier"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -11.0d
+			y: -13.0d
+			subtitle: "That a 1200 baud modem?"
+			description: [
+				"Allows access to nearby nodes. Use 'net setup <name>' in Processor console to setup the network. "
+				""
+				"17x17x17 AOE for the basic one."
+				"31x31x31 AOE for the advanced."
+			]
+			dependencies: ["5C9B70E9B765F1FC"]
+			dependency_requirement: "one_completed"
+			id: "6DD368CD3A5EF7C8"
+			tasks: [
+				{
+					id: "0658C135AE029CBF"
+					type: "item"
+					item: "rftoolscontrol:network_card"
+				}
+				{
+					id: "0A5D985BBEACE619"
+					type: "item"
+					item: "rftoolscontrol:advanced_network_card"
+				}
+			]
+		}
+		{
+			x: -9.5d
+			y: -8.5d
+			subtitle: "Sorta like a cookie"
+			description: ["This item doesn't do anything except store information."]
+			dependencies: ["04D79378B1F88A5E"]
+			id: "51B1CEBF639256DD"
+			tasks: [{
+				id: "09F10F111A8CA021"
+				type: "item"
+				item: "rftoolscontrol:token"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -7.0d
+			subtitle: "Fluid crafting"
+			description: ["Holds four different types of fluids. Is meant for use with the processor and can't be accessed directly."]
+			dependencies: ["22A0AC145EF87D69"]
+			id: "621A5FFF03F586DA"
+			tasks: [{
+				id: "42141F54638D270E"
+				type: "item"
+				item: "rftoolscontrol:tank"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -7.0d
+			subtitle: "Like an elephant"
+			description: ["Expand ram capacity up to eight extra variables. (Max 32)"]
+			dependencies: ["78D987D226E62B31"]
+			id: "5D682273E3DD8C77"
+			tasks: [{
+				id: "770066E5BAFF3C72"
+				type: "item"
+				item: "rftoolscontrol:ram_chip"
+			}]
+		}
+		{
+			title: "Utility"
+			x: -9.0d
+			y: -4.5d
+			subtitle: "More \"magic\" tech"
+			description: ["The challenge is to use blocks like the ones this mod adds as little as possible."]
+			dependencies: ["041E19F64FD9031B"]
+			hide: true
+			size: 1.25d
+			id: "786A42D350A1C7F2"
+			tasks: [{
+				id: "49F1944264B58912"
+				type: "item"
+				item: "rftoolsbase:smartwrench"
+			}]
+		}
+		{
+			title: "Crafter"
+			x: -10.5d
+			y: -5.5d
+			subtitle: "Robots are taking all our jobs"
+			description: [
+				"These blocks let you automate basically every recipe that uses a vanilla crafting table."
+				""
+				"Tier 1 can handle two recipes at once and can use the results from crafting operations."
+			]
+			dependencies: ["786A42D350A1C7F2"]
+			id: "0C378B701AD70FCA"
+			tasks: [{
+				id: "2089DDCAE2C31409"
+				type: "item"
+				item: "rftoolsutility:crafter1"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -5.5d
+			description: ["Tier 2 can handle four recipes at once and can use the results from crafting operations."]
+			dependencies: ["0C378B701AD70FCA"]
+			id: "3AEE7FC30A5164AF"
+			tasks: [{
+				id: "5B1B0CE6B9C4A456"
+				type: "item"
+				item: "rftoolsutility:crafter2"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -5.5d
+			description: ["Tier 3 can handle eight recipes at once and can use the results from crafting operations."]
+			dependencies: ["3AEE7FC30A5164AF"]
+			id: "53FE4D904CF16F16"
+			tasks: [{
+				id: "40234A9285CDF45C"
+				type: "item"
+				item: "rftoolsutility:crafter3"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -7.0d
+			description: ["The analog can do simple 'calculations' on an input redstone signal based on two side inputs."]
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "7EB5925827E5849D"
+			tasks: [{
+				id: "4D45B3B126F1E612"
+				type: "item"
+				item: "rftoolsutility:analog"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -7.0d
+			description: ["The counter can count redstone pulses up to a specified maximum. When the maximum is reached it sends out a redstone pulse of its own."]
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "5DECA75E728468BE"
+			tasks: [{
+				id: "2A8DD7E7FA4F8FC6"
+				type: "item"
+				item: "rftoolsutility:counter"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -8.0d
+			description: ["This block shows the strenght of a redstone signal."]
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "01DB2EF321C84B02"
+			tasks: [{
+				id: "11819A2CCE61F6D0"
+				type: "item"
+				item: "rftoolsutility:digit"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -9.0d
+			description: ["The Inventory Checker can check for the presence of items in an inventory and send out a redstone signal."]
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "5C3683879A263778"
+			tasks: [{
+				id: "4DC1149BE8456551"
+				type: "item"
+				item: "rftoolsutility:invchecker"
+			}]
+		}
+		{
+			x: -14.5d
+			y: -8.0d
+			description: ["Can detect various things like mobs, players, blocks, fluids and crop growth and sends out a redstone signal under various conditions."]
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "6E58B3793D4BD277"
+			tasks: [{
+				id: "2E9F209F378D2F6B"
+				type: "item"
+				item: "rftoolsutility:sensor"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -10.0d
+			description: ["Can send out a series of redstone signals given certain input signals. The sequences can optionally be repeated."]
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "1DF6FEF6685CFD3E"
+			tasks: [{
+				id: "748F15782E94D391"
+				type: "item"
+				item: "rftoolsutility:sequencer"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -9.0d
+			description: ["This block can combine three input signals into one output signal given a truth table."]
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "6ABE7C4BE287997E"
+			tasks: [{
+				id: "5A8C204DB63684E6"
+				type: "item"
+				item: "rftoolsutility:logic"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -9.5d
+			description: ["Sends out timed redstone pulses."]
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "5E4437AACC5D7CF8"
+			tasks: [{
+				id: "77CFD004F3E5D55E"
+				type: "item"
+				item: "rftoolsutility:timer"
+			}]
+		}
+		{
+			x: -14.0d
+			y: -10.5d
+			description: ["A very simple lag free redstone wire. Can only do straight lines."]
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "3F2FB14395411836"
+			tasks: [{
+				id: "7F9B321F122531F5"
+				type: "item"
+				item: "rftoolsutility:wire"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -11.5d
+			description: ["Receives a redstone signal wirelessly from anywhere in the world. Can receive a signal from a Redstone Transmitter or Button Module for a Screen."]
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "49B42BB85E12340A"
+			tasks: [{
+				id: "6B72A49BE4D2A959"
+				type: "item"
+				item: "rftoolsutility:redstone_receiver"
+			}]
+		}
+		{
+			x: -16.0d
+			y: -10.5d
+			description: ["Accepts redstone signals and sends them out wirelessly to linked receivers. Place one to create a channel or right click an existing receiver/transmitter to use that channel."]
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "4554A8968A339485"
+			tasks: [{
+				id: "5F9C92B1AE0A1057"
+				type: "item"
+				item: "rftoolsutility:redstone_transmitter"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -10.0d
+			hide_dependency_lines: true
+			dependencies: ["786A42D350A1C7F2"]
+			id: "5F5704777CA34C88"
+			tasks: [{
+				id: "253C398B07AD5562"
+				type: "item"
+				item: {
+					id: "rftoolsutility:redstone_information"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -10.0d
+			y: -11.5d
+			subtitle: "Tablet containing redstone info"
+			dependencies: ["5F5704777CA34C88"]
+			id: "4D6354757227A273"
+			tasks: [{
+				id: "058FA21990C811A9"
+				type: "item"
+				item: "rftoolsutility:tablet_redstone"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 0.0d
+			subtitle: "The base block for automation in XNet"
+			description: ["The Controller is the most important block of this mod. IN this machine you control/edit the different channels and define how items, liquids, or power move through those channels."]
+			hide_dependency_lines: false
+			dependencies: ["06F783D705B23C3F"]
+			hide: true
+			id: "4CAB45AE0AFEEBB4"
+			tasks: [{
+				id: "5DC61D8F81F5F263"
+				type: "item"
+				item: "xnet:controller"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 0.0d
+			subtitle: "Caution, mimic"
+			description: ["These mimic other blocks and cover XNet cables. Right or sneak right click on a block to mimic. Right or sneak right click on a cable/connector to hide."]
+			hide_dependency_lines: true
+			dependencies: ["06F783D705B23C3F"]
+			hide: true
+			id: "679D06AB26EEF814"
+			tasks: [{
+				id: "3FBB090E93F9C8A9"
+				type: "item"
+				item: "xnet:facade"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 0.0d
+			subtitle: "With this block you can connect multiple channels (Controllers)"
+			description: ["The router allows connection of multiple networks. This needs routing cables."]
+			hide_dependency_lines: true
+			dependencies: ["06F783D705B23C3F"]
+			hide: true
+			id: "767DF4CB9D2FFA1B"
+			tasks: [{
+				id: "3C094399EC9DA3D9"
+				type: "item"
+				item: "xnet:router"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 1.5d
+			subtitle: "Connects multiple channels remotely"
+			description: ["Connect this block to a router with a router cable. Needs an antenna placed on top."]
+			dependencies: ["767DF4CB9D2FFA1B"]
+			id: "15A7DA530FBE5D96"
+			tasks: [{
+				id: "26BD7470DFB1354E"
+				type: "item"
+				item: "xnet:wireless_router"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 1.5d
+			subtitle: "Part of the Antenna"
+			description: ["Needs to be placed on top of the Wireless Router first."]
+			dependencies: ["15A7DA530FBE5D96"]
+			id: "7BB9741C342ED34E"
+			tasks: [{
+				id: "5EFC8E90ECE65336"
+				type: "item"
+				item: "xnet:antenna_base"
+			}]
+		}
+		{
+			x: -15.0d
+			y: 1.5d
+			subtitle: "Rabbit ears"
+			description: [
+				"Place one or two of these on top of an Antenna Base. "
+				""
+				"One: range 100 (20 RF/t/channel) "
+				"Two: range 500 (50 RF/t/channel)"
+			]
+			dependencies: ["7BB9741C342ED34E"]
+			id: "12A291CA50707CE4"
+			tasks: [{
+				id: "4AC162D14B4764F7"
+				type: "item"
+				item: "xnet:antenna"
+			}]
+		}
+		{
+			x: -15.0d
+			y: 3.0d
+			subtitle: "Antenna replacement"
+			description: [
+				"Needs to be placed on top of an Antenna Base. This is an upgrade to the standard Antenna and allows a very extreme wireless range. "
+				""
+				"(200 RF/t/channel) "
+			]
+			dependencies: ["12A291CA50707CE4"]
+			id: "5CFAD498C2BB9C73"
+			tasks: [{
+				id: "07BEE3B77FAF3BCA"
+				type: "item"
+				item: "xnet:antenna_dish"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 0.0d
+			subtitle: "This version does no block update"
+			description: ["Acts as a proxy block for redstone, XNet can connect to this."]
+			hide_dependency_lines: true
+			dependencies: ["06F783D705B23C3F"]
+			hide: true
+			id: "35E4D297FC1BF0D4"
+			tasks: [{
+				id: "15DB33C6B9230502"
+				type: "item"
+				item: "xnet:redstone_proxy"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -1.5d
+			subtitle: "Does a block update"
+			description: ["Acts as a proxy block for redstone, XNet can connect to this."]
+			dependencies: ["35E4D297FC1BF0D4"]
+			id: "4C5697DDD24AC633"
+			tasks: [{
+				id: "62098F54EF66D120"
+				type: "item"
+				item: "xnet:redstone_proxy_upd"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -3.0d
+			subtitle: "Getting another upgrade"
+			description: [
+				"Using advanced connectors you can overcome some limitations normal connectors have, and access the down side of a furnace from any other side. Advanced connectors have other advantages. They allow higher speeds for item and fluid transfer and can store more RF."
+				""
+				"Sneak right click this on a normal connector to upgrade it to an advanced connector."
+			]
+			hide_dependency_lines: true
+			dependencies: ["06F783D705B23C3F"]
+			hide: true
+			id: "58C050BC7DFFB5DF"
+			tasks: [{
+				id: "673294119160F324"
+				type: "item"
+				item: "xnet:connector_upgrade"
+			}]
+		}
+		{
+			x: -15.0d
+			y: 0.0d
+			subtitle: "Linking connectors"
+			description: ["These are placed to link connectors to your networks. For the red network."]
+			hide_dependency_lines: true
+			dependencies: ["06F783D705B23C3F"]
+			hide: true
+			id: "099675F0B9779E48"
+			tasks: [{
+				id: "4C671234B82F7482"
+				type: "item"
+				item: "xnet:netcable_red"
+			}]
+		}
+		{
+			x: -18.0d
+			y: 0.0d
+			subtitle: "Linking connectors"
+			description: ["These are placed to link connectors to your networks. For the green network."]
+			hide_dependency_lines: true
+			dependencies: ["06F783D705B23C3F"]
+			hide: true
+			id: "2BCC300489890019"
+			tasks: [{
+				id: "4B7681ED373D8C1C"
+				type: "item"
+				item: "xnet:netcable_green"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 0.0d
+			subtitle: "Linking connectors"
+			description: ["These are placed to link connectors to your networks. For the blue network."]
+			hide_dependency_lines: true
+			dependencies: ["06F783D705B23C3F"]
+			hide: true
+			id: "22658587655131C5"
+			tasks: [{
+				id: "28E374B1DCF90983"
+				type: "item"
+				item: "xnet:netcable_blue"
+			}]
+		}
+		{
+			x: -19.5d
+			y: 0.0d
+			subtitle: "Linking connectors"
+			description: ["These are placed to link connectors to your networks. For the yellow network."]
+			hide_dependency_lines: true
+			dependencies: ["06F783D705B23C3F"]
+			hide: true
+			id: "3268012E4472D407"
+			tasks: [{
+				id: "378D35ADE64446E3"
+				type: "item"
+				item: "xnet:netcable_yellow"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -1.5d
+			subtitle: "Connecting machines and things"
+			description: ["Place these on inventories, machines, etc. to make them available on the network. For the red network."]
+			dependencies: ["099675F0B9779E48"]
+			id: "5192A32653B8FB99"
+			tasks: [{
+				id: "201E82BC5A7704C6"
+				type: "item"
+				item: "xnet:connector_red"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -3.0d
+			subtitle: "Connecting machines and things"
+			description: [
+				"Using advanced connectors you can overcome some limitations normal connectors have, and access the down side of a furnace from any other side. Advanced connectors have other advantages. They allow higher speeds for item and fluid transfer and can store more RF."
+				""
+				"Place these on inventories, machines, etc. to make them available on the network. For the red network."
+			]
+			dependencies: ["5192A32653B8FB99"]
+			id: "01B9A3ED5EB6D617"
+			tasks: [{
+				id: "7265B007AAA34780"
+				type: "item"
+				item: "xnet:advanced_connector_red"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -1.5d
+			subtitle: "Connecting machines and things"
+			description: ["Place these on inventories, machines, etc. to make them available on the network. For the blue network."]
+			dependencies: ["22658587655131C5"]
+			id: "23B34BAA7DD062F4"
+			tasks: [{
+				id: "71CC642BEA4A9C69"
+				type: "item"
+				item: "xnet:connector_blue"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -3.0d
+			subtitle: "Connecting machines and things"
+			description: [
+				"Using advanced connectors you can overcome some limitations normal connectors have, and access the down side of a furnace from any other side. Advanced connectors have other advantages. They allow higher speeds for item and fluid transfer and can store more RF."
+				""
+				"Place these on inventories, machines, etc. to make them available on the network. For the blue network."
+			]
+			dependencies: ["23B34BAA7DD062F4"]
+			id: "31CB238D8C4C2AF2"
+			tasks: [{
+				id: "186A239F12AAE425"
+				type: "item"
+				item: "xnet:advanced_connector_blue"
+			}]
+		}
+		{
+			x: -18.0d
+			y: -1.5d
+			subtitle: "Connecting machines and things"
+			description: ["Place these on inventories, machines, etc. to make them available on the network. For the green network."]
+			dependencies: ["2BCC300489890019"]
+			id: "1E1398AD77997602"
+			tasks: [{
+				id: "69FD107AB908B80A"
+				type: "item"
+				item: "xnet:connector_green"
+			}]
+		}
+		{
+			x: -18.0d
+			y: -3.0d
+			subtitle: "Connecting machines and things"
+			description: [
+				"Using advanced connectors you can overcome some limitations normal connectors have, and access the down side of a furnace from any other side. Advanced connectors have other advantages. They allow higher speeds for item and fluid transfer and can store more RF."
+				""
+				"Place these on inventories, machines, etc. to make them available on the network. For the green network."
+			]
+			dependencies: ["1E1398AD77997602"]
+			id: "5D4C10568B5DC6A3"
+			tasks: [{
+				id: "4F5BF0D584FD7CB7"
+				type: "item"
+				item: "xnet:advanced_connector_green"
+			}]
+		}
+		{
+			x: -19.5d
+			y: -1.5d
+			subtitle: "Connecting machines and things"
+			description: ["Place these on inventories, machines, etc. to make them available on the network. For the yellow network."]
+			dependencies: ["3268012E4472D407"]
+			id: "5C044F349B446442"
+			tasks: [{
+				id: "2060EE3B8B0C2C49"
+				type: "item"
+				item: "xnet:connector_yellow"
+			}]
+		}
+		{
+			x: -19.5d
+			y: -3.0d
+			subtitle: "Connecting machines and things"
+			description: [
+				"Using advanced connectors you can overcome some limitations normal connectors have, and access the down side of a furnace from any other side. Advanced connectors have other advantages. They allow higher speeds for item and fluid transfer and can store more RF."
+				""
+				"Place these on inventories, machines, etc. to make them available on the network. For the yellow network."
+			]
+			dependencies: ["5C044F349B446442"]
+			id: "7691F71767507E68"
+			tasks: [{
+				id: "188501F6BCB1D23C"
+				type: "item"
+				item: "xnet:advanced_connector_yellow"
+			}]
+		}
+		{
+			title: "Industrial Foregoing"
+			x: 4.0d
+			y: -3.0d
+			subtitle: "Read the heckin manual"
+			description: ["No but really, the Industrail Foregoing in-game manual is pretty well written and gives a great overview of all the machines and things it adds. Also see Misc Mods chapter for further information."]
+			dependencies: ["5183C05BE6F56C0D"]
+			size: 2.0d
+			id: "44F92AE48CD0FD90"
+			tasks: [{
+				id: "6A38A04EE2FA1F5C"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "industrialforegoing:industrial_foregoing"
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -12.0d
+			hide_dependency_lines: true
+			dependencies: ["440CD2F6B273317E"]
+			id: "13DBDB92512E411B"
+			tasks: [{
+				id: "69337E9AE690B2E5"
+				type: "item"
+				item: {
+					id: "laserio:filter_basic"
+					Count: 1b
+					tag: {
+						inv: {
+							Size: 15
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -12.5d
+			hide_dependency_lines: true
+			dependencies: ["440CD2F6B273317E"]
+			id: "551AE15103A8D8B0"
+			tasks: [{
+				id: "1C5573DE574EF3D3"
+				type: "item"
+				item: {
+					id: "laserio:filter_count"
+					Count: 1b
+					tag: {
+						inv: {
+							Size: 15
+							Items: [ ]
+						}
+						counts: [
+							{
+								MBAmount: 0
+								Slot: 0
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 1
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 2
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 3
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 4
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 5
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 6
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 7
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 8
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 9
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 10
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 11
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 12
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 13
+								Count: 0
+							}
+							{
+								MBAmount: 0
+								Slot: 14
+								Count: 0
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -13.0d
+			hide_dependency_lines: true
+			dependencies: ["440CD2F6B273317E"]
+			id: "5920D0CA61937748"
+			tasks: [{
+				id: "0770E0A9F5091271"
+				type: "item"
+				item: {
+					id: "laserio:filter_tag"
+					Count: 1b
+					tag: {
+						tags: [ ]
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -13.5d
+			hide_dependency_lines: true
+			dependencies: ["440CD2F6B273317E"]
+			id: "6D73158504C19F70"
+			tasks: [{
+				id: "38286B43A46CA0F6"
+				type: "item"
+				item: {
+					id: "laserio:filter_mod"
+					Count: 1b
+					tag: {
+						inv: {
+							Size: 15
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Success!"
+			x: -6.0d
+			y: 10.5d
+			dependencies: ["716924F76BC59E03"]
+			invisible: true
+			id: "7C6DB6AEAB89E634"
+			tasks: [{
+				id: "452E12CF70D2DE6F"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Success!"
+			x: -7.0d
+			y: 12.5d
+			dependencies: ["0839330A45A3596B"]
+			hide: false
+			invisible: true
+			id: "319EB5258D5DA40B"
+			tasks: [{
+				id: "6E97222792D32D3F"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Success!"
+			x: -7.0d
+			y: 14.5d
+			dependencies: ["738A3DA49AC8BA2B"]
+			hide: false
+			invisible: true
+			id: "463D998AC175A59C"
+			tasks: [{
+				id: "63802B11A053ABE5"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Success!"
+			x: -11.0d
+			y: 16.5d
+			dependencies: ["0578A8766129483C"]
+			hide: false
+			invisible: true
+			id: "0292DB39F497C940"
+			tasks: [{
+				id: "2A36892BC8B7A902"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Success!"
+			x: -6.0d
+			y: 18.5d
+			dependencies: ["6CFD9BA233F778EE"]
+			invisible: true
+			id: "3F882CE1BE87BA60"
+			tasks: [{
+				id: "4C452A813353FE3C"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Immersive Engineering"
+			x: -4.0d
+			y: 3.0d
+			subtitle: "This manual is also necessary kit"
+			description: [
+				"The automation aspects of this mod will be covered further in the \"Immersive Engineering\" chapter of the \"Misc Mods\" section."
+				""
+				"The manual is also a great source of in-game information."
+			]
+			dependencies: ["5183C05BE6F56C0D"]
+			size: 2.0d
+			id: "03ADAF046D8E61D7"
+			tasks: [{
+				id: "29A93058FFCA1705"
+				type: "item"
+				item: "immersiveengineering:manual"
 			}]
 		}
 	]

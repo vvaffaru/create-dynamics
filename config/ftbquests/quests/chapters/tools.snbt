@@ -13,6 +13,7 @@
 			subtitle: "Triple threat"
 			description: ["Combining an axe, pickaxe and shovel into a crafting grid with two sticks gives you a paxel. If you want a single tool that does (most) it all, this one is for you."]
 			dependencies: ["3C62F472F5D758B0"]
+			hide: true
 			dependency_requirement: "one_completed"
 			size: 1.5d
 			id: "4E4130C2DE46162A"
@@ -387,6 +388,7 @@
 			subtitle: "Can you dig it?"
 			description: ["Affects a 3x3 area of things you can dig."]
 			dependencies: ["3C62F472F5D758B0"]
+			hide: true
 			dependency_requirement: "one_completed"
 			size: 2.0d
 			id: "4151FEE38C87037E"
@@ -532,6 +534,7 @@
 			subtitle: "Smashing!"
 			description: ["Mines a 3x3 area."]
 			dependencies: ["3C62F472F5D758B0"]
+			hide: true
 			dependency_requirement: "one_completed"
 			size: 2.0d
 			id: "1550047FC8B2B9FF"
@@ -672,13 +675,16 @@
 		}
 		{
 			title: "Visit The Nether"
+			disable_toast: true
 			x: -3.0d
 			y: 5.375d
 			subtitle: "I know it's hell but it's worth it"
 			description: ["There's some stuff you need in The Nether, so you might as well get a portal opened."]
 			dependencies: ["3C62F472F5D758B0"]
-			hide: false
-			size: 0.5d
+			hide: true
+			size: 0.75d
+			invisible: true
+			secret: true
 			id: "11A5F13C90826AA4"
 			tasks: [{
 				id: "1D7CB03E2AB4AE77"
