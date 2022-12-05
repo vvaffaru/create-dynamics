@@ -2,7 +2,7 @@ backups/*
 crash-reports/*
 downloads/*
 journeymap/data/*
-/journeymap/journeymap.log
+journeymap/journeymap.log
 local/*
 logs/*
 mods/*
