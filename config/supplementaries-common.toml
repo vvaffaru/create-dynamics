@@ -215,6 +215,8 @@
 		#Time to increase 1 power level when being looked at
 		#Range: 0 ~ 10000
 		ticks_to_increase_power = 15
+		#do enderman heads work when looked from any side?
+		work_from_any_side = false
 
 #Configure spawning conditions
 [spawns]

@@ -11,8 +11,8 @@
 		{
 			title: "Everything Including The Kitchen Sink"
 			icon: "cookingforblockheads:sink"
-			x: 2.0d
-			y: 3.0d
+			x: 0.6071428571428683d
+			y: 3.7142857142857153d
 			dependencies: ["6B959CC0C54B4BFE"]
 			hide: true
 			size: 2.0d
@@ -49,7 +49,7 @@
 		{
 			title: "Cooking for Blockheads"
 			icon: "cookingforblockheads:cooking_table"
-			x: -4.0d
+			x: -5.5d
 			y: 3.0d
 			subtitle: "Gordon Ramsay would be proud"
 			description: ["This mod allows you to make some pretty cool kitchens, while also adding to the immersive experience and making things a little more flavorful."]
@@ -64,11 +64,10 @@
 		{
 			title: "Dank Storage"
 			icon: "dankstorage:dank_7"
-			x: -5.5d
+			x: -7.0d
 			y: 3.0d
-			subtitle: "It's back baby!"
 			description: [
-				"This mod or one like it has been missing from a number of packs I've played recently so I decided to fix that."
+				"Haven't seen this mod, or one like it, around for a while."
 				""
 				"For those not familiar with the mod/concept. It's a container with two modes, bag and construct. Holding the bag and right clicking while in bag mode lets you configure what items the dank collects. Right clicking while in construct mode uses the blocks you collect and places them into the world. Holding sneak + mouse-wheel to cycles through which block type is to be placed."
 				""
@@ -85,7 +84,7 @@
 		{
 			title: "Ender Crop"
 			icon: "endercrop:ender_seeds"
-			x: -7.0d
+			x: -8.5d
 			y: 3.0d
 			subtitle: "Non-violent ender pearl source"
 			description: [
@@ -108,8 +107,8 @@
 				Count: 1b
 				tag: { }
 			}
-			x: -11.5d
-			y: 3.0d
+			x: -2.5d
+			y: 4.5d
 			subtitle: "Looking for a specific biome?"
 			description: [
 				"Using this mod is one of the most helpful exploration tools for trying to find biomes."
@@ -129,7 +128,7 @@
 		{
 			title: "Engineer's Decor"
 			icon: "engineersdecor:sign_decor"
-			x: -8.5d
+			x: -10.0d
 			y: 3.0d
 			subtitle: "Industrial age decorum"
 			description: [
@@ -152,7 +151,7 @@
 				Count: 1b
 				tag: { }
 			}
-			x: -10.0d
+			x: -11.5d
 			y: 3.0d
 			subtitle: "Sometimes those who wander are actually lost"
 			description: [
@@ -171,8 +170,8 @@
 		{
 			title: "Farmer's Delight"
 			icon: "farmersdelight:roast_chicken_block"
-			x: -13.0d
-			y: 3.0d
+			x: -4.0d
+			y: 4.5d
 			subtitle: "\"Gently\" expanding on cooking and farming"
 			description: [
 				"Using a simple cooking system and a few familiar ingredients, you'll be able to prepare a wide variety of hearty meals: from sandwiches to salads and stews, from beautiful desserts to mouth-watering feasts, no ingredient will be left behind in your kitchen!"
@@ -192,8 +191,8 @@
 		{
 			title: "GoProne"
 			icon: "minecraft:oak_trapdoor"
-			x: -14.5d
-			y: 3.0d
+			x: -5.5d
+			y: 4.5d
 			subtitle: "Snake? SNAKE?! SNAKE!!!"
 			description: [
 				"Do you need to lay down and go prone?"
@@ -211,8 +210,8 @@
 		{
 			title: "GraveStone Mod"
 			icon: "graveyard:cobblestone_gravestone"
-			x: -16.0d
-			y: 3.0d
+			x: -8.5d
+			y: 4.5d
 			subtitle: "Don't lose your sh-tuff"
 			description: [
 				"By now this is a pretty common feature in a modpack. This one doesn't sport any fancy features or make a bunch of changes to gameplay."
@@ -232,7 +231,7 @@
 		{
 			title: "Iron Furnaces"
 			icon: "ironfurnaces:iron_furnace"
-			x: -2.5d
+			x: -7.0d
 			y: 4.5d
 			subtitle: "Inspired by cpw's"
 			description: [
@@ -253,7 +252,7 @@
 		{
 			title: "Mob Catcher"
 			icon: "mob_catcher:diamond_mob_catcher"
-			x: -4.0d
+			x: -10.0d
 			y: 4.5d
 			subtitle: "Catch and release"
 			description: [
@@ -275,7 +274,7 @@
 		{
 			title: "Mob Grinding Utils"
 			icon: "mob_grinding_utils:saw"
-			x: -5.5d
+			x: -11.5d
 			y: 4.5d
 			subtitle: "This is perfectly normal right?"
 			description: [
@@ -294,7 +293,7 @@
 		{
 			title: "OpenBlocks Elevator"
 			icon: "elevatorid:elevator_light_blue"
-			x: -7.0d
+			x: -13.0d
 			y: 4.5d
 			subtitle: "Traverse the vertical and the horizontal"
 			description: [
@@ -315,7 +314,7 @@
 		{
 			title: "Paragliders"
 			icon: "paraglider:deku_leaf"
-			x: -8.5d
+			x: -14.5d
 			y: 4.5d
 			subtitle: "BotW spice in your Minecraft life"
 			description: [
@@ -344,7 +343,7 @@
 					Damage: 0
 				}
 			}
-			x: -10.0d
+			x: -16.0d
 			y: 4.5d
 			subtitle: "-------FPO-------- figure out how to use ppc"
 			description: ["-------FORPLACEMENTONLY-------- figure out how to use ppc"]
@@ -359,7 +358,7 @@
 		{
 			title: "Portable Tables"
 			icon: "portable_tables:portable_crafting_table"
-			x: -11.5d
+			x: -17.5d
 			y: 4.5d
 			subtitle: "Saving you time in the long run"
 			description: [
@@ -378,7 +377,7 @@
 		{
 			title: "Re-Chiseled"
 			icon: "rechiseled:chisel"
-			x: -13.0d
+			x: -19.0d
 			y: 4.5d
 			subtitle: "But there's a vanilla stone cutter now... Yea yea yea..."
 			description: [
@@ -403,7 +402,7 @@
 				Count: 1b
 				tag: { }
 			}
-			x: -14.5d
+			x: -20.5d
 			y: 4.5d
 			subtitle: "A simple tiered backpack mod, for your item storage needs"
 			description: [
@@ -424,7 +423,7 @@
 		{
 			title: "Simply Light"
 			icon: "simplylight:illuminant_slab"
-			x: -16.0d
+			x: -22.0d
 			y: 4.5d
 			subtitle: "A lighting mod with a simplistic design"
 			description: [
@@ -532,8 +531,8 @@
 		{
 			title: "Small"
 			icon: "compactmachines:machine_small"
-			x: -2.5d
-			y: 0.0d
+			x: -4.0d
+			y: 1.5d
 			subtitle: "Slightly bigger"
 			description: [
 				"The use case for a CM of this size is somewhat limited, but if it's all you have resources for, take advantage of as much size as you can. "
@@ -550,8 +549,8 @@
 		{
 			title: "Normal"
 			icon: "compactmachines:machine_normal"
-			x: -2.5d
-			y: -1.5d
+			x: -5.5d
+			y: 1.5d
 			subtitle: "Your average machine size"
 			description: [
 				"This machine will allow for more spacial utilization."
@@ -568,8 +567,8 @@
 		{
 			title: "Large"
 			icon: "compactmachines:machine_large"
-			x: -2.5d
-			y: -3.0d
+			x: -7.0d
+			y: 1.5d
 			subtitle: "Bigger than average"
 			description: [
 				"It's larger than normal, smaller than giant. "
@@ -586,8 +585,8 @@
 		{
 			title: "Giant"
 			icon: "compactmachines:machine_giant"
-			x: -2.5d
-			y: -4.5d
+			x: -8.5d
+			y: 1.5d
 			subtitle: "Nearly the biggest"
 			description: [
 				"If you are looking for a larger space than just large, giant is for you."
@@ -604,8 +603,8 @@
 		{
 			title: "M A X I M U M"
 			icon: "compactmachines:machine_maximum"
-			x: -2.5d
-			y: -6.0d
+			x: -10.0d
+			y: 1.5d
 			subtitle: "The largest"
 			description: [
 				"For those machines that need all the space you can muster. "
@@ -621,7 +620,7 @@
 		}
 		{
 			title: "Tunnels"
-			x: -1.0d
+			x: -4.0d
 			y: 3.0d
 			subtitle: "Some sort of quantum magic"
 			description: [

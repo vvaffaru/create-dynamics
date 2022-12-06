@@ -58,7 +58,7 @@
 		{
 			title: "Awesome Dungeon"
 			icon: "quark:gold_bars"
-			x: -4.0d
+			x: -5.5d
 			y: 0.0d
 			subtitle: "Bodacious"
 			description: ["This mod adds structures/dungeons to your world. Dungeons have mobspawner and chests with loot. See CurseForge mod page for more information."]
@@ -73,7 +73,7 @@
 		{
 			title: "Better Villages"
 			icon: "minecraft:bell"
-			x: -5.5d
+			x: -7.0d
 			y: 0.0d
 			subtitle: "The HoA approved a bunch of new projects"
 			description: ["See CurseForge mod page for more information."]
@@ -88,7 +88,7 @@
 		{
 			title: "Biomes O' Plenty"
 			icon: "biomesoplenty:willow_sapling"
-			x: -7.0d
+			x: -8.5d
 			y: 0.0d
 			subtitle: "How many biomes you got? A lot."
 			description: ["Biomes O' Plenty is an expansive biome mod for Minecraft that adds a slew of new, unique biomes to the Overworld and Nether!  To go along with the new biomes, it adds new plants, flowers, trees, building blocks, and much more!"]
@@ -109,7 +109,7 @@
 					"patchouli:book": "dimdungeons:guide_book"
 				}
 			}
-			x: -8.5d
+			x: -10.0d
 			y: 0.0d
 			subtitle: "Extradimensional dungeon diver"
 			description: ["Dimensional Dungeons adds limitless procedurally generated dungeons to Minecraft! These dungeons are all placed in a single, separate dimension which can be accessed from a portal anywhere on the Overworld. (Such as in your base!) This makes the dungeons themselves renewable and it provides challenging, replayable content. See the in-game manual and CurseForge mod page for more information."]
@@ -124,7 +124,7 @@
 		{
 			title: "Dungeons Enhanced"
 			icon: "apotheosis:superior_sigil_of_enhancement"
-			x: -10.0d
+			x: -11.5d
 			y: 0.0d
 			subtitle: "Enhance 48 left. Stop. Pan right. Stop. Enhance 54 and magnify 25 percent."
 			description: ["By now 26 new dungeons and structures are included in our mod. They all fit a medieval/fantasy theme and could fit along other fantasy or RPG-like Mods. Some of our structures also look like they could be an upgraded version of a vanilla structure or a variant to them. Get ready to find huge mazes under trees, castles, towers and forgotten temples. We hope you have fun! See CurseForge mod page for more information. "]
@@ -145,7 +145,7 @@
 					Damage: 0
 				}
 			}
-			x: -11.5d
+			x: -13.0d
 			y: 0.0d
 			subtitle: "Dungeon math"
 			description: ["Dungeons Plus adds 7 new dungeons to the game with maps to guide you on a journey between them."]
@@ -160,7 +160,7 @@
 		{
 			title: "Immersive structures"
 			icon: "minecraft:honeycomb"
-			x: -13.0d
+			x: -14.5d
 			y: 0.0d
 			subtitle: "More I M M E R S I O N"
 			description: ["This mod adds various new structures to Minecraft's overworld. The final goal is to add more structures that perfectly fit Minecraft worlds. This mod adds multiple buildings that suit the ambience and aesthetics of that biome. This pack will add around 30 unique structures to the game by completion. See CurseForge mod page for more information."]
@@ -175,7 +175,7 @@
 		{
 			title: "Integrated Dungeons and Structures"
 			icon: "mcwlights:purple_ceiling_light"
-			x: -14.5d
+			x: -16.0d
 			y: 0.0d
 			subtitle: "We're all about integration in this pack"
 			description: ["Integrated Dungeons and Structures (aka IDAS) is a mod that adds heavily detailed structures using blocks and mobs from Quark, Alex’s Mobs, and Create, with optional integrated with Biomes O' Plenty. I got sick of installing structure mods into a pack and roaming the world, only to find vanilla items and nothing of difficulty anywhere. I love detailed builds and Create machines, so I decided to make a mod that adds exactly what I’ve been missing. Beautiful and challenging dungeons and structures packed with lore that are fully integrated into multiple core forge mods. See CurseForge mod page for more information. (Note: Description written by mod dev, and that's who \"I\" is.)"]
@@ -235,7 +235,7 @@
 		{
 			title: "The Graveyard"
 			icon: "graveyard:gravestone"
-			x: -7.0d
+			x: -8.5d
 			y: 1.5d
 			subtitle: "Spookeh"
 			description: ["The Graveyard adds new spooky biomes, structures, mobs and blocks to make your minecraft adventure more thrilling and challenging. Every structure, mob and biome was built with a lot of attention to detail to create an immersive experience for you. See CurseForge mod page for more information. "]
@@ -250,7 +250,7 @@
 		{
 			title: "Waystones"
 			icon: "waystones:waystone"
-			x: -8.5d
+			x: -10.0d
 			y: 1.5d
 			subtitle: "Some of the only magic in the pack"
 			description: ["This mod adds waystone blocks that the player can return to once they've been activated, either through a Warp Scroll, a rechargeable Warp Stone, or by using an existing waystone to hop from one to the other. See CurseForge mod page for more information."]
@@ -265,7 +265,7 @@
 		{
 			title: "Ocean"
 			icon: "minecraft:prismarine_wall"
-			x: -4.0d
+			x: -5.5d
 			y: -1.5d
 			subtitle: "Tubular"
 			description: ["See CurseForge mod page for more information."]
@@ -279,7 +279,7 @@
 		{
 			title: "Nether"
 			icon: "mcwfences:nether_brick_railing_gate"
-			x: -4.0d
+			x: -5.5d
 			y: -3.0d
 			subtitle: "Fire"
 			description: ["See CurseForge mod page for more information."]
@@ -293,7 +293,7 @@
 		{
 			title: "End"
 			icon: "mcwfences:end_brick_railing_gate"
-			x: -4.0d
+			x: -5.5d
 			y: -4.5d
 			subtitle: "Xenogeon"
 			description: ["See CurseForge mod page for more information. "]
@@ -327,7 +327,7 @@
 		{
 			title: "Biomes"
 			icon: "graveyard:skull_on_pike"
-			x: -7.0d
+			x: -8.5d
 			y: 3.0d
 			subtitle: "Even spookehurr"
 			description: ["The Graveyard Biomes adds new spooky biomes to make your minecraft adventure more thrilling and challenging. Every biome was built with a lot of attention to detail to create an immersive experience for you. See CurseForge mod page for more information."]
@@ -341,7 +341,7 @@
 		{
 			title: "Waystone Towers"
 			icon: "waystones:sharestone"
-			x: -8.5d
+			x: -10.0d
 			y: 3.0d
 			subtitle: "Glider + toer = yep"
 			description: ["This mod adds adds tall towers into Minecraft, inspired by Towers Of The Wild, which was inspired by The Legend Of Zelda : Breath Of The Wild. If you are wondering where the mod logo was created, I used the help of NightCafe Creator's AI which you can use as well for free! See CurseForge mod page for more information. "]
@@ -350,6 +350,236 @@
 			tasks: [{
 				id: "6FC8521539556993"
 				type: "checkmark"
+			}]
+		}
+		{
+			title: "Apotheotic Exploration"
+			icon: "apotheosis:boss_summoner"
+			x: -4.0d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["6B3D8FE0D75F1783"]
+			id: "322DE0C0F274362F"
+			tasks: [{
+				id: "265DDF12A024A000"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Rogue Spawner"
+			x: -4.0d
+			y: -1.5d
+			description: [
+				"Found sparsely in caves are single spawners, topped in a tough block, and hiding a chest underneath."
+				""
+				"As they have no known origin, purpos, or owner, they are referred to as Rogue Spawners. They have two sub-types; brutal or swarm. "
+				""
+				"Information about them can be found in the in-game manual."
+			]
+			dependencies: ["322DE0C0F274362F"]
+			id: "18C32B3D39E44947"
+			tasks: [{
+				id: "411D765834830133"
+				type: "item"
+				item: "minecraft:spawner"
+			}]
+		}
+		{
+			title: "Invading Bosses"
+			x: -4.0d
+			y: -3.0d
+			description: ["These special mobs spawn rarely on the surface. You'll hear a thunder sound when one spawns. They get highlighted with a special glow around them so you can find them easy. Some are stronger than others, but all drop a special affix item after being defeated. "]
+			dependencies: ["322DE0C0F274362F"]
+			id: "466D52AEAB4FA3DC"
+			tasks: [{
+				id: "7E0605717CFAC615"
+				type: "item"
+				item: "minecraft:red_banner"
+			}]
+		}
+		{
+			title: "Boss Dungeons"
+			x: -4.0d
+			y: -4.5d
+			description: ["Found deep in ancient caverns. Can generate in a few different variations, each one containing a boss spawner and a few loot chests. The spawner will trigger upon getting close to it, unleashing the contained boss. "]
+			dependencies: ["322DE0C0F274362F"]
+			id: "1A7FBB255458154A"
+			tasks: [{
+				id: "1A0BC5ABC75C09E7"
+				type: "item"
+				item: "minecraft:mossy_stone_bricks"
+			}]
+		}
+		{
+			title: "Affix Loot"
+			x: -4.0d
+			y: -6.0d
+			description: [
+				"Can be found while exploring or dropped from defeating bosses. Affix items are relics of the past with varying degrees of power."
+				""
+				"See the in-game manual for a complete list."
+			]
+			dependencies: ["322DE0C0F274362F"]
+			id: "50D1F954C5D0051D"
+			tasks: [{
+				id: "426CCBEC0B4E1CFD"
+				type: "item"
+				item: {
+					id: "minecraft:diamond_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "YUNG's Bridges"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "createdynamics:textures/yungsbridges.png"
+				}
+			}
+			x: -11.5d
+			y: 1.5d
+			subtitle: "https://youtu.be/4aMS_7aq3ws"
+			description: ["YUNG's Bridges is the 'self-proclaimed' first Minecraft mod to ever add naturally generated bridges to the game. Explore the world and discover over 15 different types of bridges, each with biome-specific variants!"]
+			hide_dependency_lines: true
+			dependencies: ["6B3D8FE0D75F1783"]
+			id: "7ED74BA4CDAD8DB6"
+			tasks: [{
+				id: "67C5621410E00F17"
+				type: "checkmark"
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "createdynamics:textures/yungsextras.png"
+				}
+			}
+			x: -13.0d
+			y: 1.5d
+			subtitle: "A myriad of structures, features, and vanilla+ content"
+			description: ["This mod is a collection of upgrades to vanilla Minecraft that are each individually too small for their own mods, but together create a nice finishing touch for your modpack. It's the cherry on top for any modpack."]
+			hide_dependency_lines: true
+			dependencies: ["6B3D8FE0D75F1783"]
+			id: "331ECED82A712052"
+			tasks: [{
+				id: "67E316E005889BB5"
+				type: "checkmark"
+				title: "YUNG's Extras"
+			}]
+		}
+		{
+			title: "Supplementaries"
+			icon: "supplementaries:globe_sepia"
+			x: -7.0d
+			y: 1.5d
+			subtitle: "World and Entities Additions"
+			description: ["This mod adds a few things to keep a look out for when exploring."]
+			hide_dependency_lines: true
+			dependencies: ["6B3D8FE0D75F1783"]
+			id: "08770FD727003E2F"
+			tasks: [{
+				id: "019E8B2A900831CE"
+				type: "checkmark"
+			}]
+		}
+		{
+			icon: "supplementaries:sign_post_oak"
+			x: -7.0d
+			y: 3.0d
+			description: [
+				"A new structure that will randomly spawn in the overworld."
+				""
+				"Way signs can come with up to two sign posts, each of which will point to the nearest villages."
+				""
+				"Additionally they can also point to some other modded \"manmade\" structures."
+			]
+			dependencies: ["08770FD727003E2F"]
+			id: "4FDDF2508AC26377"
+			tasks: [{
+				id: "1FB56269622EBAE8"
+				type: "checkmark"
+				title: "Way Signs"
+			}]
+		}
+		{
+			icon: "graveyard:small_yellow_urn"
+			x: -7.0d
+			y: 4.5d
+			description: [
+				"Small patches of urns will now spawn when deep enough underground."
+				""
+				"When broken urns will drop an assortment of various loot, most commonly including ash and bones or a few ores but it can rarely include very good loot such as bombs, emeralds, or enchanted armor pieces."
+				""
+				"Loot quality is affected by fortune so be sure to smash them with your fortune pick!"
+			]
+			hide_dependency_lines: false
+			dependencies: ["08770FD727003E2F"]
+			id: "3ED2F41940611833"
+			tasks: [{
+				id: "274767CAD92D89C6"
+				type: "checkmark"
+				title: "Cave Urns"
+			}]
+		}
+		{
+			icon: "supplementaries:wild_flax"
+			x: -7.0d
+			y: 6.0d
+			description: ["Flax can rarely spawn in its wild form along bodies of water in desert and arid biomes."]
+			hide_dependency_lines: false
+			dependencies: ["08770FD727003E2F"]
+			id: "2038F0F94A904557"
+			tasks: [{
+				id: "3700305929529F66"
+				type: "checkmark"
+				title: "Wild Flax"
+			}]
+		}
+		{
+			icon: "supplementaries:jar"
+			x: -7.0d
+			y: 7.5d
+			description: [
+				"A new passive mob that spawns at night and does nothing except wandering around blinking whenever it pleases."
+				""
+				"Can spawn in plain, swampy and magic biomes. "
+				""
+				"If caught with jars will display a special animation inside them."
+			]
+			hide_dependency_lines: false
+			dependencies: ["08770FD727003E2F"]
+			id: "1B89DAA637A6B3D4"
+			tasks: [{
+				id: "1EA1BAFF228896D6"
+				type: "checkmark"
+				title: "Fireflies"
+			}]
+		}
+		{
+			icon: "minecraft:tnt"
+			x: -7.0d
+			y: 9.0d
+			description: [
+				"A rare Wandering trader-like merchant. "
+				""
+				"Its spawning frequency is low but increases with the passing of days (local difficulty), game difficulty and milestone achieved (killing the ender dragon). "
+				""
+				"It sells an assortment of explosive related items. "
+			]
+			dependencies: ["08770FD727003E2F"]
+			id: "01EBB2901C5D4518"
+			tasks: [{
+				id: "06FB4D619708990F"
+				type: "checkmark"
+				title: "Red Merchant"
 			}]
 		}
 	]

@@ -927,8 +927,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 4.5d
+			x: -3.5d
+			y: 6.0d
 			subtitle: "Hey you hooligan! Stop leaving graffiti everywhere!"
 			description: [
 				"Ever wander through a stronghold or dungeon only to hopelessly lose your way?"
@@ -954,13 +954,15 @@
 			}]
 		}
 		{
-			x: -15.5d
-			y: 4.5d
+			x: -6.0d
+			y: -0.5d
 			subtitle: "Know the Akashic Tome?"
 			description: [
-				"Well this is an open source rewrite of that mod for versions of Minecraft higher than 1.18.1"
+				"This is an open source rewrite of that mod for versions of Minecraft higher than 1.18.1"
 				""
-				"If you don't know what it does. You're able to consolodate all the mod manuals into one book using the tome."
+				"If you don't know what it does, you're able to consolodate all the mod manuals into one book using this tome."
+				""
+				"Place it with any other manual in a crafting grid to combine. Sneak left click with the tome in your hand to clear selected book and open selection GUI."
 			]
 			hide_dependency_lines: true
 			dependencies: ["28EEF15784F7C8CC"]
@@ -975,6 +977,27 @@
 						"eccentrictome:mods": { }
 					}
 				}
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "createdynamics:textures/personality.png"
+				}
+			}
+			x: -10.5d
+			y: 6.0d
+			subtitle: "Not just emotes, rich character"
+			description: ["Adds more livelihood to players by introducing some new actions and animations. These include keybinds for sitting and crawling, as well as an animation for climbing. "]
+			hide_dependency_lines: true
+			dependencies: ["28EEF15784F7C8CC"]
+			id: "24750665F09F46A6"
+			tasks: [{
+				id: "3A12416EC406C8BE"
+				type: "checkmark"
+				title: "Personality"
 			}]
 		}
 	]

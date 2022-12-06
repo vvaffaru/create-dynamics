@@ -1,5 +1,5 @@
 {
-	id: "369F514D849DC1B8"
+	id: "4AEB863B2BAD1EF7"
 	group: "29701DF1EC6EE2E7"
 	order_index: 2
 	filename: "apotheosis"
@@ -7,23 +7,26 @@
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [{
-		title: "Exaltation to divine"
+		title: "Apotheosis"
 		x: 0.0d
 		y: 0.0d
-		subtitle: "Voxel based divinization"
+		subtitle: "Featuring a range of changes"
 		description: [
-			"Apotheosis is a content mod that allows you to become stronger than ever before, while trying to stay true to vanilla mechanics at heart. Every feature is carefully put together to feel cohesive and complete."
+			"Apotheosis is a content mod that allows you to become stronger than ever before, while trying to stay true to vanilla mechanics at heart."
 			""
-			"For detailed information, refer to the in-game guidebook, the Chronicle of Shadows.  You can create one with a book and a gold ingot. Some modpacks may change or alter content, and content that is disabled will not be visible in the book.  Alongside JEI, every bit of information is available in-game."
+			"Every feature is carefully put together to feel cohesive and complete."
 			""
-			"Also see the CurseForge mod page for more information."
+			"It is divided into modules, each of which has a specific focus. Modules are independent, each can be disabled at will, though they often have interactions with the other modules. All modules are enabled by default."
+			""
+			"For detailed information, refer to the in-game guidebook, the Chronicle of Shadows. Alongside JEI, every bit of information is available in-game."
 		]
-		dependencies: ["6B959CC0C54B4BFE"]
+		hide_dependency_lines: true
+		dependencies: ["3C62F472F5D758B0"]
 		hide: true
 		size: 2.0d
-		id: "57AB7B4A2E04191C"
+		id: "609CA4CDC4F14738"
 		tasks: [{
-			id: "36799A4A4D06D825"
+			id: "55D3B12164934DA9"
 			type: "item"
 			item: {
 				id: "patchouli:guide_book"
@@ -32,7 +35,6 @@
 					"patchouli:book": "apotheosis:apoth_chronicle"
 				}
 			}
-			match_nbt: true
 		}]
 	}]
 }

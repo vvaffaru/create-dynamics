@@ -269,26 +269,6 @@
 			]
 		}
 		{
-			x: -10.0d
-			y: -7.0d
-			subtitle: "Disk management"
-			description: [
-				"This block allows you to remove items from disks and insert them into the system, or vice versa. "
-				""
-				"It's useful if you're wanting to pre-format disks to hold only certain items, and need to empty disks that are full of items so that they populate the formatted cells instead."
-				""
-				"Formatting is done in the cell workbench."
-			]
-			hide_dependency_lines: true
-			dependencies: ["5C4BF85BB5F69605"]
-			id: "2AFF209C1BDBE001"
-			tasks: [{
-				id: "52C1800B327563A5"
-				type: "item"
-				item: "ae2:io_port"
-			}]
-		}
-		{
 			x: -8.5d
 			y: -1.0d
 			subtitle: "Point to point"
@@ -416,55 +396,6 @@
 			tasks: [{
 				id: "59DDA93422159B26"
 				type: "checkmark"
-			}]
-		}
-		{
-			x: -8.5d
-			y: 2.0d
-			subtitle: "Lemme at my stuff"
-			description: ["An ME Chest gives you the simplest direct access to the contents of storage cells. The ME Chest has two UI's, one is used to place the storage cell inside the device from the sides or bottom, the other is accessed by using the top surface to access the contents. "]
-			dependencies: ["60491E49D98E695C"]
-			id: "142E7BF2A167A7B9"
-			tasks: [{
-				id: "6E18F19C2B395944"
-				type: "item"
-				item: "ae2:chest"
-			}]
-		}
-		{
-			x: -11.5d
-			y: 2.0d
-			subtitle: "Set it and forget it"
-			description: [
-				"The ME Storage Bus, when attached to another inventory block in the world lets you access that inventory via networked functions."
-				""
-				"This allows you to use chests, barrels, or other types of item storage in your networks, and makes them available for auto-crafting, etc."
-				""
-				"If you place a storage bus on an ME Interface the storage bus will be able to interact with the full conents of the target network, unless that interface is configured to store items inside itself, in which case it will see those stored items. "
-			]
-			dependencies: ["5BD0C7DCBF6C413E"]
-			id: "5791778BE71261B2"
-			tasks: [{
-				id: "29E77C4CE3531076"
-				type: "item"
-				item: "ae2:storage_bus"
-			}]
-		}
-		{
-			x: -10.0d
-			y: 2.0d
-			subtitle: "How'd you put all that in there?"
-			description: [
-				"A block designed to do one thing, store Storage Cells. This block holds 10 storage cells so you can tightly pack your storage into a very small space."
-				""
-				"ME Drives show their contents and the storage cell status on the front of the drive face. Its important to note, that without an ME Network this block does nothing. Its only useful when combined with a way to input, and output items, and requires 2 AE/t power to function, and additional power for each Storage Cell stored inside it."
-			]
-			dependencies: ["142E7BF2A167A7B9"]
-			id: "5BD0C7DCBF6C413E"
-			tasks: [{
-				id: "0A7CFC4386556166"
-				type: "item"
-				item: "ae2:drive"
 			}]
 		}
 		{
