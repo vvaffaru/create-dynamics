@@ -35,4 +35,5 @@
 			match_nbt: true
 		}]
 	}]
+	quest_links: [ ]
 }

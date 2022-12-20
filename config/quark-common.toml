@@ -1335,6 +1335,7 @@
 	"Back Button Keybind" = true
 	"Auto Walk Keybind" = true
 	"Long Range Pick Block" = true
+	"Elytra Indicator" = true
 
 	[client.variant_animal_textures]
 		"Enable Cow" = true
